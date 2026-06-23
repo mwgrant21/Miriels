@@ -1,0 +1,3457 @@
+:root {
+  --bg: #0d0d1a;
+  --bg2: #13132a;
+  --bg3: #1a1a35;
+  --gold: #c9a84c;
+  --gold-dim: #8a6f30;
+  --purple: #7b5ea7;
+  --purple-light: #a07fd4;
+  --text: #e8e0f0;
+  --text-dim: #8a80a0;
+  --border: #2a2a4a;
+  --card-w: 240px;
+  --card-h: 400px;
+
+  /* ── Astral accents ── */
+  --void: #06040f;
+  --nebula: #5b4aa8;
+  --night-blue: #2d3a6e; /* reserved: Slice 2 surfaces (deal, summary, overlays) */
+  --starlight: #cdbcff;
+  --silver: #b8c4e8;
+  --moon: #e8e2ff;
+
+  /* ── Glow tokens ── */
+  --glow-moon: 0 0 22px rgba(205, 188, 255, 0.45);
+  --glow-nebula: 0 0 20px rgba(91, 74, 168, 0.50);
+  --glow-gold: 0 0 16px rgba(201, 168, 76, 0.40);
+  --takeover-pulse: 123, 94, 167; /* RGB of the Threshold pulse glow (day overrides to gold) */
+
+  /* ── Elevation tokens ── */
+  --elev-panel: 0 8px 40px rgba(0, 0, 0, 0.50);
+  --elev-panel-strong: 0 8px 50px rgba(0, 0, 0, 0.60);
+  --hairline-silver: 1px solid rgba(184, 196, 232, 0.22);
+
+  /* ── Sanctuary surface ── */
+  --sanctuary-bg: rgba(8, 7, 18, 0.72);
+  --sanctuary-blur: 6px;
+  --panel-fade-end: rgba(14, 10, 22, 0.96); /* night: collapsed-text fade target */
+
+  /* Overlay text/accent inks (themed for day/night so journal/grimoire/notebook
+     don't stay cool in day). Semantic colors (#cf8a8a errors, chakra accents)
+     are intentionally NOT tokenized here. */
+  --ink-lavender: #9b8ec4; /* quotes, questions, teasers */
+  --ink-muted: #8d829f;    /* muted labels */
+  --ink-faint: #6f6582;    /* faint meta/hints */
+  --ink-soft: #a99dbd;     /* soft body (unresolved) */
+  --placeholder-bg: linear-gradient(160deg, #241b33, #171122); /* missing-image card placeholder */
+  /* Overlay veil tint — themed so overlays read warm in day / cool in night
+     regardless of what page content sits behind the backdrop blur. */
+  --overlay-veil: rgba(6, 4, 15, 0.66);
+  --card-ring: #2a2040; /* inner ring on card faces (warm in day) */
+
+  /* ── Motion tokens ── */
+  --ease-astral: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur-fast: 0.18s;
+  --dur-med: 0.4s;
+  --dur-slow: 0.9s;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--void);
+  color: var(--text);
+  font-family: 'Georgia', serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: linear-gradient(180deg, rgba(22, 14, 42, 0.55) 0%, rgba(15, 13, 34, 0.0) 100%);
+  border-bottom: 1px solid rgba(184, 196, 232, 0.12); /* intentional ghost: lighter than --hairline-silver for the fade-out header */
+  padding: 0.9rem 2rem 0;
+}
+
+header h1 {
+  font-size: 1.35rem;
+  color: var(--moon);
+  letter-spacing: 0.24em;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+  text-shadow: var(--glow-moon);
+}
+
+/* ── Settings button ── */
+.settings-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 1.1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.settings-btn:hover { border-color: var(--gold-dim); color: var(--gold); }
+
+/* Small dot indicator — replaces the pulsing orange button */
+.settings-btn.settings-needs-key::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e07a30;
+  border: 2px solid var(--bg2);
+}
+
+/* ── Settings modal ── */
+.settings-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-modal.hidden { display: none; }
+
+.settings-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 5, 15, 0.75);
+  backdrop-filter: blur(3px);
+}
+
+.settings-box {
+  position: relative;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: min(420px, 92vw);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+}
+
+.settings-box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings-box-title {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--gold-dim);
+}
+
+.settings-close-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.settings-close-btn:hover { color: var(--text); }
+
+.settings-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.settings-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  white-space: nowrap;
+  width: 100%;
+}
+
+.settings-input-group {
+  display: flex;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+#api-key-input {
+  flex: 1;
+  background: var(--bg3);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.82rem;
+  font-family: monospace;
+  outline: none;
+}
+
+#api-key-input:focus { border-color: var(--gold-dim); }
+
+.settings-save-btn {
+  background: var(--gold-dim);
+  color: var(--bg);
+  border: none;
+  border-radius: 5px;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.settings-save-btn:hover { opacity: 0.85; }
+.settings-save-btn:disabled { opacity: 0.5; cursor: default; }
+
+.key-status { font-size: 0.78rem; width: 100%; }
+.key-ok  { color: #6db56d; }
+.key-err { color: #e05555; }
+
+.settings-hint {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.settings-link { color: var(--gold-dim); }
+
+/* ── Reader selector ── */
+.reader-selector {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.reader-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  font-family: inherit;
+  padding: 0.3rem 0.65rem;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+}
+
+.reader-btn:hover { border-color: var(--gold-dim); color: var(--gold); }
+
+.reader-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  min-width: 170px;
+  z-index: 500;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.reader-dropdown.hidden { display: none; }
+
+.reader-option {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 0.82rem;
+  font-family: inherit;
+  padding: 0.55rem 0.9rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  width: 100%;
+}
+
+.reader-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+.reader-row:last-of-type { border-bottom: none; }
+.reader-row .reader-option { border-bottom: none; flex: 1; }
+
+.reader-option { border-bottom: none; }
+.reader-option:hover { background: var(--bg3); color: var(--text); }
+
+.reader-delete-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0 0.65rem 0 0.2rem;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.15s, color 0.15s;
+  flex-shrink: 0;
+}
+.reader-delete-btn:hover { opacity: 1; color: #c05050; }
+.reader-delete-btn.armed { color: #c9a84c; opacity: 1; font-weight: bold; }
+
+.reader-option.active {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.reader-option-add {
+  color: var(--text-dim);
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.reader-option-add:hover { opacity: 1; }
+
+.reader-new-form {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.5rem 0.6rem;
+  border-top: 1px solid var(--border);
+}
+
+.reader-new-form.hidden { display: none; }
+
+.reader-new-input {
+  flex: 1;
+  background: var(--bg3);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  outline: none;
+  min-width: 0;
+}
+
+.reader-new-input:focus { border-color: var(--gold-dim); }
+
+.reader-new-save {
+  background: var(--gold-dim);
+  color: var(--bg);
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.78rem;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.reader-new-save:hover { opacity: 0.85; }
+
+/* ── Session summary ── */
+.session-summary-section {
+  border-top: 1px solid var(--gold-dim);
+  padding-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0.9;
+  width: 100%;
+  max-width: 700px;
+}
+
+.session-summary-section.hidden { display: none; }
+
+.session-summary-eyebrow {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--gold-dim);
+  text-align: center;
+}
+
+.session-summary-btn {
+  align-self: center;
+  background: transparent;
+  color: var(--gold-dim);
+  border: 1px solid var(--gold-dim);
+  padding: 0.55rem 1.4rem;
+  font-size: 0.88rem;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.session-summary-btn:hover { background: rgba(201,168,76,0.08); color: var(--gold); border-color: var(--gold); }
+.session-summary-btn:disabled { opacity: 0.4; cursor: default; }
+
+.session-summary-text {
+  font-size: 1.05rem;
+  line-height: 2.1;
+  color: #d4c090;
+  white-space: pre-line;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+  max-width: 580px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.session-save-btn {
+  background: transparent;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  padding: 0.4rem 1rem;
+  font-size: 0.78rem;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.06em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  align-self: center;
+}
+
+.session-save-btn:hover { border-color: var(--gold-dim); color: var(--gold-dim); }
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.header-title-area {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.header-ornament {
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+
+.header-tagline {
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.header-ambient {
+  margin-top: 4px;
+  font-size: 0.82rem;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: var(--ink-faint);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  min-height: 1.1em; /* reserve space so the header does not jump when empty */
+}
+@media (prefers-reduced-motion: reduce) {
+  .header-ambient { transition: none; }
+}
+
+.header-moon {
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  color: var(--ink-muted);
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.controls-row-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls-row-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.4rem;
+  padding-bottom: 0.5rem;
+  border-top: 1px solid #1e1e3a;
+  width: 100%;
+}
+
+.ctrl-sep {
+  color: #3a3a5a;
+  font-size: 0.8rem;
+  padding: 0 0.1rem;
+}
+
+.ctrl-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold-dim);
+}
+
+.spread-select-dropdown {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--gold);
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  font-family: 'Georgia', serif;
+  cursor: pointer;
+  outline: none;
+  min-width: 200px;
+}
+
+.spread-select-dropdown:focus { border-color: var(--purple); }
+.spread-select-dropdown option { background: var(--bg2); color: var(--text); }
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.control-group label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.btn {
+  background: var(--bg3);
+  color: var(--text-dim);
+  border: none;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+  border-right: 1px solid var(--border);
+}
+
+.btn:last-child { border-right: none; }
+
+.btn:hover { background: var(--bg); color: var(--text); }
+
+.btn.active {
+  background: var(--purple);
+  color: #fff;
+}
+
+.btn-reader-choice {
+  border-left: 1px solid var(--border) !important;
+  color: var(--gold-dim);
+  font-style: italic;
+}
+
+.btn-reader-choice:hover { color: var(--gold) !important; }
+.btn-reader-choice.active { background: linear-gradient(135deg, #4a3060, #2a1a50); color: var(--gold) !important; }
+
+.btn-compat {
+  border-left: 1px solid var(--border) !important;
+  color: #c08080;
+  font-style: italic;
+}
+.btn-compat:hover { color: #e0a0a0 !important; }
+.btn-compat.active { background: linear-gradient(135deg, #5a2040, #2a1020); color: #e0a0a0 !important; }
+
+/* ── Miriel's Choice button ── */
+.btn-miriel-choice {
+  background: transparent;
+  border: 1px solid var(--gold-dim);
+  color: var(--gold-dim);
+  font-family: 'Georgia', serif;
+  font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  padding: 0.35rem 0.9rem;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.25s;
+  white-space: nowrap;
+}
+
+.btn-miriel-choice:hover {
+  background: rgba(201, 168, 76, 0.08);
+  border-color: var(--gold);
+  color: var(--gold);
+  box-shadow: 0 0 12px rgba(201, 168, 76, 0.2);
+}
+
+/* ── Miriel takeover overlay ── */
+.miriel-takeover {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  /* Deep, near-neutral veil; the blurred themed background tints it. Themed
+     warmer in day below for legibility over the brighter day scene. */
+  background: rgba(5, 3, 14, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.miriel-takeover.visible { opacity: 1; }
+.miriel-takeover.hidden  { display: none; }
+
+.miriel-takeover-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.miriel-takeover-ornament {
+  color: var(--gold-dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.4em;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.5s ease 0.3s, transform 0.5s ease 0.3s;
+}
+
+.miriel-takeover.visible .miriel-takeover-ornament {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.miriel-takeover-text {
+  font-family: 'Georgia', serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  line-height: 1.7;
+  max-width: 520px;
+  min-height: 2.5rem;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.6s ease 0.7s, transform 0.6s ease 0.7s;
+}
+
+.miriel-takeover.visible .miriel-takeover-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* The Miriel question/takeover no longer pulses — the breathing inset glow
+   read as a monitor artifact. The overlay's fade-in (opacity) is unaffected. */
+
+.export-btn {
+  background: transparent;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  padding: 0.4rem 1rem;
+  font-size: 0.78rem;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.06em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: block;
+  margin: 0.6rem auto 0;
+}
+.export-btn:hover { border-color: var(--gold-dim); color: var(--gold-dim); }
+
+.compat-box { max-width: 600px; width: 90vw; }
+.compat-persons { display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 0.8rem 0; }
+.compat-person { flex: 1 1 220px; }
+.compat-person-label { color: var(--gold-dim); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.6rem; }
+.compat-name-input { width: 100%; background: var(--bg); color: var(--text); border: 1px solid var(--border); padding: 0.4rem 0.7rem; border-radius: 6px; font-family: 'Georgia', serif; font-size: 0.9rem; }
+.compat-name-input:focus { outline: none; border-color: var(--purple); }
+.compat-zodiac-row { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+.compat-zodiac-select { flex: 1; background: var(--bg); color: var(--text); border: 1px solid var(--border); padding: 0.4rem 0.5rem; border-radius: 6px; font-family: 'Georgia', serif; font-size: 0.85rem; }
+.compat-date-input { flex: 1; background: var(--bg); color: var(--text); border: 1px solid var(--border); padding: 0.4rem 0.5rem; border-radius: 6px; font-family: 'Georgia', serif; font-size: 0.85rem; min-width: 120px; }
+.compat-or { color: var(--text-dim); font-size: 0.75rem; white-space: nowrap; }
+.compat-sign-preview { color: var(--gold-dim); font-size: 0.8rem; margin-top: 0.3rem; min-height: 1.1em; font-style: italic; }
+.compat-actions { display: flex; justify-content: center; margin-top: 1.2rem; }
+.compat-begin-btn { font-size: 0.95rem; padding: 0.6rem 2rem; }
+
+/* Reader Note — shown above the spread when Reader's Choice picks a layout.
+   Class-based (not id) so styling survives archiving, which strips ids. */
+.reader-note {
+  margin: 0.9rem 1.5rem 0;
+  padding: 0.7rem 1.1rem;
+  background: linear-gradient(rgba(123, 94, 167, 0.14), rgba(123, 94, 167, 0.14)), rgba(16, 11, 26, 0.78);
+  border-left: 2px solid var(--purple-light);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.75;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.reader-note.hidden { display: none; }
+
+.reader-note-label {
+  font-style: normal;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #b89aea;
+  margin-right: 0.1rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.reader-choice-loading {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: var(--text-dim);
+}
+
+/* Three card backs weaving over each other while Miriel thinks */
+.mini-shuffle {
+  position: relative;
+  width: 90px;
+  height: 64px;
+  margin: 0 auto 1.3rem;
+}
+.mini-shuffle i {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 38px;
+  height: 60px;
+  margin-left: -19px;
+  border-radius: 5px;
+  border: 1.5px solid #5a4080;
+  background: radial-gradient(ellipse at 50% 40%, #1e1040 0%, #0a0818 100%);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.6), inset 0 0 0 2px #09091a;
+  animation: mini-weave 1.5s ease-in-out infinite;
+}
+.mini-shuffle i:nth-child(1) { animation-delay: 0s; }
+.mini-shuffle i:nth-child(2) { animation-delay: 0.5s; }
+.mini-shuffle i:nth-child(3) { animation-delay: 1s; }
+
+@keyframes mini-weave {
+  0%, 100% { translate: 0 0;      rotate: 0deg;  z-index: 3; }
+  25%      { translate: -26px 2px; rotate: -9deg; z-index: 1; }
+  50%      { translate: 0 4px;    rotate: 0deg;  z-index: 1; }
+  75%      { translate: 26px 2px; rotate: 9deg;  z-index: 2; }
+}
+
+.draw-btn {
+  background: linear-gradient(135deg, rgba(91, 74, 168, 0.35), rgba(91, 74, 168, 0.20));
+  color: var(--moon);
+  border: 1px solid var(--nebula);
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.08em;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: var(--glow-nebula);
+  transition: box-shadow var(--dur-med) var(--ease-astral),
+              transform var(--dur-fast) var(--ease-astral);
+  margin-left: auto;
+}
+
+.draw-btn:hover {
+  box-shadow: 0 0 30px rgba(91, 74, 168, 0.7);
+  transform: translateY(-1px);
+}
+.draw-btn:active { transform: translateY(0); }
+
+/* ── Mode toggle ── */
+.mode-toggle-group {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.mode-btn {
+  background: var(--bg3);
+  color: var(--text-dim);
+  border: none;
+  border-right: 1px solid var(--border);
+  padding: 0.35rem 0.7rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.mode-btn:last-child { border-right: none; }
+.mode-btn:hover { background: var(--bg); color: var(--text); }
+.mode-btn.active { background: var(--purple); color: #fff; }
+
+/* ── Question bar ── */
+.question-bar {
+  padding: 0.5rem 2rem 0.6rem;
+  background: rgba(13, 13, 26, 0.55);
+  border-bottom: 1px solid rgba(42, 42, 74, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+#question-input {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(26, 26, 53, 0.60);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.9rem;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  outline: none;
+  transition: border-color 0.2s;
+  text-align: center;
+}
+
+#question-input:focus { border-color: var(--gold-dim); }
+#question-input::placeholder { color: var(--text-dim); }
+
+/* ── Manual entry form ── */
+.manual-form {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+  max-width: 580px;
+}
+
+.manual-tabs {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  width: fit-content;
+  margin-bottom: 0.25rem;
+}
+
+.manual-tab {
+  background: var(--bg3);
+  color: var(--text-dim);
+  border: none;
+  border-right: 1px solid var(--border);
+  padding: 0.4rem 1.1rem;
+  font-size: 0.85rem;
+  font-family: inherit;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.manual-tab:last-child { border-right: none; }
+.manual-tab:hover { background: var(--bg); color: var(--text); }
+.manual-tab.active { background: var(--purple); color: #fff; }
+
+.manual-form-title {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+}
+
+.manual-row {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.manual-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+}
+
+.manual-select {
+  background: var(--bg3);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.82rem;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.manual-select:focus { border-color: var(--purple); }
+.manual-select option, .manual-select optgroup { background: var(--bg2); }
+
+.manual-rev-label {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.manual-rev-check { accent-color: var(--purple); cursor: pointer; }
+
+.deck-select {
+  background: var(--sanctuary-bg);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: var(--text);
+  border: var(--hairline-silver);
+  padding: 0.35rem 0.6rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: none;
+}
+
+.deck-select:focus { border-color: var(--purple); }
+.deck-select option { background: var(--bg2); }
+
+.suit-moonology .card-symbol { color: #b0c4e8; }
+.suit-celtic .card-symbol { color: #7ec87e; }
+
+main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* ── Greeting panel ── */
+@keyframes greetingIn {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes greetingOut {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-14px); }
+}
+
+.greeting-panel {
+  width: 100%;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 2.8rem 2rem 2.4rem;
+  animation: greetingIn 0.7s ease both;
+  /* Soft radial scrim so the floating greeting text stays legible over bright
+     backgrounds (e.g. the dawn sunrise) without a hard panel box. */
+  background: radial-gradient(ellipse at center, rgba(8, 6, 14, 0.50) 0%, rgba(8, 6, 14, 0.22) 45%, transparent 72%);
+}
+
+.greeting-panel.greeting-gone {
+  animation: greetingOut 0.35s ease both;
+  pointer-events: none;
+}
+
+.greeting-headline {
+  font-size: 1.55rem;
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  text-align: center;
+  line-height: 1.3;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+.greeting-body {
+  font-size: 0.97rem;
+  color: var(--text-dim);
+  text-align: center;
+  line-height: 1.75;
+  max-width: 480px;
+  font-style: italic;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.65);
+}
+
+.greeting-name-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 0.4rem;
+  width: 100%;
+  max-width: 340px;
+}
+
+.greeting-name-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-dim);
+  text-align: center;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.65);
+}
+
+.greeting-name-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-family: 'Georgia', serif;
+  font-size: 1.15rem;
+  text-align: center;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.5rem;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.greeting-name-input:focus { border-color: var(--gold-dim); }
+
+.greeting-begin-btn {
+  background: transparent;
+  border: 1px solid var(--gold-dim);
+  color: var(--gold-dim);
+  font-family: 'Georgia', serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  padding: 0.45rem 1.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.greeting-begin-btn:hover { border-color: var(--gold); color: var(--gold); background: rgba(201,168,76,0.06); }
+
+/* ── Spread Area ── */
+.spread-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+  position: relative; /* needed for deal-pile overlay */
+}
+
+/* ── Deal-from-pile animation ── */
+@keyframes dealSlideIn {
+  0%   { opacity: 0; transform: translateY(-30px) scale(0.74) rotateY(-22deg); }
+  30%  { opacity: 1; }
+  100% { opacity: 1; transform: translateY(0) scale(1) rotateY(0deg); }
+}
+
+.card-container.deal-in {
+  animation: dealSlideIn 0.52s cubic-bezier(0.18, 0.85, 0.32, 1) both;
+}
+
+/* Pile overlay centred in spread area */
+.spread-pile {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 133px;
+  z-index: 10;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.spread-pile-card {
+  position: absolute;
+  inset: 0;
+  border-radius: 7px;
+  border: 2px solid var(--nebula);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.7), inset 0 0 0 3px var(--void), inset 0 0 0 4px rgba(91,74,168,0.35);
+  background: radial-gradient(ellipse at 50% 40%, rgba(91, 74, 168, 0.55) 0%, var(--void) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--nebula);
+}
+
+/* Visible riffle before the deal. Uses the independent translate/rotate
+   properties so the inline stacking transform on each card is preserved. */
+.spread-pile.shuffling .spread-pile-card {
+  animation: pile-riffle 0.26s ease-in-out infinite alternate;
+}
+.spread-pile.shuffling .spread-pile-card:nth-child(2n) {
+  animation-duration: 0.21s;
+  animation-delay: 0.06s;
+}
+.spread-pile.shuffling .spread-pile-card:nth-child(3n) {
+  animation-duration: 0.31s;
+  animation-delay: 0.11s;
+}
+
+@keyframes pile-riffle {
+  from { translate: -8px 0; rotate: -3deg; }
+  to   { translate:  8px 0; rotate:  3deg; }
+}
+
+.spread-shuffle-note {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 14px);
+  transform: translateX(-50%);
+  font-family: Georgia, serif;
+  font-size: 0.78rem;
+  font-style: italic;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  white-space: nowrap;
+}
+
+/* ── Rune pouch — runes are drawn from a bag, not dealt from a pile ──────── */
+
+.rune-pouch {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 92px;
+  height: 110px;
+  z-index: 10;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.rune-pouch-neck {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 34px;
+  height: 22px;
+  background: linear-gradient(170deg, #4a3520, #2c1f10);
+  border: 2px solid #1a1208;
+  border-radius: 8px 8px 4px 4px;
+  box-shadow: inset 0 -3px 5px rgba(0,0,0,0.5);
+}
+/* drawstring */
+.rune-pouch-neck::after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: -5px;
+  right: -5px;
+  height: 3px;
+  background: #8a6f30;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+.rune-pouch-body {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at 45% 30%, #5c4226 0%, #3a2a14 55%, #241808 100%);
+  border: 2px solid #1a1208;
+  border-radius: 42% 42% 48% 48% / 30% 30% 62% 62%;
+  box-shadow:
+    inset -6px -8px 16px rgba(0,0,0,0.55),
+    inset 4px 5px 10px rgba(255, 220, 150, 0.08),
+    0 6px 18px rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  color: rgba(201, 168, 76, 0.5);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+/* hand rummaging inside — irregular jostle */
+.rune-pouch.rummaging {
+  animation: pouch-rummage 0.46s ease-in-out infinite;
+}
+@keyframes pouch-rummage {
+  0%   { rotate: 0deg;    translate: 0 0; }
+  18%  { rotate: -4deg;   translate: -3px 1px; }
+  38%  { rotate: 3deg;    translate: 2px -2px; }
+  55%  { rotate: -2.5deg; translate: -2px 2px; }
+  76%  { rotate: 4deg;    translate: 3px 0; }
+  100% { rotate: 0deg;    translate: 0 0; }
+}
+
+/* a quick upward toss as each rune leaves the bag */
+.rune-pouch.tossing {
+  animation: pouch-toss 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes pouch-toss {
+  0%   { translate: 0 0;    rotate: 0deg; }
+  35%  { translate: 0 -9px; rotate: -5deg; }
+  100% { translate: 0 0;    rotate: 0deg; }
+}
+
+/* Runes tumble out and drop with a bounce (vs the card slide-in) */
+@keyframes dealDropIn {
+  0%   { opacity: 0; transform: translateY(-70px) scale(0.55) rotate(-10deg); }
+  45%  { opacity: 1; transform: translateY(6px)  scale(1.02) rotate(4deg); }
+  72%  { transform: translateY(-3px) scale(1)    rotate(-2deg); }
+  100% { opacity: 1; transform: translateY(0)    scale(1)     rotate(0deg); }
+}
+
+.card-container.deal-drop {
+  animation: dealDropIn 0.55s cubic-bezier(0.3, 0.7, 0.4, 1) both;
+}
+
+.card-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.position-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+}
+
+/* ── Card Flip ── */
+.card-container {
+  width: var(--card-w);
+  height: var(--card-h);
+  perspective: 800px;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-inner.flipped { transform: rotateY(180deg); }
+
+.card-face, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border: 2px solid var(--gold-dim);
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.70),
+    inset 0 0 0 3px var(--bg),
+    inset 0 0 0 4px var(--card-ring);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.5rem;
+  text-align: center;
+  user-select: none;
+}
+
+.card-back {
+  background: radial-gradient(ellipse at 50% 40%, rgba(91, 74, 168, 0.55) 0%, var(--void) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: var(--nebula);
+  cursor: pointer;
+  animation: card-back-pulse 3s ease-in-out infinite;
+}
+
+/* When a deck supplies its own card back image, suppress the default moon glyph */
+.card-back.has-image-back::before {
+  content: none;
+}
+
+.card-inner.flipped .card-back {
+  animation: none;
+}
+
+.card-back::before {
+  content: '☽';
+  font-size: 2rem;
+  color: #5a4080;
+  line-height: 1;
+}
+
+@keyframes card-back-pulse {
+  0%, 100% {
+    box-shadow:
+      0 6px 24px rgba(0, 0, 0, 0.70),
+      inset 0 0 0 3px var(--bg),
+      inset 0 0 0 4px var(--card-ring),
+      0 0 6px rgba(123, 94, 167, 0.12);
+  }
+  50% {
+    box-shadow:
+      0 6px 24px rgba(0, 0, 0, 0.70),
+      inset 0 0 0 3px var(--bg),
+      inset 0 0 0 4px var(--card-ring),
+      0 0 20px rgba(123, 94, 167, 0.38);
+  }
+}
+
+.card-face {
+  background: var(--bg3);
+  transform: rotateY(180deg);
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+/* Hover is detected on .card-container (which never moves), not on the face
+   itself — a face that lifts under the pointer un-hovers itself and flickers.
+   The transform must restate rotateY(180deg): without it the face turns
+   away from the camera and vanishes (backface-visibility). */
+.card-container:hover .card-face {
+  border-color: var(--gold-dim);
+  box-shadow:
+    0 10px 32px rgba(0, 0, 0, 0.85),
+    inset 0 0 0 3px var(--bg),
+    inset 0 0 0 4px var(--card-ring),
+    0 0 22px rgba(201, 168, 76, 0.28);
+  transform: rotateY(180deg) translateY(-4px);
+}
+
+.card-face.reversed { transform: rotateY(180deg) rotate(180deg); }
+
+.card-container:hover .card-face.reversed {
+  transform: rotateY(180deg) rotate(180deg) translateY(4px);
+}
+
+.card-symbol {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.card-name {
+  font-size: 0.7rem;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+}
+
+.card-arcana {
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.card-reversed-badge {
+  font-size: 0.55rem;
+  color: var(--purple-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 1px solid var(--purple);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+/* ── Card with image ── */
+.card-face.has-image {
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* ── Runes are bare stones, not framed cards ──
+   The rune PNGs have transparent backgrounds; drop the card frame entirely
+   and let the stone's own silhouette read. object-fit: contain shows the
+   full pebble instead of cover-cropping its sides, and drop-shadow follows
+   the alpha contour rather than the card rectangle. */
+.card-face.rune-stone,
+.card-container:hover .card-face.rune-stone {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.card-face.rune-stone .card-image {
+  object-fit: contain;
+  border-radius: 0;
+  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.6));
+}
+
+.card-container:hover .card-face.rune-stone .card-image {
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.7));
+}
+
+/* ── I Ching hexagrams — same bare treatment as rune stones ──
+   Transparent-background PNGs; drop the card frame and let the
+   hexagram silhouette show without the golden border/glow. */
+.card-face.iching-hex,
+.card-container:hover .card-face.iching-hex {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.card-face.iching-hex .card-image {
+  object-fit: contain;
+  border-radius: 0;
+  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.6));
+}
+
+.card-container:hover .card-face.iching-hex .card-image {
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.7));
+}
+
+/* Reversed badge overlaid on image cards */
+.card-img-badge {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(2px);
+  white-space: nowrap;
+}
+
+/* When the face is reversed the whole face (including image) rotates 180°,
+   so the badge needs to mirror back to stay readable */
+.card-face.reversed .card-img-badge {
+  transform: translateX(-50%) rotate(180deg);
+}
+
+/* suit colors */
+.suit-wands .card-symbol { color: #e07a30; }
+.suit-cups .card-symbol { color: #4a9fd4; }
+.suit-swords .card-symbol { color: #c4c4d4; }
+.suit-pentacles .card-symbol { color: #6db56d; }
+.suit-disks .card-symbol { color: #6db56d; }
+.suit-major .card-symbol { color: var(--gold); }
+.suit-oracle .card-symbol { color: var(--purple-light); }
+
+/* ── Meaning Panel ── */
+.meaning-panel {
+  width: 100%;
+  max-width: 900px;
+  background: var(--sanctuary-bg);
+  backdrop-filter: blur(var(--sanctuary-blur));
+  -webkit-backdrop-filter: blur(var(--sanctuary-blur));
+  border: var(--hairline-silver);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: flex-start;
+  box-shadow: var(--elev-panel-strong), inset 0 0 30px rgba(91, 74, 168, 0.08);
+}
+
+.meanings-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.ai-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.col-eyebrow {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  margin-bottom: 0.1rem;
+}
+
+@media (max-width: 768px) {
+  .meaning-panel {
+    flex-direction: column;
+    max-width: 700px;
+  }
+}
+
+.meaning-panel.hidden { display: none; }
+
+.meaning-card {
+  border-bottom: 1px solid rgba(184, 196, 232, 0.15);
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.meaning-card:last-child { border-bottom: none; margin-bottom: 0; }
+
+.meaning-title {
+  font-size: 1rem;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+
+.meaning-position {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.4rem;
+}
+
+.meaning-keywords {
+  font-size: 0.72rem;
+  color: var(--purple-light);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.keyword-pill {
+  display: inline-block;
+  background: rgba(201, 168, 76, 0.10);
+  border: 1px solid rgba(201, 168, 76, 0.18);
+  color: var(--gold-dim);
+  border-radius: 10px;
+  padding: 1px 7px;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  margin: 1px 2px 3px;
+  text-transform: uppercase;
+}
+
+.keyword-pill-rev {
+  background: rgba(123, 94, 167, 0.12);
+  border-color: rgba(123, 94, 167, 0.25);
+  color: var(--purple-light);
+}
+
+.meaning-text {
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.ask-claude-btn {
+  align-self: flex-start;
+  background: transparent;
+  color: var(--purple-light);
+  border: 1px solid var(--purple);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-family: inherit;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.04em;
+}
+
+.ask-claude-btn:hover {
+  background: var(--purple);
+  color: #fff;
+}
+
+.ask-claude-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#claude-response {
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#claude-response.hidden { display: none; }
+
+.response-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--purple-light);
+  margin-bottom: 0.75rem;
+}
+
+/* Card Reflections section */
+#card-reflections { display: flex; flex-direction: column; }
+#card-reflections.hidden { display: none; }
+
+#reflections-text {
+  font-size: 0.92rem;
+  line-height: 1.9;
+  color: var(--text-dim);
+  white-space: pre-wrap;
+}
+
+/* Overall Synopsis section */
+#overall-synopsis {
+  background: linear-gradient(135deg, #1a1030 0%, #0f0f22 100%);
+  border: 1px solid var(--purple);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#overall-synopsis.hidden { display: none; }
+
+.synopsis-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.synopsis-icon {
+  color: var(--gold);
+  font-size: 0.7rem;
+  text-shadow: var(--glow-gold);
+}
+
+.synopsis-label {
+  margin-bottom: 0 !important;
+  color: var(--moon) !important;
+  letter-spacing: 0.18em !important;
+  text-shadow: var(--glow-moon);
+}
+
+#synopsis-text {
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--text);
+  white-space: pre-wrap;
+}
+
+/* Loading shimmer */
+.loading {
+  display: inline-block;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.loading::after {
+  content: '';
+  animation: dots 1.2s infinite;
+}
+
+@keyframes dots {
+  0% { content: ''; }
+  33% { content: '.'; }
+  66% { content: '..'; }
+  100% { content: '...'; }
+}
+
+/* Celtic Cross grid */
+.celtic-grid {
+  display: grid;
+  grid-template-areas:
+    ". top . . extra1"
+    "left center right . extra2"
+    ". cross . . extra3"
+    ". bottom . . extra4";
+  grid-template-columns: var(--card-w) var(--card-w) var(--card-w) 1.5rem var(--card-w);
+  grid-template-rows: var(--card-h) var(--card-h) var(--card-h) var(--card-h);
+  gap: 0.75rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.celtic-center { grid-area: center; }
+.celtic-cross  { grid-area: cross; }
+.celtic-top    { grid-area: top; }
+.celtic-bottom { grid-area: bottom; }
+.celtic-left   { grid-area: left; }
+.celtic-right  { grid-area: right; }
+.celtic-extra1 { grid-area: extra1; }
+.celtic-extra2 { grid-area: extra2; }
+.celtic-extra3 { grid-area: extra3; }
+.celtic-extra4 { grid-area: extra4; }
+
+/* Six-card relationship grid (2 col × 3 row, A left / B right) */
+.six-grid {
+  display: grid;
+  grid-template-columns: var(--card-w) var(--card-w);
+  grid-template-rows: repeat(3, auto);
+  gap: 1.5rem 3rem;
+  justify-content: center;
+  align-items: start;
+}
+.six-r1c1 { grid-row: 1; grid-column: 1; }
+.six-r2c1 { grid-row: 2; grid-column: 1; }
+.six-r3c1 { grid-row: 3; grid-column: 1; }
+.six-r1c2 { grid-row: 1; grid-column: 2; }
+.six-r2c2 { grid-row: 2; grid-column: 2; }
+.six-r3c2 { grid-row: 3; grid-column: 2; }
+
+/* Nine-card relationship grid (3 col × 4 row with gaps) */
+.nine-grid {
+  display: grid;
+  grid-template-columns: var(--card-w) var(--card-w) var(--card-w);
+  grid-template-rows: repeat(4, auto);
+  gap: 1.25rem 1.5rem;
+  justify-content: center;
+  align-items: start;
+}
+.nine-r1c1 { grid-row: 1; grid-column: 1; }
+.nine-r1c2 { grid-row: 1; grid-column: 2; }
+.nine-r1c3 { grid-row: 1; grid-column: 3; }
+.nine-r2c1 { grid-row: 2; grid-column: 1; }
+.nine-r2c2 { grid-row: 2; grid-column: 2; }
+.nine-r2c3 { grid-row: 2; grid-column: 3; }
+.nine-r3c1 { grid-row: 3; grid-column: 1; }
+.nine-r3c3 { grid-row: 3; grid-column: 3; }
+.nine-r4c2 { grid-row: 4; grid-column: 2; }
+
+.position-label-sm {
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 1.3;
+  max-width: var(--card-w);
+}
+
+/* ── Clarifier ── */
+#clarifier-prompt {
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+#clarifier-prompt.hidden { display: none; }
+
+#clarifier-suggestion {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.clarifier-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.clarifier-btn {
+  background: transparent;
+  color: var(--purple-light);
+  border: 1px solid var(--purple);
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+  font-family: inherit;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.04em;
+}
+
+.clarifier-btn:hover { background: var(--purple); color: #fff; }
+.clarifier-btn:disabled { opacity: 0.4; cursor: default; }
+
+.clarifier-btn-alt {
+  color: var(--text-dim);
+  border-color: var(--border);
+}
+
+.clarifier-btn-alt:hover { background: var(--bg3); color: var(--text); }
+
+.clarifier-btn-spread {
+  color: var(--gold-dim);
+  border-color: var(--gold-dim);
+  font-style: italic;
+}
+
+.clarifier-btn-spread:hover { background: rgba(201,168,76,0.1); color: var(--gold); border-color: var(--gold); }
+
+.clarifier-chooser-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+#clarifier-chooser { display: flex; flex-direction: column; gap: 0.5rem; }
+#clarifier-chooser.hidden { display: none; }
+
+#clarifier-result {
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#clarifier-result.hidden { display: none; }
+
+.clarifier-card-area {
+  display: flex;
+  justify-content: center;
+}
+
+.clarifier-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.clarifier-card-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--gold-dim);
+}
+
+.clarifier-reading-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--purple-light);
+}
+
+#clarifier-reading-text {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--text);
+  white-space: pre-wrap;
+}
+
+/* ── Resume Panel ── */
+#resume-panel {
+  width: 100%;
+  max-width: 700px;
+  background: var(--bg2);
+  border: 1px solid var(--gold-dim);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+#resume-panel.hidden { display: none; }
+
+.resume-eyebrow {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--gold-dim);
+  margin-bottom: 0.1rem;
+}
+
+.resume-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.resume-date {
+  font-size: 0.95rem;
+  color: var(--gold);
+}
+
+.resume-meta {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.resume-question {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--text);
+}
+
+.resume-cards {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+.resume-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.35rem;
+}
+
+/* ── Chained clarifier sections ── */
+.follow-up-section {
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.follow-up-suggestion {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.follow-up-chooser {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.follow-up-chooser.hidden { display: none; }
+
+.follow-up-reading {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--text);
+  white-space: pre-wrap;
+}
+
+/* ── Continue Reading ── */
+#continue-reading {
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+#continue-reading.hidden { display: none; }
+
+.continue-divider {
+  text-align: center;
+  color: var(--gold-dim);
+  opacity: 0.5;
+  letter-spacing: 0.5em;
+  font-size: 0.72rem;
+}
+
+.continue-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+#continue-question {
+  width: 100%;
+  background: var(--bg3);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+  min-height: 2.6rem;
+  line-height: 1.5;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+#continue-question:focus { border-color: var(--gold-dim); }
+#continue-question::placeholder { color: var(--text-dim); }
+
+.continue-draw-btn { margin-left: 0 !important; white-space: nowrap; }
+
+
+/* ── Theme Card (Overall Theme) ── */
+#theme-card-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 2rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0.5rem;
+}
+
+#theme-card-area.hidden { display: none; }
+
+.theme-card-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--gold-dim);
+  font-style: italic;
+}
+
+.theme-card-container {
+  transform: scale(0.82);
+  transform-origin: top center;
+}
+
+.theme-meaning {
+  max-width: 480px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  background: var(--sanctuary-bg);
+  backdrop-filter: blur(var(--sanctuary-blur));
+  -webkit-backdrop-filter: blur(var(--sanctuary-blur));
+  border: var(--hairline-silver);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: var(--elev-panel), inset 0 0 30px rgba(91, 74, 168, 0.08);
+}
+
+.theme-meaning-name {
+  font-size: 0.95rem;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+}
+
+.theme-reversed {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
+.theme-meaning-keywords {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  letter-spacing: 0.08em;
+}
+
+.theme-meaning-text {
+  font-size: 0.82rem;
+  color: var(--text);
+  line-height: 1.65;
+  font-style: italic;
+}
+
+/* ── Reading Archive (stacked prior readings) ── */
+.reading-archive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  opacity: 0.55;
+  filter: saturate(0.6);
+  pointer-events: none;
+  border-bottom: none;
+}
+
+.reading-archive * {
+  /* Suppress animations in archived readings */
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Make sure flipped cards still show their face in archive */
+.reading-archive .card-inner {
+  transform: rotateY(180deg);
+}
+
+.reading-divider {
+  text-align: center;
+  padding: 2.5rem 0 1.5rem;
+  color: var(--gold-dim);
+  opacity: 0.45;
+  width: 100%;
+}
+
+.reading-divider-ornament {
+  font-size: 1rem;
+  letter-spacing: 0.6em;
+}
+
+/* ── Spread category tabs ───────────────────────────────────────── */
+#spread-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border, #333);
+  margin-bottom: 6px;
+}
+
+.tab {
+  padding: 6px 16px;
+  font-size: 0.78rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-dim, #888);
+  cursor: pointer;
+  margin-bottom: -1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.tab:hover { color: var(--text, #eee); }
+.tab.active { border-bottom-color: var(--accent, #9b8dc4); color: var(--text, #eee); font-weight: 600; }
+
+/* ── Horseshoe spread ───────────────────────────────────────────── */
+.horseshoe-grid {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  min-height: 240px;
+  padding: 1rem 0;
+}
+
+.horseshoe-grid .hs-1,
+.horseshoe-grid .hs-7 { margin-bottom: 0; }
+
+.horseshoe-grid .hs-2,
+.horseshoe-grid .hs-6 { margin-bottom: 24px; }
+
+.horseshoe-grid .hs-3,
+.horseshoe-grid .hs-5 { margin-bottom: 44px; }
+
+.horseshoe-grid .hs-4 { margin-bottom: 56px; }
+
+/* ── Year Ahead spread ──────────────────────────────────────────── */
+.year-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ── Chakra spread ──────────────────────────────────────────────── */
+.chakra-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.chakra-grid .card-slot {
+  width: 100%;
+  max-width: 220px;
+  border-left: 3px solid transparent;
+  padding-left: 4px;
+}
+
+.chakra-root      { border-left-color: #c0392b !important; }
+.chakra-sacral    { border-left-color: #d35400 !important; }
+.chakra-solar     { border-left-color: #d4ac0d !important; }
+.chakra-heart     { border-left-color: #1e8449 !important; }
+.chakra-throat    { border-left-color: #1a5276 !important; }
+.chakra-third-eye { border-left-color: #7d3c98 !important; }
+.chakra-crown     { border-left-color: #9b8dc4 !important; }
+
+/* ── Decision spread ────────────────────────────────────────────── */
+.decision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 8px;
+  align-items: start;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.dc-situation { grid-column: 1; grid-row: 1 / 3; align-self: center; }
+.dc-pa1       { grid-column: 2; grid-row: 1; }
+.dc-pa2       { grid-column: 3; grid-row: 1; }
+.dc-pb1       { grid-column: 2; grid-row: 2; opacity: 0.85; }
+.dc-pb2       { grid-column: 3; grid-row: 2; opacity: 0.85; }
+.dc-outcome   { grid-column: 4; grid-row: 1 / 3; align-self: center; }
+
+/* ── Star / Pentagram spread ────────────────────────────────────── */
+.star-grid {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.star-grid .card-slot { position: absolute; transform: translateX(-50%); }
+
+/* Spirit at top, elements at pentagram points clockwise from upper-right */
+.star-spirit { left: 50%; top: 0; }
+.star-air    { left: 80%; top: 22%; }
+.star-fire   { left: 65%; top: 70%; }
+.star-earth  { left: 35%; top: 70%; }
+.star-water  { left: 20%; top: 22%; }
+
+/* ── Your Story So Far — reader profile notebook ─────────────────────────── */
+
+.notebook-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.notebook-overlay.visible { opacity: 1; }
+.notebook-overlay.hidden  { display: none; }
+
+.notebook-backdrop {
+  position: absolute;
+  inset: 0;
+  background: var(--overlay-veil);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.notebook-close {
+  position: fixed;
+  top: 18px;
+  right: 22px;
+  z-index: 302;
+  background: none;
+  border: none;
+  color: var(--ink-faint);
+  font-size: 20px;
+  cursor: pointer;
+}
+.notebook-close:hover { color: #c9a45c; }
+
+.notebook-scroll {
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  z-index: 301;
+}
+
+.notebook-inner {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 56px 24px 72px;
+  font-family: Georgia, serif;
+  color: #cfc6b8;
+  text-align: center;
+}
+
+.notebook-ornament {
+  color: #c9a45c;
+  font-size: 13px;
+  letter-spacing: 5px;
+}
+
+.notebook-title {
+  color: #c9a45c;
+  font-size: 19px;
+  letter-spacing: 5px;
+  margin: 12px 0 4px;
+}
+
+.notebook-meta {
+  color: var(--ink-faint);
+  font-size: 12px;
+  margin-bottom: 26px;
+}
+
+.notebook-quote {
+  font-style: italic;
+  color: var(--ink-lavender);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 auto 28px;
+  max-width: 540px;
+}
+
+.notebook-eyebrow {
+  color: #c9a45c;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 32px 0 12px;
+}
+
+.notebook-notes {
+  text-align: left;
+}
+.notebook-notes p {
+  font-size: 14px;
+  line-height: 1.85;
+  margin: 0 0 14px;
+}
+
+.notebook-living-note {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--gold, #d4b46a);
+  text-align: left;
+  margin: 0 0 6px;
+}
+.notebook-living-note-date {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-dim, #8a7f6a);
+  text-align: left;
+  margin: 0 0 8px;
+}
+
+.notebook-foretellings { margin: 0.5rem 0 1.25rem; }
+.notebook-foretelling { margin-bottom: 1rem; }
+.notebook-foretelling-outcome { font-style: italic; margin: 0 0 0.15rem; }
+.notebook-foretelling-claim { opacity: 0.7; font-size: 0.85em; margin: 0 0 0.25rem; }
+.notebook-foretelling-verdict {
+  display: inline-block; font-size: 0.7em; letter-spacing: 0.08em;
+  text-transform: uppercase; opacity: 0.75;
+}
+.verdict-came_to_pass { color: #b9975b; }
+.verdict-did_not      { opacity: 0.5; }
+.verdict-partly       { color: #8a9a8a; }
+
+.notebook-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.notebook-card { width: 104px; }
+
+.notebook-card-img {
+  width: 104px;
+  height: 160px;
+  object-fit: cover;
+  border: 2px solid rgba(201, 164, 92, 0.4);
+  border-radius: 6px;
+  display: block;
+}
+
+.notebook-card-placeholder {
+  width: 104px;
+  height: 160px;
+  border: 2px solid rgba(201, 164, 92, 0.4);
+  border-radius: 6px;
+  background: var(--placeholder-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9a45c;
+  font-size: 26px;
+}
+
+.notebook-card-name {
+  font-size: 12px;
+  margin-top: 7px;
+  color: #e8d9b0;
+}
+
+.notebook-card-note {
+  font-size: 11px;
+  color: var(--ink-muted);
+  line-height: 1.45;
+  margin-top: 4px;
+}
+
+.notebook-threads {
+  text-align: left;
+  font-size: 14px;
+  line-height: 2.1;
+}
+.notebook-thread-status            { font-variant: small-caps; }
+.notebook-thread-status.open       { color: #cf8a8a; }
+.notebook-thread-status.moving     { color: #e0b252; }
+.notebook-thread-status.resolved   { color: #7fbf8e; }
+
+/* ── Reading Journal ─────────────────────────────────────────────────────── */
+
+.journal-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 24px 72px;
+  font-family: Georgia, serif;
+  color: #cfc6b8;
+  text-align: center;
+}
+
+.journal-search-wrap {
+  margin: 26px auto 8px;
+  max-width: 480px;
+}
+
+.journal-search {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--sanctuary-bg);
+  border: 1px solid rgba(201, 164, 92, 0.3);
+  border-radius: 8px;
+  color: #e8d9b0;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  padding: 10px 14px;
+  outline: none;
+}
+.journal-search:focus { border-color: rgba(201, 164, 92, 0.65); }
+.journal-search::placeholder { color: var(--ink-faint); }
+
+.journal-count {
+  color: var(--ink-faint);
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+.journal-list {
+  margin-top: 28px;
+  text-align: left;
+}
+
+.journal-empty {
+  text-align: center;
+  font-style: italic;
+  color: var(--ink-muted);
+  padding: 30px 0;
+}
+
+.journal-entry {
+  border: 1px solid rgba(201, 164, 92, 0.18);
+  border-radius: 10px;
+  background: var(--sanctuary-bg);
+  padding: 20px 24px;
+  margin-bottom: 26px;
+}
+
+.journal-entry-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.journal-entry-date {
+  color: #c9a45c;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.journal-entry-meta {
+  color: var(--ink-faint);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.journal-entry-question {
+  font-style: italic;
+  color: var(--ink-lavender);
+  font-size: 14.5px;
+  line-height: 1.55;
+  margin: 10px 0 4px;
+}
+
+.journal-entry-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 16px 0 4px;
+}
+
+.journal-card-chip {
+  width: 78px;
+  text-align: center;
+}
+
+.journal-card-img {
+  width: 78px;
+  height: 120px;
+  object-fit: cover;
+  border: 1.5px solid rgba(201, 164, 92, 0.35);
+  border-radius: 5px;
+  display: block;
+}
+.journal-card-img.reversed { transform: rotate(180deg); }
+
+.journal-card-placeholder {
+  width: 78px;
+  height: 120px;
+  border: 1.5px solid rgba(201, 164, 92, 0.35);
+  border-radius: 5px;
+  background: var(--placeholder-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9a45c;
+  font-size: 20px;
+}
+
+.journal-card-label {
+  font-size: 10.5px;
+  color: #e8d9b0;
+  margin-top: 5px;
+  line-height: 1.3;
+}
+
+.journal-card-pos {
+  font-size: 9.5px;
+  color: var(--ink-muted);
+  margin-top: 2px;
+  font-style: italic;
+}
+
+.journal-entry-synopsis {
+  margin-top: 12px;
+}
+.journal-entry-synopsis p {
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: #cfc6b8;
+  margin: 0 0 12px;
+}
+.journal-entry-synopsis.collapsed {
+  max-height: 76px;
+  overflow: hidden;
+  position: relative;
+}
+.journal-entry-synopsis.collapsed::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 46px;
+  background: linear-gradient(to bottom, transparent, var(--panel-fade-end));
+}
+
+.journal-expand-btn {
+  background: none;
+  border: none;
+  color: #c9a45c;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 6px 0 0;
+}
+.journal-expand-btn:hover { color: #e0c060; }
+
+/* ── Card of the Day ─────────────────────────────────────────────────────── */
+
+#daily-card-area {
+  max-width: 760px;
+  margin: 18px auto 0;
+  padding: 0 24px;
+  font-family: Georgia, serif;
+}
+#daily-card-area.hidden { display: none; }
+
+.daily-card-bar {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--sanctuary-bg);
+  backdrop-filter: blur(var(--sanctuary-blur));
+  -webkit-backdrop-filter: blur(var(--sanctuary-blur));
+  border: var(--hairline-silver);
+  border-radius: 12px;
+  padding: 10px 18px;
+  color: #cfc6b8;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: var(--elev-panel), inset 0 0 30px rgba(91, 74, 168, 0.08);
+  transition: border-color var(--dur-med) var(--ease-astral), box-shadow var(--dur-med) var(--ease-astral);
+}
+.daily-card-bar:hover { border-color: rgba(201, 164, 92, 0.55); }
+
+.daily-bar-glyph { color: #c9a45c; font-size: 15px; }
+.daily-bar-text  { color: #e8d9b0; letter-spacing: 2px; }
+.daily-bar-hint  { color: var(--ink-faint); font-size: 11.5px; font-style: italic; margin-left: auto; }
+
+.daily-card-panel {
+  background: var(--sanctuary-bg);
+  backdrop-filter: blur(var(--sanctuary-blur));
+  -webkit-backdrop-filter: blur(var(--sanctuary-blur));
+  border: var(--hairline-silver);
+  border-radius: 12px;
+  padding: 18px 22px;
+  box-shadow: var(--elev-panel), inset 0 0 30px rgba(91, 74, 168, 0.08);
+}
+
+.daily-panel-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.daily-panel-title  { color: #c9a45c; font-size: 14px; letter-spacing: 2px; }
+.daily-panel-streak { color: #e0b252; font-size: 11.5px; letter-spacing: 1px; font-style: italic; }
+
+.daily-panel-body {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.daily-panel-card { width: 110px; flex-shrink: 0; text-align: center; }
+
+.daily-card-img {
+  width: 110px;
+  height: 170px;
+  object-fit: cover;
+  border: 2px solid rgba(201, 164, 92, 0.4);
+  border-radius: 6px;
+  display: block;
+}
+.daily-card-img.reversed { transform: rotate(180deg); }
+
+.daily-card-placeholder {
+  width: 110px;
+  height: 170px;
+  border: 2px solid rgba(201, 164, 92, 0.4);
+  border-radius: 6px;
+  background: var(--placeholder-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9a45c;
+  font-size: 24px;
+}
+
+.daily-card-name {
+  font-size: 12px;
+  color: var(--moon);
+  margin-top: 7px;
+  line-height: 1.35;
+  text-shadow: var(--glow-moon);
+}
+
+.daily-panel-text { flex: 1; min-width: 0; }
+.daily-panel-text p {
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: #cfc6b8;
+  margin: 0 0 12px;
+}
+
+.daily-panel-trail {
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--ink-muted);
+  font-style: italic;
+  line-height: 1.5;
+}
+.daily-trail-label { color: var(--ink-faint); letter-spacing: 1px; }
+
+@media (max-width: 560px) {
+  .daily-panel-body { flex-direction: column; align-items: center; }
+}
+
+/* ── Pattern weaving (inside journal) ────────────────────────────────────── */
+
+.journal-patterns {
+  margin: 22px auto 6px;
+  max-width: 640px;
+}
+
+.patterns-btn {
+  background: none;
+  border: 1px solid rgba(155, 142, 196, 0.4);
+  border-radius: 8px;
+  color: var(--ink-lavender);
+  font-family: Georgia, serif;
+  font-size: 13.5px;
+  letter-spacing: 1px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+.patterns-btn:hover:not(:disabled) { border-color: var(--ink-lavender); color: #c4b8e8; }
+.patterns-btn:disabled { opacity: 0.6; cursor: default; font-style: italic; }
+
+.patterns-error {
+  color: #cf8a8a;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.patterns-recurring {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 18px 0 4px;
+}
+
+.patterns-chip {
+  border: 1px solid rgba(201, 164, 92, 0.3);
+  border-radius: 12px;
+  color: #e8d9b0;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 4px 11px;
+}
+
+.patterns-text {
+  text-align: left;
+  border-left: 2px solid rgba(155, 142, 196, 0.35);
+  padding-left: 18px;
+  margin-top: 18px;
+}
+.patterns-text p {
+  font-size: 14px;
+  line-height: 1.85;
+  color: #cfc6b8;
+  margin: 0 0 14px;
+}
+
+/* ── Grimoire ────────────────────────────────────────────────────────────── */
+
+.grimoire-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 56px 24px 72px;
+  font-family: Georgia, serif;
+  color: #cfc6b8;
+  text-align: center;
+}
+
+.grimoire-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 20px 0 26px;
+  transition: opacity 0.3s ease;
+}
+.grimoire-tabs.searching { opacity: 0.35; }
+
+.grimoire-tab {
+  background: none;
+  border: 1px solid rgba(201, 164, 92, 0.25);
+  border-radius: 14px;
+  color: var(--ink-muted);
+  font-family: Georgia, serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.grimoire-tab:hover  { color: #e8d9b0; border-color: rgba(201, 164, 92, 0.5); }
+.grimoire-tab.active { color: #e8d9b0; border-color: #c9a45c; background: rgba(201, 164, 92, 0.08); }
+
+.grimoire-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 16px 12px;
+}
+
+.grimoire-cell { cursor: pointer; }
+.grimoire-cell:hover .grimoire-cell-img,
+.grimoire-cell:hover .grimoire-cell-placeholder { border-color: #c9a45c; }
+.grimoire-cell:hover .grimoire-cell-name { color: #e8d9b0; }
+
+.grimoire-cell-img {
+  width: 100%;
+  aspect-ratio: 280 / 486;
+  object-fit: cover;
+  border: 1.5px solid rgba(201, 164, 92, 0.3);
+  border-radius: 5px;
+  display: block;
+  transition: border-color 0.25s ease;
+}
+
+.grimoire-cell-placeholder {
+  width: 100%;
+  aspect-ratio: 280 / 486;
+  border: 1.5px solid rgba(201, 164, 92, 0.3);
+  border-radius: 5px;
+  background: var(--placeholder-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9a45c;
+  font-size: 26px;
+  box-sizing: border-box;
+  transition: border-color 0.25s ease;
+}
+.grimoire-cell-placeholder.large { font-size: 48px; }
+
+.grimoire-cell-name {
+  font-size: 10.5px;
+  color: #a99c8f;
+  margin-top: 6px;
+  line-height: 1.3;
+  transition: color 0.25s ease;
+}
+
+.grimoire-detail {
+  position: relative;
+  border: 1px solid rgba(201, 164, 92, 0.3);
+  border-radius: 10px;
+  background: var(--sanctuary-bg);
+  padding: 24px 28px;
+  margin-bottom: 28px;
+  text-align: left;
+}
+.grimoire-detail.hidden { display: none; }
+
+.grimoire-detail-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  color: var(--ink-faint);
+  font-size: 16px;
+  cursor: pointer;
+}
+.grimoire-detail-close:hover { color: #c9a45c; }
+
+.grimoire-detail-body {
+  display: flex;
+  gap: 26px;
+  align-items: flex-start;
+}
+
+.grimoire-detail-imgcol { width: 170px; flex-shrink: 0; }
+
+.grimoire-detail-img {
+  width: 170px;
+  border: 2px solid rgba(201, 164, 92, 0.4);
+  border-radius: 7px;
+  display: block;
+}
+
+.grimoire-detail-text { flex: 1; min-width: 0; }
+
+.grimoire-detail-name {
+  color: #e8d9b0;
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+
+.grimoire-detail-sub {
+  color: var(--ink-muted);
+  font-size: 11.5px;
+  letter-spacing: 1.5px;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.grimoire-keywords { justify-content: flex-start; margin: 12px 0 4px; }
+
+.grimoire-detail-eyebrow {
+  color: #c9a45c;
+  font-size: 10.5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 16px 0 6px;
+}
+
+.grimoire-detail-para {
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: #cfc6b8;
+  margin: 0;
+}
+
+@media (max-width: 620px) {
+  .grimoire-detail-body { flex-direction: column; align-items: center; }
+  .grimoire-detail-text { text-align: center; }
+  .grimoire-keywords { justify-content: center; }
+}
+
+.notebook-unresolved {
+  border-top: 1px solid rgba(58, 49, 80, 0.5);
+  margin-top: 30px;
+  padding-top: 4px;
+}
+.notebook-unresolved-text {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+.notebook-teaser {
+  font-style: italic;
+  color: var(--ink-lavender);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 48px;
+}
+.notebook-teaser-count {
+  color: var(--ink-faint);
+  font-style: normal;
+  font-size: 13px;
+  margin-top: 14px;
+}
+
+.notebook-hint {
+  color: var(--ink-faint);
+  font-size: 12px;
+  margin-top: 44px;
+}
+
+/* Reader-menu entry */
+.reader-option-story {
+  border-top: 1px solid rgba(58, 49, 80, 0.6);
+  color: #c9a45c;
+}
+
+/* The Threshold reunion overlay (reuses .miriel-takeover backdrop/fade) */
+.threshold-inner { max-width: 620px; padding: 8px 6px; }
+.threshold-greeting {
+  font-family: Georgia, 'Times New Roman', serif; font-size: 1.15rem; line-height: 1.7;
+  color: #f1ebdf; white-space: pre-wrap; margin: 14px 0 18px; text-align: center;
+}
+.threshold-answer {
+  width: 100%; box-sizing: border-box; background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(198,166,100,0.35); border-radius: 8px; color: #e8e0d0;
+  font-family: Georgia, serif; font-size: 1rem; padding: 12px 14px; resize: vertical;
+}
+.threshold-reply {
+  font-family: Georgia, serif; font-style: italic; color: #d8c79a; line-height: 1.7;
+  margin: 16px 4px; text-align: center; white-space: pre-wrap;
+}
+.threshold-actions { display: flex; gap: 12px; justify-content: center; margin-top: 18px; }
+.threshold-btn {
+  background: linear-gradient(180deg,#c6a664,#9c7d3e); color:#1a1322; border:none;
+  border-radius:8px; padding:10px 22px; font-weight:600; font-family:Georgia,serif; cursor:pointer;
+}
+.threshold-btn.ghost { background: transparent; color:#9a8f7c; border:1px solid rgba(255,255,255,0.15); }
+
+/* In-reading curiosity pause */
+.spread-area.curiosity-dim .card-container:not(.curiosity-focus) { opacity: .55; transition: opacity .5s; }
+.card-container.curiosity-focus {
+  box-shadow: 0 0 22px rgba(198,166,100,0.55), 0 0 4px rgba(198,166,100,0.85);
+  transform: translateY(-6px) scale(1.03); transition: all .45s; z-index: 5;
+}
+.curiosity-panel {
+  max-width: 440px; margin: 18px auto 0; text-align: center; padding: 16px 18px;
+  background: var(--sanctuary-bg);
+  backdrop-filter: blur(var(--sanctuary-blur));
+  -webkit-backdrop-filter: blur(var(--sanctuary-blur));
+  border: 1px solid rgba(198,166,100,0.4); border-radius: 12px;
+  box-shadow: 0 8px 36px rgba(0,0,0,0.45); opacity: 0; transition: opacity .5s;
+}
+.curiosity-panel.visible { opacity: 1; }
+.curiosity-panel.hidden { display: none; }
+.curiosity-eyebrow { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #c6a664; opacity: .85; margin-bottom: 9px; }
+.curiosity-q { font-family: Georgia, serif; color: #f1ebdf; font-size: 16px; line-height: 1.6; }
+.curiosity-answer {
+  width: 100%; box-sizing: border-box; margin-top: 12px; background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(198,166,100,0.3); border-radius: 8px; color: #e8e0d0;
+  font-family: Georgia, serif; font-size: 14px; padding: 9px 11px; resize: vertical;
+}
+.curiosity-actions { display: flex; gap: 11px; justify-content: center; margin-top: 11px; }
+.curiosity-btn { background: linear-gradient(180deg,#c6a664,#9c7d3e); color: #1a1322; border: none;
+  border-radius: 8px; padding: 8px 20px; font-family: Georgia, serif; font-weight: 600; cursor: pointer; }
+.curiosity-btn.ghost { background: transparent; color: #9a8f7c; border: 1px solid rgba(255,255,255,0.14); }
+.curiosity-btn:disabled { opacity: .5; cursor: default; }
+.threshold-btn:disabled { opacity:.5; cursor:default; }
+
+/* ════════════════════════════════════════════════════════════
+   ASTRAL ATMOSPHERE LAYER
+   ════════════════════════════════════════════════════════════ */
+#cosmos-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background-color: var(--void);
+}
+
+/* Base: the full forest scene, gently dimmed for legibility (lighter than the
+   old flat 0.70 dim so the warm forest still reads). Must be the FIRST child
+   in markup so the astral layers sit on top of it. */
+.cosmos-forest {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(180deg, rgba(10, 8, 26, 0.66) 0%, rgba(10, 8, 22, 0.50) 45%, rgba(8, 7, 18, 0.62) 100%),
+    url('../images/mirielbg-optimized.jpg');
+  background-size: cover, cover;
+  background-position: center top, center top;
+}
+
+/* Cool astral veil: deepens the upper canopy toward night and fades out
+   smoothly by ~halfway, so there is NO hard seam with the warm forest below. */
+.cosmos-nebula {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(18, 14, 46, 0.80) 0%, rgba(18, 14, 46, 0.32) 26%, transparent 52%),
+    radial-gradient(ellipse at 50% -5%, rgba(91, 74, 168, 0.40), transparent 55%);
+  animation: cosmos-breathe 14s ease-in-out infinite alternate;
+}
+
+/* Faint stars woven into the darkened upper region only, masked to fade out. */
+.cosmos-stars {
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 60%;
+  background-image:
+    radial-gradient(1px 1px at 20% 18%, #fff, transparent),
+    radial-gradient(1px 1px at 60% 10%, var(--starlight), transparent),
+    radial-gradient(1px 1px at 82% 22%, #fff, transparent),
+    radial-gradient(1px 1px at 40% 30%, var(--silver), transparent),
+    radial-gradient(1px 1px at 90% 14%, #fff, transparent),
+    radial-gradient(1px 1px at 12% 40%, #fff, transparent),
+    radial-gradient(1px 1px at 70% 26%, var(--starlight), transparent),
+    radial-gradient(1px 1px at 33% 36%, var(--silver), transparent);
+  background-repeat: repeat;
+  background-size: 600px 600px;
+  opacity: 0.55;
+  -webkit-mask: linear-gradient(180deg, #000 0%, #000 28%, transparent 100%);
+  mask: linear-gradient(180deg, #000 0%, #000 28%, transparent 100%);
+  animation: cosmos-drift 180s linear infinite, cosmos-twinkle 6s ease-in-out infinite alternate;
+}
+
+/* Soft moon glow tucked top-right, subtle so it doesn't fight the scene's
+   own light source. */
+.cosmos-moon {
+  position: absolute;
+  top: 4vh; right: 7vw;
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 35%, #fff, var(--moon) 58%, rgba(168, 159, 208, 0.6));
+  box-shadow: 0 0 40px rgba(205, 188, 255, 0.50);
+  opacity: 0.85;
+  animation: cosmos-breathe 9s ease-in-out infinite alternate;
+}
+
+.cosmos-vignette {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 160px rgba(0, 0, 0, 0.60);
+  pointer-events: none;
+}
+
+/* Transient outgoing-scene layer for the phase cross-fade. At transition time JS
+   paints it (inline) with the PREVIOUS phase's computed background and fades it out
+   while the new phase's photo is already live on .cosmos-forest underneath. It sits
+   directly above the scene photo in markup, below the nebula/stars/moon. */
+.cosmos-forest-fade {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background-size: cover, cover;
+  background-position: center top, center top;
+  transition: opacity 1.2s ease-in-out;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cosmos-forest-fade { transition: none; }
+}
+
+/* ── Night theme (body[data-time="night"]) ──
+   Swaps in the moonlit woods image and unifies it with a gentle purple
+   astral wash. The night image already contains its own moon (top-centre),
+   so the decorative .cosmos-moon disc is hidden. The image is already dark,
+   so the wash is a tint, not a heavy darkening. */
+body[data-time="night"] .cosmos-forest {
+  background-image:
+    linear-gradient(180deg, rgba(20, 16, 48, 0.42) 0%, rgba(14, 12, 32, 0.30) 50%, rgba(8, 7, 18, 0.55) 100%),
+    url('../images/mirielnightbg-optimized.jpg');
+}
+body[data-time="night"] .cosmos-nebula {
+  background:
+    linear-gradient(180deg, rgba(48, 30, 96, 0.40) 0%, rgba(48, 30, 96, 0.16) 45%, transparent 75%),
+    radial-gradient(ellipse at 50% 16%, rgba(123, 94, 167, 0.30), transparent 55%);
+}
+/* night image supplies its own moon */
+body[data-time="night"] .cosmos-moon { display: none; }
+
+/* ── Day theme (body[data-time="day"]) ──
+   The sunlit-woods image is warm, so the cool violet/cosmic accents are
+   re-themed to gold/bronze/honey. Overriding the accent TOKENS re-themes
+   most of the UI automatically (mode buttons, tabs, borders, headings);
+   the literal warm element overrides (.draw-btn, question-bar, header,
+   reader-note) are shared with dawn/dusk via the body:is(...) selectors
+   below. The veil becomes a soft golden haze and stars/moon are hidden. */
+body[data-time="day"] {
+  --purple: #9c7b3e;        /* warm bronze accent */
+  --purple-light: #d8b56a;  /* honey highlight */
+  --nebula: var(--gold);    /* gold stands in for nebula */
+  --moon: #f3e8c8;          /* warm cream for luminous headings */
+  --glow-moon: 0 0 18px rgba(243, 232, 200, 0.45);
+  --glow-nebula: 0 0 18px rgba(201, 168, 76, 0.45);
+  --takeover-pulse: 201, 168, 76; /* gold pulse for Miriel's prompt in day mode */
+  --sanctuary-bg: rgba(24, 17, 8, 0.70); /* warm-tinted frosted glass for all panels */
+  --panel-fade-end: rgba(20, 15, 8, 0.96); /* day: warm collapsed-text fade target */
+  /* warm the overlay inks so journal/grimoire/notebook read as day, not night */
+  --ink-lavender: #d8b56a;
+  --ink-muted: #b3a075;
+  --ink-faint: #8a7a58;
+  --ink-soft: #cdb98a;
+  --placeholder-bg: linear-gradient(160deg, #2a2012, #1a1206);
+  --overlay-veil: rgba(22, 15, 6, 0.62); /* warm overlay veil in day */
+  --card-ring: rgba(120, 92, 40, 0.55); /* warm inner card ring in day */
+  /* Warm the cool base surfaces so control chrome (dropdowns, mode buttons,
+     resume panel, etc.) follows the day theme too. */
+  --bg: #120d06;
+  --bg2: #1c1408;
+  --bg3: #241a0c;
+  --border: #4a3a1e;
+}
+body[data-time="day"] .cosmos-nebula {
+  background:
+    linear-gradient(180deg, rgba(60, 40, 16, 0.45) 0%, rgba(60, 40, 16, 0.16) 30%, transparent 55%),
+    radial-gradient(ellipse at 50% 0%, rgba(201, 168, 76, 0.22), transparent 55%);
+}
+body[data-time="day"] .cosmos-stars { display: none; }  /* no stars in daylight */
+body[data-time="day"] .cosmos-moon  { display: none; }  /* the day scene has its own sun */
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .draw-btn {
+  background: linear-gradient(135deg, rgba(201, 168, 76, 0.40), rgba(201, 168, 76, 0.20));
+  border-color: var(--gold);
+  color: #2a1f08;
+  box-shadow: var(--glow-gold);
+}
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .draw-btn:hover {
+  box-shadow: 0 0 28px rgba(201, 168, 76, 0.7);
+}
+/* Question bar: warm translucent band in day (cool blue would cut across the forest) */
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .question-bar {
+  background: rgba(34, 24, 10, 0.40);
+  border-bottom-color: rgba(201, 168, 76, 0.22);
+}
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) #question-input {
+  background: rgba(40, 30, 14, 0.45);
+  border-color: rgba(201, 168, 76, 0.30);
+}
+/* Header band: warm in day (base is a cool purple gradient) */
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) header {
+  background: linear-gradient(180deg, rgba(40, 26, 10, 0.50) 0%, rgba(28, 20, 10, 0.0) 100%);
+  border-bottom-color: rgba(201, 168, 76, 0.14);
+}
+/* Reader note: warm wash in day (base is a cool purple wash; border-left
+   already themes via --purple-light) */
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .reader-note {
+  background: linear-gradient(rgba(201, 168, 76, 0.12), rgba(201, 168, 76, 0.12)), rgba(26, 18, 8, 0.78);
+}
+
+@keyframes cosmos-drift {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-300px); }
+}
+@keyframes cosmos-twinkle {
+  from { opacity: 0.65; }
+  to   { opacity: 1; }
+}
+@keyframes cosmos-breathe {
+  from { opacity: 0.75; }
+  to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cosmos-stars, .cosmos-nebula, .cosmos-moon { animation: none; }
+}
+
+/* ════════════════════════════════════════════════════════════
+   SANCTUARY PANELS & ASTRAL HELPERS  (reusable across surfaces)
+   .astral-eyebrow / .astral-heading / .astral-glow-chip are reserved
+   helpers applied as Slice 2 rolls the language to remaining surfaces.
+   ════════════════════════════════════════════════════════════ */
+.sanctuary {
+  background: var(--sanctuary-bg);
+  backdrop-filter: blur(var(--sanctuary-blur));
+  -webkit-backdrop-filter: blur(var(--sanctuary-blur));
+  border: var(--hairline-silver);
+  border-radius: 12px;
+  box-shadow: var(--elev-panel), inset 0 0 30px rgba(91, 74, 168, 0.08);
+}
+
+.astral-eyebrow {
+  font-family: 'Georgia', serif;
+  color: var(--gold);
+  letter-spacing: 0.2em;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+}
+
+.astral-heading {
+  font-family: 'Georgia', serif;
+  color: var(--moon);
+  letter-spacing: 0.04em;
+  text-shadow: var(--glow-moon);
+}
+
+.astral-glow-chip {
+  background: var(--sanctuary-bg);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: var(--hairline-silver);
+  color: var(--text);
+  border-radius: 7px;
+}
+
+/* Breathing luminous divider beneath the synopsis header */
+.synopsis-header::after {
+  content: '';
+  flex-basis: 100%;
+  height: 1px;
+  margin-top: 0.6rem;
+  background: linear-gradient(90deg, transparent, rgba(205, 188, 255, 0.5), transparent); /* --starlight at 50% opacity */
+  animation: cosmos-breathe 7s ease-in-out infinite alternate;
+}
+@media (prefers-reduced-motion: reduce) {
+  .synopsis-header::after { animation: none; }
+}
+
+/* Gentle reveal for cards that aren't using the deal-from-pile animation */
+@keyframes card-reveal {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.card-container:not(.deal-in):not(.deal-drop) {
+  animation: card-reveal var(--dur-slow) var(--ease-astral) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  /* also reset fill-mode state so cards aren't left at opacity:0/translated */
+  .card-container:not(.deal-in):not(.deal-drop) { animation: none; opacity: 1; transform: none; }
+}
+
+/* Miriel takeover veil warms for the warm phases (legibility over a bright scene) */
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .miriel-takeover { background: rgba(20, 14, 6, 0.82); }
+
+/* Card back inner glow warms for the warm phases (nebula → gold family) */
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .card-back {
+  background: radial-gradient(ellipse at 50% 40%, rgba(201, 168, 76, 0.45) 0%, var(--void) 100%);
+  animation-name: card-back-pulse-day;
+}
+/* and the moon glyph on the back warms too (default text-glyph decks) */
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .card-back::before { color: var(--gold-dim); }
+/* day variant of the back pulse: gold halo + warm inner ring (base is purple) */
+@keyframes card-back-pulse-day {
+  0%, 100% {
+    box-shadow:
+      0 6px 24px rgba(0, 0, 0, 0.70),
+      inset 0 0 0 3px var(--bg),
+      inset 0 0 0 4px rgba(120, 92, 40, 0.5),
+      0 0 6px rgba(201, 168, 76, 0.14);
+  }
+  50% {
+    box-shadow:
+      0 6px 24px rgba(0, 0, 0, 0.70),
+      inset 0 0 0 3px var(--bg),
+      inset 0 0 0 4px rgba(120, 92, 40, 0.5),
+      0 0 20px rgba(201, 168, 76, 0.40);
+  }
+}
+
+/* Shuffle pile matches the themed card back in the warm phases */
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .spread-pile-card {
+  background: radial-gradient(ellipse at 50% 40%, rgba(201, 168, 76, 0.45) 0%, var(--void) 100%);
+}
+
+/* Gentle starlight shimmer as a card lands (rides on top of dealSlideIn).
+   Applied to the visible faces (.card-face/.card-back), NOT the preserve-3d
+   .card-inner — box-shadow on a preserve-3d element renders inconsistently
+   (often invisible in Safari). The faces already carry their own box-shadow;
+   the shimmer stacks an outer glow. The dealSlideIn transform stays on
+   .card-container, so there is no animation conflict. */
+@keyframes card-shimmer {
+  0%   { box-shadow: 0 0 0 rgba(205, 188, 255, 0.0); }
+  40%  { box-shadow: 0 0 26px rgba(205, 188, 255, 0.45); }
+  100% { box-shadow: 0 0 0 rgba(205, 188, 255, 0.0); }
+}
+@keyframes card-shimmer-day {
+  0%   { box-shadow: 0 0 0 rgba(201, 168, 76, 0.0); }
+  40%  { box-shadow: 0 0 26px rgba(201, 168, 76, 0.45); }
+  100% { box-shadow: 0 0 0 rgba(201, 168, 76, 0.0); }
+}
+.card-container.deal-in .card-face,
+.card-container.deal-in .card-back,
+.card-container.deal-drop .card-face,
+.card-container.deal-drop .card-back {
+  /* 0.45s fits inside the ~0.52s deal animation, so it completes before the
+     deal classes are cleared (otherwise the shimmer would snap off mid-arc). */
+  animation: card-shimmer 0.45s ease-out both;
+}
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .card-container.deal-in .card-face,
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .card-container.deal-in .card-back,
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .card-container.deal-drop .card-face,
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .card-container.deal-drop .card-back {
+  animation-name: card-shimmer-day;
+}
+@media (prefers-reduced-motion: reduce) {
+  .card-container.deal-in .card-face,
+  .card-container.deal-in .card-back,
+  .card-container.deal-drop .card-face,
+  .card-container.deal-drop .card-back,
+  body[data-time="day"] .card-container.deal-in .card-face,
+  body[data-time="day"] .card-container.deal-in .card-back,
+  body[data-time="day"] .card-container.deal-drop .card-face,
+  body[data-time="day"] .card-container.deal-drop .card-back { animation: none; }
+}
+
+/* Patterns panel (inside Journal): warm its lavender accents in the warm phases */
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .patterns-btn { border-color: rgba(201, 168, 76, 0.40); color: var(--ink-lavender); }
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .patterns-btn:hover:not(:disabled) { border-color: var(--gold); color: #f0e0b8; }
+body:is([data-time="day"], [data-time="dawn"], [data-time="dusk"]) .patterns-text { border-left-color: rgba(201, 168, 76, 0.35); }
+
+/* ── Global reduced-motion safety net ──
+   Standard accessibility pattern: collapse all animations/transitions to
+   near-zero so entrance animations snap to their END state (nothing stuck
+   hidden) and infinite loops (pulses, breathing, drift) stop after one
+   near-instant pass. Complements the targeted animation:none blocks above. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Dawn theme (body[data-time="dawn"]) — bright golden sunrise, rosy-warm ── */
+body[data-time="dawn"] {
+  --purple: #a06a4a;          /* warm rose-bronze active fill */
+  --purple-light: #e0a878;    /* peachy rose */
+  --nebula: #e8b86a;          /* warm gold */
+  --moon: #ffe8d0;            /* warm cream-rose heading */
+  --glow-moon: 0 0 18px rgba(255, 224, 200, 0.45);
+  --glow-nebula: 0 0 18px rgba(232, 168, 100, 0.45);
+  --takeover-pulse: 232, 168, 100;
+  --sanctuary-bg: rgba(28, 18, 12, 0.68);
+  --panel-fade-end: rgba(24, 16, 10, 0.96);
+  --ink-lavender: #e0a878;
+  --ink-muted: #bf9a7a;
+  --ink-faint: #93785f;
+  --ink-soft: #d8b89a;
+  --placeholder-bg: linear-gradient(160deg, #2e1f14, #1c130a);
+  --overlay-veil: rgba(26, 16, 10, 0.60);
+  --card-ring: rgba(150, 100, 55, 0.55);
+  --bg: #140d08;
+  --bg2: #20150d;
+  --bg3: #2a1c10;
+  --border: #523c24;
+}
+body[data-time="dawn"] .cosmos-forest {
+  /* The sunrise image is very bright (sun in the upper centre); dim it heavily
+     like the day image so floating text (title, greeting) stays legible. */
+  background-image:
+    linear-gradient(180deg, rgba(18, 11, 5, 0.60) 0%, rgba(16, 10, 6, 0.54) 45%, rgba(12, 8, 4, 0.64) 100%),
+    url('../images/mirielsunrise-optimized.jpg');
+}
+body[data-time="dawn"] .cosmos-nebula {
+  background:
+    linear-gradient(180deg, rgba(60, 40, 16, 0.32) 0%, rgba(60, 40, 16, 0.10) 30%, transparent 55%),
+    radial-gradient(ellipse at 50% 8%, rgba(232, 180, 110, 0.22), transparent 55%);
+}
+body[data-time="dawn"] .cosmos-stars { display: none; } /* daylight */
+body[data-time="dawn"] .cosmos-moon  { display: none; } /* sun is in the image */
+
+/* ── Dusk theme (body[data-time="dusk"]) — sunset amber bridging to violet ── */
+body[data-time="dusk"] {
+  --purple: #8a5a8a;          /* plum-rose active fill (violet creeping in) */
+  --purple-light: #d99a9a;    /* dusty rose */
+  --nebula: #e0975a;          /* sunset amber */
+  --moon: #f6d9c0;            /* warm rose-cream heading */
+  --glow-moon: 0 0 18px rgba(246, 217, 192, 0.45);
+  --glow-nebula: 0 0 18px rgba(224, 151, 90, 0.45);
+  --takeover-pulse: 224, 151, 90;
+  --sanctuary-bg: rgba(26, 16, 24, 0.70);
+  --panel-fade-end: rgba(22, 14, 22, 0.96);
+  --ink-lavender: #c98aa8;
+  --ink-muted: #ad8a9a;
+  --ink-faint: #9a7a8e; /* lightened to clear AA on the dusk sanctuary panel */
+  --ink-soft: #c4a4b4;
+  --placeholder-bg: linear-gradient(160deg, #2a1a28, #1a1018);
+  --overlay-veil: rgba(22, 12, 20, 0.62);
+  --card-ring: rgba(138, 90, 110, 0.55);
+  --bg: #150d12;
+  --bg2: #1f1420;
+  --bg3: #271a2a;
+  --border: #4a3248;
+}
+body[data-time="dusk"] .cosmos-forest {
+  background-image:
+    linear-gradient(180deg, rgba(28, 16, 36, 0.45) 0%, rgba(22, 14, 26, 0.28) 45%, rgba(14, 9, 14, 0.55) 100%),
+    url('../images/mirieldusk-optimized.jpg');
+}
+/* warm amber glow rising from the horizon + violet deepening at the very top */
+body[data-time="dusk"] .cosmos-nebula {
+  background:
+    linear-gradient(180deg, rgba(40, 22, 60, 0.38) 0%, rgba(40, 22, 60, 0.12) 28%, transparent 52%),
+    radial-gradient(ellipse at 50% 4%, rgba(120, 80, 150, 0.22), transparent 50%),
+    radial-gradient(ellipse at 50% 118%, rgba(224, 140, 80, 0.26), transparent 55%);
+}
+/* a few faint early stars high up — fainter than night */
+body[data-time="dusk"] .cosmos-stars {
+  display: block;
+  opacity: 0.28;
+}
+body[data-time="dusk"] .cosmos-moon { display: none; } /* dusk sky is in the image */

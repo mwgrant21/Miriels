@@ -1,0 +1,1328 @@
+[
+  {
+    "id": "The Fool",
+    "name": "The Fool",
+    "arcana": "major",
+    "number": 0,
+    "suit": null,
+    "symbol": "0",
+    "keywords": [
+      "new beginnings",
+      "spontaneity",
+      "trust",
+      "adventure"
+    ],
+    "upright": "A young dragon steps boldly off a cliff edge, wings not yet fully tested, eyes bright with anticipation. The Fool carries the spirit of pure potential — all things are possible because nothing has yet been tried. Conway's reading of this card emphasizes trust in your spirit guides and inner wisdom as you step into new territory. A journey is beginning that cannot be fully planned. Say yes, and trust that the path will show itself.",
+    "reversed": "Foolishness without awareness, or hesitation that has gone on too long. Either you are leaping without any instinct at all, or fear has frozen you at the cliff's edge. Your dragon guides are calling — take one step, not a blind plunge.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the magician",
+    "name": "The Magician",
+    "arcana": "major",
+    "number": 1,
+    "suit": null,
+    "symbol": "I",
+    "keywords": [
+      "skill",
+      "willpower",
+      "mastery",
+      "action"
+    ],
+    "upright": "The dragon magician stands at the center of all four elemental forces — fire, water, air, and earth — each available to his will. Conway emphasizes that this card is about the disciplined use of natural talents rather than borrowed power. You have the tools. You have the knowledge. The missing ingredient is focused intention. What the dragon mage teaches is that magic is not separate from skill — it is skill raised to its highest expression.",
+    "reversed": "Talent being misused or wasted. The magician's power turns to trickery or manipulation when the will is not guided by integrity. Check your motives. Are you using your gifts to create — or to control?",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the high priestess",
+    "name": "The High Priestess",
+    "arcana": "major",
+    "number": 2,
+    "suit": null,
+    "symbol": "II",
+    "keywords": [
+      "hidden knowledge",
+      "intuition",
+      "mystery",
+      "inner sight"
+    ],
+    "upright": "The dragon oracle sits in her sacred cavern, the crystal sphere before her glowing with visions not yet meant for the daylight world. Conway connects this card to the Celtic seer tradition — the wisdom that comes from stillness, from listening to what the inner world says beneath the noise of the outer one. Something is not yet ready to be fully known. Trust your instincts. The answer will surface when the time is right.",
+    "reversed": "You are ignoring your inner voice or refusing to look at what it is showing you. Hidden information may be being withheld by someone else. In either case, the truth exists — it is simply not yet in the light.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the empress",
+    "name": "The Empress",
+    "arcana": "major",
+    "number": 3,
+    "suit": null,
+    "symbol": "III",
+    "keywords": [
+      "abundance",
+      "fertility",
+      "growth",
+      "nurturing"
+    ],
+    "upright": "The great mother dragon rests in a lush Celtic valley, wildflowers blooming around her, streams running clear from the hills. Conway's Empress carries the energy of the earth itself — fertile, patient, generous, and cyclical. This is a time of natural abundance, of creative projects taking root and growing with their own momentum. Tend what you have planted. The harvest is coming.",
+    "reversed": "Creative energy is blocked or being smothered. A project, relationship, or plan is not getting the care it needs to grow, or is being over-controlled. Return to the natural rhythm. Growth cannot be forced.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the emperor",
+    "name": "The Emperor",
+    "arcana": "major",
+    "number": 4,
+    "suit": null,
+    "symbol": "IV",
+    "keywords": [
+      "authority",
+      "structure",
+      "protection",
+      "discipline"
+    ],
+    "upright": "The elder dragon king surveys his mountain realm — ancient, implacable, unshakeable. Conway's Emperor represents the energy of structure and rightful authority rather than domination. He protects what he rules. This card calls you to bring order, to establish clear foundations, and to lead from a place of genuine responsibility. Discipline applied now creates freedom later.",
+    "reversed": "Authority has become rigidity, or power is being exercised without wisdom or compassion. Bullying, inflexibility, and an unwillingness to adapt are the shadow of this card. True leadership serves.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the hierophant",
+    "name": "The Hierophant",
+    "arcana": "major",
+    "number": 5,
+    "suit": null,
+    "symbol": "V",
+    "keywords": [
+      "tradition",
+      "teaching",
+      "conformity",
+      "established wisdom"
+    ],
+    "upright": "The ancient dragon elder passes the old flame from its own fire to a younger dragon's torch — the living transmission of wisdom through lineage and tradition. Conway sees this card as representing genuine spiritual teaching and the value of time-honored paths. A teacher, mentor, or established tradition has something real to offer. There is wisdom in what has lasted.",
+    "reversed": "Conformity for its own sake, or blind adherence to doctrine that no longer serves. Question what you've been taught — not to discard everything, but to take ownership of your own spiritual path.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the lovers",
+    "name": "The Lovers",
+    "arcana": "major",
+    "number": 6,
+    "suit": null,
+    "symbol": "VI",
+    "keywords": [
+      "choice",
+      "relationship",
+      "values",
+      "alignment"
+    ],
+    "upright": "Two dragons meet in the sky above a sacred Celtic landscape — a choice is being made, and that choice is a reflection of the chooser's deepest values. Conway emphasizes that the Lovers is not simply about romance but about any significant decision where your heart and your values must align. What you choose here reveals who you are. Choose from your truest self.",
+    "reversed": "A poor choice made for the wrong reasons, or avoidance of a necessary decision. Values and desires are pulling in different directions. Get clear on what you actually believe before committing.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the chariot",
+    "name": "The Chariot",
+    "arcana": "major",
+    "number": 7,
+    "suit": null,
+    "symbol": "VII",
+    "keywords": [
+      "victory",
+      "control",
+      "determination",
+      "forward movement"
+    ],
+    "upright": "A dragon warrior rides to battle, harnessing two powerful forces — one dark, one light — under a single disciplined will. Conway's Chariot is about triumph achieved through self-mastery rather than brute force. Opposing energies are not defeated but directed. You are moving forward. Keep focused control of all the forces available to you and the victory is already yours.",
+    "reversed": "Loss of control, scattered direction, or aggression replacing discipline. You may be fighting the wrong battle, or fighting the right one with the wrong approach. Recenter before charging forward.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "strength",
+    "name": "Strength",
+    "arcana": "major",
+    "number": 8,
+    "suit": null,
+    "symbol": "VIII",
+    "keywords": [
+      "inner power",
+      "patience",
+      "courage",
+      "compassion"
+    ],
+    "upright": "A figure rests a calm hand on a great dragon's muzzle, and the dragon — for all its fire and size — grows still. Conway draws out the Celtic understanding of this card: true strength is not dominance but the quiet courage to meet wildness with steadiness. The energy you are working with — in yourself or in a situation — responds to patience and gentle persistence far better than force.",
+    "reversed": "Weakness masquerading as power, or real power being suppressed by self-doubt. The dragon's fire burns uncontrolled when there is no steadiness to meet it. Find your center.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the hermit",
+    "name": "The Hermit",
+    "arcana": "major",
+    "number": 9,
+    "suit": null,
+    "symbol": "IX",
+    "keywords": [
+      "introspection",
+      "solitude",
+      "wisdom",
+      "inner light"
+    ],
+    "upright": "An ancient dragon rests alone in a mountain cavern, its own inner fire casting the only light needed to see clearly. Conway's Hermit embodies the Celtic hermit-sage tradition — the one who withdraws not out of fear but to hear the deeper wisdom that only comes in stillness. Step back from the noise. The guidance you need is inside you, but you won't hear it in a crowd.",
+    "reversed": "Isolation that has become avoidance, or withdrawal that has cut you off from necessary human connection. The Hermit's light is meant to eventually illuminate the path for others. Come back when the inner work is done.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "wheel of fortune",
+    "name": "Wheel of Fortune",
+    "arcana": "major",
+    "number": 10,
+    "suit": null,
+    "symbol": "X",
+    "keywords": [
+      "cycles",
+      "fate",
+      "turning point",
+      "karma"
+    ],
+    "upright": "The great world-serpent coils around the turning wheel of existence — the Celtic understanding that all things move in cycles and that no point on the wheel is permanent. Conway emphasizes the karmic dimension of this card: what you have set in motion returns to you. A turning point is upon you. Fortune is moving. Work with the cycle rather than against it.",
+    "reversed": "Resistance to change, or a cycle that has broken out of its natural rhythm. Fate is still turning, but something is stuck. Release what is preventing the wheel from moving freely.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "justice",
+    "name": "Justice",
+    "arcana": "major",
+    "number": 11,
+    "suit": null,
+    "symbol": "XI",
+    "keywords": [
+      "fairness",
+      "truth",
+      "cause and effect",
+      "balance"
+    ],
+    "upright": "A great dragon holds the scales of truth above a Celtic court of stone — and the scales are perfectly balanced. Conway's Justice is clear-eyed and impartial. Actions have consequences that return to their source. A legal or ethical matter will be resolved fairly. Honesty now is both the wisest and the most just path. What is true will hold; what is false will not.",
+    "reversed": "Injustice, dishonesty, or a decision being made with incomplete information. The scales are tipped. Look carefully at where truth has been compromised — by you or by someone else.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the hanged man",
+    "name": "The Hanged Man",
+    "arcana": "major",
+    "number": 12,
+    "suit": null,
+    "symbol": "XII",
+    "keywords": [
+      "suspension",
+      "new perspective",
+      "sacrifice",
+      "pause"
+    ],
+    "upright": "A dragon hangs in voluntary suspension from the World Tree — not trapped, but choosing a stillness that inverts its ordinary view of things. Conway connects this to the Celtic tradition of the sacred pause — the between-time where old ways are released before new ones can be taken on. Something must be given up. In exchange, you will see what you could not see before.",
+    "reversed": "Suspension that serves no purpose, or a refusal to make the necessary sacrifice. You are hanging but gaining nothing from it. Either commit to the inner work the pause requires, or act.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "death",
+    "name": "Death",
+    "arcana": "major",
+    "number": 13,
+    "suit": null,
+    "symbol": "XIII",
+    "keywords": [
+      "transformation",
+      "endings",
+      "transition",
+      "rebirth"
+    ],
+    "upright": "The dragon sheds its old skin on the sacred stones — what was scales becomes ash, and beneath is something new, iridescent, and larger than what came before. Conway is clear that this card represents necessary transformation, not physical death. A chapter is ending completely. Honor the closing. The transformation being asked of you is real and significant — and on the other side of it, something truer awaits.",
+    "reversed": "Resistance to an inevitable ending, or a transformation that is stalled. You cannot keep the old skin and grow new wings. What are you refusing to release?",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "temperance",
+    "name": "Temperance",
+    "arcana": "major",
+    "number": 14,
+    "suit": null,
+    "symbol": "XIV",
+    "keywords": [
+      "balance",
+      "moderation",
+      "patience",
+      "blending"
+    ],
+    "upright": "A dragon draws both fire and water through its body simultaneously, finding the alchemical balance where opposites become something entirely new. Conway's Temperance speaks to the Celtic concept of the middle path — not as compromise but as synthesis. Two things that seem incompatible are asking to be integrated. Patience and a steady hand will find the blend that works. Rush nothing.",
+    "reversed": "Imbalance or excess in one direction. Too much of one element is overwhelming the others. Identify what has tipped too far and restore the flow between opposites.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the devil",
+    "name": "The Devil",
+    "arcana": "major",
+    "number": 15,
+    "suit": null,
+    "symbol": "XV",
+    "keywords": [
+      "bondage",
+      "materialism",
+      "shadow",
+      "attachment"
+    ],
+    "upright": "Two dragons are chained at the foot of a dark hoard-master — yet the chains are loose. They could leave if they chose to see the chains clearly. Conway's Devil points to the ways we bind ourselves through attachment, addiction, materialism, or the refusal to look at our own shadow. The bondage is real but not unbreakable. The first step is seeing it honestly.",
+    "reversed": "Breaking free from a binding pattern, or beginning to recognize what has held you captive. The chains are loosening. Examine the roots of the attachment so that freedom is genuine, not just a shift to a different cage.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the tower",
+    "name": "The Tower",
+    "arcana": "major",
+    "number": 16,
+    "suit": null,
+    "symbol": "XVI",
+    "keywords": [
+      "upheaval",
+      "revelation",
+      "breaking down",
+      "liberation"
+    ],
+    "upright": "Dragon fire strikes the tower that was built on a false foundation — the stones fall, and what is revealed underneath is the solid ground that was always there. Conway sees the Tower as ultimately liberating. What is destroyed was never truly sound. The disruption, however painful, clears the way for something built on genuine truth. Do not rebuild what has just been shown to be false.",
+    "reversed": "Disaster narrowly avoided, or a collapse that is being delayed by sheer force of resistance. The false structure is under strain. Better to begin dismantling it yourself than to wait for it to fall on you.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the star",
+    "name": "The Star",
+    "arcana": "major",
+    "number": 17,
+    "suit": null,
+    "symbol": "XVII",
+    "keywords": [
+      "hope",
+      "renewal",
+      "healing",
+      "spiritual guidance"
+    ],
+    "upright": "A luminous dragon glides above a moonlit pool in the Celtic highlands — its reflection doubles the light below. Conway's Star follows the Tower's upheaval with the promise that renewal is genuine and not merely comfort. Healing is available. Hope is not wishful thinking but the recognition that the universe continues to move toward life and growth. Your guides are near. Trust the light that appears after the storm.",
+    "reversed": "Despair, loss of faith, or a disconnection from the spiritual support that is still present. The stars are still there behind the clouds. Reach toward them, even in the dark.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the moon",
+    "name": "The Moon",
+    "arcana": "major",
+    "number": 18,
+    "suit": null,
+    "symbol": "XVIII",
+    "keywords": [
+      "illusion",
+      "the unconscious",
+      "psychic awareness",
+      "hidden truth"
+    ],
+    "upright": "A dragon walks the moonlit path between two stone towers, unsure whether what lies ahead is solid or shadow. Conway connects the Moon to the Celtic liminal spaces — twilight, the shoreline, the threshold — where what is seen and what is real do not fully overlap. Your psychic awareness is heightened but your rational mind cannot fully be trusted right now. Proceed carefully. Not all that appears is what it seems.",
+    "reversed": "Hidden fears are surfacing, or an illusion is beginning to dissolve. The fog is lifting, but the clearing can feel disorienting. Stay grounded in what you know to be true while the picture comes into focus.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the sun",
+    "name": "The Sun",
+    "arcana": "major",
+    "number": 19,
+    "suit": null,
+    "symbol": "XIX",
+    "keywords": [
+      "joy",
+      "success",
+      "vitality",
+      "clarity"
+    ],
+    "upright": "The great solar dragon arcs across a bright Celtic sky, and everything beneath it grows warm and clear. Conway's Sun is unambiguous good news — success, happiness, and the radiant energy that comes when you are living in alignment with your true path. Enjoy this. Let yourself feel good about what you have built and who you are becoming. Confidence here is not arrogance — it is the natural warmth of genuine achievement.",
+    "reversed": "Joy blocked by false modesty, or success temporarily delayed. The sun is still there — something is simply casting a shadow over it at the moment. Identify what is dimming your light.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "judgement",
+    "name": "Judgement",
+    "arcana": "major",
+    "number": 20,
+    "suit": null,
+    "symbol": "XX",
+    "keywords": [
+      "awakening",
+      "reckoning",
+      "renewal",
+      "calling"
+    ],
+    "upright": "The great dragon horn sounds across the Celtic hills and valleys, calling all to rise and answer. Conway's Judgement is about a profound awakening to a higher understanding of your own life — a moment of reckoning that is ultimately redemptive. Old selves are released. A new chapter is being announced. Rise to meet it. Forgiveness — of yourself and others — is the prerequisite for this new beginning.",
+    "reversed": "The call is sounding but you are not hearing it, or refusing to respond. Self-judgment or avoidance of a necessary reckoning keeps you in the past. You cannot step into the new chapter while still arguing with the old one.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "the world",
+    "name": "The World",
+    "arcana": "major",
+    "number": 21,
+    "suit": null,
+    "symbol": "XXI",
+    "keywords": [
+      "completion",
+      "wholeness",
+      "achievement",
+      "integration"
+    ],
+    "upright": "The great world-dragon encircles itself — head meeting tail — forming the ancient Celtic Ouroboros, the symbol of perfect completion and eternal continuity. A major cycle in your life is complete. Conway emphasizes that this is a moment to pause and genuinely honor what you have accomplished before the next cycle begins. You are more whole than when you started. That wholeness is real and it travels with you.",
+    "reversed": "A cycle that is almost but not quite complete, or an achievement that feels hollow because something essential was skipped. Finish what needs finishing. The world cannot turn until the circle closes.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "ace of wands",
+    "name": "Ace of Wands",
+    "arcana": "minor",
+    "number": 1,
+    "suit": "wands",
+    "symbol": "A♦",
+    "keywords": [
+      "new fire",
+      "inspiration",
+      "creative spark",
+      "opportunity"
+    ],
+    "upright": "A single Fire Dragon extends a blazing wand — the pure spark of new creative or spiritual energy offered as a gift. Conway's Fire Dragon Clan brings the energy of ambition, passion, and the creative life-force. A new project, idea, or opportunity is being kindled. The spark is live and ready. Act while the fire is high and bright.",
+    "reversed": "Creative energy is blocked or the spark has gone out before it caught. A promising beginning has been delayed or abandoned. Rekindle the inner fire before the opportunity passes entirely.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "two of wands",
+    "name": "Two of Wands",
+    "arcana": "minor",
+    "number": 2,
+    "suit": "wands",
+    "symbol": "2♦",
+    "keywords": [
+      "planning",
+      "vision",
+      "boldness",
+      "wider horizons"
+    ],
+    "upright": "A Fire Dragon stands at a high vantage point, two wands behind it, surveying a vast Celtic landscape spread below. Conway reads this as the energy of bold planning and the willingness to envision beyond familiar borders. You can see farther than you usually allow yourself. Dream with the scope the Fire Dragons encourage — large, bold, and beyond the known edge of your current territory.",
+    "reversed": "Fear of the unknown has narrowed your vision, or plans have stalled before they were ever truly tested. What are you not letting yourself see or reach for?",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "three of wands",
+    "name": "Three of Wands",
+    "arcana": "minor",
+    "number": 3,
+    "suit": "wands",
+    "symbol": "3♦",
+    "keywords": [
+      "expansion",
+      "foresight",
+      "enterprise",
+      "results emerging"
+    ],
+    "upright": "Three Fire Dragons watch from the cliffs as the first ships of a great enterprise return from distant shores. What was set in motion is now producing results. Conway emphasizes the forward-looking quality of this card — look to what is coming, not just what is already here. Your plans are expanding beyond your original reach. Keep looking toward the horizon.",
+    "reversed": "Plans have not developed as expected, or an enterprise is slower than it should be. Reassess the strategy without abandoning the vision. The horizon is still there.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "four of wands",
+    "name": "Four of Wands",
+    "arcana": "minor",
+    "number": 4,
+    "suit": "wands",
+    "symbol": "4♦",
+    "keywords": [
+      "celebration",
+      "completion",
+      "community",
+      "homecoming"
+    ],
+    "upright": "Fire Dragons gather at the great hall, the hearthfire high, wands forming a canopy of celebration overhead. A milestone has been reached and it is time to celebrate with those who have shared the journey. Conway connects this card to the Celtic festival spirit — community, joy, the completion of a phase of work. Honor this moment. Let the fire of the clan warm you.",
+    "reversed": "Celebration is premature, or there is discord in the community that joy cannot paper over. Address what is truly going on before the festivity can be real.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "five of wands",
+    "name": "Five of Wands",
+    "arcana": "minor",
+    "number": 5,
+    "suit": "wands",
+    "symbol": "5♦",
+    "keywords": [
+      "competition",
+      "conflict",
+      "striving",
+      "challenge"
+    ],
+    "upright": "Young Fire Dragons spar in an open field — each testing the other, each growing stronger for it. Conway reads this as productive conflict rather than destructive battle. Competition sharpens. Disagreement, when handled with energy and fair play rather than malice, strengthens everyone involved. Engage fully, but keep the spirit sporting.",
+    "reversed": "Competition has turned into genuine hostility or unfair tactics. The sparring has lost its productive quality. Step back and assess whether this conflict is helping anyone grow.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "six of wands",
+    "name": "Six of Wands",
+    "arcana": "minor",
+    "number": 6,
+    "suit": "wands",
+    "symbol": "6♦",
+    "keywords": [
+      "victory",
+      "recognition",
+      "public success",
+      "honor"
+    ],
+    "upright": "A Fire Dragon returns triumphant through the gates of the Celtic hillfort, the clan gathered to honor its achievement. Conway's Six of Wands celebrates earned victory and deserved recognition. You have done the work. The success is real. Receive the honor with the confidence of someone who earned it — and bring others with you.",
+    "reversed": "Pride that has overreached its actual accomplishment, or recognition that has gone to someone's head. True victory is generous. Check that ego has not outpaced achievement.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "seven of wands",
+    "name": "Seven of Wands",
+    "arcana": "minor",
+    "number": 7,
+    "suit": "wands",
+    "symbol": "7♦",
+    "keywords": [
+      "defense",
+      "perseverance",
+      "holding ground",
+      "courage"
+    ],
+    "upright": "A Fire Dragon holds the high ground alone against those challenging from below — outnumbered but not outmatched. Conway emphasizes the courage this card requires. You have earned your position and have the right to defend it. Stand firm in what you know to be true and what you have rightfully built. Do not let opposition erode what is legitimately yours.",
+    "reversed": "You are caving under pressure you could actually withstand, or defending a position that is no longer worth the energy it costs. Discern the difference between courage and stubbornness.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "eight of wands",
+    "name": "Eight of Wands",
+    "arcana": "minor",
+    "number": 8,
+    "suit": "wands",
+    "symbol": "8♦",
+    "keywords": [
+      "swift movement",
+      "action",
+      "news",
+      "rapid change"
+    ],
+    "upright": "Eight wands arc through the sky like fire thrown by a dragon — swift, direct, purposeful. Conway reads this as a card of sudden movement and rapid developments. News is coming. Decisions need to be made quickly. A situation that has been static is suddenly moving fast. Act while the momentum is with you. The window may not stay open long.",
+    "reversed": "Delays, misdirected energy, or news that does not arrive when expected. Something is slowing what should be moving freely. Clear the blockage and redirect.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "nine of wands",
+    "name": "Nine of Wands",
+    "arcana": "minor",
+    "number": 9,
+    "suit": "wands",
+    "symbol": "9♦",
+    "keywords": [
+      "resilience",
+      "last stand",
+      "stamina",
+      "guardedness"
+    ],
+    "upright": "A battle-worn Fire Dragon stands at the boundary of its territory, marked by the fights that got it here, still unbowed. Conway's Nine of Wands honors the strength of the one who has not given up despite everything. You are tired, and that is real — but you are still standing. One final effort is what this card asks for. You have more strength available than your exhaustion is telling you.",
+    "reversed": "The weariness has become defensive paranoia, or you are pushing past the point where rest has become genuinely necessary. Burnout helps no one. Tend yourself.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "ten of wands",
+    "name": "Ten of Wands",
+    "arcana": "minor",
+    "number": 10,
+    "suit": "wands",
+    "symbol": "10♦",
+    "keywords": [
+      "burden",
+      "overcommitment",
+      "responsibility",
+      "strain"
+    ],
+    "upright": "A dragon labors across open ground carrying ten wands — each one representing a commitment, a responsibility, a promise made. Conway reads this as a warning: you are carrying more than is sustainable. The load is real and so is your capability — but even the strongest Fire Dragon cannot fly while carrying too much weight. Something needs to be put down.",
+    "reversed": "Buckling under the load, or finally beginning to release some of the weight. The burden has become genuinely damaging. Delegate, release, renegotiate — before the weight decides the matter for you.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "page of wands",
+    "name": "Page of Wands",
+    "arcana": "minor",
+    "number": 11,
+    "suit": "wands",
+    "symbol": "P♦",
+    "keywords": [
+      "enthusiasm",
+      "new idea",
+      "messenger",
+      "adventure"
+    ],
+    "upright": "A young Fire Dragon, scales still bright with youth, brings a message of exciting new possibility. Conway reads the Page of Wands as the spirit of enthusiastic beginning — a new creative venture, a piece of important news, or the arrival of fresh energy into a situation. Follow the excitement. The fire is young and pure and has not yet learned to doubt itself.",
+    "reversed": "Enthusiasm without follow-through, or exciting news that turns out to be premature or inaccurate. The spark is real but needs steadier fuel to become a lasting flame.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "knight of wands",
+    "name": "Knight of Wands",
+    "arcana": "minor",
+    "number": 12,
+    "suit": "wands",
+    "symbol": "Kn♦",
+    "keywords": [
+      "action",
+      "passion",
+      "daring",
+      "impulsiveness"
+    ],
+    "upright": "The Fire Dragon knight charges across the open field at full speed, wand blazing — bold, passionate, and entirely in the present moment. Conway's Knight of Wands brings the energy of daring action and full commitment to the direction of the heart. Move. Commit. The hesitating knight accomplishes nothing. Trust your passion and the direction it is pointing.",
+    "reversed": "Passion without direction, recklessness without awareness. The charge is happening but the target has not been properly identified. Speed without aim wastes the fire's energy.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "queen of wands",
+    "name": "Queen of Wands",
+    "arcana": "minor",
+    "number": 13,
+    "suit": "wands",
+    "symbol": "Q♦",
+    "keywords": [
+      "confidence",
+      "charisma",
+      "warmth",
+      "creative authority"
+    ],
+    "upright": "The Fire Dragon queen commands her realm with a confident generosity — she does not need to assert herself because her presence speaks clearly on its own. Conway's Queen of Wands represents the fully realized creative and passionate self: warm but self-assured, inspiring without performing. Step fully into your own fire. Your confidence is not arrogance — it is your natural authority.",
+    "reversed": "Confidence has curdled into jealousy or domination, or the inner fire has been suppressed into insecurity. The queen's warmth has a shadow side: when her own fire dims, she may try to snuff out others'.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "king of wands",
+    "name": "King of Wands",
+    "arcana": "minor",
+    "number": 14,
+    "suit": "wands",
+    "symbol": "K♦",
+    "keywords": [
+      "vision",
+      "leadership",
+      "entrepreneurial spirit",
+      "mastery"
+    ],
+    "upright": "The Fire Dragon king sits at the summit of his mountain realm — a visionary who has built something real through boldness, integrity, and the willingness to take inspired risks. Conway's King of Wands leads by example and by vision rather than decree. Think on the largest scale your situation allows. Your ideas have the power to become real if you pursue them with the King's combination of fire and discipline.",
+    "reversed": "Tyrannical use of power, or visionary energy that has collapsed into egotism. The fire king's shadow is the leader who burns everything around him in pursuit of his own vision.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "ace of cups",
+    "name": "Ace of Cups",
+    "arcana": "minor",
+    "number": 1,
+    "suit": "cups",
+    "symbol": "A♥",
+    "keywords": [
+      "new love",
+      "emotional opening",
+      "spiritual gift",
+      "compassion"
+    ],
+    "upright": "A Water Dragon extends a jeweled cup overflowing with clear, sweet water — the pure gift of emotional and spiritual opening. Conway reads the Ace of Cups as a direct offering from the Water Dragon Clan: love, intuition, creativity, and spiritual renewal made available all at once. A new emotional beginning is at hand. Receive this gift with an open heart rather than cautious hands.",
+    "reversed": "The gift is present but cannot be received. Emotional walls, past wounds, or a closed heart prevents the cup from being accepted. What would it cost you to simply receive love?",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "two of cups",
+    "name": "Two of Cups",
+    "arcana": "minor",
+    "number": 2,
+    "suit": "cups",
+    "symbol": "2♥",
+    "keywords": [
+      "partnership",
+      "mutual feeling",
+      "connection",
+      "attraction"
+    ],
+    "upright": "Two Water Dragons touch their heads above the surface of a still Celtic loch — a moment of genuine recognition between equals. Conway sees the Two of Cups as the card of deep mutual connection: romantic, creative, or professional. What is forming here is a true partnership of equals, both giving and both receiving. Something real is being built between two people.",
+    "reversed": "Imbalance in a relationship — one person giving more than the other, or a connection that has grown cool or discordant. Honest communication is the only way back to balance.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "three of cups",
+    "name": "Three of Cups",
+    "arcana": "minor",
+    "number": 3,
+    "suit": "cups",
+    "symbol": "3♥",
+    "keywords": [
+      "celebration",
+      "community",
+      "friendship",
+      "joy"
+    ],
+    "upright": "Three Water Dragons dance in a moonlit Celtic pool, scales shimmering with shared delight. Conway's Three of Cups celebrates the joy of genuine community — the friends and chosen family who know and love you as you are. A time for gathering, celebrating, and allowing yourself to be nourished by the people you trust. Let the joy be real.",
+    "reversed": "Overindulgence, or a social circle that has become a source of gossip and toxicity rather than genuine nourishment. The celebration has gone hollow or been poisoned by competition.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "four of cups",
+    "name": "Four of Cups",
+    "arcana": "minor",
+    "number": 4,
+    "suit": "cups",
+    "symbol": "4♥",
+    "keywords": [
+      "discontent",
+      "apathy",
+      "reevaluation",
+      "missing the gift"
+    ],
+    "upright": "A Water Dragon sits in deep contemplation beneath a great oak, eyes inward, while a fourth cup is quietly offered from the branches above — unseen. Conway reads this as the danger of becoming so absorbed in inner discontent that the gifts being freely offered go unnoticed. Look up. Something good is being extended to you right now. Your current mood may be causing you to miss it.",
+    "reversed": "Withdrawal is ending and engagement is possible again. Or the contemplation, however necessary, has become a place to hide rather than a place to grow. Re-emerge.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "five of cups",
+    "name": "Five of Cups",
+    "arcana": "minor",
+    "number": 5,
+    "suit": "cups",
+    "symbol": "5♥",
+    "keywords": [
+      "loss",
+      "grief",
+      "regret",
+      "what remains"
+    ],
+    "upright": "A Water Dragon bows over three spilled cups, its grief large and real — but behind it stand two cups still full, still waiting. Conway acknowledges the genuine nature of this loss: grieve it, do not bypass it. At the same time, the card reminds you that something remains. When the grief has run its course, turn around and see what has not been lost.",
+    "reversed": "Beginning to move through the grief, or recognizing that the loss, while real, is not the whole story. Recovery is happening. Let it.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "six of cups",
+    "name": "Six of Cups",
+    "arcana": "minor",
+    "number": 6,
+    "suit": "cups",
+    "symbol": "6♥",
+    "keywords": [
+      "nostalgia",
+      "past",
+      "innocence",
+      "childhood memory"
+    ],
+    "upright": "Young Water Dragons play among the ruins of an ancient Celtic settlement, exchanging small cups of simple gifts — pure joy with no agenda. Conway connects this card to the healing power of returning to simpler times and the innocence of early experience. A memory from the past holds something useful for the present. Let yourself visit it — but don't take up permanent residence.",
+    "reversed": "You are living in the past rather than drawing wisdom from it. Nostalgia has become an escape from a present that needs your attention.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "seven of cups",
+    "name": "Seven of Cups",
+    "arcana": "minor",
+    "number": 7,
+    "suit": "cups",
+    "symbol": "7♥",
+    "keywords": [
+      "fantasy",
+      "choices",
+      "illusion",
+      "wishful thinking"
+    ],
+    "upright": "Seven cups float in Celtic mist, each filled with a different vision — treasure, love, victory, danger, beauty — and none of them clearly real. Conway's Seven of Cups warns against the seduction of fantasy over action. Many possibilities appear, but not all are what they seem and not all are available to you right now. Get grounded before you commit to any one of them.",
+    "reversed": "The fog is clearing and real choices are coming into focus. Or fantasy has been recognized for what it is, and genuine clarity is beginning to emerge. Use it.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "eight of cups",
+    "name": "Eight of Cups",
+    "arcana": "minor",
+    "number": 8,
+    "suit": "cups",
+    "symbol": "8♥",
+    "keywords": [
+      "moving on",
+      "seeking meaning",
+      "turning away",
+      "deeper calling"
+    ],
+    "upright": "A Water Dragon turns its back on eight carefully stacked cups and walks toward the dark Celtic sea, following a deeper pull it cannot fully name. Conway sees this as the courageous card of spiritual seeking — leaving behind what is comfortable but no longer fulfilling in order to answer a call to greater depth. The cups behind you were real and good. And something truer is ahead.",
+    "reversed": "You are walking away from something that still has value, or running from something rather than moving toward something. The departure needs honest examination before it becomes a mistake.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "nine of cups",
+    "name": "Nine of Cups",
+    "arcana": "minor",
+    "number": 9,
+    "suit": "cups",
+    "symbol": "9♥",
+    "keywords": [
+      "wish fulfilled",
+      "contentment",
+      "satisfaction",
+      "emotional abundance"
+    ],
+    "upright": "A great Water Dragon rests surrounded by nine full cups, deeply satisfied. Conway calls this the wish card — what you have been hoping for is coming, or has arrived. Allow yourself to feel genuinely good about what is in front of you. Contentment is not complacency; it is the earned recognition of genuine abundance. Enjoy what you have worked toward.",
+    "reversed": "Satisfaction that is performed rather than felt, or greed that makes genuine contentment impossible. The cups are full but something prevents you from drinking from them.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "ten of cups",
+    "name": "Ten of Cups",
+    "arcana": "minor",
+    "number": 10,
+    "suit": "cups",
+    "symbol": "10♥",
+    "keywords": [
+      "emotional fulfillment",
+      "family harmony",
+      "lasting happiness",
+      "wholeness"
+    ],
+    "upright": "A rainbow spans the Celtic valley and beneath it a Water Dragon family rests in genuine harmony — all relationships, all connections, in their right and nourishing order. Conway's Ten of Cups represents the emotional journey fully completed: deep happiness, lasting love, family or community in alignment. This is what the Water Dragon Clan's gifts have always been building toward. You are home.",
+    "reversed": "A family or community picture that looks harmonious on the surface but has unspoken tensions beneath. Real contentment requires real honesty, not performance.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "page of cups",
+    "name": "Page of Cups",
+    "arcana": "minor",
+    "number": 11,
+    "suit": "cups",
+    "symbol": "P♥",
+    "keywords": [
+      "intuitive message",
+      "emotional openness",
+      "creative news",
+      "sensitivity"
+    ],
+    "upright": "A young Water Dragon peers into a still pool and is startled to hear a fish whispering something unexpected from the deep. Conway reads this as a card of gentle intuitive messages and emotional openness — a surprise, a creative invitation, or a psychic nudge from an unexpected direction. Stay curious and open. The message is real even if it arrives strangely.",
+    "reversed": "Emotional immaturity or an intuitive impression being dismissed because it came in an unexpected form. Don't let defensiveness close you off to what the heart is trying to tell you.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "knight of cups",
+    "name": "Knight of Cups",
+    "arcana": "minor",
+    "number": 12,
+    "suit": "cups",
+    "symbol": "Kn♥",
+    "keywords": [
+      "romance",
+      "charm",
+      "invitation",
+      "heart's quest"
+    ],
+    "upright": "The Water Dragon knight moves through Celtic mists carrying a cup before it like an offering — the romantic quester following the pull of the heart. Conway's Knight of Cups brings proposals, invitations, and creative opportunities. Follow where the feeling leads — but maintain enough clarity to see whether what beckons is truly what it appears to be.",
+    "reversed": "The romantic quest has become a fantasy disconnected from reality. The knight is pursuing an ideal rather than a real person or a real path. Bring the dreaming back down to earth.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "queen of cups",
+    "name": "Queen of Cups",
+    "arcana": "minor",
+    "number": 13,
+    "suit": "cups",
+    "symbol": "Q♥",
+    "keywords": [
+      "emotional wisdom",
+      "compassion",
+      "deep intuition",
+      "nurturing"
+    ],
+    "upright": "The Water Dragon queen sits at the edge of the sacred well, her gaze clear and untroubled by the depths she has seen. Conway's Queen of Cups embodies mature emotional intelligence — she feels everything deeply and is undone by nothing. She leads with empathy and grounds her compassion in genuine understanding. Trust your feelings as information. They are showing you what is real.",
+    "reversed": "Emotional manipulation, or the queen's great sensitivity has tipped into instability. The deep waters have become a whirlpool. Restore the still surface through honest self-reflection.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "king of cups",
+    "name": "King of Cups",
+    "arcana": "minor",
+    "number": 14,
+    "suit": "cups",
+    "symbol": "K♥",
+    "keywords": [
+      "emotional mastery",
+      "calm authority",
+      "generosity",
+      "wisdom"
+    ],
+    "upright": "The Water Dragon king sits at the edge of the tidal sea — entirely at home in the emotional realm, neither overwhelmed by it nor cut off from it. Conway reads this as the card of emotional mastery in its fullest expression: steady, compassionate, and genuinely wise. Balance head and heart. Lead from a place of feeling that has been tempered by understanding.",
+    "reversed": "Emotional manipulation, volatility beneath a calm surface, or emotional intelligence being used as a tool of control. The king's deep understanding of feeling can be weaponized. Examine the motives beneath the compassion.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "ace of swords",
+    "name": "Ace of Swords",
+    "arcana": "minor",
+    "number": 1,
+    "suit": "swords",
+    "symbol": "A♠",
+    "keywords": [
+      "clarity",
+      "truth",
+      "breakthrough",
+      "mental force"
+    ],
+    "upright": "An Air Dragon raises a sword of pure light above a Celtic mountain — one stroke cutting through every layer of confusion and pretense. Conway's Air Dragon Clan brings the gift of mental clarity and truthful perception. A breakthrough is available. A decision can be made with genuine clarity. Speak the truth even if it cuts. The sharpness of this card is a gift, not a weapon.",
+    "reversed": "The sword of truth is being misused — wielded to wound rather than clarify. Or the mind is so clouded that even this blade cannot cut through. Dishonesty in some form is present.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "two of swords",
+    "name": "Two of Swords",
+    "arcana": "minor",
+    "number": 2,
+    "suit": "swords",
+    "symbol": "2♠",
+    "keywords": [
+      "stalemate",
+      "avoidance",
+      "difficult decision",
+      "blocked perception"
+    ],
+    "upright": "An Air Dragon sits with two swords crossed before it and eyes covered — holding two opposing choices in deliberate suspension. Conway reads this as willful avoidance of a decision that the mind already knows how to make. The blindfold is chosen. Remove it. You know more about this situation than you are letting yourself see.",
+    "reversed": "Too much information now makes the decision harder, not easier. Or the stalemate is breaking open against your will. Be prepared to choose even under pressure.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "three of swords",
+    "name": "Three of Swords",
+    "arcana": "minor",
+    "number": 3,
+    "suit": "swords",
+    "symbol": "3♠",
+    "keywords": [
+      "heartbreak",
+      "sorrow",
+      "grief",
+      "painful truth"
+    ],
+    "upright": "Three swords pierce the heart of an Air Dragon — grief, truth, and loss arriving at once. Conway does not soften this card. The pain is real. Something genuinely hurtful has happened or is happening, and it deserves to be acknowledged and felt fully. Grief that is moved through does not stay. But it cannot be bypassed.",
+    "reversed": "The acute pain is beginning to ease. The swords are slowly being drawn. This does not mean the wound is closed, but the worst is passing. Allow the healing its full time.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "four of swords",
+    "name": "Four of Swords",
+    "arcana": "minor",
+    "number": 4,
+    "suit": "swords",
+    "symbol": "4♠",
+    "keywords": [
+      "rest",
+      "recuperation",
+      "strategic withdrawal",
+      "stillness"
+    ],
+    "upright": "An Air Dragon rests in the carved stillness of a Celtic temple — swords laid aside, breath quieted, strength slowly returning. Conway is emphatic that this rest is not defeat. It is deliberate, wise, and necessary. You cannot continue at the pace you have been keeping without real cost. Recuperate completely before returning to action.",
+    "reversed": "Restlessness prevents genuine recovery. The mind continues its battle even when the body has stopped moving. Address the anxiety that prevents real rest.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "five of swords",
+    "name": "Five of Swords",
+    "arcana": "minor",
+    "number": 5,
+    "suit": "swords",
+    "symbol": "5♠",
+    "keywords": [
+      "conflict",
+      "defeat",
+      "hollow victory",
+      "cost"
+    ],
+    "upright": "An Air Dragon stands over fallen opponents, three swords in its possession — but the victory feels wrong. Conway's Five of Swords asks you to examine the cost of winning. A conflict has been won, or is being won, in a way that damages relationships, reputations, or integrity. Not every battle is worth the price of the victory.",
+    "reversed": "An opportunity for reconciliation after conflict. Pride is softening enough to allow repair. Take it before the moment passes.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "six of swords",
+    "name": "Six of Swords",
+    "arcana": "minor",
+    "number": 6,
+    "suit": "swords",
+    "symbol": "6♠",
+    "keywords": [
+      "transition",
+      "moving on",
+      "calmer waters",
+      "passage"
+    ],
+    "upright": "An Air Dragon ferries across dark Celtic waters toward a calmer distant shore, the six swords carried as necessary ballast rather than forgotten burdens. Conway reads this as the quiet, difficult passage from turbulence toward peace. You are moving away from what has been stormy. The journey is not joyful, but it is in the right direction. The calmer water ahead is real.",
+    "reversed": "You are resisting the passage. The familiar turbulence feels safer than the unknown calm. What are you afraid you'll find on the other shore?",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "seven of swords",
+    "name": "Seven of Swords",
+    "arcana": "minor",
+    "number": 7,
+    "suit": "swords",
+    "symbol": "7♠",
+    "keywords": [
+      "deception",
+      "strategy",
+      "evasion",
+      "cunning"
+    ],
+    "upright": "An Air Dragon moves through a war camp under cover of darkness, swords gathered beneath its wings. Conway reads this as a warning about deception in the environment — someone, possibly you, is not operating with full transparency. Cunning has its uses, but examine whether what you are calling strategy is actually dishonesty. Others may be operating the same way around you.",
+    "reversed": "A deception is unraveling. What has been done in secret is coming to light. Better to come forward honestly than to be exposed.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "eight of swords",
+    "name": "Eight of Swords",
+    "arcana": "minor",
+    "number": 8,
+    "suit": "swords",
+    "symbol": "8♠",
+    "keywords": [
+      "restriction",
+      "self-imprisonment",
+      "victim mentality",
+      "false limits"
+    ],
+    "upright": "An Air Dragon stands bound and blindfolded in a ring of swords — yet the bindings are loose and the swords do not form a true cage. Conway's Eight of Swords points directly at self-imposed limitation. The prison is largely constructed by thought. The beliefs that keep you here are not facts — they are habits of perception. You have more freedom than you are claiming.",
+    "reversed": "The blindfold is slipping. You are beginning to see the cage for what it is — a construct of thought rather than a physical reality. Act on the freedom that is becoming visible.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "nine of swords",
+    "name": "Nine of Swords",
+    "arcana": "minor",
+    "number": 9,
+    "suit": "swords",
+    "symbol": "9♠",
+    "keywords": [
+      "anxiety",
+      "nightmares",
+      "fear",
+      "mental anguish"
+    ],
+    "upright": "An Air Dragon wakes before dawn, the ceiling alive with swords — fears given shape by darkness and isolation. Conway reads the Nine of Swords as the card of worry at its most consuming: late-night fears, anxious minds, the weight of what-if. Most of what haunts you here is projection rather than prophecy. Speak the fears aloud. Name them. They lose power in daylight.",
+    "reversed": "The long night is ending. Anxiety is loosening its grip. You are finding your way back toward the light. Seek support if the dark has gone on too long alone.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "ten of swords",
+    "name": "Ten of Swords",
+    "arcana": "minor",
+    "number": 10,
+    "suit": "swords",
+    "symbol": "10♠",
+    "keywords": [
+      "painful ending",
+      "crisis",
+      "defeat",
+      "the lowest point"
+    ],
+    "upright": "An Air Dragon lies upon the cold stone, ten swords in its back, the sky beginning to lighten at the horizon. Conway does not minimize this card — it represents a genuine crisis or crushing defeat. But she also points to the dawn. From here, the only direction is upward. The ending is complete and absolute. That finality, however painful, is also a kind of liberation. The long fall is over.",
+    "reversed": "You are resisting an inevitable ending, or you are just beginning to pull yourself back from the lowest point. Either way, the worst is either coming or behind you. Face it directly.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "page of swords",
+    "name": "Page of Swords",
+    "arcana": "minor",
+    "number": 11,
+    "suit": "swords",
+    "symbol": "P♠",
+    "keywords": [
+      "curiosity",
+      "watchfulness",
+      "mental energy",
+      "new ideas"
+    ],
+    "upright": "A young Air Dragon perches alert on a Celtic watchtower, scanning the horizon with sharp, curious eyes. Conway reads this as the energy of eager mental investigation — seeking truth, watching carefully, asking the questions others don't think to ask. Approach this situation with the Page's fresh, unfiltered attention. Question everything before concluding.",
+    "reversed": "Sharp intelligence without the wisdom to know when to hold the tongue. The young dragon speaks before it has fully understood. Think before acting on what you believe you see.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "knight of swords",
+    "name": "Knight of Swords",
+    "arcana": "minor",
+    "number": 12,
+    "suit": "swords",
+    "symbol": "Kn♠",
+    "keywords": [
+      "swift action",
+      "decisiveness",
+      "charge",
+      "intellectual force"
+    ],
+    "upright": "The Air Dragon knight charges headlong into the wind — fast, decisive, entirely committed to the direction of its thinking. Conway's Knight of Swords brings the energy of rapid movement in service of clear intention. Move quickly on what you know to be true. Speak with directness. Just ensure the sword is aimed before the charge is launched.",
+    "reversed": "Speed without wisdom, or words delivered so sharply they wound rather than illuminate. The knight has outrun its own good judgment. Slow down before the damage compounds.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "queen of swords",
+    "name": "Queen of Swords",
+    "arcana": "minor",
+    "number": 13,
+    "suit": "swords",
+    "symbol": "Q♠",
+    "keywords": [
+      "clear perception",
+      "directness",
+      "honest wisdom",
+      "independence"
+    ],
+    "upright": "The Air Dragon queen sits at a high vantage above the Celtic plains, her vision unobstructed and her judgment uncluttered by sentiment she cannot afford. Conway's Queen of Swords has known real loss and allowed it to sharpen rather than harden her. She sees clearly and speaks directly. Bring that same clear-eyed honesty to your current situation. The truth, spoken with care, is always kinder than comfortable lies.",
+    "reversed": "Grief or bitterness has turned the queen's clarity into cruelty. Her distance, originally protective, has become a permanent wall. The sword is now used to keep others away rather than to illuminate truth.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "king of swords",
+    "name": "King of Swords",
+    "arcana": "minor",
+    "number": 14,
+    "suit": "swords",
+    "symbol": "K♠",
+    "keywords": [
+      "intellectual authority",
+      "truth",
+      "justice",
+      "clear judgment"
+    ],
+    "upright": "The Air Dragon king holds court on the windswept crags — impartial, disciplined, wielding intellectual authority in service of genuine truth. Conway's King of Swords represents the highest expression of the Air Dragon Clan: a mind so well trained that it can be trusted to lead others toward what is actually real. Think clearly. Decide fairly. Speak what is true even when it is uncomfortable.",
+    "reversed": "Intelligence weaponized for self-interest. The king uses the precision of his mind to manipulate rather than illuminate. Watch for reasoning that sounds logical but serves only the speaker.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "ace of pentacles",
+    "name": "Ace of Pentacles",
+    "arcana": "minor",
+    "number": 1,
+    "suit": "pentacles",
+    "symbol": "A◆",
+    "keywords": [
+      "material gift",
+      "new opportunity",
+      "prosperity",
+      "grounded beginning"
+    ],
+    "upright": "A great Earth Dragon extends a golden pentacle from the entrance of its mountain cavern — the pure gift of material opportunity and grounded new beginning. Conway's Earth Dragon Clan brings the energy of the physical world: money, health, work, and the body. A new financial or practical opportunity is being offered. Receive it, plant it well, and give it time to root properly.",
+    "reversed": "A material opportunity missed or mishandled. The gift is present but is not being recognized or developed. Reconnect with what matters in the practical realm.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "two of pentacles",
+    "name": "Two of Pentacles",
+    "arcana": "minor",
+    "number": 2,
+    "suit": "pentacles",
+    "symbol": "2◆",
+    "keywords": [
+      "balance",
+      "juggling",
+      "adaptability",
+      "managing priorities"
+    ],
+    "upright": "An Earth Dragon juggles two large pentacles on a Celtic quayside — the sea moves, the tide shifts, and the juggling continues with practiced ease. Conway emphasizes that balance here is not a static achievement but a constant, fluid adjustment. You are managing multiple responsibilities successfully, but it takes active attention. Stay flexible. The juggling is the skill.",
+    "reversed": "The juggling has become dropping. Too many obligations, too little structure. Prioritize ruthlessly before something important hits the ground.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "three of pentacles",
+    "name": "Three of Pentacles",
+    "arcana": "minor",
+    "number": 3,
+    "suit": "pentacles",
+    "symbol": "3◆",
+    "keywords": [
+      "craftsmanship",
+      "collaboration",
+      "skill",
+      "recognized work"
+    ],
+    "upright": "Three Earth Dragons work together on a great Celtic stone structure — the architect, the craftsman, and the patron consulting as genuine equals. Conway's Three of Pentacles celebrates skilled work done in community. What you are building together is better than what any one of you could produce alone. Honor the expertise that surrounds you and offer your own freely.",
+    "reversed": "Collaboration has broken down — egos competing, communication failing, or one party dominating what should be a shared effort. The craftsmanship suffers when the team cannot function.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "four of pentacles",
+    "name": "Four of Pentacles",
+    "arcana": "minor",
+    "number": 4,
+    "suit": "pentacles",
+    "symbol": "4◆",
+    "keywords": [
+      "security",
+      "holding on",
+      "conservation",
+      "material caution"
+    ],
+    "upright": "An Earth Dragon clutches its pentacles with all four limbs — protective, watchful, unwilling to release even one. Conway acknowledges that some conservation is wise, but this card asks you to examine whether the grip has become the point. Security is real and worth protecting. Hoarding is something else. What are you afraid will happen if you release your hold even slightly?",
+    "reversed": "Resources are being released — either willingly or through circumstances. The grip loosens. This may be uncomfortable, but the release itself is part of the cycle.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "five of pentacles",
+    "name": "Five of Pentacles",
+    "arcana": "minor",
+    "number": 5,
+    "suit": "pentacles",
+    "symbol": "5◆",
+    "keywords": [
+      "hardship",
+      "material loss",
+      "isolation",
+      "worry"
+    ],
+    "upright": "Two Earth Dragons struggle through a Celtic winter storm past a warm light in a stone window — too discouraged to try the door. Conway's Five of Pentacles is about material difficulty and the feeling of being left out in the cold. The hardship is real. And so is the help that is closer than it appears. Reach out. Ask. The light is not as far as it feels from where you are standing.",
+    "reversed": "The worst of the material difficulty is passing. You are beginning to find your way back toward warmth and stability. Take the first small steps toward recovery.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "six of pentacles",
+    "name": "Six of Pentacles",
+    "arcana": "minor",
+    "number": 6,
+    "suit": "pentacles",
+    "symbol": "6◆",
+    "keywords": [
+      "generosity",
+      "giving and receiving",
+      "fair exchange",
+      "charity"
+    ],
+    "upright": "An Earth Dragon distributes its treasure with measured generosity — giving freely while keeping the scales balanced. Conway reads the Six of Pentacles as the card of fair exchange: genuine generosity that does not deplete the giver and truly benefits the receiver. Give what you actually have to give. Receive with genuine gratitude. Watch for the power dynamics that can hide inside acts of charity.",
+    "reversed": "Generosity with strings attached, or giving that conceals a need for control. The gift is real but the conditions make it something else. Examine what is actually being exchanged.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "seven of pentacles",
+    "name": "Seven of Pentacles",
+    "arcana": "minor",
+    "number": 7,
+    "suit": "pentacles",
+    "symbol": "7◆",
+    "keywords": [
+      "patience",
+      "assessment",
+      "investment",
+      "long view"
+    ],
+    "upright": "An Earth Dragon pauses in its garden of growing pentacles, assessing what has been planted and what is actually growing well. Conway emphasizes the importance of this pause: not to give up, but to honestly evaluate before investing more effort in the wrong direction. Take stock. Is what you are tending actually growing? Patience is valuable only when applied to something with genuine potential.",
+    "reversed": "Impatience with growth that takes real time, or persisting in an effort that honest assessment would have redirected. Reconnect with what you are actually building toward.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "eight of pentacles",
+    "name": "Eight of Pentacles",
+    "arcana": "minor",
+    "number": 8,
+    "suit": "pentacles",
+    "symbol": "8◆",
+    "keywords": [
+      "mastery",
+      "diligence",
+      "skill development",
+      "craftsmanship"
+    ],
+    "upright": "An Earth Dragon stamps eight pentacles with careful, practiced precision — each one slightly better than the last. Conway celebrates the quiet heroism of this card: the dedicated craftsperson who shows up and does the work, day after day, until skill becomes mastery. Put in the hours. Love the process. Excellence is built in exactly this unglamorous way.",
+    "reversed": "Going through the motions without genuine engagement, or perfectionism that has made completion impossible. Reconnect the work to the meaning behind it.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "nine of pentacles",
+    "name": "Nine of Pentacles",
+    "arcana": "minor",
+    "number": 9,
+    "suit": "pentacles",
+    "symbol": "9◆",
+    "keywords": [
+      "self-sufficiency",
+      "abundance",
+      "refinement",
+      "earned luxury"
+    ],
+    "upright": "A great Earth Dragon stands in the garden it has cultivated entirely through its own skill and patience — pentacles hanging like ripe fruit, a sense of genuine self-sufficiency in every line of its posture. Conway's Nine of Pentacles honors what you have built on your own terms. Stand in what you have created and feel the full weight of genuine satisfaction. This is the fruit of real effort.",
+    "reversed": "The appearance of abundance without the substance, or self-sufficiency that has come at the cost of real human connection. What has been sacrificed for the beautiful surface?",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "ten of pentacles",
+    "name": "Ten of Pentacles",
+    "arcana": "minor",
+    "number": 10,
+    "suit": "pentacles",
+    "symbol": "10◆",
+    "keywords": [
+      "legacy",
+      "family wealth",
+      "permanence",
+      "generational security"
+    ],
+    "upright": "An elder Earth Dragon rests at the great stone gate of an ancestral holding, surrounded by the pentacles of generations of accumulated wisdom and work. Conway's Ten of Pentacles is about what you build that outlasts you — material, but also in values, in what is passed down, in the quality of life created for those who come after. What are you building that will mean something beyond your own lifetime?",
+    "reversed": "Family discord around material resources, or a legacy that was built on foundations that were never entirely sound. Examine what has been inherited — and what should be rethought before it is passed on.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "page of pentacles",
+    "name": "Page of Pentacles",
+    "arcana": "minor",
+    "number": 11,
+    "suit": "pentacles",
+    "symbol": "P◆",
+    "keywords": [
+      "study",
+      "new opportunity",
+      "practical learning",
+      "grounded beginnings"
+    ],
+    "upright": "A young Earth Dragon turns a shining pentacle over slowly in its claws, studying it from every angle with complete absorption. Conway's Page of Pentacles brings the energy of genuine, patient learning — a new skill, a practical opportunity, or a financial beginning that requires careful attention rather than rushing. Approach this as the beginner you are. The Earth Dragon Clan rewards careful study.",
+    "reversed": "Procrastination, or the enthusiasm for learning that has not translated into actual work. The pentacle is fascinating — now do something with it.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "knight of pentacles",
+    "name": "Knight of Pentacles",
+    "arcana": "minor",
+    "number": 12,
+    "suit": "pentacles",
+    "symbol": "Kn◆",
+    "keywords": [
+      "reliability",
+      "persistence",
+      "method",
+      "steady progress"
+    ],
+    "upright": "The Earth Dragon knight moves across the Celtic fields without hurry or drama — every step considered, every commitment honored, every task completed. Conway's Knight of Pentacles is the card of reliable, methodical progress. The tortoise wins this race. Show up consistently, do the unglamorous work, honor your word. The Earth Dragons reward persistence over brilliance.",
+    "reversed": "Methodical progress has become stubborn inertia. The reliable path has stopped working but you are following it out of habit rather than judgment. Know when to adapt.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "queen of pentacles",
+    "name": "Queen of Pentacles",
+    "arcana": "minor",
+    "number": 13,
+    "suit": "pentacles",
+    "symbol": "Q◆",
+    "keywords": [
+      "nurturing abundance",
+      "practical wisdom",
+      "earthy warmth",
+      "groundedness"
+    ],
+    "upright": "The Earth Dragon queen tends her great garden with the same unhurried care she gives everything — hands in the soil, pentacles growing around her, the warmth of genuine abundance radiating outward. Conway's Queen of Pentacles is grounded, generous, and deeply practical. Tend your body, your home, your finances, and your relationships with the same patient attention. True wealth is built in this way.",
+    "reversed": "The queen's nurturing has become possessiveness, or her own needs have been so thoroughly neglected that she has nothing left to give. Tend yourself before the garden fails.",
+    "deckType": "CelticDragon"
+  },
+  {
+    "id": "king of pentacles",
+    "name": "King of Pentacles",
+    "arcana": "minor",
+    "number": 14,
+    "suit": "pentacles",
+    "symbol": "K◆",
+    "keywords": [
+      "prosperity",
+      "mastery",
+      "material wisdom",
+      "generative wealth"
+    ],
+    "upright": "The great Earth Dragon king sits amid the pentacles of a lifetime of disciplined, patient work — the master of the material world who has earned every stone of his domain through integrity and steady effort. Conway's King of Pentacles represents the full expression of the Earth Dragon Clan's gifts: material mastery in service of genuine flourishing. Wealth generated this way flows generously outward.",
+    "reversed": "Wealth as an end in itself rather than a means to living well. The king's mastery has become obsession. Material success has crowded out the things that give it meaning.",
+    "deckType": "CelticDragon"
+  }
+]

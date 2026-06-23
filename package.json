@@ -1,0 +1,95 @@
+{
+  "name": "tarot",
+  "version": "1.7.0",
+  "description": "Local tarot & oracle reading tool",
+  "main": "electron/main.js",
+  "dependencies": {
+    "better-sqlite3": "^12.10.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@electron/packager": "^19.1.0",
+    "@electron/rebuild": "^4.0.4",
+    "electron": "^35.0.0",
+    "electron-builder": "^25.0.0",
+    "jimp": "^1.6.1",
+    "png2icons": "^2.0.1"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "electron": "electron .",
+    "rebuild": "electron-rebuild -f -w better-sqlite3",
+    "dist:dmg": "npm run rebuild && electron-builder --mac dmg",
+    "dist:win": "npm run rebuild && electron-builder --win nsis portable"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "build": {
+    "appId": "com.tarot.oracle",
+    "productName": "Tarot & Oracle",
+    "mac": {
+      "category": "public.app-category.lifestyle",
+      "icon": "electron/icon.icns",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        }
+      ]
+    },
+    "dmg": {
+      "title": "Tarot & Oracle",
+      "window": {
+        "width": 540,
+        "height": 380
+      }
+    },
+    "win": {
+      "icon": "electron/icon.png",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "shortcutName": "Tarot & Oracle"
+    },
+    "portable": {
+      "artifactName": "Tarot-Oracle-Portable-${version}.exe"
+    },
+    "files": [
+      "electron/**/*",
+      "public/**/*",
+      "data/**/*.json",
+      "data/**/*.js",
+      "!data/config.json",
+      "!data/readings.json",
+      "!data/{readings,profiles,patterns,daily}/**/*",
+      "scripts/seed-cache.js",
+      "server.js",
+      "package.json",
+      "!node_modules/{electron,electron-builder,@electron,app-builder-lib,jimp,png2icons,@jimp,dmg-builder,dmg-license,app-builder-bin,7zip-bin,builder-util,builder-util-runtime}/**/*",
+      "!**/*.{md,map,ts,tsx}",
+      "!**/{test,tests,__tests__,example,examples,.github,.nyc_output,coverage,docs}/**"
+    ],
+    "asar": true,
+    "npmRebuild": false
+  }
+}

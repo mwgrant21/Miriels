@@ -1,0 +1,122 @@
+[
+  {
+    "id": "oracle-1", "name": "The Threshold", "symbol": "◈",
+    "keywords": ["transition", "courage", "new beginning"],
+    "upright": "You stand at the edge of something new. The threshold asks only one thing: that you cross it. Whatever lies on the other side is already calling you by name.",
+    "reversed": "Hesitation has become its own answer. Ask yourself: is this caution wisdom, or is it fear wearing wisdom's clothes?"
+  },
+  {
+    "id": "oracle-2", "name": "Deep Roots", "symbol": "❧",
+    "keywords": ["grounding", "ancestry", "stability", "foundation"],
+    "upright": "Return to what grounds you. Your strength comes not from striving upward but from how deeply you are rooted. Nourish the foundation — the rest will follow.",
+    "reversed": "Something has cut you off from your roots. You may feel unmoored. Find one anchor — a practice, a person, a place — and begin from there."
+  },
+  {
+    "id": "oracle-3", "name": "Still Waters", "symbol": "〰",
+    "keywords": ["peace", "reflection", "inner calm", "clarity"],
+    "upright": "A moment of true stillness arrives. Do not fill it. The reflection you need can only appear in calm water — let the surface settle and see what is revealed.",
+    "reversed": "There is turbulence beneath the surface. Acknowledge it rather than forcing calm. Honest unrest is healthier than performed peace."
+  },
+  {
+    "id": "oracle-4", "name": "The Witness", "symbol": "◉",
+    "keywords": ["observation", "awareness", "non-judgment", "presence"],
+    "upright": "Step back and observe without judgment. There is profound wisdom in seeing clearly without needing to change what you see. Be the witness before you become the actor.",
+    "reversed": "Detachment has become dissociation. You cannot witness your life from so far away that you stop living it. Come a little closer."
+  },
+  {
+    "id": "oracle-5", "name": "Unraveling", "symbol": "∿",
+    "keywords": ["release", "letting go", "surrender", "dissolution"],
+    "upright": "Something is coming apart — and that is exactly right. Not all things are meant to hold. The unraveling makes way for a truer weaving. Trust the thread as it loosens.",
+    "reversed": "The unraveling frightens you, so you grip tighter. But the tighter the grip, the faster the thread frays. Practice the art of releasing one thread at a time."
+  },
+  {
+    "id": "oracle-6", "name": "The Messenger", "symbol": "⚡",
+    "keywords": ["sign", "communication", "synchronicity", "attention"],
+    "upright": "A message is coming — or has already arrived and been overlooked. Pay attention to what repeats, to what catches your eye, to what arrives uninvited. The universe is speaking.",
+    "reversed": "You have received the message but are choosing not to hear it. What truth are you avoiding? It will keep knocking until you open the door."
+  },
+  {
+    "id": "oracle-7", "name": "Fertile Dark", "symbol": "☾",
+    "keywords": ["gestation", "potential", "mystery", "the unseen"],
+    "upright": "Not all growth happens in the light. Seeds germinate in darkness. If you feel you are in a fallow period, know that something is quietly taking root. Tend the dark with patience.",
+    "reversed": "You are emerging from a long dark period. The light may feel harsh at first. Be gentle with yourself as you adjust to visibility again."
+  },
+  {
+    "id": "oracle-8", "name": "Sacred No", "symbol": "⊘",
+    "keywords": ["boundaries", "protection", "clarity", "discernment"],
+    "upright": "There is holiness in the word no. A boundary clearly held protects not just you, but those around you. Say no with gentleness, and mean it completely.",
+    "reversed": "A boundary you drew was crossed — perhaps by yourself. Examine what you agreed to that you did not truly want. You are allowed to renegotiate."
+  },
+  {
+    "id": "oracle-9", "name": "The Mirror", "symbol": "◫",
+    "keywords": ["reflection", "truth", "projection", "self-awareness"],
+    "upright": "What you see in others reflects something within you — for better or worse. The mirror does not lie. This moment is asking for honest self-reflection, not comparison.",
+    "reversed": "You are avoiding the mirror. The quality that bothers you most in another is the one you most need to examine in yourself."
+  },
+  {
+    "id": "oracle-10", "name": "Slow Magic", "symbol": "✦",
+    "keywords": ["patience", "natural timing", "organic growth", "trust"],
+    "upright": "The magic here is not sudden — it is the slow, steady kind that compounds like interest. Keep showing up. What you are building may not be visible yet, but it is real.",
+    "reversed": "Impatience is causing you to abandon what hasn't bloomed yet. Not everything can be forced into season. Give it more time."
+  },
+  {
+    "id": "oracle-11", "name": "The Body Knows", "symbol": "♡",
+    "keywords": ["embodiment", "instinct", "physical wisdom", "somatic truth"],
+    "upright": "Before the mind has an answer, the body already knows. That tightness in your chest, that lift in your step — these are data. Listen to what your body is telling you.",
+    "reversed": "You have been living too much in your head. The body is sending signals you keep overriding. Get back into your body — move, rest, breathe."
+  },
+  {
+    "id": "oracle-12", "name": "Reclamation", "symbol": "⟳",
+    "keywords": ["returning to self", "sovereignty", "wholeness", "retrieval"],
+    "upright": "Something that belongs to you is being returned — a part of yourself left behind, a creative gift set aside, a piece of your own story. Receive it back with both hands.",
+    "reversed": "You have given something away that was not yours to give. Or perhaps you have let others define who you are for too long. Begin the process of taking yourself back."
+  },
+  {
+    "id": "oracle-13", "name": "The Fire Keeper", "symbol": "🜂",
+    "keywords": ["passion", "tending", "devotion", "purpose"],
+    "upright": "Tend your inner fire. Not with reckless abandon, but with devotion — the way one tends a hearth. What are you devoted to? That devotion is the fire worth keeping.",
+    "reversed": "The fire has been neglected or smothered by obligation. Reconnect with what once lit you up. Even cold embers can be coaxed back to flame."
+  },
+  {
+    "id": "oracle-14", "name": "Ancestors at Your Back", "symbol": "⁂",
+    "keywords": ["lineage", "support", "inheritance", "wisdom of the past"],
+    "upright": "You are not alone — you carry generations within you. The wisdom, resilience, and love of those who came before is available to you right now. You did not arrive here from nowhere.",
+    "reversed": "Ancestral patterns may be running without your awareness. Inherited wounds are asking to be healed in your generation. Look at what you've been given — and choose what to pass on."
+  },
+  {
+    "id": "oracle-15", "name": "Soft Power", "symbol": "☁",
+    "keywords": ["gentleness", "yielding", "flow", "receptivity"],
+    "upright": "The most powerful water does not crash — it flows around every obstacle. Softness is not weakness; it is intelligence. Let yourself be yielding where rigidity would only break.",
+    "reversed": "Your softness is being mistaken — by yourself or others — for lack of substance. You can be gentle and firm at once. Find the iron inside the silk."
+  },
+  {
+    "id": "oracle-16", "name": "The Long Game", "symbol": "∞",
+    "keywords": ["vision", "patience", "legacy", "strategic thinking"],
+    "upright": "Play the long game. What you do today is a seed for a harvest years away. Make decisions that honor the person you are becoming, not just the situation you are in.",
+    "reversed": "You are sacrificing the future for present comfort. Ask: what would the version of you five years from now thank you for doing today?"
+  },
+  {
+    "id": "oracle-17", "name": "Wild Knowing", "symbol": "⁕",
+    "keywords": ["instinct", "primal wisdom", "untamed truth", "raw clarity"],
+    "upright": "There is a knowledge in you that precedes thought — ancient, animal, and true. Trust it. What do you know before you think? Act from that place.",
+    "reversed": "Civilization has tamed something in you that needed to stay wild. Permission is granted: reclaim the instinct that culture told you to suppress."
+  },
+  {
+    "id": "oracle-18", "name": "The Open Hand", "symbol": "✋",
+    "keywords": ["generosity", "offering", "surrender", "open-heartedness"],
+    "upright": "Give freely. The open hand both gives and receives. Clinging to what you have prevents more from coming. Offer what you have, and trust in what returns.",
+    "reversed": "Generosity has been depleted by those who take without reciprocating. It is okay to close the hand for a season. Replenish yourself before pouring out again."
+  },
+  {
+    "id": "oracle-19", "name": "Eclipse", "symbol": "⊙",
+    "keywords": ["hidden forces", "shadow", "brief darkness", "revelation"],
+    "upright": "Something is temporarily obscured — but the obscuring is itself revealing. What becomes visible in the moment of shadow? Look at the edges of this darkness.",
+    "reversed": "The eclipse has lasted too long. Something that was meant to pass has settled in. Seek light deliberately — through community, creativity, or honesty."
+  },
+  {
+    "id": "oracle-20", "name": "Homecoming", "symbol": "⌂",
+    "keywords": ["belonging", "return", "self-recognition", "rest"],
+    "upright": "You are coming home — perhaps to a place, perhaps to a person, most likely to yourself. After long journeying, rest is not laziness. It is arrival. Welcome yourself back.",
+    "reversed": "You are circling but not landing. The fear of arrival keeps you in orbit. What are you afraid you'll find if you truly come home?"
+  }
+]

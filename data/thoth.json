@@ -1,0 +1,670 @@
+[
+  {
+    "id": "thoth-major-0", "name": "The Fool", "arcana": "major", "number": 0, "suit": null,
+    "deckType": "Thoth", "symbol": "0",
+    "keywords": ["pure potential", "the divine child", "leap of faith", "zero point", "holy fool"],
+    "element": "Air", "astro": "Uranus", "kabbala": "Path 11 — Aleph, the Ox",
+    "upright": "The Fool in the Thoth deck is the Green Man, the eternal child leaping into the abyss with total trust — not the innocent fool of other decks but the conscious mystic who has abandoned limitation. He represents the zero-point of infinite potential, the divine madness that precedes all creation. Something new is beginning at the most fundamental level. The leap being asked of you is not reckless — it is the only genuine response to where you actually are.",
+    "reversed": "The leap misread as an invitation to ignore consequences, or the holy madness curdled into ordinary recklessness. The Fool reversed is also the person who cannot leap — paralyzed at the edge by the accumulated weight of everything they cannot release. The abyss is not going anywhere.",
+    "shadow": "The eternal beginning as avoidance — leaping from fresh start to fresh start precisely so that the work of staying, deepening, and becoming real never has to be done.",
+    "thoth_lore": "Crowley assigns the Fool to Uranus and the Hebrew letter Aleph — the first breath, the sacred ox that draws the plow of creation. Lady Frieda Harris painted him young, vibrant, and green, leaping off a cliff with a tiger nipping his leg and the sun blazing behind him. The crocodile in the water below is Sobek, the Egyptian god of transformation. The Fool contains everything the other cards will unfold."
+  },
+  {
+    "id": "thoth-major-1", "name": "The Magus", "arcana": "major", "number": 1, "suit": null,
+    "deckType": "Thoth", "symbol": "I",
+    "keywords": ["will", "Mercury", "the word", "trickster-sage", "the logos"],
+    "element": "Air", "astro": "Mercury", "kabbala": "Path 12 — Beth, the House",
+    "upright": "The Magus (not the Magician) is Mercury himself — the divine trickster who controls the very tools of creation: wand, cup, sword, and disk arranged in perpetual motion around him. This is not the stage magician but the one who understands that will properly directed is the only thing that exists. The word made act. You have access to all four instruments. The question is whether you are using them with conscious intention or just juggling.",
+    "reversed": "The clever mind that has mistaken cleverness for wisdom. Mercury without ethics is the con artist, the one who can make anything mean anything. The Magus reversed is the use of genuine skill for manipulation rather than transformation.",
+    "shadow": "The trickster-god's curse: knowing how to move everything, knowing the mechanism of all things, and therefore being unable to fully inhabit anything.",
+    "thoth_lore": "Crowley's Magus is radically different from Waite's — he stands in an oval of white light, the four elemental tools swirling around him in perpetual motion, suggesting that he doesn't use the tools but that he IS the mechanism through which all tools act. The Hebrew letter Beth means 'house' — the Magus is the container in which magic happens."
+  },
+  {
+    "id": "thoth-major-2", "name": "The Priestess", "arcana": "major", "number": 2, "suit": null,
+    "deckType": "Thoth", "symbol": "II",
+    "keywords": ["the veil", "the moon's mirror", "pure intuition", "the unconscious", "the silver light"],
+    "element": "Water", "astro": "Moon", "kabbala": "Path 13 — Gimel, the Camel",
+    "upright": "The Priestess is the veil of the sanctuary — not what is behind it but the veil itself, which is also a mirror. She is the mind before thought, awareness before object, pure reflective consciousness. In the Thoth deck she is associated with the lunar path across the abyss of Daath. What needs to come from the deep interior right now cannot be forced or explained; it can only be received. Quiet everything and listen.",
+    "reversed": "The veil mistaken for what it conceals, or the mirror turned to deflect rather than reflect. The Priestess reversed is the person so focused on their own inner world that they have lost contact with the actual. Depth without grounding.",
+    "shadow": "Knowing everything about the moon and nothing about the sun — the infinite interiority that has no outward expression and cannot receive what comes from outside.",
+    "thoth_lore": "Lady Frieda Harris painted the Priestess in blue-silver, her robes flowing into the sea at her feet, the veil of the temple behind her translucent rather than opaque. Crowley assigned her to the Hebrew letter Gimel, the Camel — the creature that carries its water supply across the desert, bridging the abyss. The path she represents on the Tree of Life is the sole path that crosses Daath, the hidden sephira."
+  },
+  {
+    "id": "thoth-major-3", "name": "The Empress", "arcana": "major", "number": 3, "suit": null,
+    "deckType": "Thoth", "symbol": "III",
+    "keywords": ["Venus", "abundance", "creation", "the pelican and the sparrow", "love's law"],
+    "element": "Earth", "astro": "Venus", "kabbala": "Path 14 — Daleth, the Door",
+    "upright": "The Empress in the Thoth deck is Venus — not domesticated fertility but the raw creative love that drives the universe. She is pure abundance and generative force. In Harris's painting she is surrounded by fleur-de-lis and pelicans feeding their young with their own blood — the creative force that gives of itself completely. Something is being generated from deep creative love right now. Let it be generous and unguarded.",
+    "reversed": "Love that has become possessive, or creative force turned to obsessive control. The Empress reversed is Venus in her shadow aspect — the love that clutches rather than nourishes, the abundance that becomes excess.",
+    "shadow": "The mother who loves so completely that nothing is allowed to grow independently; beauty used to bind rather than to free.",
+    "thoth_lore": "Crowley's Empress is explicitly the goddess of love and beauty as cosmic creative principle. The Hebrew letter Daleth — the Door — names her essential nature: she is the opening through which life passes into the world. Harris painted her enthroned in a field of flowers and spirals, surrounded by the symbols of Venus, her shield bearing the white eagle of alchemical purification."
+  },
+  {
+    "id": "thoth-major-4", "name": "The Emperor", "arcana": "major", "number": 4, "suit": null,
+    "deckType": "Thoth", "symbol": "IV",
+    "keywords": ["Aries", "dominion", "the fiery will", "orderer of chaos", "masculine fire"],
+    "element": "Fire", "astro": "Aries", "kabbala": "Path 15 — Tzaddi, the Fish-hook",
+    "upright": "The Emperor in Thoth is Aries in full force — fiery, direct, the will that imposes order on chaos. He is the active masculine principle made concrete: the executive function, the structure that makes building possible. What needs to be ordered, decided, or claimed? Act from this direct energy without apology. His scepter is the ankh and the orb — life-authority united.",
+    "reversed": "The will that has become tyranny, or the structure that has calcified into rigidity. The Emperor reversed is the executive function deployed against growth rather than in service of it — control for its own sake.",
+    "shadow": "The fortress that becomes a prison: order so thoroughly imposed that nothing wild or new can enter.",
+    "thoth_lore": "Crowley assigned the Emperor to the Hebrew letter Tzaddi (the Fish-hook), though he famously declared 'The Star is Tzaddi.' The Thoth Emperor is associated with Aries and the pure solar fire that initiates action. Harris painted him in red and gold, the lamb and eagle at his feet, the fiery force of the ram in his posture — martial, erect, absolute."
+  },
+  {
+    "id": "thoth-major-5", "name": "The Hierophant", "arcana": "major", "number": 5, "suit": null,
+    "deckType": "Thoth", "symbol": "V",
+    "keywords": ["the inner teacher", "Taurus", "initiation", "the outer form of inner truth", "gnosis"],
+    "element": "Earth", "astro": "Taurus", "kabbala": "Path 16 — Vau, the Nail",
+    "upright": "The Hierophant in Thoth is less the institutional authority than the inner initiator — the one who reveals what was always present but not seen. He is Taurus, fixed earth: the teacher who holds the form of the teaching stable while the student changes. What inner teaching or initiation is being offered right now? Look for the truth in the tradition rather than against it.",
+    "reversed": "Doctrine hardened into dogma, or the teacher who has confused the form of the teaching with the teaching itself. The Hierophant reversed is the institution that has forgotten its own founding insight.",
+    "shadow": "Hoarding the mysteries rather than transmitting them — using initiation as a power structure rather than as genuine revelation.",
+    "thoth_lore": "Harris painted the Thoth Hierophant surrounded by the four Kerubim (lion, eagle, bull, man) and veiled in complex symbolism. Crowley emphasized the aspect of initiation over institution — the Hierophant as the one who reveals inner truth through outer form, rather than one who enforces conformity. The Hebrew letter Vau, the Nail, suggests the thing that fixes and connects."
+  },
+  {
+    "id": "thoth-major-6", "name": "The Lovers", "arcana": "major", "number": 6, "suit": null,
+    "deckType": "Thoth", "symbol": "VI",
+    "keywords": ["the royal marriage", "Gemini", "the great choice", "opposites unified", "the alchemical wedding"],
+    "element": "Air", "astro": "Gemini", "kabbala": "Path 17 — Zayin, the Sword",
+    "upright": "The Thoth Lovers is not a romantic card but a card of the great alchemical wedding — the conscious union of opposites into a higher synthesis. Gemini divides; the Lovers reunite. This card speaks to the moment of choice that is also a moment of sacred union: the parts of yourself, the relationship, the ideas that must come together. The king and queen are crowned and wed under the blessing of what is above.",
+    "reversed": "The union avoided, the choice refused, or opposites maintained in opposition rather than brought into higher synthesis. The Lovers reversed is the person who keeps both options while fully taking neither.",
+    "shadow": "Eternal duality maintained to avoid the sacrifice that genuine union requires — keeping the possibility open rather than committing to the actual.",
+    "thoth_lore": "Harris painted the Thoth Lovers as an elaborate ceremonial scene: a king and queen being wed by a hermit-priest beneath a many-pointed star, with a white and black eagle before them and flames below. Crowley explicitly titled this 'the Brothers' in some notes, emphasizing its Gemini nature as the twins-in-one, the division that is also unity."
+  },
+  {
+    "id": "thoth-major-7", "name": "The Chariot", "arcana": "major", "number": 7, "suit": null,
+    "deckType": "Thoth", "symbol": "VII",
+    "keywords": ["Cancer", "the Holy Grail", "victory", "the armored self", "mastery over contradictions"],
+    "element": "Water", "astro": "Cancer", "kabbala": "Path 18 — Cheth, the Fence",
+    "upright": "The Thoth Chariot is Cancer: the Grail knight, the armored self moving through the world. Where other decks emphasize control, the Thoth version emphasizes the mystery — the Charioteer holds no reins but holds the Holy Grail. Victory comes from maintaining the sacred vessel intact while moving through all conditions. The four sphinxes beneath the chariot pull in all directions and yet the chariot moves forward. Contain the contradiction.",
+    "reversed": "The armor that prevents contact, or the Grail lost because the movement through the world was too aggressive or too passive. The Chariot reversed is the protection that isolates.",
+    "shadow": "The shell that began as protection and became a prison — the warrior who cannot take the armor off even in peacetime.",
+    "thoth_lore": "Harris painted the Thoth Chariot with extraordinary alchemical detail: the canopy of stars above, the four sphinxes (the four elements/fixed signs), and the Charioteer holding the Grail-vessel rather than a weapon or reins. Crowley's commentary makes clear that this is a card of the great alchemical vessel — the body as the container of the spiritual work."
+  },
+  {
+    "id": "thoth-major-8", "name": "Adjustment", "arcana": "major", "number": 8, "suit": null,
+    "deckType": "Thoth", "symbol": "VIII",
+    "keywords": ["cosmic justice", "Libra", "the perfect balance", "karma", "the sword of truth"],
+    "element": "Air", "astro": "Libra", "kabbala": "Path 19 — Lamed, the Ox-goad",
+    "upright": "Adjustment (not Justice) is the impersonal, cosmic calibration of the universe — not the legal judgment of human institutions but the absolute self-correcting balance that underlies all existence. She stands veiled on the edge of her sword, weighing all things. The scales are exact. What you put into the world returns to you with precision. This card is not a warning but a statement of reality: things are finding their natural level.",
+    "reversed": "Imbalance that has not yet been corrected, or the ego's refusal to accept the adjustment that is coming regardless. Adjustment reversed is not about injustice — it is about the human resistance to being calibrated.",
+    "shadow": "Using the language of cosmic justice to impose human preferences — the person who believes the universe owes them the exact outcome they want, and calls this 'alignment.'",
+    "thoth_lore": "Crowley renamed Justice 'Adjustment' to emphasize its impersonal, cosmic nature — the universe adjusting itself continuously toward equilibrium. Harris painted the figure masked and veiled, balanced on the point of a sword with perfect precision, her scales exact. The Hebrew letter Lamed, the Ox-goad, suggests the gentle pressure that corrects course — not punishment but recalibration."
+  },
+  {
+    "id": "thoth-major-9", "name": "The Hermit", "arcana": "major", "number": 9, "suit": null,
+    "deckType": "Thoth", "symbol": "IX",
+    "keywords": ["Virgo", "the solitary light", "the inner journey", "the descent", "the guide"],
+    "element": "Earth", "astro": "Virgo", "kabbala": "Path 20 — Yod, the Hand",
+    "upright": "The Hermit in Thoth is Virgo — not the old man with a lantern on a mountaintop but the figure descending into the underworld with the lamp of understanding. He walks with the three-headed staff: past, present, future. The light he carries is not for navigating the outer world but for illuminating the inner one. The solitary path is not loneliness but the genuine necessity of going somewhere others cannot follow. Follow the lantern.",
+    "reversed": "Withdrawal that is avoidance rather than genuine inner work, or the hermit who has gone so deep he can no longer return to function in the world. The lamp turned inward but never outward.",
+    "shadow": "The wisdom that has calcified into isolation — the one who found the light and refused to share it because sharing would require coming back.",
+    "thoth_lore": "In the Thoth deck, the Hermit is assigned to Yod — the Hand, the smallest Hebrew letter, the foundational unit from which all other letters are built. He descends rather than ascends, holding his lamp before him to light the way down rather than the way up. Crowley associated this with Persephone's descent and the Orphic mysteries."
+  },
+  {
+    "id": "thoth-major-10", "name": "Fortune", "arcana": "major", "number": 10, "suit": null,
+    "deckType": "Thoth", "symbol": "X",
+    "keywords": ["the wheel", "Jupiter", "the law of cycles", "fate and chance", "the sphinx at the center"],
+    "element": "Fire", "astro": "Jupiter", "kabbala": "Path 21 — Kaph, the Palm",
+    "upright": "Fortune (not the Wheel of Fortune) is Jupiter's wheel — the inexorable turning of the cosmic cycle. The sphinx at the center does not turn; the wheel turns around it. The law of change is itself unchanging. What is rising will fall; what has fallen will rise. The practical wisdom here is twofold: do not be destroyed by what is falling, and do not mistake what is rising for permanence.",
+    "reversed": "The wheel's turn resisted or not seen. Fortune reversed is the person who cannot accept the cycle — either fighting the fall or refusing to act in the rise.",
+    "shadow": "Mistaking the cycle for the meaning — spinning with the wheel rather than becoming the sphinx at the center.",
+    "thoth_lore": "Harris painted the Thoth Fortune as an alchemical wheel with the three elemental animals (Sahu the ape, Typhon the serpent, Hermanubis the jackal-headed figure) spiraling around it. At the center is the sphinx, the reconciler of opposites who is neither rising nor falling. Jupiter governs the expansion of consciousness through the encounter with fate."
+  },
+  {
+    "id": "thoth-major-11", "name": "Lust", "arcana": "major", "number": 11, "suit": null,
+    "deckType": "Thoth", "symbol": "XI",
+    "keywords": ["Leo", "creative fire", "the Scarlet Woman", "Babalon and the Beast", "vital force"],
+    "element": "Fire", "astro": "Leo", "kabbala": "Path 22 — Teth, the Serpent",
+    "upright": "Lust (not Strength) is Leo's fire — the creative, sexual, vital force that drives existence forward. Babalon rides the seven-headed lion of all earthly desire and is not consumed; she is nourished. This is not the taming of the beast but the sacred partnership with it. The force that might destroy when unconscious becomes the vehicle of transformation when consciously met. What vital force in you needs to be ridden rather than suppressed?",
+    "reversed": "Vital force suppressed, or the same force unleashed without the Babalon principle — pure appetite without consciousness. The beast ridden by the wrong rider.",
+    "shadow": "Mistaking stimulation for vitality — the perpetual seeking of new intensity as a substitute for genuine aliveness.",
+    "thoth_lore": "Crowley's most controversial renaming: Strength became Lust, explicitly invoking the Thelemic goddess Babalon and her partnership with the Beast. Harris painted this with extraordinary luminosity — the seven-headed lion blazing with sacred fire, Babalon raising the Holy Grail above her. The teth-serpent of Hebrew tradition appears as the spiraling life-force itself. This is not pornography but theophany."
+  },
+  {
+    "id": "thoth-major-12", "name": "The Hanged Man", "arcana": "major", "number": 12, "suit": null,
+    "deckType": "Thoth", "symbol": "XII",
+    "keywords": ["Water", "voluntary sacrifice", "the suspended moment", "reversal of values", "surrender"],
+    "element": "Water", "astro": "Neptune", "kabbala": "Path 23 — Mem, Water",
+    "upright": "The Hanged Man is voluntary suspension — Odin on Yggdrasil, Jesus on the cross, the mystic who inverts the ordinary world to see what cannot be seen right-side-up. This is sacrifice without victimhood: you chose this position because what can only be learned here cannot be learned standing. The serpents of energy spiral from his ankles; the serpent of wisdom rises to meet him. Remain in the suspension until it completes itself.",
+    "reversed": "Suspension resisted, or the suspension without the inner transformation that justifies it — martyrdom rather than initiation. The Hanged Man reversed is also the inability to remain still when stillness is what is required.",
+    "shadow": "The infinite surrender — the one who has surrendered so completely that there is no self left to receive what the surrender was meant to reveal.",
+    "thoth_lore": "The Thoth Hanged Man is attributed to the Hebrew letter Mem, meaning Water — the primordial element of dissolution and transformation. Harris painted him hung from an ankh rather than a cross, energy serpents spiraling from his feet, his face serene rather than agonized. Crowley's emphasis is entirely on the voluntary nature of the sacrifice: this figure has chosen his position."
+  },
+  {
+    "id": "thoth-major-13", "name": "Death", "arcana": "major", "number": 13, "suit": null,
+    "deckType": "Thoth", "symbol": "XIII",
+    "keywords": ["transformation", "Scorpio", "the skeleton dancer", "absolute change", "the river"],
+    "element": "Water", "astro": "Scorpio", "kabbala": "Path 24 — Nun, the Fish",
+    "upright": "Death in Thoth is not grim but ecstatic — the skeleton dances on the heads of kings and priests, scythe in hand, while the serpent writhes and flowers bloom from the dead. Something is ending completely. Not diminishing, not changing a little — ending. And in the soil of that ending, the next life is already preparing. The Scorpionic depth of this card is about the absolute transformation that only total death of the old form makes possible.",
+    "reversed": "Resistance to necessary endings, or the death that is not transformative but merely destructive. Death reversed is the clinging to what has finished, or the ending that happens without the flower that should follow.",
+    "shadow": "The addiction to death-and-rebirth as spiritual identity — cycling through endings without ever arriving at what the new beginning was for.",
+    "thoth_lore": "Harris painted the Thoth Death as a great skeletal figure dancing across a landscape of transformation — the immortal, impersonal force that harvests all form. The Hebrew letter Nun means Fish — the creature at home in the water of dissolution. Crowley's commentary emphasizes that Death is among the most positive cards in the deck: it represents the absolute transformation that only Scorpio's depth can achieve."
+  },
+  {
+    "id": "thoth-major-14", "name": "Art", "arcana": "major", "number": 14, "suit": null,
+    "deckType": "Thoth", "symbol": "XIV",
+    "keywords": ["Sagittarius", "the alchemical marriage", "integration", "the rainbow synthesis", "tempering"],
+    "element": "Fire", "astro": "Sagittarius", "kabbala": "Path 25 — Samekh, the Prop",
+    "upright": "Art (not Temperance) is the great alchemical work completed — the combination of opposites into a higher synthesis. The figure in Harris's painting is half-white, half-black, pouring fire into water and water into fire, the cauldron beneath creating the rainbow of complete integration. Something in you or in your situation is being combined that seemed contradictory. The art is in the combining, not in the choosing between.",
+    "reversed": "The integration incomplete, the opposites held separate when synthesis was possible. Art reversed is the refusal of the alchemical marriage — the insistence on keeping fire and water in separate vessels.",
+    "shadow": "The endless refinement that never completes — the alchemist so in love with the process that the work never becomes the gold.",
+    "thoth_lore": "Crowley renamed Temperance 'Art' to emphasize the alchemical nature of the work depicted. The figure in Harris's version has combined the features of the Lovers figure — they are now one being, the white woman and black man merged into a single androgynous figure who pours the elements back and forth. The Hebrew letter Samekh, the Prop, suggests the support that makes the great work possible."
+  },
+  {
+    "id": "thoth-major-15", "name": "The Devil", "arcana": "major", "number": 15, "suit": null,
+    "deckType": "Thoth", "symbol": "XV",
+    "keywords": ["Capricorn", "Pan", "creative energy unbound", "the secret fire", "material force"],
+    "element": "Earth", "astro": "Capricorn", "kabbala": "Path 26 — Ayin, the Eye",
+    "upright": "The Thoth Devil is Pan — not the adversary but the all-pervading creative-material force of nature. The phallus of light at the center is the creative fire in matter. This card is not about bondage or evil but about the raw, generative force that powers the material world, including human sexuality and creative drive. What wild energy have you been calling sin? What force have you been suppressing that was actually sacred?",
+    "reversed": "The material force turned purely toward accumulation or compulsion. The Devil reversed is Pan without the sacred — appetite serving only appetite, the creative fire used only for the self.",
+    "shadow": "Mistaking the symbol for the force — worshipping the form of the creative energy rather than being moved by the energy itself.",
+    "thoth_lore": "Harris painted the Thoth Devil as Pan against a background of creative darkness — the phallic wand of fire, the spiral energy of creation. Crowley's devil is deliberately Thelemic: not the Christian adversary but the principle of creative material energy, joyful and impersonal. The Hebrew letter Ayin means Eye — the organ of direct perception, of seeing without mediation."
+  },
+  {
+    "id": "thoth-major-16", "name": "The Tower", "arcana": "major", "number": 16, "suit": null,
+    "deckType": "Thoth", "symbol": "XVI",
+    "keywords": ["the lightning flash", "Mars", "the House of God", "sudden illumination", "the fall"],
+    "element": "Fire", "astro": "Mars", "kabbala": "Path 27 — Peh, the Mouth",
+    "upright": "The Tower in Thoth is the lightning-struck House of God — the artificial structure built by the ego that must be demolished so that genuine spiritual understanding can enter. The falling figures are not victims but liberations: the Eye of Horus blazes at the top, the lightning flash is divine. What structure — belief, relationship, identity — has grown too rigid and must now fall? The fall is the liberation.",
+    "reversed": "The blow that arrives but is not allowed to liberate — the Tower struck but rebuilt immediately from the same materials. Or the Tower held up by external force after it should have fallen.",
+    "shadow": "Building a more elaborate Tower after the collapse of the first one, having learned only to build better rather than to understand what keeps collapsing.",
+    "thoth_lore": "Harris painted the Thoth Tower in characteristic Thoth style — the Eye of Horus as the lightning source, the Hebrew letter Peh (Mouth) suggesting the divine utterance that destroys false structures. Crowley associated the Tower with the destruction of the ego-constructed universe — the necessary clearing that makes genuine spiritual experience possible. The mouth of God speaks and the Tower falls."
+  },
+  {
+    "id": "thoth-major-17", "name": "The Star", "arcana": "major", "number": 17, "suit": null,
+    "deckType": "Thoth", "symbol": "XVII",
+    "keywords": ["Aquarius", "the goddess Nuit", "infinite space", "hope", "the stellar force"],
+    "element": "Air", "astro": "Aquarius", "kabbala": "Path 28 — Tzaddi, the Fish-hook",
+    "upright": "The Thoth Star is Nuit — the infinite goddess of the night sky, the body of stars that is also the body of possibility. She pours from two cups: the waters of life flowing from her position of absolute freedom. This card speaks to the opening of spiritual awareness beyond the personal, the connection to something vast and impersonal that is nevertheless intimate. The sky is yours. Open into it.",
+    "reversed": "The infinite collapsed into the personal — the Star's energy turned inward and made small. Or the hope that becomes dissociation from what is actually present.",
+    "shadow": "The beautiful elsewhere — using the infinite as an escape from the finite, the sacred sky invoked to avoid the ordinary ground.",
+    "thoth_lore": "Crowley assigned the Star to Tzaddi and Aquarius, and famously wrote 'The Star is Tzaddi' in the Book of the Law, shifting it from its Waite assignment. Harris painted Nuit arched over the card, pouring stellar energy from twin cups. Nuit is the goddess of infinite space in Crowley's Thelema — the one whose body is the night sky, whose law is 'Every man and woman is a star.'"
+  },
+  {
+    "id": "thoth-major-18", "name": "The Moon", "arcana": "major", "number": 18, "suit": null,
+    "deckType": "Thoth", "symbol": "XVIII",
+    "keywords": ["Pisces", "the dark night", "the path through dissolution", "the deep unconscious", "flux"],
+    "element": "Water", "astro": "Pisces", "kabbala": "Path 29 — Qoph, the Back of the Head",
+    "upright": "The Thoth Moon is the path through the underworld — the great dissolution of all fixed forms as consciousness passes through the realm of the deep unconscious. The scarab of Khepri rolls the sun through the darkness; the jackals of Anubis watch from the towers. This is the night-sea journey, the dark night of the soul, the genuine dissolution of fixed identity that precedes genuine rebirth. Go through it, not around it.",
+    "reversed": "The dark journey refused, or the dissolution without the rebirth that should follow. The Moon reversed is the person stuck in the flux, unable to re-cohere once the old forms have dissolved.",
+    "shadow": "The romantic attachment to dissolution — inhabiting the dark night permanently rather than passing through it.",
+    "thoth_lore": "Harris painted the Thoth Moon with extraordinary mythological layering: the scarab of Khepri (the sun that travels through the underworld) at the base, the twin towers of Set and Nephthys, the path winding between them. The Hebrew letter Qoph means 'back of the head' — the unconscious, the part of the self one cannot see. This is the path Pisces walks: through dissolution to rebirth."
+  },
+  {
+    "id": "thoth-major-19", "name": "The Sun", "arcana": "major", "number": 19, "suit": null,
+    "deckType": "Thoth", "symbol": "XIX",
+    "keywords": ["solar consciousness", "the twins", "Ra-Hoor-Khuit", "the lord of light", "return to the day"],
+    "element": "Fire", "astro": "Sun", "kabbala": "Path 30 — Resh, the Head",
+    "upright": "The Thoth Sun is the triumphant return of solar consciousness after the Moon's passage through darkness — Ra-Hoor-Khuit blazing forth, the twin children dancing in the circle of completion. Clarity, energy, the pleasure of existing in full light. The darkness was real and necessary; what emerges from it is not naive but genuinely illuminated. Act from this renewed clarity. The sun asks nothing but that you stand in it.",
+    "reversed": "The glare that blinds rather than illuminates, or the sun refused — the person who cannot accept clarity and warmth because the darkness has become familiar.",
+    "shadow": "Solar inflation — taking the clarity of the sun as personal achievement rather than as the impersonal light that illuminates all things equally.",
+    "thoth_lore": "Harris's Thoth Sun blazes with concentric rings of light, the twin children (Harpocrates and Ra-Hoor-Khuit) dancing before the wall of solar force. Crowley's commentary connects this to the Thelemic New Aeon — the age of Horus in which solar consciousness replaces the dying-and-rising god mythology. The Hebrew letter Resh means Head — the seat of consciousness fully illuminated."
+  },
+  {
+    "id": "thoth-major-20", "name": "The Aeon", "arcana": "major", "number": 20, "suit": null,
+    "deckType": "Thoth", "symbol": "XX",
+    "keywords": ["the new age", "Horus", "cosmic transformation", "the star sapphire", "awakening into the present"],
+    "element": "Fire", "astro": "Pluto/Fire", "kabbala": "Path 31 — Shin, Fire",
+    "upright": "The Aeon (replacing Judgement) is Crowley's most radical departure — the announcement that the old aeon of dying gods is over and the new aeon of solar consciousness has begun. Nuit arches over all; Hadit is the point of awareness at the center; Horus-Ra blazes. This is not the last judgment but the awakening into the present moment of cosmic history. What in your life is ending as an era rather than as an episode?",
+    "reversed": "The failure to receive the new aeon, or the clinging to the old form of things past the point of its completion. The Aeon reversed is hearing the trumpet of transformation and rolling over to sleep.",
+    "shadow": "Cosmic grandiosity applied to ordinary life — using the language of the Aeon to avoid the specific, modest, immediate work of transformation.",
+    "thoth_lore": "The Aeon replaces the Last Judgment of traditional decks with Crowley's Thelemic cosmology: Nuit (the night sky), Hadit (the point of awareness), and Ra-Hoor-Khuit (the crowned and conquering child) represent the new triplicity replacing the Christian Father, Son, and Holy Ghost. The Hebrew letter Shin means Fire — the purifying, transforming force of the new dispensation."
+  },
+  {
+    "id": "thoth-major-21", "name": "The Universe", "arcana": "major", "number": 21, "suit": null,
+    "deckType": "Thoth", "symbol": "XXI",
+    "keywords": ["Saturn", "completion", "the dancing figure", "the matter-spirit unity", "the world dance"],
+    "element": "Earth", "astro": "Saturn", "kabbala": "Path 32 — Tau, the Cross",
+    "upright": "The Universe (the World) is the completion of the great work — the matter-spirit unity realized. The dancing figure at the center holds two wands and is wrapped in the serpent of completion; the four Kerubim watch from the four corners. All is in order. The long work is done. This is not rest but the completion that is itself a kind of dancing — the universe as the dance of matter and spirit together.",
+    "reversed": "Completion refused or incomplete — the work almost done but not quite, the final synthesis held just beyond reach. The Universe reversed is the last step not taken.",
+    "shadow": "The endless revision of the completed work — the inability to declare that what is done is done, the perfection pursued at the cost of completion.",
+    "thoth_lore": "Harris painted the Thoth Universe as one of the most complex and beautiful images in the deck: the dancing figure enclosed in an oval of serpent energy, the four Kerubim of the fixed signs at the corners, Saturn's rings in the background. The Hebrew letter Tau — the Cross — marks the completion of the Hebrew alphabet and the completion of the Fool's journey. Everything that was scattered in the first card is unified here."
+  },
+  {
+    "id": "thoth-wands-ace", "name": "Ace of Wands", "arcana": "minor", "number": 1, "suit": "Wands",
+    "deckType": "Thoth", "symbol": "A", "kabbala": "Kether in Fire",
+    "keywords": ["pure fire", "the root of flame", "the creative spark", "force itself", "initiative"],
+    "element": "Fire", "astro": "Fire signs",
+    "upright": "The Ace of Wands is fire at its most absolute — not a flame but the root of all flame, the creative force before it has taken any particular form. This is the hand of God holding the cosmic fire-wand: pure, initiating, unformed potential in its most vital expression. A creative or spiritual impulse is available to you right now at the most fundamental level. Seize it.",
+    "reversed": "Creative fire not accessed, or fire without fuel. The spark that does not catch."
+  },
+  {
+    "id": "thoth-wands-2", "name": "Two of Wands", "arcana": "minor", "number": 2, "suit": "Wands",
+    "deckType": "Thoth", "symbol": "2", "kabbala": "Chokmah in Fire",
+    "keywords": ["dominion", "the will established", "authority", "the first expression of force"],
+    "element": "Fire", "astro": "Mars in Aries",
+    "upright": "Dominion: the will has declared itself and established its domain. The Two of Wands in Thoth is Mars in Aries — the first expression of creative force into a defined territory. Not the gentle unfolding of potential but the assertive claim of authority. Your creative force has named itself. Now direct it.",
+    "reversed": "The will undermined or the authority claimed without the genuine force to back it. Dominion asserted but hollow."
+  },
+  {
+    "id": "thoth-wands-3", "name": "Three of Wands", "arcana": "minor", "number": 3, "suit": "Wands",
+    "deckType": "Thoth", "symbol": "3", "kabbala": "Binah in Fire",
+    "keywords": ["virtue", "established strength", "the creative will stabilized", "enterprise"],
+    "element": "Fire", "astro": "Sun in Aries",
+    "upright": "Virtue: the Sun in Aries — creative force at its peak expression. The Three of Wands speaks to the establishment of virtue in the ancient sense: the genuine force and excellence of a thing being fully itself. What you are undertaking has genuine strength behind it. The sun backs your fire.",
+    "reversed": "Strength that undermines itself, or genuine capability squandered through poor application."
+  },
+  {
+    "id": "thoth-wands-4", "name": "Four of Wands", "arcana": "minor", "number": 4, "suit": "Wands",
+    "deckType": "Thoth", "symbol": "4", "kabbala": "Chesed in Fire",
+    "keywords": ["completion", "perfection", "the work fulfilled", "Venus in Aries"],
+    "element": "Fire", "astro": "Venus in Aries",
+    "upright": "Completion: Venus in Aries brings the creative fire to a moment of beautiful resolution. The Four of Wands signals completion and the satisfaction of a thing well done. The structure is stable; the work has a genuine form. Enjoy the moment of arrival before the next beginning.",
+    "reversed": "Completion blocked, or the satisfaction of completion withheld by perfectionism."
+  },
+  {
+    "id": "thoth-wands-5", "name": "Five of Wands", "arcana": "minor", "number": 5, "suit": "Wands",
+    "deckType": "Thoth", "symbol": "5", "kabbala": "Geburah in Fire",
+    "keywords": ["strife", "conflict", "the testing of strength", "Saturn in Leo"],
+    "element": "Fire", "astro": "Saturn in Leo",
+    "upright": "Strife: Saturn constraining Leo's fire creates genuine conflict and the testing of strength. The Five of Wands is honest — this is difficult, contentious, and demanding. But strife is also what tests and reveals genuine strength. Engage with clarity rather than resentment.",
+    "reversed": "Conflict avoided in ways that allow the underlying tension to fester. Or strife that has become purely destructive without any testing value."
+  },
+  {
+    "id": "thoth-wands-6", "name": "Six of Wands", "arcana": "minor", "number": 6, "suit": "Wands",
+    "deckType": "Thoth", "symbol": "6", "kabbala": "Tiphareth in Fire",
+    "keywords": ["victory", "Jupiter in Leo", "the crown of achievement", "triumph"],
+    "element": "Fire", "astro": "Jupiter in Leo",
+    "upright": "Victory: Jupiter expands Leo's fire into genuine triumph. The work has succeeded; the vision has been achieved. Accept the victory without diminishing it. You have done this well.",
+    "reversed": "Victory qualified by pride that can't be sustained, or the triumph that turns out to be hollow."
+  },
+  {
+    "id": "thoth-wands-7", "name": "Seven of Wands", "arcana": "minor", "number": 7, "suit": "Wands",
+    "deckType": "Thoth", "symbol": "7", "kabbala": "Netzach in Fire",
+    "keywords": ["valour", "the maintained position", "Mars in Leo", "courage under pressure"],
+    "element": "Fire", "astro": "Mars in Leo",
+    "upright": "Valour: Mars in Leo — the courage to hold the high ground when challenged. The Seven of Wands asks whether you have the genuine fiery courage to maintain your position against opposition. You have it. Stand.",
+    "reversed": "Courage collapsed into reactivity, or the position abandoned prematurely under pressure."
+  },
+  {
+    "id": "thoth-wands-8", "name": "Eight of Wands", "arcana": "minor", "number": 8, "suit": "Wands",
+    "deckType": "Thoth", "symbol": "8", "kabbala": "Hod in Fire",
+    "keywords": ["swiftness", "Mercury in Sagittarius", "rapid movement", "the message arrives"],
+    "element": "Fire", "astro": "Mercury in Sagittarius",
+    "upright": "Swiftness: Mercury in Sagittarius — rapid, directed movement toward the target. Things are moving fast and in the right direction. Don't slow down. The message is on its way; the arrow is in the air.",
+    "reversed": "Rapid movement in the wrong direction, or speed without accuracy."
+  },
+  {
+    "id": "thoth-wands-9", "name": "Nine of Wands", "arcana": "minor", "number": 9, "suit": "Wands",
+    "deckType": "Thoth", "symbol": "9", "kabbala": "Yesod in Fire",
+    "keywords": ["strength", "Moon in Sagittarius", "the final reserve", "endurance"],
+    "element": "Fire", "astro": "Moon in Sagittarius",
+    "upright": "Strength: the Moon's receptivity tempers Sagittarian fire into endurance. The Nine of Wands is the strength of someone who has already faced considerable challenge and still stands. Not fresh strength but the deep reserve. You have more left than you think.",
+    "reversed": "Exhaustion that goes beyond endurance, or the strength that is actually rigidity — refusing to adapt when adaptation would preserve more."
+  },
+  {
+    "id": "thoth-wands-10", "name": "Ten of Wands", "arcana": "minor", "number": 10, "suit": "Wands",
+    "deckType": "Thoth", "symbol": "10", "kabbala": "Malkuth in Fire",
+    "keywords": ["oppression", "Saturn in Sagittarius", "force misapplied", "the crushing weight"],
+    "element": "Fire", "astro": "Saturn in Sagittarius",
+    "upright": "Oppression: Saturn in Sagittarius — fire constrained past the point of generativity. The creative force has been so overburdened, so over-applied, that it has become its own obstacle. What must be put down? The vision has become a millstone.",
+    "reversed": "The burden finally released — or the oppression continued because putting it down would require admitting how wrong the direction was."
+  },
+  {
+    "id": "thoth-cups-ace", "name": "Ace of Cups", "arcana": "minor", "number": 1, "suit": "Cups",
+    "deckType": "Thoth", "symbol": "A", "kabbala": "Kether in Water",
+    "keywords": ["pure water", "the root of feeling", "the Holy Grail", "love potential", "the overflowing"],
+    "element": "Water", "astro": "Water signs",
+    "upright": "The Ace of Cups is water at its most absolute — the Holy Grail, the vessel of pure love-force before it becomes any particular emotion. What is being offered here is the root of all feeling: genuine receptivity, genuine capacity to give and receive love. Open to it.",
+    "reversed": "The cup empty or inverted — the capacity for genuine feeling blocked or refusing to be offered."
+  },
+  {
+    "id": "thoth-cups-2", "name": "Two of Cups", "arcana": "minor", "number": 2, "suit": "Cups",
+    "deckType": "Thoth", "symbol": "2", "kabbala": "Chokmah in Water",
+    "keywords": ["love", "Venus in Cancer", "the meeting of waters", "mutual feeling"],
+    "element": "Water", "astro": "Venus in Cancer",
+    "upright": "Love: Venus in Cancer — the purest expression of emotional meeting. Two currents of feeling flow toward each other and recognize each other. This is genuine mutual love, the beginning of deep emotional connection.",
+    "reversed": "Love refused or blocked — the meeting that doesn't happen because one or both sides are not genuinely open."
+  },
+  {
+    "id": "thoth-cups-3", "name": "Three of Cups", "arcana": "minor", "number": 3, "suit": "Cups",
+    "deckType": "Thoth", "symbol": "3", "kabbala": "Binah in Water",
+    "keywords": ["abundance", "Mercury in Cancer", "emotional richness", "the flowing joy"],
+    "element": "Water", "astro": "Mercury in Cancer",
+    "upright": "Abundance: Mercury in Cancer — emotional richness, the joy that overflows. The Three of Cups in Thoth speaks to the genuine fullness of feeling: pleasure, celebration, friendship, the abundance that arises when love is given room to expand.",
+    "reversed": "Emotional excess that becomes overwhelming, or the abundance that cannot be appreciated."
+  },
+  {
+    "id": "thoth-cups-4", "name": "Four of Cups", "arcana": "minor", "number": 4, "suit": "Cups",
+    "deckType": "Thoth", "symbol": "4", "kabbala": "Chesed in Water",
+    "keywords": ["luxury", "Moon in Cancer", "emotional satisfaction", "the pleasure that blunts"],
+    "element": "Water", "astro": "Moon in Cancer",
+    "upright": "Luxury: the Moon at home in Cancer — deep emotional satisfaction, almost too much ease. The Four of Cups speaks to a pleasure that is real but that risks becoming self-indulgent. Enjoy but don't drown.",
+    "reversed": "Luxury become numbness, or the comfort that has eroded the capacity to feel anything sharply."
+  },
+  {
+    "id": "thoth-cups-5", "name": "Five of Cups", "arcana": "minor", "number": 5, "suit": "Cups",
+    "deckType": "Thoth", "symbol": "5", "kabbala": "Geburah in Water",
+    "keywords": ["disappointment", "Mars in Scorpio", "loss", "the cup spilled"],
+    "element": "Water", "astro": "Mars in Scorpio",
+    "upright": "Disappointment: Mars in Scorpio turns water violent — the cup has been knocked over, the hope has not been realized. The loss is genuine. Acknowledge it clearly rather than minimizing it. But two cups are still standing.",
+    "reversed": "Disappointment prolonged past the point of purpose, or the loss not acknowledged at all."
+  },
+  {
+    "id": "thoth-cups-6", "name": "Six of Cups", "arcana": "minor", "number": 6, "suit": "Cups",
+    "deckType": "Thoth", "symbol": "6", "kabbala": "Tiphareth in Water",
+    "keywords": ["pleasure", "Sun in Scorpio", "the past made sweet", "harmony of feeling"],
+    "element": "Water", "astro": "Sun in Scorpio",
+    "upright": "Pleasure: the Sun illuminating Scorpio's depths — genuine emotional pleasure and warmth. The Six of Cups speaks to the simple satisfaction of being in the right emotional relationship with your experience: the sweetness of memory, the pleasure of present connection.",
+    "reversed": "Pleasure that is nostalgic avoidance, or sentiment used to escape the present."
+  },
+  {
+    "id": "thoth-cups-7", "name": "Seven of Cups", "arcana": "minor", "number": 7, "suit": "Cups",
+    "deckType": "Thoth", "symbol": "7", "kabbala": "Netzach in Water",
+    "keywords": ["debauch", "Venus in Scorpio", "corruption of the vision", "intoxication"],
+    "element": "Water", "astro": "Venus in Scorpio",
+    "upright": "Debauch: Venus in Scorpio — desire intensified past the point of health into something that consumes. The cups are full but something has gone wrong with the water. Fantasy, addiction, the vision that has become intoxication. Look clearly at what you are actually consuming.",
+    "reversed": "Recovery from the debauch, or the debauch so normalized that 'reversed' looks like the problem."
+  },
+  {
+    "id": "thoth-cups-8", "name": "Eight of Cups", "arcana": "minor", "number": 8, "suit": "Cups",
+    "deckType": "Thoth", "symbol": "8", "kabbala": "Hod in Water",
+    "keywords": ["indolence", "Saturn in Pisces", "stagnation of feeling", "the pool that has gone still"],
+    "element": "Water", "astro": "Saturn in Pisces",
+    "upright": "Indolence: Saturn in Pisces — the feeling-life gone quiet past the point of rest into stagnation. The water has stopped flowing; the cups are abandoned. Something needs to be stirred or moved. The emotional life has settled into an avoidance of genuine engagement.",
+    "reversed": "A stirring from the indolence, or indolence so complete that even recognition of it is blocked."
+  },
+  {
+    "id": "thoth-cups-9", "name": "Nine of Cups", "arcana": "minor", "number": 9, "suit": "Cups",
+    "deckType": "Thoth", "symbol": "9", "kabbala": "Yesod in Water",
+    "keywords": ["happiness", "Jupiter in Pisces", "the wish fulfilled", "material joy"],
+    "element": "Water", "astro": "Jupiter in Pisces",
+    "upright": "Happiness: Jupiter in Pisces — the genuine satisfaction of having what one needs. The Nine of Cups is the wish fulfilled, the contentment that is not hollow but real. Enjoy this without immediately seeking the next thing.",
+    "reversed": "Happiness mistaken for completion, or contentment that prevents necessary growth."
+  },
+  {
+    "id": "thoth-cups-10", "name": "Ten of Cups", "arcana": "minor", "number": 10, "suit": "Cups",
+    "deckType": "Thoth", "symbol": "10", "kabbala": "Malkuth in Water",
+    "keywords": ["satiety", "Mars in Pisces", "the fullness that numbs", "excess of the good"],
+    "element": "Water", "astro": "Mars in Pisces",
+    "upright": "Satiety: Mars in Pisces — the cups have been filled past the point of pleasure into excess. The emotional life has been over-fed. What needs to be released, emptied, allowed to become genuinely hungry again before the next filling?",
+    "reversed": "The over-fullness recognized and beginning to release — or the satiety refused in favor of further indulgence."
+  },
+  {
+    "id": "thoth-swords-ace", "name": "Ace of Swords", "arcana": "minor", "number": 1, "suit": "Swords",
+    "deckType": "Thoth", "symbol": "A", "kabbala": "Kether in Air",
+    "keywords": ["pure air", "the root of mind", "the sword of truth", "the invoked force"],
+    "element": "Air", "astro": "Air signs",
+    "upright": "The Ace of Swords is air at its most absolute — the sword of pure mind, the divine will cutting through all illusion. This is the most powerful and dangerous of the aces: invoked correctly, it cuts to truth; invoked incorrectly, it turns on the invoker. The clarity available now is absolute. Use it with absolute care.",
+    "reversed": "The sword turned on its bearer, or the clarity refused because what it would cut is something the ego wants to keep."
+  },
+  {
+    "id": "thoth-swords-2", "name": "Two of Swords", "arcana": "minor", "number": 2, "suit": "Swords",
+    "deckType": "Thoth", "symbol": "2", "kabbala": "Chokmah in Air",
+    "keywords": ["peace", "Moon in Libra", "the truce", "the balanced blades"],
+    "element": "Air", "astro": "Moon in Libra",
+    "upright": "Peace: Moon in Libra — the blades held in perfect balance, the temporary truce of opposites. This peace is real but it is precarious — held by perfect tension rather than genuine resolution. Appreciate the stillness while it lasts.",
+    "reversed": "The truce broken, or the peace maintained so rigidly that genuine movement becomes impossible."
+  },
+  {
+    "id": "thoth-swords-3", "name": "Three of Swords", "arcana": "minor", "number": 3, "suit": "Swords",
+    "deckType": "Thoth", "symbol": "3", "kabbala": "Binah in Air",
+    "keywords": ["sorrow", "Saturn in Libra", "the heart pierced", "grief acknowledged"],
+    "element": "Air", "astro": "Saturn in Libra",
+    "upright": "Sorrow: Saturn in Libra — the heart genuinely pierced, the grief that must be acknowledged rather than managed. The Three of Swords in Thoth is honest about pain without dramatizing it. Something has cut through. The sorrow is real. Feel it.",
+    "reversed": "Sorrow refused or performed rather than genuinely felt. The blades avoided by looking away."
+  },
+  {
+    "id": "thoth-swords-4", "name": "Four of Swords", "arcana": "minor", "number": 4, "suit": "Swords",
+    "deckType": "Thoth", "symbol": "4", "kabbala": "Chesed in Air",
+    "keywords": ["truce", "Jupiter in Libra", "rest from conflict", "the temporary ceasefire"],
+    "element": "Air", "astro": "Jupiter in Libra",
+    "upright": "Truce: Jupiter in Libra — the expansion of the peace that the Two of Swords held tentatively. A breathing space in the conflict, a genuine rest from mental struggle. Use this respite to recover rather than to plan the next offensive.",
+    "reversed": "Truce broken prematurely, or rest used to avoid the genuine reckoning that the conflict requires."
+  },
+  {
+    "id": "thoth-swords-5", "name": "Five of Swords", "arcana": "minor", "number": 5, "suit": "Swords",
+    "deckType": "Thoth", "symbol": "5", "kabbala": "Geburah in Air",
+    "keywords": ["defeat", "Venus in Aquarius", "the battle lost", "humiliation"],
+    "element": "Air", "astro": "Venus in Aquarius",
+    "upright": "Defeat: Venus in Aquarius — the love of the ideal meeting the reality of loss. The Five of Swords speaks to genuine defeat, the situation where the battle has been lost and must be acknowledged as such. The defeat is not permanent but it is real. Acknowledge it clearly and move with that knowledge.",
+    "reversed": "Defeat denied, or the defeat so complete that even the acknowledgment feels impossible."
+  },
+  {
+    "id": "thoth-swords-6", "name": "Six of Swords", "arcana": "minor", "number": 6, "suit": "Swords",
+    "deckType": "Thoth", "symbol": "6", "kabbala": "Tiphareth in Air",
+    "keywords": ["science", "Mercury in Aquarius", "the balanced mind", "earned understanding"],
+    "element": "Air", "astro": "Mercury in Aquarius",
+    "upright": "Science: Mercury in Aquarius — the mind at its clearest and most balanced, having passed through the storms of the lower numbers into genuine earned understanding. This is intellectual clarity earned through experience. The swords are in perfect order.",
+    "reversed": "Clarity that is actually rationalization, or the scientific mind become its own prison."
+  },
+  {
+    "id": "thoth-swords-7", "name": "Seven of Swords", "arcana": "minor", "number": 7, "suit": "Swords",
+    "deckType": "Thoth", "symbol": "7", "kabbala": "Netzach in Air",
+    "keywords": ["futility", "Moon in Aquarius", "the unstable mind", "theft of victory"],
+    "element": "Air", "astro": "Moon in Aquarius",
+    "upright": "Futility: Moon in Aquarius — the instability of lunar feeling in the sign of abstract ideals. The Seven of Swords speaks to effort that cannot succeed given its current basis, or the clever action that defeats its own purpose. Examine whether what you're pursuing is actually achievable with your current approach.",
+    "reversed": "Futility recognized and the approach changed, or futility so accepted that genuine effort stops."
+  },
+  {
+    "id": "thoth-swords-8", "name": "Eight of Swords", "arcana": "minor", "number": 8, "suit": "Swords",
+    "deckType": "Thoth", "symbol": "8", "kabbala": "Hod in Air",
+    "keywords": ["interference", "Jupiter in Gemini", "the crossed purposes", "plans disrupted"],
+    "element": "Air", "astro": "Jupiter in Gemini",
+    "upright": "Interference: Jupiter in Gemini — the expansion of Gemini's dualities creates interference patterns, plans crossing each other and cancelling out. Something external (or your own divided mind) is disrupting the work. Identify the interference before trying to push through it.",
+    "reversed": "Interference cleared, or interference ignored until the situation degrades further."
+  },
+  {
+    "id": "thoth-swords-9", "name": "Nine of Swords", "arcana": "minor", "number": 9, "suit": "Swords",
+    "deckType": "Thoth", "symbol": "9", "kabbala": "Yesod in Air",
+    "keywords": ["cruelty", "Mars in Gemini", "the mind turned on itself", "despair"],
+    "element": "Air", "astro": "Mars in Gemini",
+    "upright": "Cruelty: Mars in Gemini — the sharp mind deployed against the self or against others without mercy. The Nine of Swords is the mind's capacity for cruelty at its most acute: the 3am thoughts, the relentless self-criticism, the cruel clarity that sees only what is worst. The mind is capable of extraordinary violence. Notice where yours is being turned.",
+    "reversed": "The cruelty recognized and beginning to be redirected, or the cruelty externalized — turned outward instead of inward."
+  },
+  {
+    "id": "thoth-swords-10", "name": "Ten of Swords", "arcana": "minor", "number": 10, "suit": "Swords",
+    "deckType": "Thoth", "symbol": "10", "kabbala": "Malkuth in Air",
+    "keywords": ["ruin", "Sun in Gemini", "the final cut", "total dissolution of the mental structure"],
+    "element": "Air", "astro": "Sun in Gemini",
+    "upright": "Ruin: the Sun in Gemini brings its full illuminating force to bear on what has been building through the swords' progression — and it is ruin. The structure of thought has collapsed entirely. But Malkuth, the earth, receives what falls; the end of the swords is the beginning of manifestation in a different form. The ruin is complete. That means something genuinely new can now begin.",
+    "reversed": "Ruin that cannot be acknowledged, or the structural collapse that was somehow avoided when it should have happened."
+  },
+  {
+    "id": "thoth-disks-ace", "name": "Ace of Disks", "arcana": "minor", "number": 1, "suit": "Disks",
+    "deckType": "Thoth", "symbol": "A", "kabbala": "Kether in Earth",
+    "keywords": ["pure earth", "the root of matter", "the coin of the realm", "material potential"],
+    "element": "Earth", "astro": "Earth signs",
+    "upright": "The Ace of Disks is earth at its most absolute — the root of all material manifestation, the seed of physical reality. What is being offered here is the potential for genuine material foundation: work, health, stability, or the physical beginning of something significant. Receive this grounded gift.",
+    "reversed": "Material potential blocked or refused — the foundation not built, the seed not planted."
+  },
+  {
+    "id": "thoth-disks-2", "name": "Two of Disks", "arcana": "minor", "number": 2, "suit": "Disks",
+    "deckType": "Thoth", "symbol": "2", "kabbala": "Chokmah in Earth",
+    "keywords": ["change", "Jupiter in Capricorn", "the perpetual motion", "balancing forces"],
+    "element": "Earth", "astro": "Jupiter in Capricorn",
+    "upright": "Change: Jupiter in Capricorn — the practical management of material forces in motion. The Two of Disks is the juggler, the person who keeps multiple things in motion through skillful attention. Change is constant; the work is to maintain the flow rather than to freeze any one configuration.",
+    "reversed": "The juggling act that has broken down, or the resistance to the natural flow of material change."
+  },
+  {
+    "id": "thoth-disks-3", "name": "Three of Disks", "arcana": "minor", "number": 3, "suit": "Disks",
+    "deckType": "Thoth", "symbol": "3", "kabbala": "Binah in Earth",
+    "keywords": ["work", "Mars in Capricorn", "the craft", "material skill"],
+    "element": "Earth", "astro": "Mars in Capricorn",
+    "upright": "Work: Mars in Capricorn — the directed force of Mars in the most disciplined earth sign creates genuine skilled work. This is the craftsperson at the bench, the artisan who has developed real competence. The work is real, the skill is real. Apply both.",
+    "reversed": "Work interrupted, or craft performed without genuine skill — the appearance of work without the substance."
+  },
+  {
+    "id": "thoth-disks-4", "name": "Four of Disks", "arcana": "minor", "number": 4, "suit": "Disks",
+    "deckType": "Thoth", "symbol": "4", "kabbala": "Chesed in Earth",
+    "keywords": ["power", "Sun in Capricorn", "the stronghold", "consolidated resources"],
+    "element": "Earth", "astro": "Sun in Capricorn",
+    "upright": "Power: the Sun in Capricorn — consolidated material power, the stronghold built and defended. The Four of Disks speaks to the genuine achievement of material security. But the fortress and the prison are built from the same materials. Hold what you have wisely.",
+    "reversed": "Power hoarded past the point of usefulness, or the stronghold that has become an isolation."
+  },
+  {
+    "id": "thoth-disks-5", "name": "Five of Disks", "arcana": "minor", "number": 5, "suit": "Disks",
+    "deckType": "Thoth", "symbol": "5", "kabbala": "Geburah in Earth",
+    "keywords": ["worry", "Mercury in Taurus", "material anxiety", "the concern about resources"],
+    "element": "Earth", "astro": "Mercury in Taurus",
+    "upright": "Worry: Mercury's anxious mind in practical Taurus — the concern about material resources that is real but not necessarily proportionate. The Five of Disks speaks to genuine material difficulty, or to the anxiety about material matters that exceeds the actual situation. Assess accurately.",
+    "reversed": "Worry that has become paralysis, or material concern used to avoid emotional engagement."
+  },
+  {
+    "id": "thoth-disks-6", "name": "Six of Disks", "arcana": "minor", "number": 6, "suit": "Disks",
+    "deckType": "Thoth", "symbol": "6", "kabbala": "Tiphareth in Earth",
+    "keywords": ["success", "Moon in Taurus", "material fulfillment", "the gifts flowing"],
+    "element": "Earth", "astro": "Moon in Taurus",
+    "upright": "Success: Moon in Taurus — material fulfillment, the gifts of the earth flowing in their proper channels. The Six of Disks speaks to genuine material success that is also generous — the success that enables giving. Receive and distribute.",
+    "reversed": "Success qualified by stinginess, or the gift withheld when it should have flowed."
+  },
+  {
+    "id": "thoth-disks-7", "name": "Seven of Disks", "arcana": "minor", "number": 7, "suit": "Disks",
+    "deckType": "Thoth", "symbol": "7", "kabbala": "Netzach in Earth",
+    "keywords": ["failure", "Saturn in Taurus", "the blighted crop", "work unrewarded"],
+    "element": "Earth", "astro": "Saturn in Taurus",
+    "upright": "Failure: Saturn constraining Taurus's productivity — the work that has not yielded what it should have, the crop that didn't come in as expected. The Seven of Disks is honest about the failure of practical efforts. Assess clearly what went wrong before replanting.",
+    "reversed": "Failure denied, or the failed strategy repeated in the hope of different results."
+  },
+  {
+    "id": "thoth-disks-8", "name": "Eight of Disks", "arcana": "minor", "number": 8, "suit": "Disks",
+    "deckType": "Thoth", "symbol": "8", "kabbala": "Hod in Earth",
+    "keywords": ["prudence", "Sun in Virgo", "practical wisdom", "the careful craftsperson"],
+    "element": "Earth", "astro": "Sun in Virgo",
+    "upright": "Prudence: the Sun in Virgo — practical wisdom applied with precision. The Eight of Disks speaks to the careful, methodical approach to material work that produces real results. This is not caution from fear but the practical intelligence of someone who knows how things actually work. Apply it carefully.",
+    "reversed": "Prudence become timidity, or practical wisdom overthinking what needs simply to be done."
+  },
+  {
+    "id": "thoth-disks-9", "name": "Nine of Disks", "arcana": "minor", "number": 9, "suit": "Disks",
+    "deckType": "Thoth", "symbol": "9", "kabbala": "Yesod in Earth",
+    "keywords": ["gain", "Venus in Virgo", "material accomplishment", "the good result"],
+    "element": "Earth", "astro": "Venus in Virgo",
+    "upright": "Gain: Venus in Virgo — the genuine material gain that comes from the careful, beautiful attention to practical work. The Nine of Disks speaks to the material reward of work well done, the accomplishment of something genuinely good in the material world. Acknowledge this.",
+    "reversed": "Gain that is less than expected, or material accomplishment undermined by anxiety about its adequacy."
+  },
+  {
+    "id": "thoth-disks-10", "name": "Ten of Disks", "arcana": "minor", "number": 10, "suit": "Disks",
+    "deckType": "Thoth", "symbol": "10", "kabbala": "Malkuth in Earth",
+    "keywords": ["wealth", "Mercury in Virgo", "the complete material manifestation", "the inheritance"],
+    "element": "Earth", "astro": "Mercury in Virgo",
+    "upright": "Wealth: Mercury in Virgo — the complete material manifestation, the legacy built. The Ten of Disks is the fullness of earthly life: the accumulated work, the family inheritance, the material security that spans generations. This is the completion of the material suit in Malkuth, the kingdom — the earth itself, made fully into home.",
+    "reversed": "Material accumulation without meaning, or the wealth that has no generational continuity."
+  },
+  {
+    "id": "thoth-wands-princess", "name": "Princess of Wands", "arcana": "court", "number": null, "suit": "Wands",
+    "deckType": "Thoth", "symbol": "Ps",
+    "keywords": ["creative spark", "the beginning of fire", "impetuous", "the new project", "earthly fire"],
+    "element": "Earth of Fire", "astro": "Aries/Leo/Sagittarius",
+    "upright": "The Princess of Wands (Page in RW) is the first manifestation of fire in the physical world — enthusiastic, impetuous, full of creative impulse. She carries the wand like a torch and doesn't always know where she's going. The creative energy is real; the direction is still forming. Begin.",
+    "reversed": "Creative impulse scattered before it can gather into anything, or impetuous action creating chaos instead of movement."
+  },
+  {
+    "id": "thoth-wands-prince", "name": "Prince of Wands", "arcana": "court", "number": null, "suit": "Wands",
+    "deckType": "Thoth", "symbol": "Pr",
+    "keywords": ["directed fire", "the swift one", "Air of Fire", "passionate action", "the adventurer"],
+    "element": "Air of Fire", "astro": "Aries",
+    "upright": "The Prince of Wands (Knight in RW) is fire in motion — swift, passionate, directed outward with tremendous force. He is the adventurer, the one who acts without excessive deliberation because action is what he is. The fire is moving. Get clear on the direction and trust the momentum.",
+    "reversed": "Directed fire without wisdom — the passionate action that burns bridges. Or the fire that has lost its direction and is simply consuming."
+  },
+  {
+    "id": "thoth-wands-queen", "name": "Queen of Wands", "arcana": "court", "number": null, "suit": "Wands",
+    "deckType": "Thoth", "symbol": "Q",
+    "keywords": ["Water of Fire", "the woman who commands fire", "magnetic authority", "warm leadership"],
+    "element": "Water of Fire", "astro": "Aries/Pisces",
+    "upright": "The Queen of Wands is the magnetic authority of the creative realm — the one who commands fire through genuine presence rather than force. She is warm, generous, magnetically attractive, and absolutely certain of herself. Lead from that certainty.",
+    "reversed": "The commanding presence become domineering, or the magnetic authority used to draw others in for the Queen's benefit rather than theirs."
+  },
+  {
+    "id": "thoth-wands-knight", "name": "Knight of Wands", "arcana": "court", "number": null, "suit": "Wands",
+    "deckType": "Thoth", "symbol": "Kn",
+    "keywords": ["Fire of Fire", "the true king", "generosity", "nobility", "the creative sovereign"],
+    "element": "Fire of Fire", "astro": "Leo",
+    "upright": "The Knight of Wands (King in RW) is fire in its fullest sovereignty — noble, generous, the creative king at the height of his power. This is the true Fire: passionate but controlled, generous, magnanimous. Lead with this energy and others will follow gladly.",
+    "reversed": "The noble fire turned to pride and arrogance — the king who consumes rather than illuminates."
+  },
+  {
+    "id": "thoth-cups-princess", "name": "Princess of Cups", "arcana": "court", "number": null, "suit": "Cups",
+    "deckType": "Thoth", "symbol": "Ps",
+    "keywords": ["Earth of Water", "the dreamer", "tender feeling", "the first opening of the heart", "vision"],
+    "element": "Earth of Water", "astro": "Water signs",
+    "upright": "The Princess of Cups is the first tender opening of the feeling life — the dreamer who hears what is beneath the surface, who receives visions and intuitions before the rational mind knows what to do with them. Something is being received at the feeling level. Attend to it.",
+    "reversed": "Feeling too tender to survive contact with the world, or the dreaminess that cannot translate into anything concrete."
+  },
+  {
+    "id": "thoth-cups-prince", "name": "Prince of Cups", "arcana": "court", "number": null, "suit": "Cups",
+    "deckType": "Thoth", "symbol": "Pr",
+    "keywords": ["Air of Water", "the subtle seeker", "the inner work", "emotional intelligence"],
+    "element": "Air of Water", "astro": "Scorpio/Libra",
+    "upright": "The Prince of Cups is the emotional intelligence made subtle and active — the one who navigates the feeling world with both depth and grace. He pursues genuine inner transformation. The emotional work is real and requires this kind of careful, sustained attention.",
+    "reversed": "Emotional intelligence deployed for manipulation, or the subtlety become evasiveness."
+  },
+  {
+    "id": "thoth-cups-queen", "name": "Queen of Cups", "arcana": "court", "number": null, "suit": "Cups",
+    "deckType": "Thoth", "symbol": "Q",
+    "keywords": ["Water of Water", "the deepest feeling", "the empathic sovereign", "reflective consciousness"],
+    "element": "Water of Water", "astro": "Cancer",
+    "upright": "The Queen of Cups is the deepest water — pure reflective consciousness, the empathic sovereign who holds the feeling of everything around her and is not overwhelmed. She sits with what is rather than trying to fix it. This kind of presence is rare and genuinely powerful.",
+    "reversed": "Empathy become enmeshment, or the reflective consciousness turned inward so completely it can no longer function in relation to others."
+  },
+  {
+    "id": "thoth-cups-knight", "name": "Knight of Cups", "arcana": "court", "number": null, "suit": "Cups",
+    "deckType": "Thoth", "symbol": "Kn",
+    "keywords": ["Fire of Water", "the emotional king", "passionate depth", "the quest for the Grail"],
+    "element": "Fire of Water", "astro": "Scorpio/Sagittarius",
+    "upright": "The Knight of Cups is the Grail knight — fire beneath water, passionate depth, the one who pursues the sacred feeling-quest with genuine devotion. The emotional life has been claimed as a terrain of genuine spiritual work. This is the highest expression of the Cups suit.",
+    "reversed": "The Grail quest become obsession, or passionate depth turned to consuming intensity."
+  },
+  {
+    "id": "thoth-swords-princess", "name": "Princess of Swords", "arcana": "court", "number": null, "suit": "Swords",
+    "deckType": "Thoth", "symbol": "Ps",
+    "keywords": ["Earth of Air", "the young mind", "fierce clarity", "the first cut"],
+    "element": "Earth of Air", "astro": "Air signs",
+    "upright": "The Princess of Swords is the young mind claiming its cutting edge — fierce, direct, sometimes brutal in her clarity. She will say the thing that needs to be said. The sword is new in her hand and she hasn't yet learned all the contexts in which not to use it. The clarity is real; use it with awareness.",
+    "reversed": "Cruelty in the name of clarity, or the fierce mind used to wound rather than to illuminate."
+  },
+  {
+    "id": "thoth-swords-prince", "name": "Prince of Swords", "arcana": "court", "number": null, "suit": "Swords",
+    "deckType": "Thoth", "symbol": "Pr",
+    "keywords": ["Air of Air", "the driven thinker", "the intellectual storm", "speed of mind"],
+    "element": "Air of Air", "astro": "Gemini/Aquarius",
+    "upright": "The Prince of Swords is the most purely intellectual figure in the deck — Air of Air, thought at its most driven and relentless. He slices through every obstacle with his mind and does not stop to consider the landscape he's crossed. The intellectual force is tremendous. Use it surgically.",
+    "reversed": "Intellectual force without any grounding — the brilliant mind that has lost contact with reality, human feeling, or the consequences of its own cuts."
+  },
+  {
+    "id": "thoth-swords-queen", "name": "Queen of Swords", "arcana": "court", "number": null, "suit": "Swords",
+    "deckType": "Thoth", "symbol": "Q",
+    "keywords": ["Water of Air", "clear seeing", "the undeceived", "the one who has known loss"],
+    "element": "Water of Air", "astro": "Libra/Virgo",
+    "upright": "The Queen of Swords is the one who has seen through everything — who cannot be deceived because she has been through the deception and out the other side. Her clarity comes from genuine experience of loss and sorrow, and from having chosen truth over comfort. She is not cold but honest. See clearly.",
+    "reversed": "The clear seeing become bitterness, or the truth-telling become cruelty."
+  },
+  {
+    "id": "thoth-swords-knight", "name": "Knight of Swords", "arcana": "court", "number": null, "suit": "Swords",
+    "deckType": "Thoth", "symbol": "Kn",
+    "keywords": ["Fire of Air", "the warrior of mind", "relentless", "the blade fully extended"],
+    "element": "Fire of Air", "astro": "Aquarius/Capricorn",
+    "upright": "The Knight of Swords is Fire of Air — the most aggressive and relentless energy in the deck. He rides into battle with total commitment, his blade extended, his direction absolute. The force here is extraordinary. The wisdom required to wield it is equally extraordinary.",
+    "reversed": "Aggression without wisdom — the blade extended in every direction, cutting allies as readily as enemies."
+  },
+  {
+    "id": "thoth-disks-princess", "name": "Princess of Disks", "arcana": "court", "number": null, "suit": "Disks",
+    "deckType": "Thoth", "symbol": "Ps",
+    "keywords": ["Earth of Earth", "the new worker", "the grounded beginner", "tending the material"],
+    "element": "Earth of Earth", "astro": "Earth signs",
+    "upright": "The Princess of Disks is Earth of Earth — the most grounded of all the court cards, the one who tends the material world with genuine care and patience. She is at the beginning of the practical work and fully committed to it. Plant carefully; tend faithfully.",
+    "reversed": "Material attachment without productivity, or the grounded energy become stagnation."
+  },
+  {
+    "id": "thoth-disks-prince", "name": "Prince of Disks", "arcana": "court", "number": null, "suit": "Disks",
+    "deckType": "Thoth", "symbol": "Pr",
+    "keywords": ["Air of Earth", "the patient builder", "methodical progress", "slow force"],
+    "element": "Air of Earth", "astro": "Taurus",
+    "upright": "The Prince of Disks is the patient, methodical builder — Air of Earth, the mind applied to material progress. He is slow but inexorable. The work he does is done well and lasts. You have this quality available right now. Apply it consistently over time.",
+    "reversed": "Patience become inertia, or methodical progress become an avoidance of necessary change."
+  },
+  {
+    "id": "thoth-disks-queen", "name": "Queen of Disks", "arcana": "court", "number": null, "suit": "Disks",
+    "deckType": "Thoth", "symbol": "Q",
+    "keywords": ["Water of Earth", "the nourishing sovereign", "practical abundance", "the garden"],
+    "element": "Water of Earth", "astro": "Capricorn/Sagittarius",
+    "upright": "The Queen of Disks is the nourishing sovereign of the material world — the one who tends the garden, who knows how to make abundance happen through practical intelligence and genuine care. She is generous with what she has grown. Nourish what needs nourishing.",
+    "reversed": "Material nourishment become material control, or the generous queen who has exhausted herself giving without receiving."
+  },
+  {
+    "id": "thoth-disks-knight", "name": "Knight of Disks", "arcana": "court", "number": null, "suit": "Disks",
+    "deckType": "Thoth", "symbol": "Kn",
+    "keywords": ["Fire of Earth", "the sovereign of matter", "the patient king", "steady mastery"],
+    "element": "Fire of Earth", "astro": "Virgo/Leo",
+    "upright": "The Knight of Disks is the sovereign of the material world — the king who has mastered his domain through patience, practical intelligence, and genuine dedication to the work. He is not glamorous but he is genuinely powerful. This is what sustained, intelligent material engagement produces.",
+    "reversed": "The material king become a miser — the mastery of the physical world in service of accumulation rather than flourishing."
+  }
+]

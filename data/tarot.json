@@ -1,0 +1,782 @@
+[
+  {
+    "id": "major-0", "name": "The Fool", "arcana": "major", "number": 0, "suit": null,
+    "symbol": "0", "keywords": ["beginnings", "innocence", "spontaneity", "free spirit"],
+    "element": "Air", "astro": "Uranus",
+    "numerology": "0 — the void before form; infinite potential held in perfect stillness before the first step. Neither beginning nor end but the womb of both.",
+    "upright": "New beginnings, optimism, and trust in life. The Fool leaps forward with open arms, embracing the unknown. This card invites you to take a chance, to step into the new with courage and an open heart.",
+    "reversed": "Recklessness, carelessness, and naivety. You may be taking risks without thinking them through, or someone around you is acting foolishly. Look before you leap.",
+    "shadow": "Eternal beginning as escape — leaping from fresh start to fresh start to avoid the work of staying. Mistaking perpetual motion for freedom.",
+    "waite": "A youth in bright motley stands at the edge of a precipice, gaze lifted toward the sun, a white rose in one hand and a wallet on a staff over his shoulder. A small dog leaps at his heels — companion or warning. He stands at the brink of the abyss with perfect, unconcerned trust, as though the ground will meet him."
+  },
+  {
+    "id": "major-1", "name": "The Magician", "arcana": "major", "number": 1, "suit": null,
+    "symbol": "I", "keywords": ["willpower", "desire", "creation", "manifestation"],
+    "element": "Air", "astro": "Mercury",
+    "numerology": "1 — unity, the first act of will; the point from which all lines extend. Pure focused intention before it meets the world.",
+    "upright": "Manifestation, resourcefulness, and inspired action. You have all the tools you need. Channel your will and skill to turn your desires into reality. The universe supports your intentions.",
+    "reversed": "Manipulation, poor planning, and untapped talents. Power is being misused — either by you or someone around you. Examine your motives and ensure you're not deceiving yourself.",
+    "shadow": "The trickster in the throne — using knowledge and charm to control rather than create; the performer who has forgotten there's a self behind the act.",
+    "waite": "Before a table spread with the four elemental symbols, a figure in white and red raises a wand toward heaven while the other hand points to earth. The lemniscate of infinity floats above his head; a serpent biting its own tail girds his waist. He is the channel between above and below — the will made act."
+  },
+  {
+    "id": "major-2", "name": "The High Priestess", "arcana": "major", "number": 2, "suit": null,
+    "symbol": "II", "keywords": ["intuition", "mystery", "inner knowledge", "the subconscious"],
+    "element": "Water", "astro": "Moon",
+    "numerology": "2 — duality held in stillness; the threshold between the known and the unknown. The pause between the question and the answer.",
+    "upright": "Intuition, sacred knowledge, and the subconscious mind. Trust what you feel rather than what you see. Answers lie within — quiet your mind and listen to your inner voice.",
+    "reversed": "Secrets, disconnection from intuition, and withdrawal. Important information may be hidden. You may be ignoring your gut instinct in favor of logic alone. Reconnect with your inner wisdom.",
+    "shadow": "Knowledge withheld as power — using mystery or silence to maintain distance; fear of genuine intimacy disguised as spiritual reserve.",
+    "waite": "A veiled woman sits between two pillars — one black, one white — before a curtain of pomegranates. On her lap lies the Torah, half concealed by her robes. She is the guardian of the threshold, keeper of what has not yet been revealed. She will not tell you; she will make you remember."
+  },
+  {
+    "id": "major-3", "name": "The Empress", "arcana": "major", "number": 3, "suit": null,
+    "symbol": "III", "keywords": ["femininity", "beauty", "nature", "abundance", "nurturing"],
+    "element": "Earth", "astro": "Venus",
+    "numerology": "3 — creative synthesis; the third force that emerges when two meet and generate life. The number of growth, expression, and overflow.",
+    "upright": "Fertility, creativity, and abundance. The Empress represents the nurturing energy of nature itself. A time of growth, beauty, and sensory pleasure. Creativity flows freely — let it.",
+    "reversed": "Creative block, dependence, and smothering. You may be neglecting your own needs or those of someone close. Reconnect with nature and your own body. Ease up on control.",
+    "shadow": "Nurturing that binds — love so total that nothing can grow independently from it; abundance used to create dependency rather than flourishing.",
+    "waite": "A crowned woman reclines on cushions in a lush garden, the Venus symbol on her heart-shaped shield, twelve stars in her crown. Wheat grows ripe at her feet; a stream runs nearby. The earth itself breathes around her. She does not strive; she simply is — and in that being, everything grows."
+  },
+  {
+    "id": "major-4", "name": "The Emperor", "arcana": "major", "number": 4, "suit": null,
+    "symbol": "IV", "keywords": ["authority", "structure", "control", "fatherhood"],
+    "element": "Fire", "astro": "Aries",
+    "numerology": "4 — the square, structure, the foundation on which everything else is built. Stability achieved through will imposed on matter.",
+    "upright": "Authority, stability, and establishment. The Emperor provides structure and order. A time for discipline, leadership, and solid foundations. Power exercised with wisdom and care.",
+    "reversed": "Tyranny, rigidity, and domination. Excessive control stifles growth. You or someone else may be abusing authority or refusing to adapt. Examine where you need to loosen your grip.",
+    "shadow": "Order as fear — the tyrant who imposes control because tenderness and vulnerability feel more dangerous than any enemy. Love administered rather than felt.",
+    "waite": "An armored figure sits rigidly upon a stone throne adorned with four rams' heads. The mountains behind him are barren — he has conquered nature and imposed will upon it. His scepter is the ankh of life; his orb, authority. He has mastered the world by mastering himself — or the version of himself he could tolerate."
+  },
+  {
+    "id": "major-5", "name": "The Hierophant", "arcana": "major", "number": 5, "suit": null,
+    "symbol": "V", "keywords": ["tradition", "conformity", "belief", "institutions"],
+    "element": "Earth", "astro": "Taurus",
+    "numerology": "5 — the disruptor of the stable four; the bridge between the material and the spiritual; the human standing between heaven and earth.",
+    "upright": "Tradition, institutions, and spiritual wisdom. A teacher, mentor, or established system offers guidance. There is wisdom in convention. Working within an established structure may serve you now.",
+    "reversed": "Rebellion, subversiveness, and unconventional approaches. You may be chafing against rules or dogma. Question what you've been taught, but don't throw everything out — discern what still serves you.",
+    "shadow": "Doctrine as comfort — trading genuine spiritual experience for the safety of prescribed belief; enforcing tradition because the alternative is facing the raw unknown alone.",
+    "waite": "A robed religious figure sits between two pillars, his right hand raised in the sign of benediction, two keys crossed at his feet. Two supplicants kneel before him in vestments of lily and rose. He is the visible institution that mediates the invisible — the human system that turns mystery into ritual, and sometimes ritual into meaning."
+  },
+  {
+    "id": "major-6", "name": "The Lovers", "arcana": "major", "number": 6, "suit": null,
+    "symbol": "VI", "keywords": ["love", "harmony", "relationships", "choices", "alignment"],
+    "element": "Air", "astro": "Gemini",
+    "numerology": "6 — harmony, the number of beauty and love; the alignment of inner and outer that happens when a true choice is made.",
+    "upright": "Love, harmony, and alignment of values. A meaningful connection — romantic or otherwise. A significant choice ahead. To align with your authentic self is to align with love.",
+    "reversed": "Disharmony, imbalance, and misalignment. A relationship may be out of sync, or you're avoiding a necessary decision. Examine what you truly value before committing.",
+    "shadow": "Projection as love — choosing based on what someone represents rather than who they are; the decision avoided by calling it fate; the angel as excuse not to choose.",
+    "waite": "A man and woman stand naked beneath the outstretched wings of an archangel, flanked by two trees — one bearing fruit, one aflame with twelve tongues of fire. This is the Garden again: the moment before knowledge becomes burden. The angel blesses not the union, but the choice being made."
+  },
+  {
+    "id": "major-7", "name": "The Chariot", "arcana": "major", "number": 7, "suit": null,
+    "symbol": "VII", "keywords": ["control", "willpower", "victory", "determination"],
+    "element": "Water", "astro": "Cancer",
+    "numerology": "7 — the seeker's number; the victory that comes not from force but from the integration of opposing forces within the self.",
+    "upright": "Control, willpower, and triumph over obstacles. You are moving forward with confidence and purpose. Success comes through focus and determination. Hold the reins steady.",
+    "reversed": "Lack of direction, aggression, and loss of control. You may feel pulled in different directions. Slow down and reassert your focus before charging ahead.",
+    "shadow": "Control as armor — the inability to stop moving lest stillness reveal what is being outrun; willpower deployed to prevent rather than to achieve.",
+    "waite": "A crowned warrior sits within a starry canopy, carried by a chariot drawn by two sphinxes — one black, one white — yet he holds no reins. The city lies behind him; the open road ahead. He has not tamed the opposing forces; he has made his will so clear that they move as one."
+  },
+  {
+    "id": "major-8", "name": "Strength", "arcana": "major", "number": 8, "suit": null,
+    "symbol": "VIII", "keywords": ["strength", "courage", "patience", "inner power"],
+    "element": "Fire", "astro": "Leo",
+    "numerology": "8 — mastery, the lemniscate of infinity made vertical; power that circulates rather than accumulates; the eternal return of energy through will.",
+    "upright": "Inner strength, courage, and compassion. True strength is not force but patience and grace. You have what it takes to face this challenge — through gentleness, not aggression.",
+    "reversed": "Self-doubt, weakness, and insecurity. You may be giving in to fear or losing confidence. Reconnect with your quiet inner power — it has not gone anywhere.",
+    "shadow": "Virtue as suppression — gentling the beast into silence rather than genuine integration; the iron hand inside the velvet glove that has forgotten which is the hand.",
+    "waite": "A woman in white calmly closes the jaws of a lion. Her touch is soft; her expression, serene. Above her head floats the lemniscate of infinity. The lion does not submit to force — it yields to love. True strength shows no effort because it requires no fight. The beast becomes the ally."
+  },
+  {
+    "id": "major-9", "name": "The Hermit", "arcana": "major", "number": 9, "suit": null,
+    "symbol": "IX", "keywords": ["solitude", "searching", "guidance", "inner wisdom"],
+    "element": "Earth", "astro": "Virgo",
+    "numerology": "9 — the edge of completion; everything learned, nothing yet released; the wisdom that accumulates before the cycle can close.",
+    "upright": "Soul-searching, introspection, and inner guidance. Step back from the noise. Solitude is not isolation — it is the space where clarity grows. Seek within.",
+    "reversed": "Isolation, loneliness, and withdrawal. You may have retreated too far inward, or are avoiding necessary connection. Balance reflection with engagement.",
+    "shadow": "Wisdom as wall — using spiritual development to maintain safe distance from life's messiness; the teacher who can no longer be a student; the light turned inward and hoarded.",
+    "waite": "On a mountaintop in the dark, an old man in a grey cloak holds a lantern containing a six-pointed star and leans on a long staff. He is alone at the summit — not because he is lost, but because he has been. The lantern is not for him. It is turned back, for those still climbing."
+  },
+  {
+    "id": "major-10", "name": "Wheel of Fortune", "arcana": "major", "number": 10, "suit": null,
+    "symbol": "X", "keywords": ["good luck", "karma", "life cycles", "destiny", "turning point"],
+    "element": "Fire", "astro": "Jupiter",
+    "numerology": "10 — completion and return; the 1 and 0 together; the cycle that closes only to open again at a new level.",
+    "upright": "Luck, destiny, and turning points. The wheel always turns. What has been sown is now being reaped. Embrace the cycles of life — this moment is part of a larger pattern.",
+    "reversed": "Bad luck, resistance to change, and breaking cycles. You may be fighting against a natural turn of events. Release what no longer serves you and let the wheel turn.",
+    "shadow": "Fate as excuse — surrendering agency to the wheel to avoid responsibility for which direction you face when it turns; using cycles to justify what patience and action might change.",
+    "waite": "A great wheel turns in the sky, covered in Hebrew letters and alchemical symbols. On it rise and fall a serpent, the jackal-headed Anubis, and a sphinx at the summit. In the four corners: the four living creatures of Ezekiel, each reading a book. The wheel is always turning. No position on it holds."
+  },
+  {
+    "id": "major-11", "name": "Justice", "arcana": "major", "number": 11, "suit": null,
+    "symbol": "XI", "keywords": ["justice", "fairness", "truth", "cause and effect"],
+    "element": "Air", "astro": "Libra",
+    "numerology": "11 — the master number of witness; the two pillars again, with clear sight between them; the moment when the record is read aloud.",
+    "upright": "Justice, fairness, and truth. Actions have consequences. The scales will balance. A legal matter, a fair outcome, or a time to weigh your decisions with clear eyes.",
+    "reversed": "Unfairness, dishonesty, and evasion of accountability. Someone may not be telling the full truth. Examine where you have been dishonest — with yourself or others.",
+    "shadow": "Justice without mercy — the letter of the law wielded as a weapon; self-righteous judgment dressed as principle; the scales held by a hand that has already decided.",
+    "waite": "A crowned woman sits between two pillars, her expression composed and direct. In her right hand, a double-edged sword points upward. In her left, the scales hang perfectly level. Her red robes suggest that what comes will be felt. She does not promise comfort — only accuracy. The sword cuts both ways."
+  },
+  {
+    "id": "major-12", "name": "The Hanged Man", "arcana": "major", "number": 12, "suit": null,
+    "symbol": "XII", "keywords": ["suspension", "restriction", "letting go", "new perspectives"],
+    "element": "Water", "astro": "Neptune",
+    "numerology": "12 — the 3 broken open and inverted; voluntary sacrifice that creates something new; the pause that becomes illumination.",
+    "upright": "Pause, surrender, and new perspectives. A voluntary pause brings profound insight. Let go of the need to act. In stillness, you'll see what you couldn't while rushing.",
+    "reversed": "Delays, resistance, and stalling. You may be avoiding a necessary sacrifice or clinging to what no longer serves. The pause has become stagnation — it may be time to move.",
+    "shadow": "Martyrdom as identity — remaining suspended long past the insight has arrived; using sacrifice as leverage for love or guilt; choosing the cross because it absolves the need to choose.",
+    "waite": "A young man hangs by one foot from a living T-cross of timber, his free leg bent casually, his hands behind his back. His expression is serene; a nimbus of twelve rays surrounds his golden hair. He is not trapped — he chose this. The world looks different from upside down, and he has been here long enough to know it."
+  },
+  {
+    "id": "major-13", "name": "Death", "arcana": "major", "number": 13, "suit": null,
+    "symbol": "XIII", "keywords": ["endings", "change", "transformation", "transition"],
+    "element": "Water", "astro": "Scorpio",
+    "numerology": "13 — the death of the completed twelve; the turn after fullness; the seed beneath the frozen ground that no one sees moving.",
+    "upright": "Endings, transformation, and transition. What is falling away is making room for something new. This is not physical death but the death of an old chapter. Embrace the change.",
+    "reversed": "Resistance to change, stagnation, and decay. You may be clinging to what should naturally end. What are you refusing to release? Let the old die so the new can live.",
+    "shadow": "The comfortable almost-ending — keeping things technically alive to avoid the grief and the terrifying openness that comes after genuine release.",
+    "waite": "A skeleton in black armor rides a white horse through a field where figures of every station lie fallen or kneel in supplication. The sun rises between two towers on the horizon. The king is dead; a child holds up flowers; a bishop prays. Death does not distinguish, and the sun rises regardless."
+  },
+  {
+    "id": "major-14", "name": "Temperance", "arcana": "major", "number": 14, "suit": null,
+    "symbol": "XIV", "keywords": ["balance", "moderation", "patience", "purpose"],
+    "element": "Fire", "astro": "Sagittarius",
+    "numerology": "14 — the 5 elevated; disruption brought into flow; the alchemy that turns conflict into synthesis through patience.",
+    "upright": "Balance, moderation, and patience. Blend opposites with care. A calm, measured approach will serve you far better than extremes. Flow between states with grace.",
+    "reversed": "Imbalance, excess, and lack of long-term vision. You may be overdoing something or lacking harmony. Identify where your life is out of balance and restore equilibrium.",
+    "shadow": "Moderation as mediocrity — so committed to balance that nothing is ever fully felt or fully risked; the alchemist who will not commit to the fire.",
+    "waite": "A winged angelic figure stands at a pool's edge with one foot in the water and one on land, pouring liquid between two cups in a continuous impossible stream — never spilling. A path behind leads toward rising light between two mountains. This is not compromise. This is the art of living synthesis."
+  },
+  {
+    "id": "major-15", "name": "The Devil", "arcana": "major", "number": 15, "suit": null,
+    "symbol": "XV", "keywords": ["shadow self", "attachment", "addiction", "restriction"],
+    "element": "Earth", "astro": "Capricorn",
+    "numerology": "15 — the 6 inverted; love turned to possession; harmony become entrapment; the beauty of the Lovers made grotesque.",
+    "upright": "Bondage, materialism, and shadow self. What chains are you wearing — and are they real? The Devil shows us what we've become enslaved to. Awareness is the first step to freedom.",
+    "reversed": "Releasing limiting beliefs and reclaiming power. You are breaking free from something that held you. Detachment is possible. Don't run from your shadow — integrate it.",
+    "shadow": "The chains we chose — the real shock is that the chains are loose and the prisoners stay by consent; comfort and familiarity disguised as bondage; the captor we call home.",
+    "waite": "A horned, bat-winged figure squats upon a black altar above two chained humans — one male, one female, both with tails and horns of their own now. The chains around their necks are loose enough to slip. An inverted pentagram glows above. It is the Hierophant's shadow: the same position of power, toward very different ends."
+  },
+  {
+    "id": "major-16", "name": "The Tower", "arcana": "major", "number": 16, "suit": null,
+    "symbol": "XVI", "keywords": ["sudden change", "upheaval", "revelation", "chaos"],
+    "element": "Fire", "astro": "Mars",
+    "numerology": "16 — the 7 broken open; the structure that imprisoned the seeker destroyed so the seeking can resume; divine disruption.",
+    "upright": "Sudden change, upheaval, and revelation. The Tower tears down what was built on false foundations. Though jarring, this disruption clears the path for something more true and lasting.",
+    "reversed": "Fear of change, averting disaster, and delaying the inevitable. You may be delaying an inevitable collapse. Or you've narrowly avoided catastrophe. Either way — examine what needs rebuilding.",
+    "shadow": "The relief hidden in catastrophe — unconsciously engineering collapse to escape what patience and honesty might have changed slowly; the tower we kept building because we never wanted to live in it.",
+    "waite": "Lightning strikes a tall stone tower, blowing its golden crown into the sky. Two figures fall headlong into darkness below. The bolt comes from heaven and does not distinguish. What is falling was built on false premises — pride, false security, certainty that could not hold the weight of the real. The fall is correction."
+  },
+  {
+    "id": "major-17", "name": "The Star", "arcana": "major", "number": 17, "suit": null,
+    "symbol": "XVII", "keywords": ["hope", "faith", "rejuvenation", "inspiration"],
+    "element": "Air", "astro": "Aquarius",
+    "numerology": "17 — the 8 opened into flow; mastery dissolved into service; power released from the self and given back to the world.",
+    "upright": "Hope, faith, and renewal. After the storm, the stars appear. This is a card of healing, inspiration, and trust that the universe is guiding you toward your highest good.",
+    "reversed": "Lack of faith, despair, and disconnection. You may have lost hope or feel spiritually adrift. This too shall pass. Small acts of self-care and gratitude can reignite your inner light.",
+    "shadow": "Hope as passivity — waiting for the stars to deliver while avoiding the work that would bring what is hoped for; faith as a way of escaping agency without admitting it.",
+    "waite": "A naked woman kneels at a pool, one foot in water and one on land, pouring water from two vessels — one into the pool, one onto the earth. Eight stars burn above her, one large and radiant. She has nothing to hide and nothing to protect. The ibis of Thoth watches from the tree. After the Tower, this."
+  },
+  {
+    "id": "major-18", "name": "The Moon", "arcana": "major", "number": 18, "suit": null,
+    "symbol": "XVIII", "keywords": ["illusion", "fear", "the unconscious", "intuition"],
+    "element": "Water", "astro": "Pisces",
+    "numerology": "18 — the 9 in shadow; almost complete but lost in the fog; the final test before dawn arrives.",
+    "upright": "Illusion, fear, and the unconscious. Things are not as they appear. Confusion and anxiety may cloud your path. Trust your instincts and proceed carefully through the fog.",
+    "reversed": "Release of fear, repressed emotions, and inner confusion. Hidden fears are surfacing to be healed. The fog is beginning to lift — clarity is coming, but slowly.",
+    "shadow": "The comfortable fog — preferring the anxiety of not-knowing to the disruption that clarity would bring; familiar fears that are at least known quantities, unlike the truth.",
+    "waite": "Under a full moon with a veiled face, a lobster crawls from dark water between two howling dogs and two distant towers. The path between the towers winds into shadow. Nothing here is as it appears. The only guide is instinct — older, quieter, and more reliable than reason in this particular dark."
+  },
+  {
+    "id": "major-19", "name": "The Sun", "arcana": "major", "number": 19, "suit": null,
+    "symbol": "XIX", "keywords": ["positivity", "fun", "warmth", "success", "vitality"],
+    "element": "Fire", "astro": "Sun",
+    "numerology": "19 — the 1 returned from its long journey through the Major Arcana; the child's knowing; mastery rediscovered as simplicity.",
+    "upright": "Joy, success, and vitality. The Sun shines on all things with warmth and clarity. A time of happiness, confidence, and radiant energy. Celebrate — you have earned this light.",
+    "reversed": "Inner child wounds, overconfidence, and temporary setbacks. The light may feel dimmed, but it is still there. Watch for excessive ego or optimism that blinds you to reality.",
+    "shadow": "The performance of joy — the relentless positivity that cannot hold shadow or sadness; the child who was never allowed to be unhappy and never quite learned how.",
+    "waite": "A naked child rides a white horse before a wall of tall sunflowers, arms flung wide and laughing. The great sun blazes above, its rays both straight and wavy — giving and taking warmth in equal measure. The child has come through the Moon's dark and rides freely now, unguarded, luminous, unburdened."
+  },
+  {
+    "id": "major-20", "name": "Judgement", "arcana": "major", "number": 20, "suit": null,
+    "symbol": "XX", "keywords": ["reflection", "reckoning", "awakening", "absolution"],
+    "element": "Fire", "astro": "Pluto",
+    "numerology": "20 — the 2 at its highest octave; the witness and the witnessed becoming one; accountability as liberation rather than condemnation.",
+    "upright": "Reflection, reckoning, and spiritual awakening. A profound call to examine your life honestly. Forgive yourself and others. A major transition is complete — rise into your next chapter.",
+    "reversed": "Self-doubt, lack of self-awareness, and ignoring the call. You may be refusing to hear an important message from within. Self-judgment blocks growth. Compassion and clarity are needed.",
+    "shadow": "The call unheard — ignoring the summons to a larger life through busyness, unworthiness, or the comfort of the smaller self that knows who it is, even if it's less than it could be.",
+    "waite": "An angel blows a great trumpet from the clouds; below, figures rise from open coffins, arms outstretched, faces turned toward the sound. Mountains of ice rise in the background — they cannot stop what is in motion. This is not punishment. It is the moment you cannot unhear. Rise."
+  },
+  {
+    "id": "major-21", "name": "The World", "arcana": "major", "number": 21, "suit": null,
+    "symbol": "XXI", "keywords": ["completion", "integration", "accomplishment", "travel"],
+    "element": "Earth", "astro": "Saturn",
+    "numerology": "21 — 3×7; creative synthesis meeting completion; the journey's end that contains the whole journey within it; the center of the mandala.",
+    "upright": "Completion, integration, and wholeness. A significant cycle is complete. You have achieved what you set out to do. Pause to honor this — and prepare for a new beginning.",
+    "reversed": "Incompletion, shortcuts, and delayed success. Something feels unfinished. You may be rushing toward the next thing without honoring what you've just completed. Tie up loose ends.",
+    "shadow": "Completion without integration — finishing the cycle and immediately starting another to avoid sitting with what was actually learned and changed.",
+    "waite": "A figure wrapped in a purple ribbon dances freely within a wreath of laurel, holding two wands. In each corner stands one of the four living creatures — angel, eagle, lion, bull. The dancer is whole: neither fully one thing nor another, but integrated. The wreath is the world. The dance is the work, completed."
+  },
+  {
+    "id": "wands-ace", "name": "Ace of Wands", "arcana": "minor", "number": 1, "suit": "wands",
+    "symbol": "A♦", "keywords": ["inspiration", "new opportunities", "growth", "potential"],
+    "element": "Fire", "astro": "Pure Fire — the root of the element's power",
+    "numerology": "1 — the first spark; raw creative potential before direction or form; the impulse that precedes the idea.",
+    "upright": "A spark of inspiration and creative potential. A new project, passion, or path beckons. The fire of possibility ignites — act while the energy is high.",
+    "reversed": "Delays, lack of motivation, and missed opportunities. The fire is struggling to catch. Examine what's blocking your creative energy and clear the path.",
+    "shadow": "Excitement hoarded — the thrill of new beginnings as a substitute for the harder joy of seeing something through to its finish.",
+    "waite": "A great hand emerges from clouds, gripping a living wand that still sprouts green leaves at its tip. Yod-shaped flames rain down around it. The landscape below is verdant and open. The wand is offered but not yet taken. Everything waits on the person willing to reach."
+  },
+  {
+    "id": "wands-2", "name": "Two of Wands", "arcana": "minor", "number": 2, "suit": "wands",
+    "symbol": "2♦", "keywords": ["future planning", "progress", "decisions", "discovery"],
+    "element": "Fire", "astro": "Mars in Aries",
+    "numerology": "2 — duality in action; the moment of choice between the known and the horizon; the self divided between what is and what could be.",
+    "upright": "Planning, progress, and decisions about the future. You stand at a crossroads with the world at your feet. Dream boldly and begin mapping your path forward.",
+    "reversed": "Fear of change, bad planning, and playing it too safe. You may be hesitating when boldness is needed. What future are you afraid to claim?",
+    "shadow": "The castle-wall stance — holding the world in miniature while refusing to actually enter it; planning as a substitute for departure.",
+    "waite": "A man stands on a castle parapet holding a globe in one hand, his other resting on a staff. Before him, the open sea; behind him, the second wand fixed to the wall. He has already chosen — he simply hasn't moved yet. The world is in his hand. He just hasn't looked up from it."
+  },
+  {
+    "id": "wands-3", "name": "Three of Wands", "arcana": "minor", "number": 3, "suit": "wands",
+    "symbol": "3♦", "keywords": ["progress", "expansion", "foresight", "overseas"],
+    "element": "Fire", "astro": "Sun in Aries",
+    "numerology": "3 — synthesis in motion; the creative force now extended into the world; watching what you set in motion take on its own momentum.",
+    "upright": "Foresight, expansion, and setting things in motion. Your plans are taking shape. Look to the horizon — opportunity may be found beyond your current borders.",
+    "reversed": "Obstacles to long-term goals and lack of foresight. Plans may be stalled or returning unexpectedly. Reassess your strategy and adjust.",
+    "shadow": "The watcher who never boards the ship — standing at the horizon of one's own potential and observing rather than entering.",
+    "waite": "A figure stands on high ground, back to us, watching ships sail in the distance. Three wands are planted around him — he has already staked his claim. The sea is wide. The ships are moving. He sent them. Now he waits with the patience of someone who knows what he set in motion."
+  },
+  {
+    "id": "wands-4", "name": "Four of Wands", "arcana": "minor", "number": 4, "suit": "wands",
+    "symbol": "4♦", "keywords": ["celebration", "joy", "harmony", "homecoming"],
+    "element": "Fire", "astro": "Venus in Aries",
+    "numerology": "4 — the stable structure of celebration; a foundation built well enough to hold the weight of joy; the four-cornered home.",
+    "upright": "Celebration, joy, and harmony. A milestone reached, a homecoming, a gathering of loved ones. Rejoice in what has been built. Community and belonging.",
+    "reversed": "Lack of harmony, instability, and delayed celebration. Home or community feels unsettled. Work to restore harmony before celebrating prematurely.",
+    "shadow": "The celebration that papers over — the party thrown at the crack in the foundation; using festivity to avoid sitting with what still needs building.",
+    "waite": "Four wands form a canopy hung with flowers and garlands; two figures approach beneath it with bouquets raised. A castle stands in the background; the sky is clear. This is a genuine moment — a return, a completion, a threshold crossed. The garlands are real. The welcome is earned."
+  },
+  {
+    "id": "wands-5", "name": "Five of Wands", "arcana": "minor", "number": 5, "suit": "wands",
+    "symbol": "5♦", "keywords": ["conflict", "disagreements", "competition", "tension"],
+    "element": "Fire", "astro": "Saturn in Leo",
+    "numerology": "5 — disruption of the stable four; the chaos that prevents stagnation; conflict as growth hormone.",
+    "upright": "Conflict, competition, and clashing egos. Not all conflict is harmful — this may be productive sparring that sharpens your ideas. Engage, but stay clear-headed.",
+    "reversed": "Avoiding conflict and inner tension. You may be suppressing disagreement. Address tensions directly rather than letting them fester beneath the surface.",
+    "shadow": "Competition for its own sake — the person who needs an opponent more than they need a goal; using conflict to avoid the vulnerability of real collaboration.",
+    "waite": "Five young men clash wands in what may be a brawl or a game — it's genuinely difficult to tell. No one appears to be winning; no one appears to be losing. The energy is chaotic but not vicious. Sometimes this is how ideas get tested. Sometimes this is just noise."
+  },
+  {
+    "id": "wands-6", "name": "Six of Wands", "arcana": "minor", "number": 6, "suit": "wands",
+    "symbol": "6♦", "keywords": ["victory", "success", "public reward", "progress"],
+    "element": "Fire", "astro": "Jupiter in Leo",
+    "numerology": "6 — harmony after strife; the triumph that becomes a foundation rather than a destination.",
+    "upright": "Victory, success, and public recognition. You have overcome obstacles and earned praise. Accept the recognition gracefully and let this win fuel your next effort.",
+    "reversed": "Egotism, broken promises, and fall from grace. Success has gone to someone's head — perhaps yours. Stay humble. Don't count on external validation for your sense of worth.",
+    "shadow": "Victory as identity — defining oneself by the laurel wreath and becoming afraid to compete again lest the wreath be lost.",
+    "waite": "A rider on a white horse wears a laurel crown and holds a wreath-adorned wand aloft. A crowd of supporters carrying wands walks alongside. The procession is triumphant. The question is whether the rider remembers that the horse is what carried him."
+  },
+  {
+    "id": "wands-7", "name": "Seven of Wands", "arcana": "minor", "number": 7, "suit": "wands",
+    "symbol": "7♦", "keywords": ["challenge", "competition", "protection", "perseverance"],
+    "element": "Fire", "astro": "Mars in Leo",
+    "numerology": "7 — the seeker under pressure; the number of inner truth tested by external force; the position that must be earned daily.",
+    "upright": "Perseverance, courage, and holding your ground. You're under pressure, but you're capable of defending your position. Stand firm in what you believe.",
+    "reversed": "Giving up, overwhelmed, and loss of conviction. You may be caving under pressure from others. Know the difference between wise retreat and surrendering unnecessarily.",
+    "shadow": "Defensive crouch as permanent posture — defending a position so long it becomes unclear whether the position still deserves defending.",
+    "waite": "A man stands on high ground, staff raised against six wands thrust up from below. His footing is uncertain; he's wearing mismatched boots. He holds the high ground — but barely, and only because he hasn't stopped. Sometimes that's enough."
+  },
+  {
+    "id": "wands-8", "name": "Eight of Wands", "arcana": "minor", "number": 8, "suit": "wands",
+    "symbol": "8♦", "keywords": ["speed", "action", "air travel", "movement", "swift change"],
+    "element": "Fire", "astro": "Mercury in Sagittarius",
+    "numerology": "8 — the lemniscate in action; energy moving so efficiently it appears effortless; momentum at its purest.",
+    "upright": "Speed, action, and rapid progress. Things are accelerating. Communication flows, travel is possible, and momentum is with you. Act quickly while conditions are favorable.",
+    "reversed": "Delays, frustration, and miscommunication. Things are moving too slowly — or chaotically. Pause, recommunicate clearly, and wait for the right moment.",
+    "shadow": "Speed as avoidance — moving so fast that nothing has to land, nothing has to be processed, nothing has to change you.",
+    "waite": "Eight wands fly through a clear sky in perfect parallel formation, their trajectory steep and purposeful. No figures, no drama — just pure directed motion. They are not falling; they are arriving. The message is already in the air."
+  },
+  {
+    "id": "wands-9", "name": "Nine of Wands", "arcana": "minor", "number": 9, "suit": "wands",
+    "symbol": "9♦", "keywords": ["resilience", "grit", "last stand", "persistence"],
+    "element": "Fire", "astro": "Moon in Sagittarius",
+    "numerology": "9 — the edge of completion; everything given, not yet released; the penultimate effort before the cycle closes.",
+    "upright": "Resilience, persistence, and tested strength. You are tired, battle-worn — yet still standing. One more push and you'll reach the finish line. You have more in you than you think.",
+    "reversed": "Exhaustion, rigidity, and paranoia. You may be defending yourself unnecessarily, or have worn yourself thin. Rest is not weakness — it is wisdom.",
+    "shadow": "Vigilance become compulsion — standing guard past the point when the danger has passed; wounds worn as identity because they are at least proof that something happened.",
+    "waite": "A bandaged man leans on a staff, eight wands forming a fence behind him. He looks over his shoulder — wary, not broken. He has clearly been in a fight. What's remarkable is that he's still here, still standing, still watching. That's not nothing. That's actually a lot."
+  },
+  {
+    "id": "wands-10", "name": "Ten of Wands", "arcana": "minor", "number": 10, "suit": "wands",
+    "symbol": "10♦", "keywords": ["burden", "extra responsibility", "hard work", "completion"],
+    "element": "Fire", "astro": "Saturn in Sagittarius",
+    "numerology": "10 — completion as weight; the full cycle accumulated into a single load that must be set down before the next cycle can begin.",
+    "upright": "Burden, hard work, and responsibility. You are carrying a great deal. Acknowledge the weight honestly — and consider what you can delegate, release, or renegotiate.",
+    "reversed": "Inability to delegate, burnt out, and struggling. The weight has become unsustainable. Let go of some responsibilities before they crush you.",
+    "shadow": "Martyrdom through overload — taking on more than necessary as proof of worth; refusing to put the wands down because who would you be without the carrying?",
+    "waite": "A man hunched under a bundle of ten wands trudges toward a town visible in the distance. His face is obscured by the load. He can barely see where he's going. The town isn't far. The question is whether all ten wands need to arrive with him."
+  },
+  {
+    "id": "wands-page", "name": "Page of Wands", "arcana": "minor", "number": 11, "suit": "wands",
+    "symbol": "P♦", "keywords": ["exploration", "excitement", "freedom", "adventure"],
+    "element": "Fire", "astro": "Earth of Fire — Sagittarius",
+    "numerology": "11 — the page stands at the threshold of mastery; the 2 in the court's sequence; potential that has not yet chosen its direction.",
+    "upright": "A free spirit, enthusiastic and adventurous. A new creative idea or message arrives. Embrace curiosity without needing all the answers yet.",
+    "reversed": "Immaturity, lack of direction, and hastiness. Enthusiasm without follow-through. Don't let excitement fizzle — build discipline around your passion.",
+    "shadow": "The idea that never becomes a thing — perpetual enthusiasm for the new; the person who is always about to start something great.",
+    "waite": "A young figure stands in a barren landscape, holding a long wand and studying it with intense curiosity. The salamanders on his tunic eat their own tails. He has received the fire — now he's figuring out what to do with it. That figuring-out is the work."
+  },
+  {
+    "id": "wands-knight", "name": "Knight of Wands", "arcana": "minor", "number": 12, "suit": "wands",
+    "symbol": "Kn♦", "keywords": ["energy", "passion", "lust", "action", "adventure"],
+    "element": "Fire", "astro": "Air of Fire — Aries/Sagittarius",
+    "numerology": "12 — the 3 in motion; creative energy fully committed to its direction; the synthesis of vision and will moving as one.",
+    "upright": "Passionate, energetic, and driven to act. Charge forward with confidence. This knight acts fast — make sure the direction is right before riding hard.",
+    "reversed": "Recklessness, anger, and scattered energy. High passion without wisdom. Slow down before you burn out or injure yourself or others.",
+    "shadow": "Passion as destination — mistaking the charge for the arrival; addicted to the momentum of pursuit without caring what is being pursued.",
+    "waite": "A knight in armor covered with salamanders charges forward on a rearing horse. His cape flames behind him; his helmet plumed. He does not look back. He may not know exactly where he's going, but the going itself is the point right now. The energy is genuine. Whether the direction is — that's the question."
+  },
+  {
+    "id": "wands-queen", "name": "Queen of Wands", "arcana": "minor", "number": 13, "suit": "wands",
+    "symbol": "Q♦", "keywords": ["courage", "confidence", "independence", "social"],
+    "element": "Fire", "astro": "Water of Fire — Aries",
+    "numerology": "13 — the 4 in the court's wisdom; the stable, sustaining expression of fire's power; warmth that does not consume.",
+    "upright": "Courage, confidence, and vibrant energy. A magnetic, bold presence who knows her power. Step into your full self — command the room with warmth and fire.",
+    "reversed": "Selfishness, jealousy, and insecurity. The inner fire is burning inward rather than outward. Examine whether your confidence is genuine or performative.",
+    "shadow": "The performance of radiance — maintaining the appearance of warmth and magnetism while the private self grows cold and disconnected.",
+    "waite": "A queen sits on a throne adorned with lions, a sunflower in one hand and a wand in the other. A black cat sits at her feet. Her gaze is direct and assured. The sunflower is not decorative — she grew it. The lion doesn't frighten her. Neither should you."
+  },
+  {
+    "id": "wands-king", "name": "King of Wands", "arcana": "minor", "number": 14, "suit": "wands",
+    "symbol": "K♦", "keywords": ["natural-born leader", "vision", "entrepreneur", "honour"],
+    "element": "Fire", "astro": "Fire of Fire — Leo",
+    "numerology": "14 — fire fully realized; the vision that has become a world; leadership that inspires by embodying rather than commanding.",
+    "upright": "Visionary leadership and entrepreneurial spirit. A natural leader who inspires others through bold action. Think big — your vision has the power to become reality.",
+    "reversed": "Impulsiveness, overbearing, and ruthless. Power is being abused or misapplied. Check that your ambition serves a greater good, not just your own ego.",
+    "shadow": "The visionary who stopped listening — so certain of the rightness of the vision that evidence to the contrary has become noise rather than signal.",
+    "waite": "A king in robes decorated with salamanders leans forward on his throne, wand in hand, as if about to rise. A small salamander at his feet bites its own tail. He rules not by sitting still but by being ready to move. The fire is in him, not on the throne."
+  },
+  {
+    "id": "cups-ace", "name": "Ace of Cups", "arcana": "minor", "number": 1, "suit": "cups",
+    "symbol": "A♥", "keywords": ["love", "new relationships", "compassion", "creativity"],
+    "element": "Water", "astro": "Pure Water — the root of the element's power",
+    "numerology": "1 — the first opening; emotional potential before it has become feeling; the heart before it has loved anyone specific.",
+    "upright": "New love, emotional beginnings, and deep compassion. The heart opens. A gift of love, creativity, or spiritual connection is being offered. Receive it openly.",
+    "reversed": "Emotional loss, blocked creativity, and emptiness. Something is preventing the flow of love or creative expression. What are you holding back?",
+    "shadow": "The cup held up but never offered — emotional capacity kept as private treasure rather than shared; the open heart as spiritual achievement rather than lived practice.",
+    "waite": "A great chalice overflows with five streams of water, offered from a hand emerging from clouds. A dove descends bearing a disc marked with a cross. The cup teems with life. This is not the feeling of love — it is the capacity for it, arriving as pure gift."
+  },
+  {
+    "id": "cups-2", "name": "Two of Cups", "arcana": "minor", "number": 2, "suit": "cups",
+    "symbol": "2♥", "keywords": ["unified love", "partnership", "mutual attraction"],
+    "element": "Water", "astro": "Venus in Cancer",
+    "numerology": "2 — the meeting of two; the mirror dynamic; connection that reveals each person to themselves through the other.",
+    "upright": "Partnership, mutual attraction, and deep connection. A relationship of equals — romantic, platonic, or professional. Something beautiful is being built between two people.",
+    "reversed": "Imbalance in a relationship, broken communication, and one-sided feeling. A connection has grown unequal or strained. Open, honest dialogue is needed.",
+    "shadow": "The mirror mistaken for a window — loving the reflection of oneself in another person more than the actual person; the connection that deepens self-involvement rather than opening it.",
+    "waite": "A man and woman exchange cups before a caduceus crowned with a lion's head. Both figures are engaged, present, and equal. The exchange is the point — neither withholds; neither is diminished by giving. This is love as reciprocity rather than transaction."
+  },
+  {
+    "id": "cups-3", "name": "Three of Cups", "arcana": "minor", "number": 3, "suit": "cups",
+    "symbol": "3♥", "keywords": ["celebration", "friendship", "creativity", "community"],
+    "element": "Water", "astro": "Mercury in Cancer",
+    "numerology": "3 — abundance through sharing; the joy that multiplies rather than diminishes when given away; community as creative force.",
+    "upright": "Celebration, friendship, and joyful community. Gather with those you love. A moment of festivity and shared happiness. Honor the people who lift you up.",
+    "reversed": "Overindulgence, gossip, and isolation. Social energy has turned toxic or hollow. Beware of excess, or of friendships that drain rather than replenish.",
+    "shadow": "The circle that excludes — the warmth of belonging made contingent on shared judgment of outsiders; friendship as insulation from growth rather than fuel for it.",
+    "waite": "Three women dance in a circle, cups raised, surrounded by a harvest of fruits and flowers. The celebration is unambiguous. What is being marked here is not extraordinary circumstance but the ordinary miracle of being together — and choosing to acknowledge it."
+  },
+  {
+    "id": "cups-4", "name": "Four of Cups", "arcana": "minor", "number": 4, "suit": "cups",
+    "symbol": "4♥", "keywords": ["meditation", "contemplation", "apathy", "reevaluation"],
+    "element": "Water", "astro": "Moon in Cancer",
+    "numerology": "4 — the stable structure that can become a cage; emotional security hardened into withdrawal; the foundation that stopped you moving.",
+    "upright": "Contemplation, apathy, and reevaluation. Something is being offered, but you're not seeing it. Sit quietly — but don't miss the opportunity that's waiting at the edge of your vision.",
+    "reversed": "Retreat, withdrawal, and missed messages. You may have been too inward for too long. It is time to re-engage and accept what is being offered.",
+    "shadow": "Dissatisfaction as identity — maintaining boredom or withdrawal because engagement would require wanting something, and wanting makes you vulnerable.",
+    "waite": "A young man sits cross-armed beneath a tree, staring at three cups on the grass. A fourth cup is extended toward him from a hand in the clouds — he doesn't see it, or won't. The gift is there. The blindness is his, and it is chosen, and it is not permanent."
+  },
+  {
+    "id": "cups-5", "name": "Five of Cups", "arcana": "minor", "number": 5, "suit": "cups",
+    "symbol": "5♥", "keywords": ["regret", "failure", "disappointment", "pessimism"],
+    "element": "Water", "astro": "Mars in Scorpio",
+    "numerology": "5 — disruption of emotional stability; the loss that reorders everything; the grief that, if allowed, transforms.",
+    "upright": "Loss, grief, and regret. You are focused on what has been spilled. Let yourself grieve — but don't forget the cups that are still full behind you. Something remains.",
+    "reversed": "Moving on, acceptance, and finding peace. The worst of the grief has passed. You are beginning to find your footing again. Be gentle with yourself.",
+    "shadow": "Grief as loyalty — staying in mourning as the last remaining act of devotion to what was lost; the spilled cups tended more carefully than the standing ones.",
+    "waite": "A figure in a black cloak stares at three overturned cups on the ground, their contents spilled. Behind them, two cups still stand upright. A bridge crosses to a distant house. The standing cups go unseen. The figure hasn't turned around yet — but the bridge is there."
+  },
+  {
+    "id": "cups-6", "name": "Six of Cups", "arcana": "minor", "number": 6, "suit": "cups",
+    "symbol": "6♥", "keywords": ["revisiting the past", "childhood memories", "innocence", "joy"],
+    "element": "Water", "astro": "Sun in Scorpio",
+    "numerology": "6 — harmony found in memory; the beauty of what was; the past as a place to visit, not inhabit.",
+    "upright": "Nostalgia, childhood, and revisiting the past. Sweet memories offer comfort or wisdom. Reconnect with your inner child. The past holds something you still need.",
+    "reversed": "Living in the past, naivety, and unrealistic nostalgia. You may be romanticizing what was. Don't let longing for the past prevent you from living in the present.",
+    "shadow": "The past as refuge from the present — using nostalgia to avoid the discomfort of becoming; mistaking innocence for wisdom.",
+    "waite": "A young child offers a cup full of white flowers to a smaller figure in what appears to be a village courtyard. Other flower-filled cups surround them. The scene is gentle and unguarded. This is not a metaphor for loss — it is simply the image of giving something pure to someone small, and meaning it."
+  },
+  {
+    "id": "cups-7", "name": "Seven of Cups", "arcana": "minor", "number": 7, "suit": "cups",
+    "symbol": "7♥", "keywords": ["fantasy", "illusion", "wishful thinking", "choices"],
+    "element": "Water", "astro": "Venus in Scorpio",
+    "numerology": "7 — the seeker's number turned to confusion; too many inner visions, not enough ground; reflection become hall of mirrors.",
+    "upright": "Choices, fantasy, and scattered desires. Many tempting options appear, but not all are what they seem. Beware wishful thinking — ground yourself and choose with clarity.",
+    "reversed": "Alignment, clarity, and personal values. The fog of illusion is lifting. You are beginning to see what truly matters. Focus and commit.",
+    "shadow": "Infinite possibility as paralysis — keeping all options open as a way to avoid the grief of what any single choice forecloses.",
+    "waite": "A silhouetted figure stands before seven cups floating in the clouds, each containing something different: a figure, a shrouded form, a snake, a castle, gems, a wreath, a dragon. None of these are real yet — they are the interior's show of options. Choosing one means closing six. That's the real challenge."
+  },
+  {
+    "id": "cups-8", "name": "Eight of Cups", "arcana": "minor", "number": 8, "suit": "cups",
+    "symbol": "8♥", "keywords": ["disappointment", "abandonment", "withdrawal", "escapism"],
+    "element": "Water", "astro": "Saturn in Pisces",
+    "numerology": "8 — mastery in retreat; the power to recognize that something is complete even when it doesn't feel complete; walking away as an act of integrity.",
+    "upright": "Walking away, seeking deeper meaning, and abandonment of the familiar. Something that once fulfilled you no longer does. It takes courage to leave — and wisdom to know when to go.",
+    "reversed": "Aimlessness, fear of abandonment, and staying too long. You may be staying in a situation out of fear rather than love. Ask yourself honestly: is this still serving your soul?",
+    "shadow": "The graceful exit from what was never quite tried — leaving before the depth is reached, mistaking departure for depth.",
+    "waite": "A figure walks away in the night, moving between mountains under an eclipsed moon. Eight cups are stacked behind them — orderly, complete. The figure does not look back. This is not running. The cups are arranged too carefully for this to be flight. This is leaving because it is time."
+  },
+  {
+    "id": "cups-9", "name": "Nine of Cups", "arcana": "minor", "number": 9, "suit": "cups",
+    "symbol": "9♥", "keywords": ["contentment", "satisfaction", "gratitude", "wish"],
+    "element": "Water", "astro": "Jupiter in Pisces",
+    "numerology": "9 — emotional fulfillment at the edge of completion; the wish that came true; what it feels like when you got what you wanted.",
+    "upright": "Contentment, satisfaction, and wishes fulfilled. The wish card. Enjoy what you have — you have more than you sometimes acknowledge. Gratitude multiplies abundance.",
+    "reversed": "Greed, dissatisfaction, and materialism. Despite having much, something still feels missing. Look inward — the satisfaction you seek isn't found in more things.",
+    "shadow": "The satisfied man who stopped dreaming — contentment that has calcified into complacency; the wish fulfilled that is then defended rather than built upon.",
+    "waite": "A plump and self-satisfied man sits with arms crossed before an arched display of nine gleaming cups. He grins. This card is sometimes called the 'wish card' — but look at the smile. He got what he wanted. Whether it still wants him back is a different card's question."
+  },
+  {
+    "id": "cups-10", "name": "Ten of Cups", "arcana": "minor", "number": 10, "suit": "cups",
+    "symbol": "10♥", "keywords": ["divine love", "blissful relationships", "harmony", "alignment"],
+    "element": "Water", "astro": "Mars in Pisces",
+    "numerology": "10 — emotional completion; the full cycle of feeling arriving at wholeness; love that has matured into family, home, and continuity.",
+    "upright": "Emotional fulfillment, family harmony, and lasting happiness. The rainbow card — all is well. You are aligned with love, community, and the life you were meant to live.",
+    "reversed": "Disconnection, broken family, and disillusionment. The picture-perfect life feels fractured. What is being papered over? Real connection requires honesty, not performance.",
+    "shadow": "The picture of happiness as substitute for the experience — performing a blessed life rather than living one; the rainbow that must always be pointed at rather than simply standing beneath.",
+    "waite": "Two adults embrace as two children dance nearby beneath a rainbow arc of ten cups, with a house and green hills beyond. Everything in the scene says: we made it. The question this card quietly asks is: did you choose this, or did it happen to you? Either way — here it is."
+  },
+  {
+    "id": "cups-page", "name": "Page of Cups", "arcana": "minor", "number": 11, "suit": "cups",
+    "symbol": "P♥", "keywords": ["creative opportunities", "intuitive messages", "curiosity", "possibility"],
+    "element": "Water", "astro": "Earth of Water — Pisces",
+    "numerology": "11 — emotional potential standing at the threshold; feeling not yet integrated; the invitation to meet what is coming from within.",
+    "upright": "Creative beginnings, intuitive messages, and emotional openness. A surprise or creative invitation arrives. Stay curious and emotionally open — something unexpected may delight you.",
+    "reversed": "Emotional immaturity, insecurity, and repressed feelings. Vulnerable feelings are being suppressed or acted out awkwardly. Create safe space for emotions to surface gently.",
+    "shadow": "Perpetual emotional childhood — staying in the wonder of feeling without developing the capacity to act on or integrate it; creativity never landing.",
+    "waite": "A young figure in a floral tunic gazes in surprise at a fish that has popped up from the cup he holds. The sea rolls behind him. He hadn't expected the fish. He should have — but sometimes the unconscious surprises even those who were watching. The right response is curiosity, not alarm."
+  },
+  {
+    "id": "cups-knight", "name": "Knight of Cups", "arcana": "minor", "number": 12, "suit": "cups",
+    "symbol": "Kn♥", "keywords": ["creativity", "romance", "charm", "imagination", "beauty"],
+    "element": "Water", "astro": "Air of Water — Pisces/Scorpio",
+    "numerology": "12 — feeling in motion; the emotional self committed to a direction; the heart that has decided and moves with the current.",
+    "upright": "Romance, charm, and following the heart. A proposal, an invitation, or a creative pursuit. This knight follows the call of the heart — beautiful, but sometimes impractical.",
+    "reversed": "Moodiness, disappointment, and unrealistic expectations. Romantic ideals clash with reality. Don't let fantasy cloud your judgment in matters of the heart.",
+    "shadow": "The romantic gesture as destination — pursuing the beloved or the dream with such devoted artistry that arrival would spoil it; in love with love.",
+    "waite": "A knight rides a white horse slowly and deliberately, holding a cup aloft like an offering. His winged helmet and cloak suggest something between warrior and messenger. The river flows alongside him. He isn't rushing. The cup is carried with care. Whether the person it's intended for is worth that care — open question."
+  },
+  {
+    "id": "cups-queen", "name": "Queen of Cups", "arcana": "minor", "number": 13, "suit": "cups",
+    "symbol": "Q♥", "keywords": ["compassionate", "caring", "emotionally stable", "intuitive", "in flow"],
+    "element": "Water", "astro": "Water of Water — Cancer",
+    "numerology": "13 — emotional mastery in its feminine, receptive form; the depth from which one gives; the self full enough to pour without emptying.",
+    "upright": "Compassion, emotional intelligence, and deep intuition. An emotionally wise presence who gives generously from a place of wholeness. Trust your feelings — they are your compass.",
+    "reversed": "Emotional insecurity, dependence, and martyrdom. Giving too much of yourself while neglecting your own emotional needs. Restore your own cup before pouring into others.",
+    "shadow": "The empath who loses the self — so attuned to others' feelings that one's own have nowhere to live; compassion as the obliteration of the self rather than its expression.",
+    "waite": "A queen sits on a throne at the water's edge, gazing at an ornate closed cup she holds before her. Unlike the other cup court cards, this cup is sealed — its contents known only to her. The sea laps at her throne. She knows things. She doesn't always say them."
+  },
+  {
+    "id": "cups-king", "name": "King of Cups", "arcana": "minor", "number": 14, "suit": "cups",
+    "symbol": "K♥", "keywords": ["emotionally balanced", "generous", "diplomatic", "compassionate"],
+    "element": "Water", "astro": "Fire of Water — Scorpio",
+    "numerology": "14 — emotional mastery in its active, outward form; feeling guided by wisdom; the heart that has been through enough to be steady.",
+    "upright": "Emotional balance, wisdom, and generous leadership. A heart tempered by experience. This king leads with empathy and calm authority. Balance mind and heart in your decisions.",
+    "reversed": "Emotional manipulation, moodiness, and volatility. Emotional wisdom has given way to instability. Examine where emotions are being weaponized or suppressed unhealthily.",
+    "shadow": "Diplomatic detachment — the composure that is not equanimity but avoidance; the king who has learned to appear unaffected because being affected once cost too much.",
+    "waite": "A king sits on a throne in the middle of a turbulent sea, holding a cup and a scepter with complete composure. A fish leaps in the background; a ship rides the waves. Everything around him moves. He does not. This is not detachment. This is what having survived the water looks like."
+  },
+  {
+    "id": "swords-ace", "name": "Ace of Swords", "arcana": "minor", "number": 1, "suit": "swords",
+    "symbol": "A♠", "keywords": ["breakthrough", "clarity", "sharp mind", "truth"],
+    "element": "Air", "astro": "Pure Air — the root of the element's power",
+    "numerology": "1 — the first cut; the mind encountering its object for the first time with full force; clarity before it becomes opinion.",
+    "upright": "Clarity, truth, and mental breakthrough. Cut through confusion with honest thought. A new idea or perspective arrives like a blade — precise and illuminating.",
+    "reversed": "Confusion, brutality, and clouded judgment. The mind is fighting itself. Dishonesty or muddled thinking creates chaos. Seek clarity before acting.",
+    "shadow": "The sword that loves cutting more than it loves truth — intellect deployed for its own satisfaction rather than genuine understanding; clarity as cruelty.",
+    "waite": "A hand emerges from clouds gripping a great upright sword. A crown hangs from the tip, wreathed with a yew branch and palm. The mountains loom below. The blade is double-edged: it cuts in both directions. The crown is the prize, but you have to earn it by being honest about which direction the cut must go."
+  },
+  {
+    "id": "swords-2", "name": "Two of Swords", "arcana": "minor", "number": 2, "suit": "swords",
+    "symbol": "2♠", "keywords": ["difficult decisions", "weighing options", "an impasse", "avoidance"],
+    "element": "Air", "astro": "Moon in Libra",
+    "numerology": "2 — the mind divided; the two truths that cannot both be true; the pause that is neither rest nor action but suspension.",
+    "upright": "Indecision, stalemate, and avoidance. You are blindfolded to the full truth, holding two opposing choices at bay. It's time to remove the blindfold and face what you already know.",
+    "reversed": "Indecision, confusion, and information overload. Too much information now confuses rather than clarifies. Quiet the mind and trust your gut.",
+    "shadow": "The preferred blindfold — choosing not to see because seeing requires deciding; using balance as an excuse for perpetual suspension.",
+    "waite": "A blindfolded woman sits before a crescent-lit sea, two swords crossed over her chest. She is self-protected: the swords keep approach away, and the blindfold keeps the truth away. She already knows what she needs to know. The blindfold is hers; she could remove it at any time."
+  },
+  {
+    "id": "swords-3", "name": "Three of Swords", "arcana": "minor", "number": 3, "suit": "swords",
+    "symbol": "3♠", "keywords": ["heartbreak", "emotional pain", "sorrow", "grief", "hurt"],
+    "element": "Air", "astro": "Saturn in Libra",
+    "numerology": "3 — the third thing that breaks the pair; grief as the price of love; the synthesis of caring and loss.",
+    "upright": "Heartbreak, grief, and sorrow. Pain pierces deep — acknowledge it fully. Grief allowed to move through you will not stay. This card gives permission to feel.",
+    "reversed": "Recovery, forgiveness, and moving on. The worst of the pain has passed. Healing is underway. Release the story of the wound so the scar can form cleanly.",
+    "shadow": "Pain as proof of love — keeping the wound open because healing feels like betrayal of what was lost; the swords kept in the heart as monuments.",
+    "waite": "A red heart hangs in a grey, rainstormed sky, pierced by three swords. There is no figure. The image is the feeling itself — no interpretation needed, no context that would make it hurt less. This is simply what grief looks like when you make it visible. Let it rain."
+  },
+  {
+    "id": "swords-4", "name": "Four of Swords", "arcana": "minor", "number": 4, "suit": "swords",
+    "symbol": "4♠", "keywords": ["rest", "restoration", "contemplation", "recuperation"],
+    "element": "Air", "astro": "Jupiter in Libra",
+    "numerology": "4 — the stable structure of rest; the four walls of a sanctuary; stillness after battle not as defeat but as necessary preparation.",
+    "upright": "Rest, recuperation, and strategic withdrawal. You need — and deserve — time to restore yourself. Stillness now is not retreat but preparation. Rest is productive.",
+    "reversed": "Restlessness, burnout, and unable to relax. The body and mind won't quiet despite exhaustion. Address the root of the restlessness — what fear prevents you from resting?",
+    "shadow": "The effigy — resting so completely and for so long that it becomes a kind of living death; withdrawal from the world as an end rather than a means.",
+    "waite": "A knight lies in effigy on a tomb, hands clasped in prayer, three swords mounted on the wall above and one beneath. A stained glass window filters the light. The church is quiet. He is not dead — he is thinking. The swords wait. He will rise when he is ready."
+  },
+  {
+    "id": "swords-5", "name": "Five of Swords", "arcana": "minor", "number": 5, "suit": "swords",
+    "symbol": "5♠", "keywords": ["unbridled ambition", "conflict", "defeat", "win at all costs"],
+    "element": "Air", "astro": "Venus in Aquarius",
+    "numerology": "5 — the disruption that reveals character; the victory that costs more than it was worth; what winning at any cost actually costs.",
+    "upright": "Conflict, defeat, and hollow victory. Someone wins at the cost of others' dignity. Examine whether a victory is worth what it costs. Not every battle needs to be fought.",
+    "reversed": "Reconciliation, making amends, and moving past conflict. An opportunity to resolve lingering tension. Pride has softened enough to allow real repair.",
+    "shadow": "The scorekeeper — winning arguments as a substitute for genuine relationship; the person who needs to be right more than they need to be known.",
+    "waite": "A smirking figure gathers up three swords while two defeated figures walk away in the distance. The sky is stormy. He won. The two walking away know it, and so does he — but his expression isn't triumphant. It's something else. What does it cost to win this way? Look at his face."
+  },
+  {
+    "id": "swords-6", "name": "Six of Swords", "arcana": "minor", "number": 6, "suit": "swords",
+    "symbol": "6♠", "keywords": ["transition", "change", "rite of passage", "moving on"],
+    "element": "Air", "astro": "Mercury in Aquarius",
+    "numerology": "6 — the harmony of necessary motion; the healing that happens on the water between here and there; transition as its own kind of rest.",
+    "upright": "Transition, moving on, and passage to calmer waters. You are being guided away from turbulence toward something more peaceful. The journey is quiet but necessary.",
+    "reversed": "Emotional baggage, unfinished business, and resistance to transition. You're having difficulty leaving something behind. What are you still carrying that the transition requires you to release?",
+    "shadow": "The permanent passenger — always in transit, never arriving; using the motion of leaving as a way to avoid the stillness of having arrived somewhere.",
+    "waite": "A ferryman poles a boat carrying two seated figures — one appears to be a woman with a child, heads bowed. Six swords stand upright in the prow. The near water is choppy; the far water, smooth. They are moving. They carry the swords with them — you don't leave trouble, you carry it into calmer water."
+  },
+  {
+    "id": "swords-7", "name": "Seven of Swords", "arcana": "minor", "number": 7, "suit": "swords",
+    "symbol": "7♠", "keywords": ["betrayal", "deception", "getting away with something", "stealth"],
+    "element": "Air", "astro": "Moon in Aquarius",
+    "numerology": "7 — the seeker's number gone sideways; the inner truth turned cunning; the mind that knows better but acts anyway.",
+    "upright": "Deception, betrayal, and strategic thinking. Someone may not be honest with you — or with themselves. Tread carefully and verify before trusting.",
+    "reversed": "Conscience, coming clean, and unmasking deception. A secret is ready to be revealed. Guilt or honesty compels someone to come forward. Truth will out.",
+    "shadow": "The self-deceiver — the person most successfully fooled by the scheme is its architect; cleverness deployed against the self's own best interests.",
+    "waite": "A figure creeps away from a military encampment carrying five swords, glancing back over his shoulder with a sly grin. Two swords remain planted in the ground behind him. He thinks he's gotten away with something. He has left evidence. He will find out."
+  },
+  {
+    "id": "swords-8", "name": "Eight of Swords", "arcana": "minor", "number": 8, "suit": "swords",
+    "symbol": "8♠", "keywords": ["negative thinking", "restriction", "imprisonment", "victim mentality"],
+    "element": "Air", "astro": "Jupiter in Gemini",
+    "numerology": "8 — the lemniscate of thought turned inward; power circulating as restriction; mastery of imprisonment.",
+    "upright": "Restriction, trapped thinking, and self-imposed limitation. The cage is largely built from thoughts. You have more freedom than you believe. Remove the blindfold of your own perception.",
+    "reversed": "Self-limiting beliefs releasing, freedom, and opening up. The cage door is open. You are beginning to recognize that you have the power to free yourself.",
+    "shadow": "The cage as identity — unconsciously maintaining restriction because freedom would require a self that hasn't been built yet; the blindfold preferred to the exposed vulnerability of seeing.",
+    "waite": "A bound and blindfolded woman stands surrounded by eight upright swords. She is not bound tightly. The swords form a fence, not a cage — there are gaps. The sea and castle are visible beyond. She could leave. The blindfold is hers. The bindings are loose. The jailer is also the prisoner."
+  },
+  {
+    "id": "swords-9", "name": "Nine of Swords", "arcana": "minor", "number": 9, "suit": "swords",
+    "symbol": "9♠", "keywords": ["anxiety", "worry", "fear", "depression", "nightmares"],
+    "element": "Air", "astro": "Mars in Gemini",
+    "numerology": "9 — the edge of completion turned to dread; the mind at its most productive generating catastrophe instead of insight.",
+    "upright": "Anxiety, fear, and nighttime worry. The mind spirals in the dark. These fears feel real, but many are projections. Seek support and shine a light on what haunts you.",
+    "reversed": "Inner turmoil, releasing worry, and recovery. You are finding your way back from the dark. The worst of the anxiety is lifting, slowly but surely.",
+    "shadow": "The anxious vigil as control — if I worry enough, nothing bad will happen; fear deployed as a substitute for trust because trust has been broken before.",
+    "waite": "A figure sits bolt upright in bed, head in hands, nine swords mounted on the wall behind them. The quilt shows the astrological symbols; the carved bedpost depicts a scene of defeat. This is 3 a.m. thinking. The swords are on the wall, not in the flesh — but the mind doesn't know the difference yet."
+  },
+  {
+    "id": "swords-10", "name": "Ten of Swords", "arcana": "minor", "number": 10, "suit": "swords",
+    "symbol": "10♠", "keywords": ["painful endings", "deep wounds", "betrayal", "crisis"],
+    "element": "Air", "astro": "Sun in Gemini",
+    "numerology": "10 — the complete cycle of mental suffering; the absolute bottom; after this, there is nowhere left to go but up.",
+    "upright": "Painful endings, betrayal, and crisis. The lowest point. Though this moment is brutal, it is also final — things cannot get worse from here. Dawn follows the darkest hour.",
+    "reversed": "Recovery, regeneration, and resisting an inevitable end. You are pulling yourself back from the brink. Or you are delaying an ending that must come. Let it end so you can heal.",
+    "shadow": "The theatrical collapse — ten swords where one would have done; the part of the self that chooses the most dramatic possible version of being done.",
+    "waite": "A figure lies face-down on the ground, ten swords in the back. The sky is black — but on the horizon, the sun rises over calm water. The gold sky is above the darkness. Ten is as many swords as anyone gets. This is the absolute bottom, and it is also, therefore, the beginning of the turn."
+  },
+  {
+    "id": "swords-page", "name": "Page of Swords", "arcana": "minor", "number": 11, "suit": "swords",
+    "symbol": "P♠", "keywords": ["new ideas", "curiosity", "thirst for knowledge", "new ways of communicating"],
+    "element": "Air", "astro": "Earth of Air — Gemini",
+    "numerology": "11 — the mind at the threshold of its own power; thought not yet disciplined; the first encounter with the sword's weight.",
+    "upright": "Curiosity, new ideas, and sharp mental energy. A young, eager mind seeking truth. Ask questions, speak honestly, and gather information before concluding.",
+    "reversed": "Cynicism, rudeness, and scattered thinking. The sharp tongue cuts without wisdom. Use words with care — honesty without tact is cruelty.",
+    "shadow": "The sword turned inward — using intellectual sharpness to perform superiority rather than to understand; truth-seeking that is actually score-settling.",
+    "waite": "A young figure stands on a hilltop, sword raised, their cloak and hair whipped by the wind. The clouds move fast. The gaze is keen and slightly suspicious — alert to everything, trusting nothing. The sword is too big for them, but they don't know that yet. That's half the danger."
+  },
+  {
+    "id": "swords-knight", "name": "Knight of Swords", "arcana": "minor", "number": 12, "suit": "swords",
+    "symbol": "Kn♠", "keywords": ["ambiguous", "action oriented", "communicative", "daring"],
+    "element": "Air", "astro": "Air of Air — Gemini/Libra",
+    "numerology": "12 — mental energy fully in motion; the mind that has chosen its direction and now moves at full speed without stopping to ask if the direction is right.",
+    "upright": "Ambition, action, and intellectual charge. Fast-moving ideas and bold action. This knight moves fast — make sure the sword is aimed at truth before swinging.",
+    "reversed": "Rudeness, tactlessness, and all action no forethought. Speed has outpaced wisdom. Pause before speaking or acting — damage done in haste is hard to undo.",
+    "shadow": "Speed as righteousness — moving so fast and with such conviction that doubt itself becomes the enemy; certainty as armor against the possibility of being wrong.",
+    "waite": "A knight charges at full gallop, sword raised, cloak and horse's mane streaming backward. Clouds are sliced by his passage. The birds scatter. He is committed to his direction in a way that precludes correction. The question is not whether he is capable. The question is whether he will know when to stop."
+  },
+  {
+    "id": "swords-queen", "name": "Queen of Swords", "arcana": "minor", "number": 13, "suit": "swords",
+    "symbol": "Q♠", "keywords": ["complex, perceptive, clear boundaries, direct, witty"],
+    "element": "Air", "astro": "Water of Air — Libra",
+    "numerology": "13 — the mind in its wise, discerning feminine form; thought that has been tempered by loss and emerged as clarity rather than bitterness.",
+    "upright": "Clarity, directness, and sharp perception. A keen mind that sees through illusion. She speaks truth without cruelty. Set clear boundaries with compassion and precision.",
+    "reversed": "Cold, bitter, and cruel. Pain has hardened into armor. Walls built to protect become prison walls. Soften enough to allow connection without losing your discernment.",
+    "shadow": "The fortress of clarity — the truth used to keep people at a distance rather than to bring them closer; precision as protection from vulnerability.",
+    "waite": "A queen sits upright on her throne, sword raised vertically, one hand slightly extended as if to receive. Her expression is composed but not unkind. A bird flies above her; the sky has weather in it. She has seen things. Her clarity comes from what she survived, not from having been shielded."
+  },
+  {
+    "id": "swords-king", "name": "King of Swords", "arcana": "minor", "number": 14, "suit": "swords",
+    "symbol": "K♠", "keywords": ["clear thinking", "intellectual power", "authority", "truth"],
+    "element": "Air", "astro": "Fire of Air — Aquarius",
+    "numerology": "14 — intellect at full authority; the mind that governs by principle rather than impulse; thought that has earned the right to lead.",
+    "upright": "Intellectual power, authority, and clear judgment. A sharp and disciplined mind leads with logic and integrity. Truth, however uncomfortable, is the foundation of real leadership.",
+    "reversed": "Manipulative, tyrannical, and abusive of power. Intelligence used to control or deceive. A leader who exploits rather than serves. Examine whose interests the intellect truly serves.",
+    "shadow": "The judge who has forgotten mercy — intelligence deployed to dominate rather than to understand; the letter of the law honored at the expense of everything it was meant to protect.",
+    "waite": "A king sits rigidly forward on a stone throne, holding his sword upright. Butterflies decorate his throne — transformation is in the stone, even if not yet in the man. He looks directly at you. His mind is made up. The question is whether what his mind made is just."
+  },
+  {
+    "id": "pents-ace", "name": "Ace of Pentacles", "arcana": "minor", "number": 1, "suit": "pentacles",
+    "symbol": "A◆", "keywords": ["opportunity", "prosperity", "new venture", "security"],
+    "element": "Earth", "astro": "Pure Earth — the root of the element's power",
+    "numerology": "1 — material potential at its origin; the seed before it is planted; the coin before it is spent or invested.",
+    "upright": "New financial opportunity, material beginnings, and prosperous seeds. A gift of abundance is being extended. Ground yourself and plant this seed with care.",
+    "reversed": "Lost opportunity, lack of planning, and scarcity mindset. A chance for prosperity has been missed or squandered. Review your relationship with money and resources.",
+    "shadow": "The seed admired but never planted — treating abundance as something to be appreciated rather than used; the opportunity held so carefully it never grows.",
+    "waite": "A hand extends from clouds above a lush garden, offering a single golden pentacle. An archway of roses opens onto a path leading to distant mountains. The path is already prepared. The garden is already growing. The pentacle is real. The only question is whether you'll take it and walk through."
+  },
+  {
+    "id": "pents-2", "name": "Two of Pentacles", "arcana": "minor", "number": 2, "suit": "pentacles",
+    "symbol": "2◆", "keywords": ["multiple priorities", "time management", "prioritization", "adaptability"],
+    "element": "Earth", "astro": "Jupiter in Capricorn",
+    "numerology": "2 — material duality in motion; the balance between two real things; the juggle that is actually a sophisticated form of attention.",
+    "upright": "Balance, adaptability, and juggling priorities. You are managing multiple responsibilities. Stay flexible — the balance is achievable, but requires mindful attention.",
+    "reversed": "Disorganization, financial loss, and overwhelm. Too many balls in the air. Something will drop if you don't prioritize. Simplify where you can.",
+    "shadow": "Perpetual juggling as identity — keeping things in motion to avoid having to decide which thing actually matters most.",
+    "waite": "A young man dances on the balls of his feet, juggling two pentacles connected by an infinity loop of ribbon. Behind him, great ships ride enormous waves. He makes it look effortless. It isn't. But the effort has been metabolized into grace. That takes practice."
+  },
+  {
+    "id": "pents-3", "name": "Three of Pentacles", "arcana": "minor", "number": 3, "suit": "pentacles",
+    "symbol": "3◆", "keywords": ["teamwork", "initial fulfilment", "collaboration", "learning"],
+    "element": "Earth", "astro": "Mars in Capricorn",
+    "numerology": "3 — creative collaboration made material; the point where individual skill meets collective vision; the work that requires more than one person to exist.",
+    "upright": "Teamwork, skill-building, and collaborative success. Different skills combining toward a common goal. Respect the expertise of others. Progress through partnership.",
+    "reversed": "Lack of teamwork, disorganized work, and poor communication. Collaboration has broken down. Competing egos undermine a shared goal. Rebuild trust and communication.",
+    "shadow": "Expertise as isolation — the master craftsman who cannot share the work because collaboration would require giving up control of the outcome.",
+    "waite": "In a cathedral, a craftsman works at an arch while two robed figures — an architect and a priest perhaps — consult a plan. The craftsman has stopped to receive the input. Each person knows something the others don't. The building requires all three kinds of knowing to stand."
+  },
+  {
+    "id": "pents-4", "name": "Four of Pentacles", "arcana": "minor", "number": 4, "suit": "pentacles",
+    "symbol": "4◆", "keywords": ["saving money", "security", "conservatism", "scarcity", "control"],
+    "element": "Earth", "astro": "Sun in Capricorn",
+    "numerology": "4 — material stability become rigidity; the foundation that will not allow anything to be built on it for fear of adding weight.",
+    "upright": "Security, stability, and conserving resources. There is value in holding steady, but be careful not to let security become hoarding. What are you gripping too tightly?",
+    "reversed": "Generosity, giving, and releasing control. The grip loosens — either by choice or circumstance. Money or control is being released. Examine your relationship with security.",
+    "shadow": "Possession as love — holding things tightly not because they are valuable but because letting go would require trusting that something else will come.",
+    "waite": "A crowned man sits rigidly, a pentacle on his crown, one under each foot, one clasped to his chest. The city is visible behind him — he will not move toward it. He is holding everything he has, in every place he can. What he cannot hold is his own future."
+  },
+  {
+    "id": "pents-5", "name": "Five of Pentacles", "arcana": "minor", "number": 5, "suit": "pentacles",
+    "symbol": "5◆", "keywords": ["financial loss", "poverty", "lack mindset", "isolation", "worry"],
+    "element": "Earth", "astro": "Mercury in Taurus",
+    "numerology": "5 — material disruption; the loss that teaches what actually matters; deprivation as a clarifying force.",
+    "upright": "Hardship, financial loss, and feeling left out in the cold. A difficult material period. Reach out — help may be closer than you think. You are not as alone as you feel.",
+    "reversed": "Recovery from financial loss, spiritual poverty, and improved conditions. The worst has passed. Resources are beginning to return. Don't let past scarcity drive future decisions.",
+    "shadow": "Poverty as identity — having internalized lack so deeply that abundance, when it arrives, feels like a trick; the beggar who refuses the door that's open.",
+    "waite": "Two ragged figures make their way through snow past a lit stained glass window — warmth and light behind glass they don't enter. One is on crutches. One is barefoot. The window glows above them. They don't look up. The question is why."
+  },
+  {
+    "id": "pents-6", "name": "Six of Pentacles", "arcana": "minor", "number": 6, "suit": "pentacles",
+    "symbol": "6◆", "keywords": ["giving", "receiving", "sharing wealth", "generosity", "charity"],
+    "element": "Earth", "astro": "Moon in Taurus",
+    "numerology": "6 — material harmony through exchange; the circulation of resources that sustains a community; abundance made active through giving.",
+    "upright": "Generosity, giving and receiving, and balanced exchange. Abundance flows when shared. Give freely and receive graciously. Be aware of power dynamics in acts of charity.",
+    "reversed": "Strings attached gifts, inequality, and debt. Generosity hides control. Examine the conditions attached to what is given or received.",
+    "shadow": "The benevolent controller — giving generously as a way to maintain the position of giver; charity that preserves the hierarchy rather than dissolving it.",
+    "waite": "A wealthy merchant holds scales while distributing coins to two kneeling figures. He is the arbiter of who gets how much. The scales suggest fairness — but who decided he gets to hold the scales? The giving is real, and the power dynamic is also real. Both things are true."
+  },
+  {
+    "id": "pents-7", "name": "Seven of Pentacles", "arcana": "minor", "number": 7, "suit": "pentacles",
+    "symbol": "7◆", "keywords": ["long term view", "sustainable results", "perseverance", "investment"],
+    "element": "Earth", "astro": "Saturn in Taurus",
+    "numerology": "7 — patient assessment in the material world; the pause that distinguishes investment from impatience; the long view applied to slow-growing things.",
+    "upright": "Perseverance, investment, and long-term vision. Pause and assess your progress. The work you've done is good — but do you need to change course? Patient, sustainable effort wins.",
+    "reversed": "Lack of long-term vision, limited success, and impatience. You may be expecting quick results from slow-growing seeds. Reassess whether your efforts are well-placed.",
+    "shadow": "Endless assessment as avoidance — reviewing the garden so carefully and so often that the harvest is missed; perfectionism disguised as patience.",
+    "waite": "A young man leans on his staff, looking thoughtfully at a vine bearing seven pentacles. He has grown these. He could harvest them now, or wait for more. The work is good — but he is paused, and the pause is productive only if it leads to a decision. Otherwise it's just hesitation with good posture."
+  },
+  {
+    "id": "pents-8", "name": "Eight of Pentacles", "arcana": "minor", "number": 8, "suit": "pentacles",
+    "symbol": "8◆", "keywords": ["apprenticeship", "repetitive tasks", "mastery", "skill development"],
+    "element": "Earth", "astro": "Sun in Virgo",
+    "numerology": "8 — mastery through repetition; the lemniscate as the endless return to the craft; power built one iteration at a time.",
+    "upright": "Mastery, dedication, and skillful work. Focus on the craft. Repetition is not boring — it is the path to excellence. Put in the hours and let the skill develop.",
+    "reversed": "Perfectionism, misdirected activity, and lack of ambition. Either doing the wrong work with great effort, or excellent work in service of no meaningful goal. Realign.",
+    "shadow": "Craft as escape — becoming so absorbed in the doing that the question of why never has to be answered; perfecting the work to avoid confronting the purpose.",
+    "waite": "A craftsman sits at his bench, working carefully on one pentacle while seven more hang finished around him. The city is distant; his world is small and focused. He is not bored. He is building something — in the pentacles, yes, but also in himself. The repetition is the point."
+  },
+  {
+    "id": "pents-9", "name": "Nine of Pentacles", "arcana": "minor", "number": 9, "suit": "pentacles",
+    "symbol": "9◆", "keywords": ["fruits of labor", "rewards", "luxury", "self-sufficiency"],
+    "element": "Earth", "astro": "Venus in Virgo",
+    "numerology": "9 — material fulfillment at the edge of completion; the garden at its most abundant; independence earned through sustained effort.",
+    "upright": "Abundance, self-sufficiency, and enjoying the fruits of labor. You have built something real and beautiful. Stand in the garden of your own making and be proud.",
+    "reversed": "Over-investment in work, financial setbacks, and living beyond means. The garden is beautiful on the outside but something is off beneath the surface. Reassess what true wealth means to you.",
+    "shadow": "The solitary garden — abundance that has come at the cost of connection; self-sufficiency that has become self-enclosure; the estate that has no guests.",
+    "waite": "An elegantly dressed woman stands in a vineyard, a hooded falcon on her gloved hand, snails at her feet. Nine pentacles grow around her in abundance. She is alone — by choice, it seems, and at ease with it. The falcon is hooded because some things don't need to hunt when they already have everything."
+  },
+  {
+    "id": "pents-10", "name": "Ten of Pentacles", "arcana": "minor", "number": 10, "suit": "pentacles",
+    "symbol": "10◆", "keywords": ["wealth", "financial security", "family", "long-term success", "contribution"],
+    "element": "Earth", "astro": "Mercury in Virgo",
+    "numerology": "10 — material completion; the full cycle of earthly wealth culminating in legacy; what outlasts a single life.",
+    "upright": "Legacy, family wealth, and lasting security. What you've built will outlast you. This is about more than money — it is about the life and lineage you are creating.",
+    "reversed": "Fleeting success, instability, and family conflict around money. The foundation cracks under pressure. Examine what has been neglected in pursuit of material success.",
+    "shadow": "Legacy as control — building something to outlast the self in order to maintain influence beyond death; confusing inheritance with love.",
+    "waite": "An old man sits with two dogs in an archway while a couple converses beyond and a child reaches out to touch one of the dogs. Ten pentacles are arranged in the Kabbalistic Tree of Life pattern across the scene. Three generations are present. The old man is part of the background now — which is exactly right."
+  },
+  {
+    "id": "pents-page", "name": "Page of Pentacles", "arcana": "minor", "number": 11, "suit": "pentacles",
+    "symbol": "P◆", "keywords": ["opportunity", "ambition", "desire", "diligence", "studiousness"],
+    "element": "Earth", "astro": "Earth of Earth — Virgo",
+    "numerology": "11 — material potential at the threshold of mastery; the student who has just discovered the seriousness of the work.",
+    "upright": "New opportunities, studiousness, and practical beginnings. A new skill or financial opportunity is emerging. Approach it with curiosity, humility, and a willingness to learn.",
+    "reversed": "Lack of progress, procrastination, and immaturity. The eagerness to learn has stalled. Identify what is getting in the way of practical follow-through.",
+    "shadow": "Perpetual student syndrome — the one who is always preparing to do the thing rather than doing it; studying as a substitute for risking.",
+    "waite": "A young figure stands in a green field, gazing intently at a single pentacle held at eye level. The mountains and meadows spread behind him. He is absorbed. He has found the thing he wants to understand. That focused gaze is the beginning of everything — if it ever moves from studying the pentacle to using it."
+  },
+  {
+    "id": "pents-knight", "name": "Knight of Pentacles", "arcana": "minor", "number": 12, "suit": "pentacles",
+    "symbol": "Kn◆", "keywords": ["efficiency", "hard work", "responsibility", "consistent", "conservative"],
+    "element": "Earth", "astro": "Air of Earth — Virgo/Taurus",
+    "numerology": "12 — material dedication in motion; the steady force that shows up and does the work; practical commitment expressed as perseverance.",
+    "upright": "Hard work, reliability, and methodical progress. Slow and steady wins this race. A dependable, trustworthy energy that shows up and does the work, no matter what.",
+    "reversed": "Laziness, boredom, and workaholic tendencies. Either coasting without effort, or grinding without joy. Reconnect your effort to meaning.",
+    "shadow": "The reliable machine — so consistent and dependable that the why has been forgotten; duty without feeling; showing up so completely that the self never arrives.",
+    "waite": "A knight sits motionless on a heavy horse in a plowed field, a pentacle held before him in examination. Unlike the other knights, he is not moving. He surveys the work already done. His horse is massive, built for labor. He is not in a hurry. He will still be here tomorrow. That is both his gift and his trap."
+  },
+  {
+    "id": "pents-queen", "name": "Queen of Pentacles", "arcana": "minor", "number": 13, "suit": "pentacles",
+    "symbol": "Q◆", "keywords": ["practical", "homely", "motherly", "down-to-earth", "security"],
+    "element": "Earth", "astro": "Water of Earth — Capricorn",
+    "numerology": "13 — earthly mastery in its nurturing, receptive form; abundance that flows from deep rootedness; care that is practical rather than performed.",
+    "upright": "Nurturing abundance, practicality, and earthy wisdom. A warm and grounded presence who creates comfort and security. Take care of your body, home, and finances with loving attention.",
+    "reversed": "Self-centeredness, jealousy, and smothering. Material security has become the measure of love. Reconnect with what truly nourishes — not just what impresses.",
+    "shadow": "Comfort as currency — using the provision of security and material care as a substitute for emotional presence; the table always set but the host never quite there.",
+    "waite": "A queen sits on an ornate throne, a pentacle cradled gently in her lap, her head bowed toward it with what looks like tenderness. A rabbit runs at the base of her throne; flowers and greenery surround her. She is at home in the world. The pentacle is not a prize — it is a living thing she tends."
+  },
+  {
+    "id": "pents-king", "name": "King of Pentacles", "arcana": "minor", "number": 14, "suit": "pentacles",
+    "symbol": "K◆", "keywords": ["abundance", "prosperity", "security", "ambition", "discipline"],
+    "element": "Earth", "astro": "Fire of Earth — Taurus",
+    "numerology": "14 — earthly mastery in its full, active expression; the will made manifest as lasting abundance; the discipline that has become a world.",
+    "upright": "Abundance, prosperity, and mastery of the material world. A steady, disciplined hand that has turned effort into lasting wealth. Generosity flows from genuine security.",
+    "reversed": "Materialism, greed, and financial instability. Wealth has become an end in itself rather than a means to flourishing. Examine your relationship with money and power.",
+    "shadow": "The kingdom as the self — having built something so substantial that it can no longer be distinguished from who you are; the man who cannot afford to fail because failure would erase him.",
+    "waite": "A king sits heavily on a throne covered in grapes and vines, a pentacle resting in one hand, his scepter in the other. The castle rises behind him; armor is visible beneath his robes. He built this. He is also this now. The question this card quietly poses is: does he remember being anything else?"
+  }
+]

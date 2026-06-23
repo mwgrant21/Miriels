@@ -1,0 +1,24 @@
+node_modules/
+dist/
+data/readings/
+*.log
+.env
+
+# Interpretation cache and reader profiles (personal data, stays local)
+data/interpretations.db
+data/profiles/
+
+# Miriel memory engine — accumulating personal memory of the querent (stays local)
+data/memory.db
+data/memory.db-wal
+data/memory.db-shm
+
+# Brainstorm session files
+.superpowers/
+
+# Pattern weaving + daily card caches (personal data, stays local)
+data/patterns/
+data/daily/
+
+# API key lives here — never commit
+data/config.json

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miriel's Readings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="cosmos-bg" aria-hidden="true">
+    <div class="cosmos-forest"></div>
+    <div class="cosmos-forest-fade" aria-hidden="true"></div>
+    <div class="cosmos-nebula"></div>
+    <div class="cosmos-stars"></div>
+    <div class="cosmos-moon" id="cosmos-moon"></div>
+    <div class="cosmos-vignette"></div>
+  </div>
+  <header>
+    <div class="header-title-area">
+      <div class="header-ornament">&#10022; &middot; &#10022; &middot; &#10022;</div>
+      <h1>MIRIEL'S READINGS</h1>
+      <div class="header-tagline">Tarot &middot; Oracle &middot; Runes</div>
+      <div class="header-ambient" id="header-ambient"></div>
+      <div class="header-moon" id="header-moon"></div>
+    </div>
+    <div class="controls">
+      <div class="controls-row-1">
+        <div class="control-group">
+          <label class="sr-only">Deck</label>
+          <select id="deck-select" class="deck-select">
+            <option value="tarot">Rider-Waite Tarot</option>
+            <option value="thoth">Thoth Tarot</option>
+            <option value="celtic-dragon">Celtic Dragon Tarot</option>
+            <option value="moonology">Moonology Oracle</option>
+            <option value="lenormand">Lenormand Oracle</option>
+            <option value="runic">Elder Futhark Runes</option>
+            <option value="iching">I Ching</option>
+            <option value="oracle">My Oracle</option>
+            <option value="mixed">All Decks</option>
+          </select>
+        </div>
+        <span class="ctrl-sep">|</span>
+        <div class="control-group">
+          <div id="spread-tabs">
+            <button class="tab active" data-tab="general">General</button>
+            <button class="tab" data-tab="relationship">Relationship</button>
+            <button class="tab" data-tab="spiritual">Spiritual</button>
+          </div>
+        </div>
+        <span class="ctrl-sep">|</span>
+        <button class="draw-btn" id="draw-btn">&#9790; Lay the Cards</button>
+        <button class="settings-btn" id="grimoire-btn" title="Grimoire — study the cards">&#128218;</button>
+        <button class="settings-btn" id="journal-btn" title="Reading Journal">&#128214;</button>
+        <button class="settings-btn" id="theme-btn" title="Theme">&#9681;</button>
+        <button class="settings-btn" id="settings-btn" title="Settings">&#9881;</button>
+      </div>
+      <div class="controls-row-2">
+        <span class="ctrl-label">Spread &#8594;</span>
+        <select id="spread-select" class="spread-select-dropdown"></select>
+        <span class="ctrl-sep">|</span>
+        <div class="mode-toggle-group">
+          <button class="mode-btn active" id="mode-random">&#127922; Draw for me</button>
+          <button class="mode-btn" id="mode-manual">&#9997; I'll choose</button>
+        </div>
+        <button class="btn-miriel-choice" id="mode-miriel">&#9790; Miriel's Choice</button>
+      </div>
+    </div>
+    <div class="question-bar">
+      <input type="text" id="question-input" placeholder="What weighs on you? Ask the cards. (optional)" autocomplete="off" />
+    </div>
+
+    <!-- Settings modal -->
+    <div id="settings-panel" class="settings-modal hidden" role="dialog" aria-modal="true">
+      <div class="settings-backdrop" id="settings-backdrop"></div>
+      <div class="settings-box">
+        <div class="settings-box-header">
+          <span class="settings-box-title">Settings</span>
+          <button class="settings-close-btn" id="settings-close-btn" aria-label="Close">&#x2715;</button>
+        </div>
+        <div class="settings-row">
+          <label class="settings-label">Anthropic API Key</label>
+          <div class="settings-input-group">
+            <input type="password" id="api-key-input" placeholder="sk-ant-..." autocomplete="off" spellcheck="false" />
+            <button class="settings-save-btn" id="save-key-btn">Save</button>
+          </div>
+          <div id="key-status" class="key-status"></div>
+        </div>
+        <p class="settings-hint">Your key is saved locally on this machine only. Get yours at <span class="settings-link">console.anthropic.com</span></p>
+      </div>
+    </div>
+    <!-- Compatibility modal -->
+    <div id="compat-modal" class="settings-modal hidden" role="dialog" aria-modal="true">
+      <div class="settings-backdrop" id="compat-backdrop"></div>
+      <div class="settings-box compat-box">
+        <div class="settings-box-header">
+          <span class="settings-box-title">&#9829; Compatibility Reading</span>
+          <button class="settings-close-btn" id="compat-close-btn" aria-label="Close">&#x2715;</button>
+        </div>
+        <div class="compat-persons">
+          <div class="compat-person">
+            <div class="compat-person-label">First Person</div>
+            <div class="settings-row">
+              <label class="settings-label">Name</label>
+              <input type="text" id="compat-a-name" class="compat-name-input" placeholder="Name" autocomplete="off" />
+            </div>
+            <div class="settings-row">
+              <label class="settings-label">Zodiac</label>
+              <div class="compat-zodiac-row">
+                <select id="compat-a-zodiac" class="compat-zodiac-select">
+                  <option value="">— choose sign —</option>
+                  <option>Aries</option><option>Taurus</option><option>Gemini</option>
+                  <option>Cancer</option><option>Leo</option><option>Virgo</option>
+                  <option>Libra</option><option>Scorpio</option><option>Sagittarius</option>
+                  <option>Capricorn</option><option>Aquarius</option><option>Pisces</option>
+                </select>
+                <span class="compat-or">or</span>
+                <input type="date" id="compat-a-bdate" class="compat-date-input" title="Birth date (auto-detects sign)" />
+              </div>
+              <div class="compat-sign-preview" id="compat-a-preview"></div>
+            </div>
+          </div>
+          <div class="compat-person">
+            <div class="compat-person-label">Second Person</div>
+            <div class="settings-row">
+              <label class="settings-label">Name</label>
+              <input type="text" id="compat-b-name" class="compat-name-input" placeholder="Name" autocomplete="off" />
+            </div>
+            <div class="settings-row">
+              <label class="settings-label">Zodiac</label>
+              <div class="compat-zodiac-row">
+                <select id="compat-b-zodiac" class="compat-zodiac-select">
+                  <option value="">— choose sign —</option>
+                  <option>Aries</option><option>Taurus</option><option>Gemini</option>
+                  <option>Cancer</option><option>Leo</option><option>Virgo</option>
+                  <option>Libra</option><option>Scorpio</option><option>Sagittarius</option>
+                  <option>Capricorn</option><option>Aquarius</option><option>Pisces</option>
+                </select>
+                <span class="compat-or">or</span>
+                <input type="date" id="compat-b-bdate" class="compat-date-input" title="Birth date (auto-detects sign)" />
+              </div>
+              <div class="compat-sign-preview" id="compat-b-preview"></div>
+            </div>
+          </div>
+        </div>
+        <div class="compat-actions">
+          <button class="draw-btn compat-begin-btn" id="compat-begin-btn">Begin the Reading</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <datalist id="card-names"></datalist>
+
+  <main>
+    <!-- Card of the Day -->
+    <div id="daily-card-area" class="hidden"></div>
+
+    <!-- Resume prior session banner (shown on load if history exists) -->
+    <div id="resume-panel" class="hidden">
+      <div class="resume-eyebrow">Where We Left Off</div>
+      <div class="resume-header">
+        <span class="resume-date" id="resume-date"></span>
+        <span class="resume-meta" id="resume-meta"></span>
+      </div>
+      <div class="resume-question" id="resume-question"></div>
+      <div class="resume-cards" id="resume-cards"></div>
+      <div class="resume-actions">
+        <button class="clarifier-btn" id="resume-btn">&#8617; Return to the reading</button>
+        <button class="clarifier-btn clarifier-btn-alt" id="resume-dismiss-btn">Begin anew</button>
+      </div>
+    </div>
+
+    <div id="reader-note" class="reader-note hidden"></div>
+    <div id="theme-card-area" class="hidden"></div>
+    <div id="spread-area" class="spread-area"></div>
+
+    <div id="meaning-panel" class="meaning-panel hidden">
+      <div class="meanings-col">
+        <div class="col-eyebrow">Card Meanings</div>
+        <div id="meaning-content"></div>
+      </div>
+      <div class="ai-col">
+        <div class="col-eyebrow">The Reading</div>
+        <button class="ask-claude-btn" id="ask-claude-btn">&#10024; Open the reading</button>
+        <button class="export-btn hidden" id="export-reading-btn">&#8595; Save this reading</button>
+        <button class="export-btn hidden" id="copy-reading-btn">&#128203; Copy text</button>
+        <button class="export-btn hidden" id="share-image-btn">&#128247; Save as image</button>
+
+        <div id="claude-response" class="hidden">
+          <!-- Card reflections: individual per-card interpretations -->
+          <div id="card-reflections" class="hidden">
+            <div class="response-label">What the cards say</div>
+            <div id="reflections-text"></div>
+          </div>
+
+          <!-- Overall synopsis: the unified reading -->
+          <div id="overall-synopsis" class="hidden">
+            <div class="synopsis-header">
+              <span class="synopsis-icon">&#10022;</span>
+              <span class="response-label synopsis-label">The Reading</span>
+              <span class="synopsis-icon">&#10022;</span>
+            </div>
+            <div id="synopsis-text"></div>
+          </div>
+
+          <!-- Clarifier suggestion + actions -->
+          <div id="clarifier-prompt" class="hidden">
+            <div id="clarifier-suggestion"></div>
+            <div class="clarifier-actions">
+              <button class="clarifier-btn" id="clarifier-draw-btn">&#127183; Draw one for me</button>
+              <button class="clarifier-btn clarifier-btn-alt" id="clarifier-choose-btn">&#9997; I'll pick one</button>
+            </div>
+
+            <div id="clarifier-chooser" class="hidden">
+              <div class="manual-tabs" id="clarifier-tabs">
+                <button class="manual-tab active" id="ctab-tarot">Tarot</button>
+                <button class="manual-tab" id="ctab-oracle">Oracle</button>
+              </div>
+              <div class="clarifier-chooser-row">
+                <select id="clarifier-select" class="manual-select"></select>
+                <label class="manual-rev-label">
+                  <input type="checkbox" id="clarifier-reversed" class="manual-rev-check" /> Reversed
+                </label>
+                <button class="clarifier-btn" id="clarifier-submit-btn">Read this card</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Clarifier card result -->
+          <div id="clarifier-result" class="hidden">
+            <div class="clarifier-card-area" id="clarifier-card-area"></div>
+            <div class="clarifier-reading-label">What it reveals</div>
+            <div id="clarifier-reading-text"></div>
+          </div>
+
+          <!-- Continue: ask another question and draw again without scrolling up -->
+          <div id="continue-reading" class="hidden">
+            <div class="continue-divider">✦ ✦ ✦</div>
+            <div class="continue-row">
+              <textarea id="continue-question" placeholder="What calls to you? Share a question, a situation, or anything on your mind." autocomplete="off" rows="2"></textarea>
+              <button class="draw-btn continue-draw-btn" id="continue-draw-btn">Read Again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Your Story So Far — reader profile notebook overlay -->
+  <div id="notebook-overlay" class="notebook-overlay hidden" role="dialog" aria-modal="true">
+    <div class="notebook-backdrop" id="notebook-backdrop"></div>
+    <button class="notebook-close" id="notebook-close" aria-label="Close">&#x2715;</button>
+    <div class="notebook-scroll">
+      <div class="notebook-inner" id="notebook-inner"></div>
+    </div>
+  </div>
+
+  <!-- Grimoire overlay -->
+  <div id="grimoire-overlay" class="notebook-overlay hidden" role="dialog" aria-modal="true">
+    <div class="notebook-backdrop" id="grimoire-backdrop"></div>
+    <button class="notebook-close" id="grimoire-close" aria-label="Close">&#x2715;</button>
+    <div class="notebook-scroll">
+      <div class="grimoire-inner" id="grimoire-inner"></div>
+    </div>
+  </div>
+
+  <!-- Reading Journal overlay -->
+  <div id="journal-overlay" class="notebook-overlay hidden" role="dialog" aria-modal="true">
+    <div class="notebook-backdrop" id="journal-backdrop"></div>
+    <button class="notebook-close" id="journal-close" aria-label="Close">&#x2715;</button>
+    <div class="notebook-scroll">
+      <div class="journal-inner" id="journal-inner"></div>
+    </div>
+  </div>
+
+  <!-- Miriel's Choice cinematic takeover overlay -->
+  <div id="miriel-takeover" class="miriel-takeover hidden" aria-hidden="true">
+    <div class="miriel-takeover-inner">
+      <div class="miriel-takeover-ornament">&#10022; &middot; &#10022; &middot; &#10022;</div>
+      <div class="mini-shuffle"><i></i><i></i><i></i></div>
+      <div class="miriel-takeover-text" id="miriel-takeover-text"></div>
+    </div>
+  </div>
+
+  <!-- The Threshold — Miriel's memory-aware reunion greeting -->
+  <div id="threshold-overlay" class="miriel-takeover threshold-overlay hidden" aria-hidden="true">
+    <div class="miriel-takeover-inner threshold-inner">
+      <div class="miriel-takeover-ornament">&#10022; &middot; &#10022; &middot; &#10022;</div>
+      <div class="threshold-greeting" id="threshold-greeting"></div>
+      <textarea id="threshold-answer" class="threshold-answer" rows="3" placeholder="Tell her, or leave it&hellip;"></textarea>
+      <div class="threshold-reply" id="threshold-reply" hidden></div>
+      <div class="threshold-actions">
+        <button id="threshold-skip" class="threshold-btn ghost" type="button">Not now</button>
+        <button id="threshold-continue" class="threshold-btn" type="button">Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- In-reading curiosity — she pauses on a card -->
+  <div id="curiosity-panel" class="curiosity-panel hidden" aria-hidden="true">
+    <div class="curiosity-eyebrow" id="curiosity-eyebrow"></div>
+    <div class="curiosity-q" id="curiosity-q"></div>
+    <textarea id="curiosity-answer" class="curiosity-answer" rows="2" placeholder="Tell her, or skip&hellip;"></textarea>
+    <div class="curiosity-actions">
+      <button id="curiosity-skip" class="curiosity-btn ghost" type="button">Skip</button>
+      <button id="curiosity-answer-btn" class="curiosity-btn" type="button">Answer</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous"></script>
+  <script src="theme-transition.js"></script>
+  <script src="ambient-lines.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

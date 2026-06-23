@@ -1,0 +1,326 @@
+[
+  {
+    "id": "len-01", "name": "The Rider", "number": 1, "deckType": "Lenormand",
+    "symbol": "9♥", "keywords": ["news", "messenger", "arrival", "movement", "speed"],
+    "upright": "A message is on its way — news arrives quickly, often unexpectedly. The Rider signals movement toward you: a visitor, a communication, a development that has been traveling and will soon land. In combination with other cards, the Rider defines the nature of what is coming. What arrives is not yet here, but it is close and moving fast.",
+    "reversed": "Delayed news, a message that gets lost or distorted in transit, or movement that stalls before arrival. Something expected has not yet come — and the waiting itself is information worth examining.",
+    "lore": "In Marie Anne Lenormand's tradition, the Rider was the card of Mercury — the divine messenger, swift between worlds. The 9 of Hearts gives this card warmth: whatever news comes carries emotional weight. In the grand tableau, the Rider's proximity to other cards tells you what news is approaching whom.",
+    "combinations": "Rider + Letter = written news coming. Rider + Coffin = bad news arriving. Rider + Heart = romantic message or a beloved visitor approaching.",
+    "shadow": "The anxiety of waiting — obsessively checking for news that hasn't arrived, or mistaking urgency for importance because something is moving fast."
+  },
+  {
+    "id": "len-02", "name": "The Clover", "number": 2, "deckType": "Lenormand",
+    "symbol": "6♦", "keywords": ["luck", "chance", "small joy", "opportunity", "brief happiness"],
+    "upright": "Small but genuine good fortune. The Clover is the lucky break, the fortuitous timing, the unexpected delight that arrives without effort. It is not the great windfall — it is the parking spot that opens, the friend who calls at the right moment, the small thing that makes a difficult day easier. Do not overlook it because it is small. Small luck is still luck.",
+    "reversed": "A lucky opportunity that passes by unnoticed or untaken. The timing was briefly right and is now gone. This is a reminder to recognize good fortune when it appears, however modest.",
+    "lore": "The four-leaf clover as a charm against misfortune appears across European folk tradition dating back centuries — the triple leaf sacred to the Celts, the fourth a gift of fate. Lenormand readers associate this card with Venus in its lighter aspect: pleasure that costs nothing, beauty in the small. The 6 of Diamonds speaks to modest material gain.",
+    "combinations": "Clover + Fish = financial luck. Clover + Cross = luck that comes with a price or burden. Clover + Sun = significant good fortune, more than the Clover alone.",
+    "shadow": "Gambling on luck instead of building something: waiting for the four-leaf clover to appear rather than tending the garden."
+  },
+  {
+    "id": "len-03", "name": "The Ship", "number": 3, "deckType": "Lenormand",
+    "symbol": "10♠", "keywords": ["travel", "journey", "distance", "commerce", "foreign"],
+    "upright": "A journey is indicated — physical travel, a move across distance, or a venture into unknown territory. The Ship also speaks to commerce, especially trade across distance or with foreign parties. It is the card of longing for what is far away, and of the courage it takes to leave the familiar shore. Whatever it describes involves crossing into new waters.",
+    "reversed": "A journey delayed, cancelled, or arrived at badly. Plans to travel or expand are blocked. Alternatively: a homecoming, a return from foreign shores, or a venture that turns back before completion.",
+    "lore": "The Ship as oracle symbol has roots in ancient Mediterranean divination — the sea voyage as the ultimate test of fate's favor. In Lenormand's era, a ship voyage was one of the most consequential things a person could undertake. The 10 of Spades gives this card weight: the journey is significant and may be difficult. Ancient Romans consulted oracles before any sea voyage.",
+    "combinations": "Ship + House = moving to a new home. Ship + Book = education abroad, or hidden journey. Ship + Cross = a journey that carries burden or spiritual significance.",
+    "shadow": "Restlessness that never resolves into actual departure — the person always planning to leave who never goes; the longing for elsewhere as avoidance of here."
+  },
+  {
+    "id": "len-04", "name": "The House", "number": 4, "deckType": "Lenormand",
+    "symbol": "K♥", "keywords": ["home", "family", "property", "security", "privacy"],
+    "upright": "Home, family, and the private domestic world. The House is where you belong, where you feel safe, where the deepest parts of life unfold. It governs property, family dynamics, household matters, and the sense of security that comes from having a stable foundation. The King of Hearts at its heart makes this a card of generous, established authority within the home.",
+    "reversed": "Domestic instability, trouble with property, or a family matter that needs attention. The home environment is unsettled. What should feel safe does not.",
+    "lore": "The home as sacred space appears in virtually every divination tradition — the Roman Lares and Penates (household gods) guarded the threshold; in Celtic tradition the hearth was the spiritual center of family life. Lenormand's House corresponds to Jupiter in its domestic aspect: the stable, generous head of the household. The King of Hearts confirms warmth and benevolent authority within the domain.",
+    "combinations": "House + Tree = long-established family health or roots. House + Snake = trouble or a hidden threat within the home. House + Sun = a happy, flourishing home.",
+    "shadow": "The fortress-home that keeps the world out — using domestic security as an excuse not to engage with what lies beyond the threshold."
+  },
+  {
+    "id": "len-05", "name": "The Tree", "number": 5, "deckType": "Lenormand",
+    "symbol": "7♥", "keywords": ["health", "life force", "growth", "roots", "spirituality"],
+    "upright": "Health — of body, spirit, and life itself. The Tree speaks to deep-rooted vitality and the slow, patient growth of living things. It governs physical wellbeing, spiritual practice, ancestry, and the long arc of a life well-lived. When this card appears, health is on the table — either a blessing to be grateful for, or a concern to attend to.",
+    "reversed": "Health concerns, a slow drain of vitality, or roots that have been damaged. The life force is under strain. Attend to the body and the deeper spiritual nourishment it needs.",
+    "lore": "The World Tree — Yggdrasil in Norse tradition, the sacred oak in Celtic and Druidic practice, the Tree of Life in Kabbalistic and Christian mysticism — stands at the center of virtually every ancient cosmology. Lenormand's Tree carries this weight: it is the axis of a life. The 7 of Hearts grounds it in the emotional body — health is not separate from the heart's condition.",
+    "combinations": "Tree + Coffin = serious illness or the death of something long-rooted. Tree + Stars = spiritual healing and guidance. Tree + Child = a child's health, or new life beginning to take root.",
+    "shadow": "Clinging to old roots at the cost of new growth — the tree that will not bend in the storm, and so breaks."
+  },
+  {
+    "id": "len-06", "name": "The Clouds", "number": 6, "deckType": "Lenormand",
+    "symbol": "K♣", "keywords": ["confusion", "uncertainty", "doubt", "obstruction", "unclear"],
+    "upright": "Confusion, doubt, and the obscuring of what would otherwise be clear. The Clouds card tells you that the situation is not as it appears — information is incomplete, motivations are unclear, or the path forward is temporarily hidden. Look at what surrounds this card: the clouds are darkest near the darker cards, lighter near the brighter ones. Clarity will return, but not yet.",
+    "reversed": "The fog is beginning to lift. Confusion has passed its peak. What was hidden or unclear is starting to become visible. The obstruction is dissolving.",
+    "lore": "Clouds as an omen symbol appear in ancient Roman augury — the haruspex and augur read the sky as text. The clouded sun was a sign of uncertainty in matters of state. In the Lenormand tradition, the cloud card is the card of the difficult older man (King of Clubs) — authority that obscures rather than illuminates, power that operates in shadow.",
+    "combinations": "Clouds + Sun = temporary obscuration of success; the sun will return. Clouds + Key = clarity and solution are coming after the confusion. Clouds + Snake = deception deliberately created.",
+    "shadow": "Using uncertainty as permission to avoid deciding — the person who genuinely cannot see clearly, and who chooses to stay in the fog rather than moving toward the edge of it."
+  },
+  {
+    "id": "len-07", "name": "The Snake", "number": 7, "deckType": "Lenormand",
+    "symbol": "Q♣", "keywords": ["complication", "betrayal", "wisdom", "cunning", "temptation"],
+    "upright": "Complications, indirectness, and the presence of something that requires careful navigation. The Snake is not simply evil — it is the card of wisdom gained through difficulty, of knowing that not all paths are straight and not all people are straightforward. It often signals a complicated woman figure, a rival, or a situation with hidden layers. Navigate with your eyes open.",
+    "reversed": "A complication that has been neutralized, a rival overcome, or a deception exposed. The snake has shed its skin — what was tangled is now clearer.",
+    "lore": "The serpent as oracle symbol spans every major ancient tradition. In Greek divination, the sacred serpents of Asclepius at Epidaurus were the medium between seekers and the god of healing. The Delphic oracle sat above a chasm associated with Python. In Lenormand, the Queen of Clubs represents a complex, worldly woman — often beautiful, always worth watching carefully. The snake knows the way through the underworld.",
+    "combinations": "Snake + Coffin = a serious betrayal or the death of a relationship through deception. Snake + Fox = double cunning; a sophisticated deception. Snake + Bouquet = a gift with hidden strings.",
+    "shadow": "Mistrust become paranoia — seeing betrayal in every corner because the snake has been found before; the wisdom of the serpent turned to venom through fear."
+  },
+  {
+    "id": "len-08", "name": "The Coffin", "number": 8, "deckType": "Lenormand",
+    "symbol": "9♦", "keywords": ["endings", "transformation", "illness", "grief", "the necessary death"],
+    "upright": "Something is ending — a chapter, a relationship, a way of being, or a phase of life. The Coffin is one of the most direct cards in the Lenormand: it speaks of conclusion without softening it. But like the Death card in tarot, the ending clears the ground for what comes next. The 9 of Diamonds suggests this ending has material or financial dimensions worth examining.",
+    "reversed": "A prolonged ending — something that should have concluded has not yet fully released. Or: a near-miss with loss, a situation that came close to a bad end but did not reach it. Recovery is possible.",
+    "lore": "Ancient cultures understood death not as termination but as passage. The Egyptian Book of the Dead, the Tibetan Bardo Thodol, the Orphic gold tablets — all treat death as a threshold to navigate rather than a wall to hit. Lenormand's Coffin carries this tradition: it is the portal more than the ending. The 9 of Diamonds grounds it in the material realm — what we own, what we owe, what remains.",
+    "combinations": "Coffin + Tree = serious health concern. Coffin + Cross = a spiritually significant ending, fated closure. Coffin + Child = a project or new beginning that does not take root.",
+    "shadow": "Treating every ending as catastrophe rather than transformation — the inability to let things die naturally because death has not yet been befriended."
+  },
+  {
+    "id": "len-09", "name": "The Bouquet", "number": 9, "deckType": "Lenormand",
+    "symbol": "Q♠", "keywords": ["gifts", "beauty", "appreciation", "happiness", "social grace"],
+    "upright": "A gift, an invitation, a beautiful surprise. The Bouquet is one of the most unambiguously positive cards in the Lenormand — it speaks of appreciation, generosity, beauty, and the pleasures of social life. Something lovely is being offered or received. A person of warmth and refinement may be indicated. Allow yourself to enjoy this.",
+    "reversed": "Appreciation that is not acknowledged, or a gift with strings attached. The beauty of the moment is being missed. Alternatively: social niceties that paper over something more complicated.",
+    "lore": "The gift of flowers as a sacred gesture appears across ancient Mediterranean tradition — garlands at Greek temples, roses sacred to Venus, the lotus offered to Egyptian gods. In Lenormand's nineteenth century context, the bouquet also spoke to the art of reading the 'language of flowers' (floriography), in which each flower carried a coded social message. The Queen of Spades beneath this beauty suggests depth beneath the gift.",
+    "combinations": "Bouquet + Ring = an engagement or formal commitment celebrated. Bouquet + Book = a secret admirer or hidden appreciation. Bouquet + Sun = a period of genuine happiness and social flourishing.",
+    "shadow": "Beauty used as currency — giving generously only when there is a social return; the performance of warmth rather than its genuine expression."
+  },
+  {
+    "id": "len-10", "name": "The Scythe", "number": 10, "deckType": "Lenormand",
+    "symbol": "J♦", "keywords": ["sudden events", "danger", "harvesting", "decision", "cutting away"],
+    "upright": "Something comes suddenly and cuts clean. The Scythe is the card of decisive, irreversible action — a decision made, a connection severed, a harvesting of what has grown. It can indicate danger (look at what surrounds it), but it also carries the clarity of the blade: after the Scythe passes, there is no ambiguity. The Jack of Diamonds tells you this cutting has something to do with material matters or a young, quick-thinking person.",
+    "reversed": "A blow that was narrowly avoided, or a cutting decision that was delayed too long. The scythe swings but misses — or it has been stayed and the crop has begun to rot.",
+    "lore": "The scythe as a symbol of harvest and time appears in ancient Greek iconography — Cronos/Saturn with his sickle, the tool that both harvests and destroys. The Grim Reaper borrowed this image in medieval European allegory. In Lenormand, the direction the Scythe faces determines what it cuts: the blade end points toward what is being severed, the handle toward what initiated the action.",
+    "combinations": "Scythe + Heart = a sudden end to a relationship. Scythe + House = a significant domestic change, possibly abrupt. Scythe + Bouquet = cutting away what is beautiful but no longer serving.",
+    "shadow": "The compulsive cutter — using radical endings to avoid the slower, harder work of repair and continuation; the relief of destruction mistaken for the freedom of choice."
+  },
+  {
+    "id": "len-11", "name": "The Whip", "number": 11, "deckType": "Lenormand",
+    "symbol": "J♣", "keywords": ["conflict", "repetition", "discipline", "patterns", "agitation"],
+    "upright": "Conflict, arguments, or repetitive patterns that cause friction. The Whip speaks to the kind of disagreements that keep returning — the same fight, the same tension, the same cycle of agitation and resolution that never quite resolves. It also governs physical activity and discipline. Where is the repeated pattern in this situation? That is the real question this card poses.",
+    "reversed": "A conflict beginning to resolve, or a repetitive pattern finally breaking. The agitation is calming. What has been beaten against can now be approached differently.",
+    "lore": "The rod and scourge as instruments of both punishment and purification appear in ancient mystery religion: flagellation as part of Dionysian rites, the bundle of rods (fasces) as Roman symbol of disciplined authority, the hairshirt of Christian penitence. Lenormand's Whip carries this dual energy — it disciplines toward growth as well as punishes. The Jack of Clubs is the young man of action and sometimes confrontation.",
+    "combinations": "Whip + Dog = ongoing conflict with a friend. Whip + Heart = an abusive or conflicted love relationship. Whip + Stars = spiritual discipline, sustained practice.",
+    "shadow": "The discipline that has become self-flagellation — punishing oneself in endless repetitive cycles for not being enough, under the banner of self-improvement."
+  },
+  {
+    "id": "len-12", "name": "The Birds", "number": 12, "deckType": "Lenormand",
+    "symbol": "7♦", "keywords": ["communication", "conversation", "nervousness", "chatter", "a pair"],
+    "upright": "Communication — conversations, messages, phone calls, negotiations — and the anxiety that often accompanies them. The Birds indicates that words are central right now: what is being said, what is being not-said, and the nervous energy that surrounds important exchanges. It often indicates a pair or couple, and the particular kind of back-and-forth energy between two parties.",
+    "reversed": "Miscommunication, anxious chatter that circles without resolution, or a conversation that goes badly. The birds are flustered. What is said may not be what is meant.",
+    "lore": "Bird augury — the reading of bird behavior, flight patterns, and calls — was central to Roman and Greek divination, conducted by the augurs. The haruspex read the flight of birds across the templum (a defined sacred space of sky). The owl was Athena's bird of wisdom; the raven spoke for Apollo; the eagle of Zeus was the highest omen. In Lenormand, the Birds often appear as two owls — the wisdom of paired exchange.",
+    "combinations": "Birds + Letter = an important written communication, possibly a contract or legal document. Birds + Clouds = confused or mixed messages. Birds + Ring = discussion or negotiation around commitment.",
+    "shadow": "The anxious mind that will not quiet — mistaking the endless chatter of worry for useful processing; conversations going around in circles because the real thing is too frightening to say directly."
+  },
+  {
+    "id": "len-13", "name": "The Child", "number": 13, "deckType": "Lenormand",
+    "symbol": "J♠", "keywords": ["new beginnings", "innocence", "smallness", "immaturity", "youth"],
+    "upright": "Something new, small, and just beginning. The Child is the card of fresh starts — a project in its earliest stage, a young person, a new beginning that has not yet found its full shape. It is both innocent and inexperienced. Whatever is described is not yet mature: this is both its vulnerability and its open possibility. Treat it accordingly.",
+    "reversed": "Immaturity causing problems, or a new beginning that is struggling to find its footing. Something that should be growing is being stunted. Alternatively: the end of a childlike phase.",
+    "lore": "The divine child appears in mystery traditions worldwide — the infant Dionysos, the child Horus, the infant Christ — as the symbol of the sacred new beginning that requires protection because it holds everything in potential. Ancient oracles were often asked about children: will they survive, will they thrive? The Jack of Spades gives this child an edge — even innocence carries a blade.",
+    "combinations": "Child + Tree = a child's health, or a new beginning with deep roots. Child + Bear = a protective parent figure for a new beginning. Child + Coffin = a new beginning that doesn't survive, or a brief project.",
+    "shadow": "Perpetual beginning — using the freshness of the child card as a way to avoid growing up: always starting, never maturing, because staying small feels safer than becoming large."
+  },
+  {
+    "id": "len-14", "name": "The Fox", "number": 14, "deckType": "Lenormand",
+    "symbol": "9♣", "keywords": ["cunning", "strategy", "self-employment", "deception", "adaptation"],
+    "upright": "Cleverness, strategy, and the ability to adapt to circumstances. The Fox is not simply a card of deception — in the Lenormand tradition it is also the card of self-employment, freelance work, and the kind of intelligent maneuvering that gets things done in the real world. When it falls near the querent, it often says: use your wits. When it falls near other people, it says: watch theirs.",
+    "reversed": "Cunning turned against itself, or a deception that has been exposed. The fox has been caught, or has outfoxed itself. Whatever clever strategy was in play has backfired.",
+    "lore": "The fox as trickster figure appears across world mythology — Reynard the Fox of medieval European fable, the kitsune of Japanese tradition, the fox-spirit of West African Yoruba lore. In European folk tradition, the fox is the animal that outwits dogs and hunters through superior intelligence rather than strength. The 9 of Clubs confirms the fox's link to practical work and strategic action in the material world.",
+    "combinations": "Fox + Dog = a clever friend or an ally who is also watching their own interests. Fox + Book = a hidden strategy or secret career path. Fox + Snake = sophisticated deception; double cunning.",
+    "shadow": "The trickster who has tricked only themselves — cleverness deployed in the service of avoiding what cannot be avoided; strategy as a substitute for honesty."
+  },
+  {
+    "id": "len-15", "name": "The Bear", "number": 15, "deckType": "Lenormand",
+    "symbol": "10♣", "keywords": ["strength", "authority", "protection", "finance", "the boss"],
+    "upright": "Power, authority, and the kind of strength that protects. The Bear is the card of the boss, the parent, the institution — whoever holds the most power in a given situation. It governs finances, particularly savings and investment. The Bear's protection is genuine but also somewhat overwhelming: powerful forces are at work, and whether they serve you depends on your relationship to them.",
+    "reversed": "Authority misused, a controlling influence that stifles rather than protects, or financial pressure from above. The bear is too much, too close. Create some space.",
+    "lore": "The bear held sacred status in cultures from the Ainu of Japan to the Celts to the Sámi of Scandinavia — the largest and most powerful land animal of the northern hemisphere, revered as an ancestor and spirit guide. In ancient Greece, young girls served as 'arktoi' (she-bears) at the sanctuary of Artemis at Brauron, a rite of transition to womanhood. The 10 of Clubs confirms material power and endurance.",
+    "combinations": "Bear + Fish = significant financial matters, wealth. Bear + Whip = a controlling authority figure causing conflict. Bear + Child = a protective parent, or a powerful figure nurturing something new.",
+    "shadow": "Power that smothers — the protection that becomes suffocation; the strength that cannot allow vulnerability in those it loves because vulnerability feels like weakness."
+  },
+  {
+    "id": "len-16", "name": "The Stars", "number": 16, "deckType": "Lenormand",
+    "symbol": "6♥", "keywords": ["hope", "guidance", "clarity", "spiritual connection", "goals"],
+    "upright": "Hope, inspiration, and the sense of being guided toward something greater than the immediate situation. The Stars offer orientation — like the North Star, this card says you can find your direction if you look up. It governs spiritual practice, healing, and the longer arc of a life moving toward its purpose. The 6 of Hearts brings warmth to this guidance: it is not cold or distant but genuinely supportive.",
+    "reversed": "Feeling lost, spiritually disconnected, or without guidance. The stars have been obscured. The way forward is temporarily unclear. Return to what has always oriented you.",
+    "lore": "Stellar divination — astrology in its ancient form — was the original oracle. Babylonian astronomers tracked planetary movements for over a millennium before the Greeks formalized astrology. The Chaldeans (Babylonian astrologers) were famous throughout the ancient world for their ability to read the stars as divine communication. In Lenormand, the Stars card draws on this tradition of celestial guidance and cosmic orientation.",
+    "combinations": "Stars + Key = a clear solution revealed, a breakthrough of understanding. Stars + Moon = heightened intuition and spiritual gifts. Stars + Coffin = a spiritual ending, the death of a limiting belief.",
+    "shadow": "Spiritual bypassing — using the stars as an excuse not to do the earthly work; seeking celestial guidance as a way to avoid taking responsibility for earthly decisions."
+  },
+  {
+    "id": "len-17", "name": "The Stork", "number": 17, "deckType": "Lenormand",
+    "symbol": "Q♥", "keywords": ["change", "improvement", "return", "new cycle", "delivery"],
+    "upright": "Change for the better is coming — a positive transformation, a move, an improvement in circumstances. The Stork signals return and renewal: what has been away comes back, what has been stuck begins to move. It is classically the card of pregnancy and new life, but in the broader Lenormand tradition it governs any significant and welcome change in circumstances.",
+    "reversed": "Change that is delayed, a return that does not come, or an improvement that requires more time than expected. Something expected to shift has not yet done so.",
+    "lore": "The stork's return to its nest each spring was one of the most reliable natural omens of the ancient world — its arrival in Europe after winter migration was a sign that renewal was certain. Storks were sacred to Juno in Roman tradition and were considered guardians of domestic life; harming a stork was considered deeply unlucky. The Queen of Hearts confirms warmth and generous feminine energy behind this change.",
+    "combinations": "Stork + Child = pregnancy or a new beginning. Stork + House = a move to a new home, an improvement in domestic life. Stork + Coffin = a change that requires ending something first.",
+    "shadow": "Waiting for the stork to bring change rather than generating it — the person whose improvement is always arriving from outside rather than being created from within."
+  },
+  {
+    "id": "len-18", "name": "The Dog", "number": 18, "deckType": "Lenormand",
+    "symbol": "10♥", "keywords": ["loyalty", "friendship", "support", "trust", "known qualities"],
+    "upright": "A loyal friend, trusted ally, or supportive presence. The Dog is the most reliably positive person-card in the Lenormand: whoever this represents, they are on your side. They may not be the most exciting or powerful figure, but they will be there. Trust this person. This card also speaks to the quality of loyalty itself — the support that shows up without drama.",
+    "reversed": "A friend who has proven disloyal, trust misplaced, or support that has its limits. The dog has bitten. Or: an overprotective, suffocating loyalty that no longer serves either party.",
+    "lore": "The dog as the emblem of loyalty and faithfulness appears in virtually every human culture that kept dogs — which is nearly all of them, going back at least 15,000 years. In ancient Egypt, the jackal-headed Anubis guided souls through the underworld with faithful accuracy. In Greek myth, Odysseus's dog Argos waited twenty years and recognized him on his return. The 10 of Hearts gives this loyalty an abundance of emotional warmth.",
+    "combinations": "Dog + Snake = a friend who is not what they appear; loyalty that conceals complications. Dog + Bear = a powerful, reliable protector. Dog + Cross = a friend who becomes a burden, or a loyalty tested by fate.",
+    "shadow": "Codependent loyalty — staying with what is familiar and safe rather than what is honest or healthy; the faithfulness that serves neither party because it cannot see clearly."
+  },
+  {
+    "id": "len-19", "name": "The Tower", "number": 19, "deckType": "Lenormand",
+    "symbol": "6♠", "keywords": ["authority", "solitude", "organization", "establishment", "isolation"],
+    "upright": "Official structures, institutions, and the power of established authority. Unlike the tarot Tower, Lenormand's Tower is not about collapse — it is about the tall, established, somewhat isolated organizations that shape our lives: governments, corporations, courts, hospitals, banks. It also speaks to solitude and the particular kind of aloneness that comes with height. You may be dealing with a large institution, or with the experience of being set apart.",
+    "reversed": "Bureaucratic obstruction, an institution that fails or disappoints, or isolation that has become genuinely lonely rather than productively solitary.",
+    "lore": "The tower as symbol of both power and isolation appears across ancient and medieval tradition — the Tower of Babel as overreach, the watchtower as military strength, the lighthouse as guide. In medieval European society, the tower was where authority lived, literally above the common people. The 6 of Spades gives this card a quality of isolation and separation that is not hostile but is decidedly cool.",
+    "combinations": "Tower + Man or Woman = a person in a position of institutional authority. Tower + Coffin = an institution ending or failing. Tower + Garden = a public organization or social institution.",
+    "shadow": "The fortress self — retreating into solitude and structure as protection against the vulnerability of genuine human contact; authority used to maintain distance."
+  },
+  {
+    "id": "len-20", "name": "The Garden", "number": 20, "deckType": "Lenormand",
+    "symbol": "8♠", "keywords": ["society", "public life", "social gatherings", "community", "the public"],
+    "upright": "The public world — social gatherings, events, parties, community, and the way we present ourselves in public life. The Garden is where people meet: it governs social networks, public appearances, and the energy of a group or crowd. What happens here is visible to many. When the Garden appears, the situation involves the social dimension: other people are watching, or the answer lies in community and connection.",
+    "reversed": "Social isolation, a gathering that does not go well, or public exposure that is uncomfortable. The garden has become a fishbowl. Alternatively: withdrawal from social life that has become necessary.",
+    "lore": "The garden as a place of social gathering has ancient roots — the Persian paradise garden (paradeisos) that gave us the word 'paradise', the Greek agora as a gathering place of public life, the Roman forum as the center of civic existence. Pleasure gardens were central to public life in Lenormand's own Paris. The 8 of Spades adds a note of effort and discipline to social life: being seen takes work.",
+    "combinations": "Garden + Heart = a romantic social event, meeting someone at a gathering. Garden + Fox = networking with hidden agendas. Garden + Tower = a public institution, an official gathering.",
+    "shadow": "The performance of social connection — being in the garden but not genuinely present; networking rather than relating; the person who is always at the party and never truly there."
+  },
+  {
+    "id": "len-21", "name": "The Mountain", "number": 21, "deckType": "Lenormand",
+    "symbol": "8♣", "keywords": ["obstacles", "delays", "challenges", "hard journey", "long path"],
+    "upright": "A significant obstacle stands between you and what you are working toward. The Mountain is not impossible — mountains are climbed — but it is honest about the difficulty. This is not a small inconvenience but a real challenge that will require sustained effort over time. Look at what surrounds the Mountain to understand what the obstacle concerns and what resources are available for the climb.",
+    "reversed": "An obstacle that is beginning to give way, or a long-standing blockage finally resolving. The mountain is being climbed. Alternatively: an obstacle that is not what it appears — smaller than feared or of a different nature.",
+    "lore": "The mountain as sacred obstacle and spiritual destination appears across religious traditions — Mount Sinai and Olympus, the holy mountains of Hindu tradition, the Tibetan understanding of Meru as the world's axis. Climbing a sacred mountain was an act of devotion as much as endurance. The 8 of Clubs gives this card the energy of sustained hard work — the energy of someone who keeps going not because it is easy but because it matters.",
+    "combinations": "Mountain + Rider = delayed news or a message blocked. Mountain + Stars = keeping hope and direction through a long difficulty. Mountain + Key = the obstacle has a solution; the key will unlock the pass.",
+    "shadow": "The mountain as identity — defining oneself by one's obstacles; making the difficulty so central to the story that it becomes something to be preserved rather than overcome."
+  },
+  {
+    "id": "len-22", "name": "The Crossroads", "number": 22, "deckType": "Lenormand",
+    "symbol": "Q♦", "keywords": ["choices", "alternatives", "freedom", "different paths", "decision"],
+    "upright": "A genuine choice stands before you — two or more paths, each real and each with its own consequences. The Crossroads is the card of freedom and of responsibility: you are not trapped, you have options. Look at what lies along each path (what cards surround this one) to understand where each road leads. The decision is yours to make and it matters. Choose with awareness.",
+    "reversed": "Paralysis at the crossroads, or a choice made and already regretted. Alternatively: the freedom of having committed to a path — the decision has been made and the roads behind are now closed.",
+    "lore": "The crossroads held powerful spiritual significance in ancient Mediterranean tradition — Hecate, goddess of magic and the liminal, was the queen of crossroads and was honored there with offerings at the dark of the moon. In West African tradition (Yoruba) and its diaspora descendants (Vodou, Candomblé), Exu/Legba rules the crossroads as the guardian of choice and change. The Queen of Diamonds gives this card a practical, materially-grounded quality.",
+    "combinations": "Crossroads + Fox = choosing the clever path, or a deceptive choice. Crossroads + Heart = a decision in love. Crossroads + Mountain = a difficult crossroads; all paths are hard.",
+    "shadow": "The permanent standstill at the crossroads — using freedom of choice as an excuse never to commit to any path; the person for whom all options remain perpetually open."
+  },
+  {
+    "id": "len-23", "name": "The Mice", "number": 23, "deckType": "Lenormand",
+    "symbol": "7♣", "keywords": ["stress", "loss", "decrease", "draining", "gnawing worry"],
+    "upright": "Something is being nibbled away — resources, energy, time, peace of mind. The Mice speak to the slow draining effect of stress, worry, and the small losses that accumulate over time until they add up to something significant. Look at what surrounds this card to see what is being eaten away. The mice are rarely sudden — they work gradually, which is exactly what makes them dangerous.",
+    "reversed": "The draining has slowed or stopped. A source of stress is being addressed. Alternatively: losses that have already occurred and cannot be recovered — the cheese is gone.",
+    "lore": "Mice as an omen of misfortune appear across ancient cultures — they were associated with plague and famine, and their presence in granaries was a genuine catastrophic threat. The Greek god Apollo was sometimes called Apollo Smintheus (Mouse Apollo) — the god who both sent and protected from mouse plagues. In medieval European tradition, dreams of mice predicted loss. The 7 of Clubs gives the Mice a connection to work and practical matters being disrupted.",
+    "combinations": "Mice + Fish = financial loss, money draining away. Mice + Tree = health gradually declining. Mice + Heart = a relationship being eroded by small conflicts or neglect.",
+    "shadow": "The worry that becomes the thing itself — anxious attention to what might be lost creating a constant low-grade drain that is more damaging than the imagined threat."
+  },
+  {
+    "id": "len-24", "name": "The Heart", "number": 24, "deckType": "Lenormand",
+    "symbol": "J♥", "keywords": ["love", "emotion", "kindness", "desire", "the emotional center"],
+    "upright": "Love, emotional connection, and the warmth of genuine feeling. The Heart is the emotional center of the Lenormand — it brings all matters into the realm of feeling. When it appears, emotions are central to the situation. A romantic connection, an act of kindness, or the simple truth that what is happening here is being felt deeply rather than simply processed. Love is present.",
+    "reversed": "Love that is conflicted, conditional, or not quite what it appears. Emotions that are being suppressed, or a romantic situation that is under strain. The heart is present but not free.",
+    "lore": "The heart as the seat of emotion and spirit appears in ancient Egyptian theology most explicitly — the heart (ib) was weighed against the feather of Ma'at in the judgment of the dead, the only organ preserved for this cosmic trial. In ancient Mesopotamia, the heart was the organ of intelligence as well as emotion. The Jack of Hearts gives this card a romantic, youthful energy — the feeling is real, alive, and not yet armored by experience.",
+    "combinations": "Heart + Ring = an engagement, a commitment made in love. Heart + Whip = passionate conflict or a difficult love relationship. Heart + Book = a secret love or hidden feelings.",
+    "shadow": "Emotional demand disguised as love — the heart that gives in order to receive, and calls the transaction love; the attachment that cannot distinguish between connection and possession."
+  },
+  {
+    "id": "len-25", "name": "The Ring", "number": 25, "deckType": "Lenormand",
+    "symbol": "A♣", "keywords": ["commitment", "agreement", "partnership", "contract", "cycle"],
+    "upright": "A commitment is made — a contract signed, a partnership formalized, a promise given. The Ring speaks to agreements of all kinds: marriage, business contracts, long-term commitments, and the cycles that these create. The Ace of Clubs gives this card the force of a beginning — but it is a beginning that binds. What is agreed now creates the structure within which much else will unfold.",
+    "reversed": "A commitment broken, a contract disputed, or a cycle that is completing and releasing. Alternatively: a binding situation that needs renegotiation.",
+    "lore": "The ring as a symbol of binding agreement appears in ancient Mesopotamia — the cylinder seal ring was used to mark contracts in clay. Roman tradition used the anulus as a formal marker of status and agreement. The wedding ring's circle symbolizes the unbroken cycle of time — an idea present in cultures from ancient Egypt to the Iron Age Celts. The Ace of Clubs confirms this is a powerful, initiating force.",
+    "combinations": "Ring + Heart = a romantic commitment, engagement or marriage. Ring + Snake = a complicated or entangled commitment. Ring + Coffin = the end of a commitment, divorce or contract dissolution.",
+    "shadow": "Commitment used to arrest rather than ground — binding agreements made to prevent change rather than to create something; mistaking the ring for love rather than the container that love requires."
+  },
+  {
+    "id": "len-26", "name": "The Book", "number": 26, "deckType": "Lenormand",
+    "symbol": "10♦", "keywords": ["secrets", "knowledge", "education", "hidden information", "study"],
+    "upright": "Something is hidden or not yet known — a secret, undisclosed information, or knowledge that has not yet been fully revealed or understood. The Book governs education, research, and any situation where what you need to know is not fully visible. Look at what surrounds this card to understand what kind of knowledge is at play, and whether it will be revealed or remain hidden.",
+    "reversed": "A secret that is coming to light, or knowledge that has been revealed. Information that was hidden is now accessible. Alternatively: someone is refusing to share what they know.",
+    "lore": "The sealed book as a symbol of hidden wisdom appears across religious tradition — the sealed scrolls of Revelation, the sealed books of Egyptian temple libraries accessible only to initiates, the locked grimoire of magical tradition. In medieval European tradition, the Book of Fate was an actual divination tool used by fortune-tellers. The 10 of Diamonds gives this book a material dimension: the hidden knowledge often concerns practical, worldly matters.",
+    "combinations": "Book + Key = the secret will be unlocked; hidden knowledge revealed. Book + Man or Woman = a person who knows more than they are saying. Book + Letter = a written communication with hidden significance.",
+    "shadow": "Knowledge as power over rather than power with — hoarding information, keeping secrets not for protection but for the sense of superiority that knowing what others do not provides."
+  },
+  {
+    "id": "len-27", "name": "The Letter", "number": 27, "deckType": "Lenormand",
+    "symbol": "7♠", "keywords": ["written communication", "documents", "messages", "news in writing", "official papers"],
+    "upright": "A written communication of significance — a letter, email, document, contract, or any formal exchange in writing. The Letter is specific and concrete: this is not rumor or verbal communication but something that has been put in writing. Look at what surrounds it to understand the nature and content of what is written. An important document may need attention.",
+    "reversed": "A letter that does not arrive, important documents lost or delayed, or written communication that creates problems. Alternatively: a written matter that is being avoided.",
+    "lore": "Written communication held sacred status in ancient cultures — the stylus that pressed cuneiform into clay, the reed pen that wrote hieroglyphs, the calligrapher's brush that shaped Chinese characters. These were not merely utilitarian but sacred acts. In Roman augury, written omens (haruspicy of entrails) were transcribed into records preserved by the Etruscan tradition. The 7 of Spades gives this card a slight edge of difficulty — the letter may carry news that requires careful handling.",
+    "combinations": "Letter + Rider = written news arriving soon. Letter + Ring = a contract or written commitment. Letter + Coffin = a notice of ending — a dismissal, a death notice, a formal conclusion.",
+    "shadow": "Using the formality of writing to avoid the directness of conversation — communicating only what can be edited and controlled, hiding behind the document."
+  },
+  {
+    "id": "len-28", "name": "The Gentleman", "number": 28, "deckType": "Lenormand",
+    "symbol": "A♥", "keywords": ["the male querent", "significant man", "masculine energy", "partner"],
+    "upright": "The male querent — this card represents you if you identify as male, or the significant male figure in a reading. All cards surrounding the Gentleman describe that person's situation, influences, feelings, and trajectory. The Ace of Hearts gives this figure a warm, loving energy at core. Look at what cards fall nearby to understand what is shaping this person's world right now.",
+    "reversed": "The male figure in a complicated position — blocked, confused, or under difficult influence. The surrounding cards reveal the nature of the challenge.",
+    "lore": "Lenormand readings have always used significator cards — the Gentleman and Lady — to represent the querent and their partner or other key figures in a reading. This tradition of representing the querent as a card in the spread comes from the earliest cartomancy traditions, allowing the reader to map the landscape around the person as a visual, spatial practice. The Ace of Hearts roots this figure in the realm of emotional life and love.",
+    "combinations": "Gentleman + Heart = a man in love, or whose primary energy is emotional. Gentleman + Bear = a powerful male authority figure. Gentleman + Coffin = a man facing a significant ending or loss.",
+    "shadow": "The identity that has become a role — performing the expected qualities of the significator rather than inhabiting a genuine, complicated self."
+  },
+  {
+    "id": "len-29", "name": "The Lady", "number": 29, "deckType": "Lenormand",
+    "symbol": "A♠", "keywords": ["the female querent", "significant woman", "feminine energy", "partner"],
+    "upright": "The female querent — this card represents you if you identify as female, or the significant female figure in a reading. All surrounding cards describe her situation, influences, feelings, and path. The Ace of Spades gives her a quality of depth and directness — she is not easily fooled and not easily deterred. Look at what falls near her to understand her world.",
+    "reversed": "The female figure in a difficult or complicated position. Surrounding cards reveal what is challenging or blocking her.",
+    "lore": "The Lady card in early Lenormand decks was depicted as a woman of the querent's class and era — the nineteenth century bourgeoise or aristocrat, depending on the deck. In modern practice the Gentleman and Lady have been reinterpreted as simply the two significators that anchor a reading, with gender assigned by identification rather than appearance. The Ace of Spades gives this figure sharp intelligence and the ability to cut through to truth.",
+    "combinations": "Lady + Ring = a woman in a committed relationship, or a woman making a significant commitment. Lady + Star = a spiritually oriented, guided woman. Lady + Snake = a woman who is complicated or not fully revealing herself.",
+    "shadow": "The good woman's burden — performing the role of the Lady (capable, gracious, together) while the actual self remains unlived and unseen."
+  },
+  {
+    "id": "len-30", "name": "The Lily", "number": 30, "deckType": "Lenormand",
+    "symbol": "K♠", "keywords": ["wisdom", "maturity", "sensuality", "purity", "older person"],
+    "upright": "Wisdom accumulated through a long life, the peace that comes with maturity, and the pleasures of the body enjoyed without guilt. The Lily is one of the most complex cards in the Lenormand: it speaks simultaneously of purity and sensuality, of the elder's hard-won peace and the deep pleasures of a life well-lived. The King of Spades suggests this is not a gentle or sentimental card — it is wise, self-knowing, and fully realized.",
+    "reversed": "Rigidity of the elder who stopped learning, or pleasures pursued in ways that conflict with genuine values. Wisdom turned to stubbornness, or purity turned to repression.",
+    "lore": "The lily as a symbol of both purity and sensuality appears throughout ancient Mediterranean tradition — sacred to Hera (queen and mature feminine power), associated with Venus and the Song of Solomon's erotic poetry. The white lily's paradox of sexual fragrance and virginal appearance made it a favorite symbol in medieval Christian iconography, where it simultaneously honored the Virgin and the Magdalene. The King of Spades grounds this in the wisdom of the elder statesman.",
+    "combinations": "Lily + Heart = mature love, sensual relationship. Lily + Cross = spiritual maturity tested by suffering. Lily + Child = wisdom meeting new beginnings; an elder mentoring something young.",
+    "shadow": "The authority of age used to foreclose rather than to open — the elder who uses their accumulated experience as a reason why new things cannot work."
+  },
+  {
+    "id": "len-31", "name": "The Sun", "number": 31, "deckType": "Lenormand",
+    "symbol": "A♦", "keywords": ["success", "vitality", "happiness", "warmth", "clarity"],
+    "upright": "Success, happiness, and the energy of full, radiant achievement. The Sun is the most positive major card in the Lenormand — when it appears, it brightens everything around it. Whatever the surrounding cards describe is going well, or will go well. The Ace of Diamonds grounds this joy in material reality: this is not merely felt happiness but actual, tangible success.",
+    "reversed": "Temporary setback to what was going well, or success that is slightly less than expected. The sun is behind clouds but will return. Alternatively: overconfidence burning too bright.",
+    "lore": "The sun as the supreme divine symbol appears in virtually every ancient culture — Ra and Aten in Egypt, Helios and Apollo in Greece, Sol Invictus in Rome, Amaterasu in Japan, Surya in India. Solar divination — reading the quality of sunlight, eclipses, and halos — was practiced across the ancient world. In Lenormand, the Sun is the card of absolute good fortune, drawing on this universal tradition of solar beneficence. The Ace of Diamonds makes success material and real.",
+    "combinations": "Sun + Key = absolute certainty of success, the solution is found. Sun + Coffin = the end of happiness, or happiness following an ending. Sun + Moon = a highly prominent public success.",
+    "shadow": "Optimism weaponized against reality — the relentless positivity that cannot acknowledge difficulty, and so cannot learn from it or address it."
+  },
+  {
+    "id": "len-32", "name": "The Moon", "number": 32, "deckType": "Lenormand",
+    "symbol": "8♥", "keywords": ["intuition", "emotions", "recognition", "cycles", "fame"],
+    "upright": "Intuition, emotional depth, and the kind of recognition that comes from inner knowing rather than outer achievement. The Moon governs the cyclical emotional life, the unconscious, and public recognition — in the Lenormand tradition, it is also the card of fame and honor. The 8 of Hearts gives this an abundance of emotional energy. Trust what you sense rather than only what you can prove.",
+    "reversed": "Emotional confusion, moodiness, or public reputation at risk. The intuition is clouded. Alternatively: a cycle is completing, and the emotional waters are pulling back.",
+    "lore": "Selene, the Greek moon goddess, drove her silver chariot across the night sky; her Roman counterpart Luna gave her name to lunacy (luna), acknowledging the ancient belief in the moon's power over the mind. In Arabic lunar mansion tradition, each of the 28 mansions of the moon had its own character and influence. Lenormand's Moon card carries this long tradition — the lunar cycle as the master template of emotional and cyclical life.",
+    "combinations": "Moon + Stars = exceptional intuition, spiritual gifts. Moon + Clouds = emotional confusion, the inner sense obscured. Moon + Sun = great public recognition and fame.",
+    "shadow": "The pull of the tides without the anchor — emotions so dominant that they drown out practical thinking; moods that make decisions rather than informing them."
+  },
+  {
+    "id": "len-33", "name": "The Key", "number": 33, "deckType": "Lenormand",
+    "symbol": "8♦", "keywords": ["solutions", "destiny", "certainty", "unlocking", "the answer"],
+    "upright": "A solution has been found, or the answer to your question is yes — this is certain and destined. The Key is one of the most positive resolution cards in the Lenormand: it unlocks what has been closed, answers what has been asked, and confirms that the matter is fated to resolve. Look at what surrounds it to understand what is being unlocked. The 8 of Diamonds adds material practicality to this certainty.",
+    "reversed": "A solution is taking longer than expected, or the certainty that was assumed is less complete than hoped. The key exists — but may need to be turned differently.",
+    "lore": "The key as a symbol of authority, access, and sacred knowledge appears across ancient tradition — the Hierophant holds the keys to the kingdom of heaven (Peter's keys), the Egyptian goddess Isis held the ankh as a key to eternal life, Roman Janus (god of doorways and transitions) held his keys as symbols of access to the new year and new beginnings. The Key in Lenormand carries this sense of the door being opened by fate.",
+    "combinations": "Key + Book = the secret is unlocked. Key + Mountain = the solution to an obstacle is found. Key + House = the home situation is resolved or a home is secured.",
+    "shadow": "Looking for the key rather than trying the door — assuming a situation is locked when it may simply be waiting to be pushed; the certainty of the answer used as a substitute for attempting the thing."
+  },
+  {
+    "id": "len-34", "name": "The Fish", "number": 34, "deckType": "Lenormand",
+    "symbol": "K♦", "keywords": ["abundance", "finances", "business", "flow", "resources"],
+    "upright": "Financial abundance, business activity, and the free flow of resources. The Fish is the primary money card in the Lenormand, but it speaks to abundance more broadly — the sense of plenty, of things flowing freely, of the life force manifesting in material form. The King of Diamonds at its heart makes this a card of mature, established material success rather than a windfall.",
+    "reversed": "Financial difficulty, resources that are drying up, or business that is not flowing freely. Money matters need attention. Alternatively: spiritual richness coexisting with material scarcity.",
+    "lore": "Fish as a symbol of abundance and divine provision appears across ancient tradition — the fish as a food miracle in Christian scripture, the fish sacred to the Egyptian goddess Hathor, the Japanese koi as a symbol of perseverance and material success, the Celtic salmon of wisdom (bradán feasa) as the repository of all knowledge gained through the waters of experience. The King of Diamonds confirms established, substantial material success.",
+    "combinations": "Fish + Bear = significant financial authority or investment. Fish + Coffin = financial loss. Fish + Mice = money being eaten away slowly by small expenses or leaks.",
+    "shadow": "The ocean mistaken for ownership — the person who mistakes having access to abundance for having abundance; who spends what flows through rather than building what lasts."
+  },
+  {
+    "id": "len-35", "name": "The Anchor", "number": 35, "deckType": "Lenormand",
+    "symbol": "9♠", "keywords": ["stability", "persistence", "long-term", "groundedness", "work"],
+    "upright": "Stability, persistence, and the groundedness that comes from staying with something through difficulty. The Anchor holds a vessel in place against the current — it speaks to long-term commitments, steady work, and the kind of security that is earned rather than given. Whatever this card describes is durable. Stay with it. The 9 of Spades adds a note of effort: this stability costs something, but it is real.",
+    "reversed": "Stuck rather than stable — anchored when movement is needed. The persistence has become stubbornness, the groundedness has become immovability. It may be time to raise the anchor.",
+    "lore": "The anchor as a symbol of hope and steadfastness appears in early Christian iconography — it was used as a secret symbol of Christ and Christian hope by early believers, referencing Hebrews 6:19 ('an anchor for the soul'). Ancient maritime cultures gave the anchor sacred significance: sailors prayed to Poseidon/Neptune and dedicated anchors at temples after safe journeys. The 9 of Spades gives this stability a quality of tested endurance rather than easy comfort.",
+    "combinations": "Anchor + Fish = stable financial situation, sustained abundance. Anchor + Crossroads = stability that creates freedom of choice, or stability keeping someone from choosing. Anchor + Stork = a positive change coming to a stable situation.",
+    "shadow": "The anchor as identity — defining oneself entirely by one's reliability and steadfastness to the point where growth, change, and adventure become impossible."
+  },
+  {
+    "id": "len-36", "name": "The Cross", "number": 36, "deckType": "Lenormand",
+    "symbol": "6♣", "keywords": ["burden", "fate", "karma", "suffering", "spiritual path"],
+    "upright": "A karmic weight, a burden that must be carried, or a situation that has been fated. The Cross is not a punishment — it is the weight of consequence, the difficulty that comes with being alive and making choices in a world of cause and effect. It is also the card of deep spiritual significance: what must be endured often becomes what transforms us most profoundly. The 6 of Clubs suggests this burden has a social or communal dimension.",
+    "reversed": "The burden lightening, or a karmic debt beginning to resolve. Alternatively: a fate being resisted that cannot be avoided — the cross that becomes heavier the more it is fought against.",
+    "lore": "The cross as a symbol of burden and spiritual significance predates Christianity — in ancient Egypt the ankh (cross with a loop) was the symbol of life itself; the equal-armed cross (crux quadrata) appears in Bronze Age cultures across Europe and Asia as a symbol of the four directions and the sacred center. In Lenormand, the Cross is the card of destiny — not comfortable, but real and ultimately purposeful.",
+    "combinations": "Cross + Coffin = a fated ending, something that was always going to conclude this way. Cross + Stars = spiritual suffering that leads to greater wisdom and guidance. Cross + Key = the fate or burden has a resolution; the path through is found.",
+    "shadow": "Martyrdom as identity — carrying the cross as a way of establishing moral superiority; suffering performed rather than endured; the spiritual significance of burden used as an excuse not to seek relief."
+  }
+]

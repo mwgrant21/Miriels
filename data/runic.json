@@ -1,0 +1,218 @@
+[
+  {
+    "id": "rune-01", "name": "Fehu", "deckType": "Runic", "number": 1,
+    "symbol": "ᚠ", "aett": "Freyr's Aett",
+    "keywords": ["wealth", "earned reward", "abundance", "mobile energy", "vitality"],
+    "element": "Fire", "astro": "Venus",
+    "upright": "The first rune, Fehu is fire that moves — cattle, gold, the wealth that flows and circulates. This is not the wealth buried under stone but the kind that works: energy in motion, effort rewarded, resources gained through your own labor. Something is moving toward you that you've earned. Fehu asks you to tend it wisely — wealth easily won is wealth easily lost. Spend where it grows.",
+    "reversed": "Money troubles, something slipping away, or effort that isn't translating into reward. Fehu reversed (merkstave) often points to loss or envy — either your own fear of losing what you have, or someone else's hunger for it. Examine whether you are hoarding what should circulate, or spreading what should be kept.",
+    "lore": "Fehu is the cattle of Freyr, god of abundance and fertility — wealth measured in what can move, grow, reproduce. In the ancient Norse world, cattle were the primary measure of wealth: fluid, alive, capable of increase. The rune also carries Freyr's deeper gift: that true wealth is generative, not simply accumulated. The name survives in the English word 'fee.'"
+  },
+  {
+    "id": "rune-02", "name": "Uruz", "deckType": "Runic", "number": 2,
+    "symbol": "ᚢ", "aett": "Freyr's Aett",
+    "keywords": ["strength", "primal force", "health", "wild power", "courage"],
+    "element": "Earth", "astro": "Mars",
+    "upright": "Uruz is the aurochs — the massive wild ox that once ranged across Europe, untameable and immense. This rune speaks to raw vital force: the strength in your body, the primal energy that surges when something genuinely matters. You have more power available to you than you believe. Now is not the time for caution or calculation — it is the time to act with your full weight behind it.",
+    "reversed": "Force without direction, health undermined, or energy wasted. The aurochs merkstave is still powerful but dangerous — strength turning against itself, or an opportunity for growth that has been refused. Examine where you are letting your power dissipate or turn inward as aggression or stagnation.",
+    "lore": "The aurochs (Bos primigenius) was extinct by the 17th century but lived in the Germanic memory as the ultimate symbol of untamed nature. To hunt the aurochs was to prove one's worth; its horns were used as drinking vessels at feasts. Uruz carries the echo of something genuinely wild and genuinely free — power that exists outside civilization's arrangements."
+  },
+  {
+    "id": "rune-03", "name": "Thurisaz", "deckType": "Runic", "number": 3,
+    "symbol": "ᚦ", "aett": "Freyr's Aett",
+    "keywords": ["thorn", "giant power", "threshold", "directed force", "defense"],
+    "element": "Fire", "astro": "Mars/Saturn",
+    "upright": "Thurisaz is the thorn and the giant — directed force at the boundary. It marks a threshold moment: before passing through, something must be confronted, overcome, or honestly named. This is not an invitation to aggression but to reckoning with what stands between you and where you need to go. Used with conscious intent, Thurisaz is protective. It is also honest about what things cost.",
+    "reversed": "Danger misread, force turned against its wielder, or threshold energy avoided. Thurisaz merkstave often signals that someone — perhaps you — is wielding aggression unconsciously: lashing out, refusing to see the genuine obstacle, or crossing a line that should not be crossed. The thorn punctures the careless hand.",
+    "lore": "Named for the Thursi (giants) of Norse mythology, and also for Thor's hammer — the force that protects Midgard against chaos. The thorn of the rune is both weapon and barrier: it wounds those who reach for it carelessly but guards what is precious within. Anglo-Saxon poetry associated Thurisaz with pain and danger, but also with the necessary confrontations that forge character."
+  },
+  {
+    "id": "rune-04", "name": "Ansuz", "deckType": "Runic", "number": 4,
+    "symbol": "ᚨ", "aett": "Freyr's Aett",
+    "keywords": ["divine speech", "inspiration", "signal", "Odin's breath", "wisdom"],
+    "element": "Air", "astro": "Mercury",
+    "upright": "Ansuz is Odin's breath — the divine word that animates, the message that arrives bearing genuine meaning. Something important is trying to reach you: listen more carefully than usual. This rune signals inspired communication, significant conversation, or the arrival of insight from an unexpected source. Pay attention to what is being said beneath what is being said. The gods speak in hints.",
+    "reversed": "Miscommunication, manipulation, or a message that is not what it appears to be. Someone may be using words to deceive rather than illuminate. Ansuz merkstave asks: are you hearing clearly, or hearing what you want to hear? It may also point to your own failure to speak truth when truth was needed.",
+    "lore": "Ansuz is the rune of Odin (Óðinn), the Allfather whose name means 'frenzy' or 'inspiration.' It is associated with the Aesir gods and specifically with Odin's gift of speech, poetry, and the runes themselves. Odin hung for nine days on Yggdrasil to receive the runes; Ansuz is the breath he found when he finally lifted them."
+  },
+  {
+    "id": "rune-05", "name": "Raidho", "deckType": "Runic", "number": 5,
+    "symbol": "ᚱ", "aett": "Freyr's Aett",
+    "keywords": ["journey", "right action", "rhythm", "the road", "cosmic order"],
+    "element": "Air", "astro": "Sagittarius",
+    "upright": "Raidho is the wheel and the road — not just any journey, but the journey in alignment with the right path. It speaks to rhythm, the natural order of movement through time. When Raidho appears, you are on your path: the journey you're on is the right one, even if it is difficult. This is also the rune of right action — doing what needs to be done in the order it needs to be done.",
+    "reversed": "A journey gone wrong, poor timing, or a crisis of direction. Raidho merkstave suggests that the rhythm has broken — you are pushing against the current, moving when you should be still, or traveling the wrong road. It may also signal that what you thought was right action has revealed itself to be something else entirely.",
+    "lore": "Raidho governs both the literal road and the cosmic wheel — the passage of the sun, the turning of seasons, the procession of the dead to Hel. The wagon of the gods rolls through the sky; the rune's shape echoes a wheel's spoke. In Germanic legal tradition, Raidho also governed the right to travel and the laws of the road: the order that makes passage possible."
+  },
+  {
+    "id": "rune-06", "name": "Kenaz", "deckType": "Runic", "number": 6,
+    "symbol": "ᚲ", "aett": "Freyr's Aett",
+    "keywords": ["torch", "knowledge", "craft", "illumination", "controlled fire"],
+    "element": "Fire", "astro": "Venus",
+    "upright": "Kenaz is the torch held in the hand — fire that illuminates and enables, the controlled flame of knowledge and craft. Something is becoming clear to you that was previously hidden. This is the light you carry through darkness: skill, insight, technique mastered through dedicated practice. Kenaz is the fire that makes things. What are you building with yours?",
+    "reversed": "The torch extinguished, illness, or creative block. Kenaz merkstave can signal that the light has gone out — energy running low, a skill or relationship declining, or the dangerous choice to douse your own flame for someone else's comfort. Examine what you are letting dim and ask whether it is time to rekindle.",
+    "lore": "The kenaz rune means 'torch' or possibly 'ulcer/wound' — the fire that warms and the fire that burns from within. The torch was carried into the dark barrow, held at the forge, lit to find the way through unknown passages. It is also the fire of Freyja, goddess of love and craft — the creative flame that transforms raw material into something beautiful."
+  },
+  {
+    "id": "rune-07", "name": "Gebo", "deckType": "Runic", "number": 7,
+    "symbol": "ᚷ", "aett": "Freyr's Aett",
+    "keywords": ["gift", "sacred exchange", "partnership", "generosity", "balance"],
+    "element": "Air", "astro": "Venus/Jupiter",
+    "upright": "Gebo is the gift and the sacred exchange — the understanding that all giving creates a bond, that every genuine gift requires something in return. This rune speaks to partnerships formed in good faith, to the balance maintained between give and take, and to the generous act that does not demand but trusts. Something is being offered to you or by you that carries real weight.",
+    "reversed": "Gebo has no merkstave — its X-shape is identical in all orientations. But in a challenging context it speaks to imbalance in giving and receiving: the gift that is really a debt, the exchange that is not equal, the generosity that is actually control. Examine who owes whom in your significant relationships.",
+    "lore": "Gebo means 'gift' and was central to Norse social order — the reciprocal gift-giving that bound people together. The gift relationship was not mere exchange but sacred obligation: to receive a gift was to enter into a relationship with the giver. Odin's own name may be linked to gift-giving; the gods' favors came with deep entailments. The rune's X-mark was used to indicate agreements."
+  },
+  {
+    "id": "rune-08", "name": "Wunjo", "deckType": "Runic", "number": 8,
+    "symbol": "ᚹ", "aett": "Freyr's Aett",
+    "keywords": ["joy", "harmony", "belonging", "kinship", "well-being"],
+    "element": "Earth", "astro": "Venus/Leo",
+    "upright": "Wunjo is the banner of the clan — belonging, harmony, and the deep joy of being in right relationship with your people and your place. This is not surface happiness but the abiding satisfaction of a life in alignment: work that fits you, people who know you, a place you can rest in. The weather of your inner life is clearing. Let yourself enjoy what you've built.",
+    "reversed": "Disharmony, alienation, or joy in the wrong container. Wunjo merkstave suggests a discord in the community or relationship that underlies surface pleasantness — something off in the foundation. Alternatively, there is joy available that you are refusing because you don't trust it or believe you deserve it.",
+    "lore": "Wunjo (or Wynn in the Anglo-Saxon futhorc) is the 'joy rune' and marked the end of the first aett — the culmination of Freyr's gifts of abundance, vitality, and community. The banner it depicts was planted when claiming land or when the clan had gathered in safety. Joy in the Norse world was not individual but communal — it lived in the hall, around the fire, among those who knew your name."
+  },
+  {
+    "id": "rune-09", "name": "Hagalaz", "deckType": "Runic", "number": 9,
+    "symbol": "ᚺ", "aett": "Hagal's Aett",
+    "keywords": ["hail", "disruption", "nature's force", "crisis", "transformation"],
+    "element": "Water/Ice", "astro": "Uranus",
+    "upright": "Hagalaz is hail from a clear sky — the sudden disruption that cannot be avoided, only endured. This is not a rune of warning but of recognition: what has arrived is here. The storm is real. But hailstones melt into water, and Hagalaz holds within its destruction the seed of change and renewal. The disruption is clearing something that needed to go, even if it doesn't feel that way yet.",
+    "reversed": "Hagalaz has no merkstave — it reads the same in all orientations. In a challenging context, it points to prolonged disruption, or to a crisis of your own making that you are blaming on outside forces. The hail is still coming down. Look honestly at what role you played in inviting the storm.",
+    "lore": "Hagalaz opens the second aett with the raw force of nature beyond human control. Hail in northern Europe was a genuine agricultural catastrophe — it could destroy a year's harvest in minutes. The Norse egg-shaped form of this rune enclosed within itself the world-tree Yggdrasil, the axis of all things. Destruction is built into the fabric of existence; Hagalaz names this honestly."
+  },
+  {
+    "id": "rune-10", "name": "Nauthiz", "deckType": "Runic", "number": 10,
+    "symbol": "ᚾ", "aett": "Hagal's Aett",
+    "keywords": ["need", "necessity", "constraint", "endurance", "friction"],
+    "element": "Fire", "astro": "Saturn",
+    "upright": "Nauthiz is the need-fire made by rubbing two sticks together — heat born from friction and necessity. This rune acknowledges constraint and hardship honestly, but it also reveals what constraint teaches: resourcefulness, endurance, and the discovery of what you actually need versus what you merely want. The limitation is real. What it demands of you may be exactly what you need to develop.",
+    "reversed": "Deprivation that crushes rather than strengthens, or need that is refused rather than acknowledged. Nauthiz merkstave often points to someone pushing through sheer force of will when rest and repair are actually needed. It can also speak to false necessity — believing you have no choice when you do.",
+    "lore": "Nauthiz (or Nyd in Anglo-Saxon) is the rune of the Norns — the three weavers who determine fate at the Well of Wyrd. Need was understood in ancient Norse culture as both the engine of human ingenuity and the shape of destiny. The need-fire kindled by friction was used in times of plague to drive away evil; only the fire made by honest necessity could purify."
+  },
+  {
+    "id": "rune-11", "name": "Isa", "deckType": "Runic", "number": 11,
+    "symbol": "ᛁ", "aett": "Hagal's Aett",
+    "keywords": ["ice", "standstill", "preservation", "clarity", "stillness"],
+    "element": "Water/Ice", "astro": "Moon",
+    "upright": "Isa is the single ice-rune — the world held still. All action has paused; everything waits. This is not failure but preservation: ice keeps the seed intact until spring is ready to receive it. If everything feels frozen, look more carefully — something is being preserved under the stillness. The pause is not permanent. Clarity tends to arrive in stillness that noise prevents.",
+    "reversed": "Isa has no merkstave — it looks the same in all orientations. In a challenging context, it points to stagnation that has gone beyond preservation into paralysis, or to ice used as avoidance — emotional distance, refusal to engage, freezing out what cannot be faced.",
+    "lore": "In Norse cosmology, ice was one of the primordial substances — Niflheim, the world of mist and cold, was where the first matter condensed before it met the fire of Muspelheim and sparked creation. Isa is the world before motion, the eternal cosmic cold that underlies all warmth. The rune's single vertical stroke mirrors the ice column, the frozen river, the still spine of winter."
+  },
+  {
+    "id": "rune-12", "name": "Jera", "deckType": "Runic", "number": 12,
+    "symbol": "ᛃ", "aett": "Hagal's Aett",
+    "keywords": ["harvest", "cycle", "reward", "natural order", "patience"],
+    "element": "Earth", "astro": "Sun",
+    "upright": "Jera is the year and the harvest — the promise that right effort over time produces right result. You have planted well. The crop is coming in. Jera is a rune of cycles and natural timing: you cannot rush the harvest, but neither will it be withheld if the work has been done. Patience here is not passive waiting but trust in the turning of seasons. What you've worked for is ripening.",
+    "reversed": "Jera has no merkstave — its rotational symmetry means it reads the same. In a challenging context, it points to effort put in but cycles not yet complete, or to impatience that is causing premature harvesting. The work may also have been insufficient. Look honestly at whether the seeds you planted were good seeds.",
+    "lore": "Jera (or Ger/Yer) means 'year' and represents the entire agricultural cycle: plowing, sowing, tending, harvesting, rest. In Norse society the year's turning was the foundation of life — the festivals followed the agricultural calendar, and the gods were petitioned at each turning. The harvest was not only food but cosmic confirmation that the compact between humans and the gods remained intact."
+  },
+  {
+    "id": "rune-13", "name": "Eihwaz", "deckType": "Runic", "number": 13,
+    "symbol": "ᛇ", "aett": "Hagal's Aett",
+    "keywords": ["yew tree", "endurance", "death and rebirth", "the world axis", "deep roots"],
+    "element": "All", "astro": "Scorpio",
+    "upright": "Eihwaz is the yew tree — the tree that lives for thousands of years by constantly dying at its center and regenerating outward. It is the axis of Yggdrasil, the spine between worlds. This rune speaks to endurance beyond ordinary limits, to the ability to transform death into rebirth. What appears to be ending is actually in the process of profound renewal. The roots go deeper than you know.",
+    "reversed": "Eihwaz technically has no reversal but in a challenging context points to clinging to the old form past the point of its usefulness, or to initiation refused — the transformation is needed but is being avoided. The yew's poison is in its leaves; proximity without readiness is dangerous.",
+    "lore": "The yew tree (Taxus baccata) was the World Tree of northern Europe: planted in churchyards because it predated them by centuries, its wood made the best bows, its berries deadly poison that could also cure. Many English churchyard yews are over 3,000 years old. The yew dies at its center and grows outward, creating hollow 'mothers' within which new trees grow — the tree of both death and immortality."
+  },
+  {
+    "id": "rune-14", "name": "Perthro", "deckType": "Runic", "number": 14,
+    "symbol": "ᛈ", "aett": "Hagal's Aett",
+    "keywords": ["fate", "the hidden", "dice cup", "mystery", "initiation"],
+    "element": "Water", "astro": "Saturn/Uranus",
+    "upright": "Perthro is the dice cup — fate shaken and cast, the mystery of what will land face-up. This rune governs what cannot be known in advance, the roll of wyrd, the hidden thing that shapes outcomes. It is also the cup of memory and initiation. Something is unfolding that you cannot fully control or predict. There is more at play than you can see. Trust the process and accept that not everything is yours to determine.",
+    "reversed": "Stagnation, bad luck, or manipulation of fate. Perthro merkstave suggests that the dice are being loaded — by you or by forces around you. It can also point to obsessive attempts to control what cannot be controlled, or to secrets that are working against you rather than for you.",
+    "lore": "Perthro's meaning is disputed — some scholars suggest 'fruit tree' or 'lot cup,' the vessel from which runes were cast in divination. The Germanic casting of lots (described in Tacitus's Germania) involved cutting rune-marked pieces of wood from a nut-bearing tree and casting them onto white cloth. The image is of fate made momentarily visible — the hidden becoming knowable, but only partially, only for a moment."
+  },
+  {
+    "id": "rune-15", "name": "Algiz", "deckType": "Runic", "number": 15,
+    "symbol": "ᛉ", "aett": "Hagal's Aett",
+    "keywords": ["protection", "divine connection", "elk", "awareness", "the guardian"],
+    "element": "Air", "astro": "Moon",
+    "upright": "Algiz is the elk's branching antlers — reach toward the sky, roots in the earth. This is the rune of protection and divine connection: it marks a boundary that harmful forces cannot easily cross, and it opens the channel between human awareness and something larger. You are being watched over. You are also being called to watch — heightened awareness, instinctual wisdom, the readiness of the elk who senses the predator before it appears.",
+    "reversed": "Vulnerability, psychic danger, or the channel of protection turned against its bearer. Algiz merkstave can indicate that your defenses are down when they need to be up, or that you have extended your protection to someone or something that is using it against you. The channel is open but something uninvited is coming through.",
+    "lore": "Algiz (or Elhaz, 'elk') is associated with the Valkyries — the divine guardians who chose the slain on the battlefield. The rune's shape echoes both the elk's antlers and the human figure with arms raised: the gesture of reaching toward the sacred. It was used as a charm against harm, scratched into sword hilts and doorposts. The elk was sacred to several Germanic cultures as a messenger between worlds."
+  },
+  {
+    "id": "rune-16", "name": "Sowilo", "deckType": "Runic", "number": 16,
+    "symbol": "ᛊ", "aett": "Hagal's Aett",
+    "keywords": ["sun", "victory", "life force", "wholeness", "clarity"],
+    "element": "Fire", "astro": "Sun",
+    "upright": "Sowilo is the solar wheel — success, life force, and the wholeness that comes from alignment with your true nature. The sun that closes the second aett brings clarity after storm, constraint, and stillness. Victory is not necessarily over an enemy but over the lesser version of yourself. Health, vitality, and the clean energy of genuine direction all live here.",
+    "reversed": "Sowilo has no merkstave — it reads the same in all orientations, like the sun that rises regardless of your readiness. In a challenging context, it points to ego inflation mistaken for genuine strength, or to the blinding force of certainty — the sun that illuminates also burns those who stare directly into it.",
+    "lore": "The sun rune closes the second aett — the night has passed. Sowilo is the solar force that drives life itself: the plant that turns toward the light, the longest day of the year, the fire that cannot be extinguished. In runic tradition it represented not just sunlight but the directed will aligned with divine purpose — the soul's own light moving in the right direction."
+  },
+  {
+    "id": "rune-17", "name": "Tiwaz", "deckType": "Runic", "number": 17,
+    "symbol": "ᛏ", "aett": "Tyr's Aett",
+    "keywords": ["justice", "sacrifice", "honor", "Tyr", "right order"],
+    "element": "Air", "astro": "Mars",
+    "upright": "Tiwaz is the spear of Tyr — the god who sacrificed his hand to bind the wolf Fenrir and keep the world safe. This rune speaks to justice that requires genuine sacrifice, the oath kept even when keeping it costs you, the clear moral action in a situation where no option is without cost. The warrior's question is not 'how do I win?' but 'what is worth fighting for?' Act justly and accept what that requires.",
+    "reversed": "Injustice, broken oaths, or sacrifice that is actually martyrdom. Tiwaz merkstave can indicate someone using 'justice' as a cover for vengeance, or a sacrifice made for the wrong reasons. It may also point to depletion — the warrior who has given too much for too long and has nothing left to give.",
+    "lore": "Tyr (Tiw/Tiwaz) is the oldest Norse sky-god, predating Odin in some traditions. He is the one-handed god of war and law: he sacrificed his hand so the gods could bind the wolf Fenrir, whose freedom would mean the destruction of the world. The rune's arrow-like shape points upward — toward divine order. 'Tuesday' is his day. He governed not conquest but the laws that make civilization possible."
+  },
+  {
+    "id": "rune-18", "name": "Berkano", "deckType": "Runic", "number": 18,
+    "symbol": "ᛒ", "aett": "Tyr's Aett",
+    "keywords": ["birch", "birth", "nurturing", "new beginnings", "gentle growth"],
+    "element": "Earth", "astro": "Venus/Moon",
+    "upright": "Berkano is the birch tree — the first tree to put out leaves in spring, the tree of new beginnings and gentle regeneration. This is the nurturing force that receives and holds new growth: a birth of some kind, a new project finding its first real roots, something that needs to be protected as it establishes itself. The birch is patient and strong in its softness. What is just starting needs tenderness, not ambition.",
+    "reversed": "Troubled birth, growth that is sabotaged, or nurturing turned overprotective. Berkano merkstave can speak to a new beginning being blocked, or to someone using 'nurturing' as a form of control. It may also indicate something begun before its time, or a family situation where healing is needed.",
+    "lore": "The birch (Betula) is called 'the pioneer tree' — it colonizes disturbed ground, grows fast, and makes space for the forest that follows. It was associated with Berchta, a Germanic goddess of the domestic and feminine mysteries, and with spring rites of fertility and renewal. The birch wand was used in Scandinavian sweat lodges to stimulate circulation and clear the body."
+  },
+  {
+    "id": "rune-19", "name": "Ehwaz", "deckType": "Runic", "number": 19,
+    "symbol": "ᛖ", "aett": "Tyr's Aett",
+    "keywords": ["horse", "partnership", "movement", "trust", "the divine twins"],
+    "element": "Earth", "astro": "Gemini",
+    "upright": "Ehwaz is the horse and rider — the rune of partnership as movement, of trust so deep it allows two to move as one. This is not merger but collaboration: you and another — person, project, aspect of yourself — moving in the same direction at the same pace. Progress comes through this alliance. The horse does not submit to the rider; the rider does not force the horse. Together they go farther than either could alone.",
+    "reversed": "Mistrust, broken partnership, or movement in the wrong direction. Ehwaz merkstave suggests the horse and rider are fighting each other, or a partnership has become a burden rather than a vehicle. It may also signal physical restlessness that has become aimlessness — movement for its own sake leading nowhere.",
+    "lore": "Ehwaz is associated with the divine twins of Germanic mythology — and with the sacred horse of the gods used in ritual and divination. The partnership between a horse and its rider was one of the deepest relationships in the ancient world; a horse knew its rider's fear before the rider did. The rune also governs the shamanic journey between worlds — the horse as the vehicle of the spirit traveler."
+  },
+  {
+    "id": "rune-20", "name": "Mannaz", "deckType": "Runic", "number": 20,
+    "symbol": "ᛗ", "aett": "Tyr's Aett",
+    "keywords": ["humanity", "the self", "the rational mind", "community", "the divine human"],
+    "element": "Air", "astro": "Jupiter/Sun",
+    "upright": "Mannaz is the rune of the human being — the self in its full complexity: rational, social, aware of mortality, capable of both great good and great harm. This rune asks you to see yourself clearly: not inflated with pride, not diminished by shame, but as the particular human you actually are. It also speaks to your position in the human community — to the relationships and obligations that make you who you are.",
+    "reversed": "Self-deception, isolation, or the failure of rationality. Mannaz merkstave can indicate arrogance that cannot hear correction, or self-deprecation that refuses to see genuine strength. It may also point to the human community around you working against you rather than with you. Examine your assumptions about who your people are.",
+    "lore": "Mannaz is the rune of Ask and Embla — the first humans fashioned by Odin, Vili, and Vé from ash and elm wood. They were given breath, awareness, and the gifts of human life. The rune's shape is two Wunjo runes joined — the mark of the clan made fully human through reflection. The name appears in Gothic for 'man' and in words for mind and memory across Germanic languages."
+  },
+  {
+    "id": "rune-21", "name": "Laguz", "deckType": "Runic", "number": 21,
+    "symbol": "ᛚ", "aett": "Tyr's Aett",
+    "keywords": ["water", "flow", "intuition", "the unconscious", "the deep"],
+    "element": "Water", "astro": "Moon/Neptune",
+    "upright": "Laguz is the deep water — the unconscious, the intuitive current that knows things before the mind can articulate them. Go by feel right now rather than logic. Trust the direction you're flowing even if you can't explain it. Something from the depths is surfacing; pay attention to dreams, to what keeps returning to your mind unbidden, to what your body knows that your head hasn't caught up to.",
+    "reversed": "Being overwhelmed by the depths, emotional turbulence, or intuition distorted by fear. Laguz merkstave can indicate that you are drowning rather than swimming — too much feeling without enough structure to hold it. It may also signal avoidance of the emotional realm, a refusal to get wet that keeps you parched.",
+    "lore": "Laguz governs the sea, rivers, lakes, and the primordial waters of creation. In Norse cosmology the sea surrounds all the worlds; the great serpent Jörmungandr lies in the deep. Laguz is also associated with the staff that probes the riverbed — the wise use of what cannot be seen. The sea-voyage was one of the central metaphors of Norse life: the water that separated and connected worlds."
+  },
+  {
+    "id": "rune-22", "name": "Ingwaz", "deckType": "Runic", "number": 22,
+    "symbol": "ᛜ", "aett": "Tyr's Aett",
+    "keywords": ["seed", "gestation", "fertility", "inner completion", "potential"],
+    "element": "Earth", "astro": "Venus/Moon",
+    "upright": "Ingwaz is the seed rune — gestation, potential fully gathered and held before release. Something is complete in its inner form and preparing to emerge. This is not passivity but the last moment of stillness before the burst of energy a seed needs before it sprouts. Do not push or force. The work happening beneath the surface is real work. Honor the gestation.",
+    "reversed": "Ingwaz has no merkstave — it is symmetric. In a challenging context, it points to potential being held too long, the seed that never breaks open, the energy stored but not released. Examine what is preventing the emergence.",
+    "lore": "Ingwaz (or Ing) is associated with Yngvi-Freyr, the god of virility, fertility, and the hearth. The proto-Germanic legend of Ing describes a god who arrived by sea, ruled for a time, then returned — the cycle of fertility deities whose own death and return ensures renewal of the land. The rune's diamond shape holds energy at the center, compressed and waiting."
+  },
+  {
+    "id": "rune-23", "name": "Dagaz", "deckType": "Runic", "number": 23,
+    "symbol": "ᛞ", "aett": "Tyr's Aett",
+    "keywords": ["dawn", "breakthrough", "transformation", "paradox", "the threshold"],
+    "element": "Fire", "astro": "Sun",
+    "upright": "Dagaz is the dawn rune — the breakthrough moment where darkness becomes light. This is genuine transformation: not gradual change but the moment the horizon catches fire. Everything shifts. What was impossible becomes possible; what was hidden becomes visible. If you are in the dark, this rune promises morning. If you are already in the light, it asks: what darkness do you still need to walk through to reach the next dawn?",
+    "reversed": "Dagaz has no merkstave — it is symmetric, like the infinity symbol it echoes. In a challenging context, it speaks to being caught at the paradox point between day and night — neither fully here nor fully there, stuck at the threshold when the door is open.",
+    "lore": "Dagaz stands at the threshold between night and day — the magical moment that is neither one nor the other. The hourglass shape of the rune contains within it the paradox: light and dark in perfect balance, each creating the other. Dagaz was sometimes placed last in the runic row because it represents the final breakthrough — the dawn that comes after all the other work of the futhark."
+  },
+  {
+    "id": "rune-24", "name": "Othala", "deckType": "Runic", "number": 24,
+    "symbol": "ᛟ", "aett": "Tyr's Aett",
+    "keywords": ["inheritance", "ancestral land", "home", "heritage", "what cannot be bought"],
+    "element": "Earth", "astro": "Saturn",
+    "upright": "Othala is the enclosed land — the ancestral home, the inheritance that cannot be bought or sold, the gift that comes through lineage rather than earning. This rune asks you to consider what you have inherited: the gifts of your people, the wisdom of those who came before, the ground you stand on that others prepared. It also asks what you are building that will outlast you. Home is not only a house but a living relationship with the past.",
+    "reversed": "Rootlessness, inheritance denied, or being imprisoned by what you have received. Othala merkstave can indicate someone trapped by ancestral patterns rather than sustained by them, or the refusal of inheritance — cutting oneself off from one's roots in a way that does not liberate. It may also point to complications of property, legacy, or belonging.",
+    "lore": "Othala is the enclosed family land — the odal land of Norse tradition that could not be sold and could only be inherited. It was the sacred ground of the ancestors, where they were buried and where their spirits remained. The rune ends the Elder Futhark with the most fundamental of human values: belonging to a place and a people across time. All of Freyr's gifts culminate here in the inheritance that makes them possible."
+  }
+]

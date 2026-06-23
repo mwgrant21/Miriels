@@ -1,0 +1,514 @@
+[
+  {
+    "id": "iching-01", "name": "The Creative", "chineseName": "Qián", "deckType": "IChing", "number": 1,
+    "symbol": "䷀", "trigrams": { "upper": "Heaven", "lower": "Heaven" },
+    "keywords": ["creative force", "heaven", "strength", "originating power", "the dragon"],
+    "upright": "Pure creative force — the initiating energy of heaven moving into form. Everything begins here. This is the moment of pure potential translating into directed action, the dragon rising. You have the power right now to set something significant in motion. Act from your deepest nature, not from calculation. What you begin under this hexagram carries the energy of heaven itself — it wants to be excellent.",
+    "reversed": "Creative force turned to ego, or strength without wisdom. The dragon that flies too high is struck by lightning. Examine whether the drive behind your action comes from genuine purpose or from the need to dominate. Tremendous energy that has not found its right channel will exhaust itself — or exhaust everyone around it.",
+    "lore": "The first hexagram is six unbroken yang lines — pure heaven, pure creative force. In Chinese cosmology, Qián is the active principle of the universe: the father, the sky, the dragon. The I Ching's commentaries on this hexagram are the most extended in the entire text, reflecting its central importance. The dragon image moves through four stages: submerged, appearing, active, and soaring — a map of how creative power moves through time."
+  },
+  {
+    "id": "iching-02", "name": "The Receptive", "chineseName": "Kūn", "deckType": "IChing", "number": 2,
+    "symbol": "䷁", "trigrams": { "upper": "Earth", "lower": "Earth" },
+    "keywords": ["receptivity", "earth", "yin", "yielding", "the mare"],
+    "upright": "Six broken yin lines — pure receptivity, pure earth. This is not passivity but the active capacity to receive and nurture what heaven has initiated. The mare follows where the stallion leads, not from submission but because following is her natural power. Something needs your full, undivided receptivity right now: your task is not to drive but to support, to receive, to allow. The yield is not surrender.",
+    "reversed": "Receptivity that has become passive or self-erasing. The earth out of balance tries to act like heaven and loses the power that is uniquely hers. Examine whether you are avoiding your own genuine authority under the guise of flexibility, or whether you are being too accommodating in a situation that actually needs you to take the lead.",
+    "lore": "Kūn is the complement and equal of Qián — together they are the first pair of hexagrams, heaven and earth, yang and yin. The I Ching describes the mare as the symbol of Kūn: tireless, gentle, strong, devoted to the work. Earth receives all seeds without discrimination and brings them to fruition; the receptive holds what the creative generates. Without Kūn, Qián has nowhere to land."
+  },
+  {
+    "id": "iching-03", "name": "Difficulty at the Beginning", "chineseName": "Zhūn", "deckType": "IChing", "number": 3,
+    "symbol": "䷂", "trigrams": { "upper": "Water", "lower": "Thunder" },
+    "keywords": ["difficult beginning", "first steps", "gathering support", "germination", "chaos"],
+    "upright": "Thunder beneath water — the first shoots pushing through resistant ground. All true beginnings involve this kind of difficulty: not as a sign that you are going the wrong way, but because nothing of value emerges without struggle. The seed does not know how hard it is to break through soil; it only knows it must reach the light. Gather support around you, take small steps, and trust that the difficulty is inherent in the beginning — not evidence of failure.",
+    "reversed": "Difficulty that overwhelms rather than forms, or beginning that refuses to begin. The struggle has become the story rather than the passage. Examine whether you are stalled by genuine obstacles or by fear of the difficulty that is simply part of starting. Sometimes beginning must wait; sometimes the waiting is the obstacle.",
+    "lore": "The third hexagram immediately follows the paired heaven and earth with this image of emergence through difficulty — as if the universe itself understood that creation begins with struggle. Zhūn (pronounced 'Zhwen') is often translated as 'sprouting' and depicts the grass that pushes up through frozen ground in early spring. It is the archetypal image of potential meeting resistance and emerging through it."
+  },
+  {
+    "id": "iching-04", "name": "Youthful Folly", "chineseName": "Méng", "deckType": "IChing", "number": 4,
+    "symbol": "䷃", "trigrams": { "upper": "Mountain", "lower": "Water" },
+    "keywords": ["inexperience", "learning", "the student", "guidance", "beginner's mind"],
+    "upright": "Mountain above a spring — the freshness of genuine not-knowing. The young fool is not stupid; she is simply at the beginning of understanding. This hexagram asks you to approach your situation as a student: with willingness to be taught, without the rigidity of assumed expertise. It is also sometimes the teacher's hexagram: the student must ask three times before the oracle answers, because sincere seeking is what makes wisdom transmissible.",
+    "reversed": "Foolishness defended against correction, or learning that will not be learned. The student who asks but ignores the answer, the beginner who pretends expertise to avoid vulnerability. Méng reversed asks what knowledge or correction you are resisting because accepting it would mean acknowledging how much you do not know.",
+    "lore": "Méng means 'enveloped' — the covering that hides a young sprout, the veil of inexperience. The I Ching's commentary here describes the relationship between teacher and student with rare directness: if the student asks once with genuine sincerity, answer. If the student asks again and again seeking different answers, stay silent — the repetition reveals that the answer was already received and rejected. Seeking the right answer is different from seeking a comfortable one."
+  },
+  {
+    "id": "iching-05", "name": "Waiting", "chineseName": "Xū", "deckType": "IChing", "number": 5,
+    "symbol": "䷄", "trigrams": { "upper": "Water", "lower": "Heaven" },
+    "keywords": ["waiting", "patience", "nourishment", "timing", "clouds before rain"],
+    "upright": "Heaven below clouds and rain — the warrior who knows when to act and when to wait. This is active, alert, nourishing patience: you are preparing, maintaining your strength, staying ready. The rain will come. The timing is not yet right for the crossing. Do not force what has not yet ripened. Use this time to rest, eat, gather yourself — not to scheme or worry, but to be genuinely present in the waiting.",
+    "reversed": "Waiting that has become avoidance, or patience that has curdled into passivity. The moment for action has arrived and is not being met. Xū reversed asks whether you are telling yourself you are 'waiting for the right time' when the right time is actually now and the real obstacle is fear.",
+    "lore": "Xū means 'waiting with nourishment' — an active, purposeful patience. The hexagram depicts clouds gathering over the firmament: rain is coming, but is not yet here. The I Ching advises eating and drinking, resting, maintaining oneself during the wait. The figure who waits well is not passive but is conserving force and maintaining equanimity — qualities that will be needed when the moment of action arrives."
+  },
+  {
+    "id": "iching-06", "name": "Conflict", "chineseName": "Sòng", "deckType": "IChing", "number": 6,
+    "symbol": "䷅", "trigrams": { "upper": "Heaven", "lower": "Water" },
+    "keywords": ["conflict", "contention", "litigation", "opposing forces", "caution"],
+    "upright": "Heaven pulling upward, water pulling downward — two genuine forces in direct opposition. Conflict is real. The I Ching does not tell you to avoid it but advises how to navigate it: do not escalate unnecessarily, meet someone halfway when you can, do not pursue this to the bitter end. If the conflict must be adjudicated, seek a neutral mediator. The goal is resolution, not victory.",
+    "reversed": "Conflict pursued past the point of wisdom, or aggression that refuses any resolution except total defeat of the other side. Sòng reversed warns that the fight has become more important than what the fight was about. Examine whether you are actually trying to resolve something or whether you have become attached to the conflict itself.",
+    "lore": "Song is one of the I Ching's most pragmatic hexagrams — it deals with conflict, legal disputes, and adversarial situations without any idealization. The text advises: reach half-way and stop. To pursue legal proceedings to the end is to invite calamity even in a just cause. The ancient Chinese legal system was expensive, uncertain, and often punished both parties. The wisest move is usually the one that ends the conflict soonest."
+  },
+  {
+    "id": "iching-07", "name": "The Army", "chineseName": "Shī", "deckType": "IChing", "number": 7,
+    "symbol": "䷆", "trigrams": { "upper": "Earth", "lower": "Water" },
+    "keywords": ["discipline", "leadership", "mobilization", "collective force", "strategy"],
+    "upright": "Water hidden in earth — the army that moves without being seen until it must act. Disciplined collective force in service of a genuine cause. This hexagram speaks to the moment when you must marshal your resources — internal or external — and lead them with clarity and discipline toward a real objective. The army must be led by someone worthy of trust. Are you that person? Organize before acting.",
+    "reversed": "Force without leadership, or leadership without moral authority. The army that follows an unworthy commander brings disaster. Shī reversed asks whether the cause is genuinely just, whether you have the support you believe you have, and whether you are prepared to take responsibility for what your mobilization sets in motion.",
+    "lore": "Shī is the hexagram of the commander, the organized collective, the campaign that requires sustained effort over time. The I Ching's commentary emphasizes that the general must have the people's trust and the ruler's mandate — military action without these foundations invites calamity. The single yang line in the second position (surrounded by yin) represents the commander within the mass of troops."
+  },
+  {
+    "id": "iching-08", "name": "Holding Together", "chineseName": "Bǐ", "deckType": "IChing", "number": 8,
+    "symbol": "䷇", "trigrams": { "upper": "Water", "lower": "Earth" },
+    "keywords": ["union", "alliance", "belonging", "gathering", "mutual support"],
+    "upright": "Water on earth — union, alliance, the gathering of kindred people around a shared center. This hexagram asks: who do you belong with? Who belongs with you? The time is right for forming genuine bonds, for committing to a shared direction. Hesitation here has a cost: those who come late find the alliance already formed. Come with sincerity and remain in it.",
+    "reversed": "Union sought for the wrong reasons, or the alliance that cannot hold because its foundation is not genuine. Bǐ reversed speaks to the loneliness of trying to belong where you don't, or the danger of gathering power without genuine shared purpose. Examine whether the union you are seeking is one of genuine affinity or merely of convenience.",
+    "lore": "Bǐ is the complementary hexagram to Shī — where the Army mobilizes force outward, Holding Together gathers people inward around a center. The I Ching describes a ritual in which the king hunts only on three sides, leaving the fourth side open so animals can escape if they choose: only those who genuinely come belong. The consultation here is: have you examined yourself? Are you sincerely prepared for this union?"
+  },
+  {
+    "id": "iching-09", "name": "Small Taming", "chineseName": "Xiǎo Xù", "deckType": "IChing", "number": 9,
+    "symbol": "䷈", "trigrams": { "upper": "Wind", "lower": "Heaven" },
+    "keywords": ["gentle restraint", "small steps", "accumulation", "pause before action", "cultivation"],
+    "upright": "Wind over heaven — a single yin line holding back five yang lines through gentle persistence. Small taming: this is not the moment for major action but for patient, consistent cultivation. The clouds gather but have not yet released rain. Work in small ways. Accumulate gradually. The restraint is not a defeat; it is the pressure that will eventually release something significant. Be gentle with yourself and others.",
+    "reversed": "Restraint that becomes impotence, or small taming used as permanent excuse not to move. The clouds that gather forever without raining are a form of false promise. Examine whether you have been 'preparing' and 'accumulating' as genuine preparation or as avoidance of commitment.",
+    "lore": "Xiǎo Xù (Small Taming/Nourishing) is the hexagram of the gentle influence that shapes without forcing. One yin line holds back five yang lines — the small thing that nevertheless redirects the large. The wind that moves over heaven does not stop it but gradually shapes its clouds. The I Ching here advises consistent, modest action rather than grand gestures; the small work accumulates into significant change."
+  },
+  {
+    "id": "iching-10", "name": "Treading", "chineseName": "Lǚ", "deckType": "IChing", "number": 10,
+    "symbol": "䷉", "trigrams": { "upper": "Heaven", "lower": "Lake" },
+    "keywords": ["conduct", "tread carefully", "right behavior", "the tiger's tail", "propriety"],
+    "upright": "Lake beneath heaven — treading on the tiger's tail and not being bitten. This is the hexagram of conduct in dangerous territory: moving with lightness, good humor, and careful attention in a situation that could go very wrong if handled clumsily. The image is of someone who treads on a tiger's tail but escapes because they approach with the right attitude — not with aggression, not with fear, but with ease. Watch your step but keep moving.",
+    "reversed": "Conduct that provokes what it claims to navigate. Treading carelessly when carefulness is required, or the pretense of propriety used as a cover for dangerous intentions. Lǚ reversed asks whether you are actually moving with the lightness the situation requires, or whether you are simply hoping the tiger won't notice.",
+    "lore": "Lǚ is the hexagram of ritual conduct — the forms of behavior that allow humans to live together safely. The ancient Chinese placed enormous importance on li (ritual propriety) as the force that transforms potential conflict into harmonious interaction. Treading on the tiger's tail is the image of correct behavior in the presence of real danger: it is not the tiger's fault if the danger is not respected. Move with awareness."
+  },
+  {
+    "id": "iching-11", "name": "Peace", "chineseName": "Tài", "deckType": "IChing", "number": 11,
+    "symbol": "䷊", "trigrams": { "upper": "Earth", "lower": "Heaven" },
+    "keywords": ["harmony", "peace", "prosperous exchange", "union of opposites", "flourishing"],
+    "upright": "Earth above heaven — the great exchange in full flow. Yin descends to meet yang rising; heaven and earth are in dynamic communication. This is the hexagram of genuine flourishing: the small departs and the great arrives. Everything is in right relationship. Enjoy the harmony and use it well — not to rest on your laurels but to build what the good season makes possible.",
+    "reversed": "Even Tài has its reversal — into Pǐ (Standstill). Nothing is permanent, including prosperity. Tài in its shadow is the warning not to mistake the good season for an eternal condition. Use abundance wisely, do not neglect what needs tending even in times of ease, prepare for the turning.",
+    "lore": "Tài (Peace/Pervading) is one of the most auspicious hexagrams in the I Ching. Earth sits above heaven in an arrangement that seems paradoxical — earth should sink, heaven should rise — but this is precisely the dynamic tension that creates the great flow: heaven's force rises while earth's receptivity descends to meet it. The exchange between them is the source of all productivity. Small people depart; great people arrive."
+  },
+  {
+    "id": "iching-12", "name": "Standstill", "chineseName": "Pǐ", "deckType": "IChing", "number": 12,
+    "symbol": "䷋", "trigrams": { "upper": "Heaven", "lower": "Earth" },
+    "keywords": ["obstruction", "stagnation", "separation", "the small prevailing", "patience"],
+    "upright": "Heaven above earth — separated, not exchanging. Heaven rises higher; earth sinks lower. Communication has broken down. Small-minded people advance while the great retire. This is not permanent but it is genuinely difficult. The right response is not force but patience and withdrawal to where your integrity can be preserved. This too will turn. Protect what matters while the season lasts.",
+    "reversed": "Standstill that is used as excuse for permanent disengagement. Pǐ in its shadow becomes resignation rather than strategic retreat. Examine whether you are preserving your integrity in difficult conditions or whether you have given up entirely and dressed it as wisdom.",
+    "lore": "Pǐ (Standstill/Obstruction) is Tài's opposite — the two form a complementary pair of great exchange and great separation. Where Tài brings the forces of heaven and earth into productive communication, Pǐ separates them: heaven rises away from earth, earth sinks away from heaven, and between them nothing flows. The I Ching is honest: there are times when the world is in disorder and the proper response is strategic withdrawal, not heroic action."
+  },
+  {
+    "id": "iching-13", "name": "Fellowship", "chineseName": "Tóng Rén", "deckType": "IChing", "number": 13,
+    "symbol": "䷌", "trigrams": { "upper": "Heaven", "lower": "Fire" },
+    "keywords": ["fellowship", "community", "shared cause", "openness", "concord"],
+    "upright": "Fire beneath heaven — the fellowship of people gathered in the open, under an honest sky. This hexagram speaks to genuine community built on shared purpose rather than self-interest: not the clique that excludes, but the fellowship that includes all who share the cause. To achieve something great, you must be able to join forces with others. The crucial word is 'in the open' — hidden agendas, secret arrangements, and in-group loyalty all limit what this hexagram can bring.",
+    "reversed": "Fellowship that excludes rather than includes, or community built on shared grievance rather than shared vision. Tóng Rén reversed is the clique, the faction, the brotherhood with enemies. Examine whether what you call fellowship is a genuine community or a wall with friendlier language.",
+    "lore": "Tóng Rén (Concording People/Fellowship with Men) emphasizes that true community must be broad and open. The I Ching's commentary specifically warns against forming fellowships only within narrow groups — clan, party, ideology. The hexagram's fire below heaven suggests the light that illuminates all equally; fellowship limited to the in-group is a dimmer thing. The great person gathers those who share the cause, regardless of faction."
+  },
+  {
+    "id": "iching-14", "name": "Great Possession", "chineseName": "Dà Yǒu", "deckType": "IChing", "number": 14,
+    "symbol": "䷍", "trigrams": { "upper": "Fire", "lower": "Heaven" },
+    "keywords": ["abundance", "great harvest", "generosity", "the sun at noon", "peak possession"],
+    "upright": "Fire over heaven — the sun at its zenith, illuminating everything. This is the hexagram of great abundance and genuine possession: you have what you need, perhaps more than you need. The character of this hexagram is not grasping but generous — the sun does not hoard its light. The great possession calls for the generosity of spirit that matches the gift. Share what you have; the hexagram's power is in its circulation.",
+    "reversed": "Abundance grasped too tightly, or the arrogance that abundance can generate. Dà Yǒu in shadow is the person who has everything and becomes defined by defending it. At the height of possession, the question of character becomes most acute: what do you do with what you have?",
+    "lore": "Dà Yǒu (Great Possessing/Possession in Great Measure) pairs with Fellowship (Tóng Rén) as its complement. Where Fellowship is about gathering people around a shared cause, Great Possession is about what that gathering produces. The single yin line in the fifth position holds the position of the ruler — surrounded by and nourished by yang — a gentle leader who commands through virtue rather than force."
+  },
+  {
+    "id": "iching-15", "name": "Modesty", "chineseName": "Qiān", "deckType": "IChing", "number": 15,
+    "symbol": "䷎", "trigrams": { "upper": "Earth", "lower": "Mountain" },
+    "keywords": ["humility", "modesty", "balance", "the leveling force", "lasting influence"],
+    "upright": "Mountain hidden beneath the earth — the mountain that does not display its height. This is the only hexagram in the I Ching whose every line is auspicious: genuine humility succeeds in all circumstances. Modesty is not self-effacement but the accurate accounting of one's position — neither overclaiming nor underclaiming. Heaven reduces the full; earth lifts the empty. What is genuinely modest is filled.",
+    "reversed": "False modesty used as self-protection, or modesty that has become invisibility. Qiān in shadow is the person who hides genuine ability out of fear of standing out, or who uses the language of humility to avoid responsibility. True modesty is not the same as refusing to show up.",
+    "lore": "Qiān (Humbling/Modesty) is celebrated in the I Ching with unusual consistency — unlike most hexagrams, every line commentary is positive. This rarity has a point: genuine modesty is a form of alignment with the actual forces of the universe, which always level what is too high and raise what is too low. The mountain that stays hidden beneath the earth is not diminished by its concealment; it is the foundation on which the plain rests."
+  },
+  {
+    "id": "iching-16", "name": "Enthusiasm", "chineseName": "Yù", "deckType": "IChing", "number": 16,
+    "symbol": "䷏", "trigrams": { "upper": "Thunder", "lower": "Earth" },
+    "keywords": ["enthusiasm", "mobilization", "music", "inspiration", "movement"],
+    "upright": "Thunder over earth — the single yang line in the fourth position generates movement and enthusiasm in all the yin lines around it. This is the hexagram of genuine inspiration: the music that moves people, the enthusiasm that is not performance but genuine felt energy that others catch. You have the capacity right now to move people through genuine expression. Act from that aliveness. It is the moment to mobilize.",
+    "reversed": "Enthusiasm inflated into arrogance, or enthusiasm that has no real fuel — the excitement that leads people nowhere, the charisma unmoored from substance. Yù reversed is the demagogue or the person who mistakes emotional energy for wisdom. Examine whether the enthusiasm is connected to something true.",
+    "lore": "Yù (Providing-For/Enthusiasm) depicts the minister who moves the king's forces with music and ceremony — genuine inspired action that carries others without forcing them. The ancient Chinese understood music as a cosmic force capable of aligning people with the rhythms of heaven and earth. The hexagram's thunder over earth is the drum that precedes the army: not a threat but an announcement that something real is moving."
+  },
+  {
+    "id": "iching-17", "name": "Following", "chineseName": "Suí", "deckType": "IChing", "number": 17,
+    "symbol": "䷐", "trigrams": { "upper": "Lake", "lower": "Thunder" },
+    "keywords": ["following", "adaptation", "the right guide", "going with", "joyful cooperation"],
+    "upright": "Lake above thunder — thunder submits to the joy of the lake. Following here is not weakness but wisdom: finding what genuinely calls to you and following it with full commitment. The question this hexagram asks is: what is actually worth following? What do you genuinely want to serve or be led by? Once that is clear, follow it completely — not with servility but with the full engagement that makes following a form of leadership.",
+    "reversed": "Following the wrong thing, or the inability to follow anything. Suí reversed is the person who follows blindly without discernment, or the person who cannot submit to anything — both are forms of being lost. What you follow shapes what you become.",
+    "lore": "Suí (Following) describes the ability to adapt to the time and follow what is genuinely worthy of following — a key virtue in classical Chinese thought. Thunder in the lake suggests the yang force that has entered the realm of joy and ease: the great becomes willing to be led by the lesser, modeling the flexibility of the great person who adapts to circumstances without losing integrity."
+  },
+  {
+    "id": "iching-18", "name": "Decay", "chineseName": "Gǔ", "deckType": "IChing", "number": 18,
+    "symbol": "䷑", "trigrams": { "upper": "Mountain", "lower": "Wind" },
+    "keywords": ["repair", "corruption", "inherited problems", "remedy", "regeneration"],
+    "upright": "Mountain above wind — the wind trapped beneath the mountain, turning stagnant. Something has spoiled, been neglected, or inherited as dysfunction. This hexagram does not name the decay to condemn it but to invite repair. Three days before beginning, three days after: take time to understand what went wrong, then act, then assess. The decay of what was over is the necessary precondition for what comes next. This is work worth doing.",
+    "reversed": "Decay denied or decay addressed superficially. Gǔ in shadow is the person who patches over corruption without examining its roots — the family secret that is 'handled' but never actually healed. What has been spoiled must be genuinely understood before it can be genuinely repaired.",
+    "lore": "Gǔ is the hexagram of what has been allowed to deteriorate — whether through neglect, inherited dysfunction, or simple entropy. The ancient Chinese character for Gǔ depicted worms in a bowl, suggesting corruption that has taken hold over time. The I Ching's response is neither shame nor despair but practical: understand what went wrong, repair it with care, and what emerges from the decay can be more vital than what preceded it."
+  },
+  {
+    "id": "iching-19", "name": "Approach", "chineseName": "Lín", "deckType": "IChing", "number": 19,
+    "symbol": "䷒", "trigrams": { "upper": "Earth", "lower": "Lake" },
+    "keywords": ["approach", "advance", "the great drawing near", "springtime energy", "growing influence"],
+    "upright": "Earth above lake — the great approaching. Two yang lines advance from below as yin lines recede above: this is the image of increasing force, growing influence, the favorable moment drawing near. The energy is building and your influence is expanding. Act from this growing strength but remember: the eighth month will bring the turn. Use the advance wisely and do not neglect what the turn will require.",
+    "reversed": "Advance that overextends, or the warning ignored. Lín reversed is the spring energy that presses forward without preparing for the autumn that follows. Even in the moment of greatest advance, keep your attention on what is sustainable.",
+    "lore": "Lín (Nearing/Approach) describes the moment when favorable energy is growing — two yang lines at the bottom of the hexagram, advancing upward through the yin lines. The I Ching's commentary adds an unusual warning: 'When the eighth month comes, misfortune.' The great approach always has its limit; the time of advance is also the time to prepare for its reversal. Wisdom is not just knowing when to advance but knowing when to consolidate."
+  },
+  {
+    "id": "iching-20", "name": "Contemplation", "chineseName": "Guān", "deckType": "IChing", "number": 20,
+    "symbol": "䷓", "trigrams": { "upper": "Wind", "lower": "Earth" },
+    "keywords": ["contemplation", "observation", "the watchtower", "influence through example", "seeing clearly"],
+    "upright": "Wind above earth — moving across the land, observing all. This is the hexagram of the watchtower: seeing clearly, being seen, influencing through the quality of your presence rather than through force. The great person becomes the standard by which others orient themselves. What do you see when you look clearly at your situation, your people, your own inner life? Contemplation is not passive; it is the active gathering of accurate understanding.",
+    "reversed": "Seeing only the surface, or contemplation as avoidance of action. Guān in shadow is the endless observer who never acts on what she sees, or the person who looks everywhere except at herself. The watchtower that sees everything must also look down at its own foundations.",
+    "lore": "Guān (Viewing/Contemplation) depicts the ritual of the ancient Chinese king who made formal inspection tours of his kingdom — not to exercise power but to observe conditions, make himself seen and known, and bring his presence as a moral influence. The king who genuinely contemplates and is genuinely seen becomes the standard. The hexagram also describes the contemplative who observes the workings of heaven and earth and aligns herself with them."
+  },
+  {
+    "id": "iching-21", "name": "Biting Through", "chineseName": "Shì Kè", "deckType": "IChing", "number": 21,
+    "symbol": "䷔", "trigrams": { "upper": "Fire", "lower": "Thunder" },
+    "keywords": ["decisive action", "removing obstacles", "justice", "biting through", "breaking through"],
+    "upright": "Thunder and lightning together — the decisive action that removes what stands in the way of union. An obstacle needs to be bitten through: clearly, firmly, without hesitation. This may be a difficult conversation, a legal matter, a decision that cannot be deferred any longer. The I Ching here supports decisive action in the service of justice. What needs to be resolved must be resolved.",
+    "reversed": "Harsh action that goes further than the situation requires, or the force that cannot find the right thing to bite through. Shì Kè reversed is excessive punishment, or the aggression that mistakes every obstacle for an enemy. Decisive force is needed; wisdom determines where to apply it.",
+    "lore": "Shì Kè (Gnawing Bite/Biting Through) is one of the hexagrams explicitly concerned with legal proceedings and justice. The image is of an open mouth with something hard between the teeth that must be bitten through before the mouth can close — union cannot happen until the obstacle is removed. Fire and thunder together represent the force of natural law: swift, clear, and impersonal."
+  },
+  {
+    "id": "iching-22", "name": "Grace", "chineseName": "Bì", "deckType": "IChing", "number": 22,
+    "symbol": "䷕", "trigrams": { "upper": "Mountain", "lower": "Fire" },
+    "keywords": ["grace", "beauty", "adornment", "form", "the limits of decoration"],
+    "upright": "Mountain lit by fire — the beautiful form. Grace and beauty have genuine value but do not substitute for substance. This hexagram is about the right relationship between form and content: adornment should enhance what is already present, not replace what is absent. Beauty in small matters; do not use it to decide large ones. What is beautiful is also temporary. Let the form honor the substance.",
+    "reversed": "Beauty substituted for truth, or the elaborate form concealing an empty center. Bì reversed is the beautiful person or thing whose attractiveness prevents anyone from seeing that nothing is actually there. Examine what you are adorning and whether the adornment is appropriate to what it covers.",
+    "lore": "Bì (Adorning/Grace) addresses the role of aesthetic form in human life with characteristic Chinese ambivalence. Beauty and proper form matter — they communicate meaning, establish dignity, make interaction possible. But Grace cautions: adornment is appropriate for small matters, not for decisions that carry real weight. The mountain illuminated by fire is breathtaking but still just a mountain; the fire's light does not change the mountain's nature."
+  },
+  {
+    "id": "iching-23", "name": "Splitting Apart", "chineseName": "Bō", "deckType": "IChing", "number": 23,
+    "symbol": "䷖", "trigrams": { "upper": "Mountain", "lower": "Earth" },
+    "keywords": ["dissolution", "stripping away", "the bed overturned", "accepting loss", "endurance"],
+    "upright": "Mountain on earth — five yin lines below with one yang line at the top about to be displaced. This is the time of splitting apart, when things fall away. The I Ching is direct: it is not favorable to undertake anything. This is the season for quiet endurance, for riding out what cannot be stopped, for preserving the core while the periphery falls away. What remains after the stripping is what is truly real.",
+    "reversed": "Dissolution fought against uselessly, or surrender that goes too far — not only allowing what needs to fall to fall, but pulling down what could have been saved. Bō in shadow mistakes exhaustion for wisdom. Endure what must be endured without dramatizing it into total destruction.",
+    "lore": "Bō (Stripping/Splitting Apart) marks the lowest point in the I Ching's yin-yang cycle — five yin lines eating away at the last yang line. The image is of a bed whose legs have been cut away and whose surface is being stripped. It follows immediately from Bì (Grace), suggesting that what has been over-adorned eventually loses its foundation. But this too turns: the next hexagram is Return (Fù), the first yang line reappearing."
+  },
+  {
+    "id": "iching-24", "name": "Return", "chineseName": "Fù", "deckType": "IChing", "number": 24,
+    "symbol": "䷗", "trigrams": { "upper": "Earth", "lower": "Thunder" },
+    "keywords": ["return", "turning point", "renewal", "the solstice", "first light"],
+    "upright": "Thunder beneath earth — the first yang line returning after the long yin period. This is the winter solstice: the darkness is still deep but the light has turned. The reversal has begun. Do not hurry what has just begun to return; let the light strengthen naturally. Rest and allow the renewal. Friends come and go without blame; the way is clear. The energy that is returning is genuine — it needs time to establish itself.",
+    "reversed": "Return incomplete, or turning back before reaching the destination. Fù in shadow is the person who sees the light returning and extinguishes it through impatience or inability to believe that things can actually get better.",
+    "lore": "Fù (Returning) is one of the most celebrated hexagrams in the I Ching and was associated with the winter solstice — the moment when the yang force begins its return after the longest night. The ancient Chinese observed the solstice carefully; this was when the emperor remained still and at rest for seven days, as the returning yang was too fragile to withstand disturbance. Return is a hexagram of extraordinary promise: what was lost is coming back."
+  },
+  {
+    "id": "iching-25", "name": "Innocence", "chineseName": "Wú Wàng", "deckType": "IChing", "number": 25,
+    "symbol": "䷘", "trigrams": { "upper": "Heaven", "lower": "Thunder" },
+    "keywords": ["innocence", "unexpected fortune", "natural action", "spontaneity", "no error"],
+    "upright": "Heaven above thunder — the innocent action that has no calculation behind it. Wu Wang means 'without embroiling' or 'no error': acting from genuinely natural impulse, without ulterior motive, in alignment with what the moment requires. When this innocence is present, fortune is not far behind. The question this hexagram asks is whether your action comes from genuine spontaneity or from a naturalness performed for effect.",
+    "reversed": "Action that appears innocent but conceals calculation, or unexpected misfortune that arrives despite good intentions. Wú Wàng reversed is not moral condemnation but practical warning: even good intentions can lead to difficulty when circumstances are unfavorable. Perseverance in doing the right thing is still advised; the outcome may not be immediate.",
+    "lore": "Wú Wàng (Without Embroiling/Innocence) pairs action with the concept of te — the natural virtue of a thing acting according to its deepest nature. The I Ching contrasts this with calculation: to act innocently is to act as the thunder acts, as the seasons act, without agenda. This naturalness aligns with heaven and brings the support of natural forces. To act with hidden motives, even good ones, is to lose this alignment."
+  },
+  {
+    "id": "iching-26", "name": "Great Taming", "chineseName": "Dà Xù", "deckType": "IChing", "number": 26,
+    "symbol": "䷙", "trigrams": { "upper": "Mountain", "lower": "Heaven" },
+    "keywords": ["great restraint", "accumulated wisdom", "taming power", "storing up force", "legacy"],
+    "upright": "Mountain over heaven — the mountain that holds back the sky's creative force. Great taming: your strength and your accumulated resources are at their peak. The timing is right for major undertakings; the reserves are there. But what is accumulated must be tended: the great person studies the words and deeds of those who came before, nourishing virtue through the wisdom of history. This hexagram also suggests travel and crossing great water — the time to venture.",
+    "reversed": "Force stored but never released, or the accumulation that prevents movement. Dà Xù in shadow is the person who prepares forever and never begins, or the wisdom hoarded rather than shared.",
+    "lore": "Dà Xù (Great Accumulating/Taming Power of the Great) is the large-scale version of Small Taming (Xiǎo Xù). Where Small Taming restrained force temporarily, Great Taming contains it productively — the mountain that holds back heaven's force while it builds into something significant. The hexagram is associated with crossing rivers, undertaking major journeys, and building the legacy that outlasts the individual."
+  },
+  {
+    "id": "iching-27", "name": "Nourishment", "chineseName": "Yí", "deckType": "IChing", "number": 27,
+    "symbol": "䷚", "trigrams": { "upper": "Mountain", "lower": "Thunder" },
+    "keywords": ["nourishment", "the open mouth", "what you take in", "what you give out", "cultivation"],
+    "upright": "Mountain above thunder — the open jaw. This hexagram asks two questions: what do you nourish yourself with, and what do you give to others? Nourishment is literal and metaphorical — what you eat, what you take into your mind, what company you keep, what ideas you entertain. Look to the source. Nourishment that comes from seeking your own comfort alone is not true nourishment; the person who nourishes others wisely is nourished in return.",
+    "reversed": "Feeding on what diminishes you, or withholding nourishment from others. Yí reversed is the person who consumes without discernment, or who is stingy with the nourishment they could provide. What do you actually feed your mind and spirit? What nourishment are you starving others of?",
+    "lore": "Yí (Swallowing/Nourishment) presents the image of the jaw — two solid lines enclosing four hollow ones, the shape of an open mouth. The I Ching's commentary asks us to 'look at what a person nourishes and to observe how they seek to nourish their mind.' What we choose to take in shapes who we become; what we provide to others shapes the community we inhabit. Nourishment as a moral category, not just a physical one."
+  },
+  {
+    "id": "iching-28", "name": "Great Excess", "chineseName": "Dà Guò", "deckType": "IChing", "number": 28,
+    "symbol": "䷛", "trigrams": { "upper": "Lake", "lower": "Wind" },
+    "keywords": ["great pressure", "the ridgepole bending", "extraordinary times", "going alone", "critical mass"],
+    "upright": "Lake above wood — the ridgepole bending under excessive weight. This is a situation of genuine excess: too much weight for the structure to bear, pressure pushing to the limit. Extraordinary measures may be needed. The image of the ridgepole is honest — it may bend or crack. But the I Ching advises: find your own way forward even if you must go alone. The extraordinary man may need to act against convention.",
+    "reversed": "Collapse under excess, or actions so extreme that they accomplish nothing. Dà Guò in shadow is the person who responds to an extreme situation with an excess of response — piling catastrophe on catastrophe, or collapsing when a bent ridgepole could have been shored up with less drama.",
+    "lore": "Dà Guò (Great Exceeding) is one of the most physically evocative hexagrams: four yang lines sandwiched between two yin lines at top and bottom create an image of weight without sufficient support. The ridgepole of a traditional Chinese building, if it bends, threatens the entire structure. This is an emergency that calls for clear-headed, unconventional action — a time when ordinary rules may not apply."
+  },
+  {
+    "id": "iching-29", "name": "The Abyss", "chineseName": "Kǎn", "deckType": "IChing", "number": 29,
+    "symbol": "䷜", "trigrams": { "upper": "Water", "lower": "Water" },
+    "keywords": ["danger", "the abyss", "flowing through", "keeping the heart true", "mastery through repetition"],
+    "upright": "Water doubled — the gorge, the dangerous ravine, the repeated experience of peril. Kǎn is the hexagram of genuine danger, and the I Ching does not minimize it: the peril is real. But the water's wisdom is in its nature — it does not balk at the gorge but flows through it, around every obstacle, finding the low path. Keep your heart sincere; do not let repeated difficulty harden into cynicism. Flow through.",
+    "reversed": "Danger that is not engaged — the freeze response, the inability to flow. Kǎn reversed is the person trapped in the abyss rather than moving through it, or the one who keeps falling into the same gorge because the pattern of danger hasn't been recognized.",
+    "lore": "Kǎn (Gorge/The Abysmal Water) is one of eight hexagrams composed of two identical trigrams, creating an image of the same force doubled. Water repeated is relentless — it will find its way regardless of the obstacle. The I Ching uses this as both warning and instruction: where water goes, danger awaits, but where water flows, passage is possible. The sincere heart flowing through difficulty is the central image."
+  },
+  {
+    "id": "iching-30", "name": "The Clinging", "chineseName": "Lí", "deckType": "IChing", "number": 30,
+    "symbol": "䷝", "trigrams": { "upper": "Fire", "lower": "Fire" },
+    "keywords": ["clarity", "illumination", "clinging", "the cow's docility", "radiance"],
+    "upright": "Fire doubled — light clinging to what it illuminates, as fire needs fuel, as the eye needs the object it perceives. This hexagram speaks to awareness, brilliance, and illumination, but also to the necessary dependence that makes these possible. Clarity clings to clarity. Tend to what feeds your light — relationships, practices, sources of meaning. The cow's docility: sustainable brightness comes from being willing to be nourished.",
+    "reversed": "Brightness that consumes its fuel and burns out, or clarity that blinds rather than illuminates. Lí in shadow is the brilliant person who cannot be sustained — who burns intensely and briefly, refusing the 'cow's docility' that would allow the light to last. What nourishes your clarity?",
+    "lore": "Lí (Radiance/The Clinging) forms the complementary pair with Kǎn (the Abysmal). Where water flows down seeking the low path, fire climbs and clings to what it illuminates. Fire cannot exist without fuel; the eye cannot see without an object; the mind cannot think without content. The clinging that this hexagram describes is not weakness but the fundamental dependence of all bright things on what sustains them."
+  },
+  {
+    "id": "iching-31", "name": "Influence", "chineseName": "Xián", "deckType": "IChing", "number": 31,
+    "symbol": "䷞", "trigrams": { "upper": "Lake", "lower": "Mountain" },
+    "keywords": ["attraction", "mutual influence", "courtship", "sensitivity", "responsive"],
+    "upright": "Lake over mountain — the sensitive and joyful above, the still and stable below. Influence without force: mutual attraction, courtship, the gentle pull between things that belong together. This hexagram is about what draws two things into genuine relationship. It begins the second half of the I Ching and is associated with marriage — the free, mutual influence of complementary forces. Be sensitive. What do you feel? What is feeling toward you?",
+    "reversed": "Attraction that is manipulation, or sensitivity that has become reactivity. Xián reversed is the person who calls every emotional response 'authentic' whether or not it comes from genuine feeling or from their own unexamined needs. True influence is mutual and honest.",
+    "lore": "Xián (Conjoining/Influence) opens the lower canon of the I Ching with the image of courtship and mutual attraction. The mountain (stable, enduring) and the lake (joyful, responsive) represent the complementary qualities that draw together in genuine relationship. The Chinese commentary notes that this hexagram follows from heaven and earth: after the universe is established, the next great fact is the attraction between things. Influence without ulterior motive."
+  },
+  {
+    "id": "iching-32", "name": "Duration", "chineseName": "Héng", "deckType": "IChing", "number": 32,
+    "symbol": "䷟", "trigrams": { "upper": "Thunder", "lower": "Wind" },
+    "keywords": ["perseverance", "endurance", "constancy", "duration", "long continuance"],
+    "upright": "Thunder above wind — firm above, gentle below, movement and penetration working together over time. This is the hexagram of endurance and constancy: not rigidity, but the lasting quality of something that continues to develop. The person who does not change their place lasts. Persevere in what is genuinely right and let it develop over time. The great tree survives storms because its roots go deep, not because it refuses to bend.",
+    "reversed": "Constancy that is stubbornness, or endurance in the wrong direction. Héng in shadow is the person who mistakes being unmoved for being right — continuing a course of action because they've always done it that way, not because it still makes sense. Genuine duration requires flexibility at the surface and solidity at the core.",
+    "lore": "Héng (Persevering/Duration) is the complement of Influence (Xián): where Influence describes the beginning of relationship, Duration describes its long continuation. The I Ching observes that the seasons persevere and therefore all things are completed — duration is not inertia but the ongoing renewal of commitment. The wind and thunder, flexible and strong, model how what endures must work: not the frozen thing but the living one."
+  },
+  {
+    "id": "iching-33", "name": "Retreat", "chineseName": "Dùn", "deckType": "IChing", "number": 33,
+    "symbol": "䷠", "trigrams": { "upper": "Heaven", "lower": "Mountain" },
+    "keywords": ["retreat", "withdrawal", "strategic retirement", "the right time to go", "yielding space"],
+    "upright": "Heaven above mountain — the sky withdrawing as the lesser force advances. Retreat is not defeat but strategic wisdom: knowing when to yield, when to withdraw your energy from what cannot be won or is no longer worth the cost. The great person retreats without resentment and without hurry. Two yin lines advance from below; there is no forcing them back. Leave gracefully and preserve your strength for when conditions improve.",
+    "reversed": "Retreat that comes too late, or retreat that becomes permanent flight. Dùn in shadow is the withdrawal that collapses into defeat rather than deliberate withdrawal into position. There is also the person who retreats at the first sign of difficulty rather than when genuine wisdom requires it.",
+    "lore": "Dùn (Retiring/Retreat) describes the wisdom of withdrawal — a quality highly valued in classical Chinese thought. The sage who retreats when lesser forces are in the ascendant preserves both integrity and strength. This is not cowardice but the long view: the heaven withdraws only temporarily; the yin force that currently prevails will not do so forever. Retreat to where your genuine authority can be maintained."
+  },
+  {
+    "id": "iching-34", "name": "Great Power", "chineseName": "Dà Zhuàng", "deckType": "IChing", "number": 34,
+    "symbol": "䷡", "trigrams": { "upper": "Thunder", "lower": "Heaven" },
+    "keywords": ["great strength", "the ram at the fence", "power with integrity", "caution in strength", "rightness"],
+    "upright": "Thunder over heaven — four yang lines advancing powerfully. Great power is present; the question is what to do with it. The I Ching's concern here is integrity: power is only truly great when it is aligned with what is right. The image of the ram butting its horns against a fence is a warning: the ram's strength is real, but blindly applied it gets horns caught in the fence. Use your strength with precision, not force.",
+    "reversed": "Power used without wisdom, or strength that becomes stubbornness. Dà Zhuàng reversed is the person whose considerable force has become a liability — pushing through everything, unable to stop, horns caught in the fence. The great person does not persist in what is wrong even when strong enough to force the issue.",
+    "lore": "Dà Zhuàng (Great Invigorating/Great Power) follows Retreat, as if the I Ching is tracking the full cycle: first strategic withdrawal, then the yang force returns strengthened. The ram at the fence is one of the most memorable images in the I Ching — the animal strong enough to push through but whose power becomes its entrapment when applied to the wrong target. Strength is not the same as wisdom about where to apply it."
+  },
+  {
+    "id": "iching-35", "name": "Progress", "chineseName": "Jìn", "deckType": "IChing", "number": 35,
+    "symbol": "䷢", "trigrams": { "upper": "Fire", "lower": "Earth" },
+    "keywords": ["advance", "progress", "rising", "the morning sun", "recognition"],
+    "upright": "Fire over earth — the sun rising over the horizon. Progress: genuine advance, recognition coming, brightness increasing. This is not the beginning of something but the recognition of what has been building. The virtuous person advances and is acknowledged; gifts flow. Keep moving forward with clarity. The sun continues to rise; your advance has genuine momentum behind it.",
+    "reversed": "Progress blocked, or advance without the foundations to sustain it. Jìn reversed is the appearance of advancement masking stagnation, or the rise that comes before the fall. Ensure that your advancing is genuine and not simply the visible part of something without substance.",
+    "lore": "Jìn (Prospering/Progress) is the sun-rising hexagram — fire over earth, the bright force emerging from and illuminating the world below it. The I Ching's commentary describes the feudal lord who was given horses in great numbers and who received audiences with the king three times in a day: recognition, access, and gifts flowing freely. Progress here is authentic and publicly acknowledged."
+  },
+  {
+    "id": "iching-36", "name": "Darkening of the Light", "chineseName": "Míng Yí", "deckType": "IChing", "number": 36,
+    "symbol": "䷣", "trigrams": { "upper": "Earth", "lower": "Fire" },
+    "keywords": ["concealment", "suppressed brightness", "perseverance in darkness", "hiding one's light", "endurance"],
+    "upright": "Earth above fire — brightness hidden under the earth. This is the complement of Progress: the time when genuine brightness must hide itself to survive. The light is not gone — it is concealed. Persevere. Keep your integrity intact while the darkness lasts. Do not reveal your full understanding to those who cannot bear it or would use it against you. The sun that is under the earth will rise again.",
+    "reversed": "Hiding that has become permanent concealment, or brightness extinguished rather than simply hidden. Míng Yí in shadow is the person who has forgotten that the light is still there, who has stopped believing that the darkness is temporary. Or the one who uses 'darkness' as excuse to stop doing the necessary work.",
+    "lore": "Míng Yí (Darkening of the Light/Brilliance Injured) is the hexagram of those who must work and endure under oppression or in difficult conditions. The I Ching offers two historical examples: King Wen, who served under the tyrant Zhou while preserving his integrity for the eventual overthrow; and Prince Ji, who feigned madness to survive. The message is not to glorify suffering but to model how genuine brightness preserves itself through dark times."
+  },
+  {
+    "id": "iching-37", "name": "The Family", "chineseName": "Jiā Rén", "deckType": "IChing", "number": 37,
+    "symbol": "䷤", "trigrams": { "upper": "Wind", "lower": "Fire" },
+    "keywords": ["family", "household", "roles", "inner order", "right relationships"],
+    "upright": "Wind fed by fire — the family as the model of ordered society. This hexagram addresses the domestic sphere and the roles and relationships within it. The woman holding her position within; the man holding his outside — in the ancient Chinese context, this was literal; in broader application, it speaks to the right ordering of any close group. When each plays their genuine role with integrity, the household prospers. What internal order do you need to address?",
+    "reversed": "Family disorder, roles confused or reversed, or the household in which no one holds their actual position. Jiā Rén reversed does not only mean family dysfunction but any close group in which people are not playing their genuine roles — where someone pretends to a position they haven't earned or refuses the responsibility that belongs to them.",
+    "lore": "Jiā Rén (Dwelling People/The Family) is one of the I Ching's most explicitly social hexagrams. It uses the family as a microcosm of all ordered society — if order begins at home, it extends outward. The wind fed by fire rises and spreads: the influence of the well-ordered household moves outward into the world. The commentaries address both husband and wife, and the I Ching notes that the woman's role here requires greater attention since it is the interior work that others do not see."
+  },
+  {
+    "id": "iching-38", "name": "Opposition", "chineseName": "Kuí", "deckType": "IChing", "number": 38,
+    "symbol": "䷥", "trigrams": { "upper": "Fire", "lower": "Lake" },
+    "keywords": ["opposition", "contradiction", "polarity", "small things only", "misunderstanding"],
+    "upright": "Fire moving upward, lake moving downward — two forces moving apart. Opposition is real; do not pretend it isn't. But the I Ching counsels: in times of opposition, small things can be accomplished even though the great things are blocked. Find what you can agree on, however small. Misunderstandings are common here — check your assumptions before acting on them. The stranger who initially seemed threatening may be a friend in disguise.",
+    "reversed": "Opposition hardened into enmity, or the refusal to find what can still be shared. Kuí reversed is the total separation — the relationship or situation in which even small agreements have become impossible. Examine whether the opposition is genuine or whether it has been maintained past the point of any usefulness.",
+    "lore": "Kuí (Polarising/Opposition) confronts the reality that not everything can be harmonized. Fire and lake are genuinely contrary in nature; the I Ching does not advise forcing them into false unity. What it counsels instead is: work with small things, maintain good faith, and recognize that apparent enemies may not be enemies. The hexagram ends with the image of a pig covered in mud and a wagon loaded with devils that turns out to be a friend — appearances deceive in times of opposition."
+  },
+  {
+    "id": "iching-39", "name": "Obstruction", "chineseName": "Jiǎn", "deckType": "IChing", "number": 39,
+    "symbol": "䷦", "trigrams": { "upper": "Water", "lower": "Mountain" },
+    "keywords": ["obstruction", "the difficult path", "looking inward", "seeking help", "limping"],
+    "upright": "Water above mountain — the way forward is obstructed. Not every path should be taken right now. The I Ching advises: turn back, seek help from people of experience, and look within. The limping man who turns back is not a coward; he is wise. The obstruction is not permanent, but forcing through it now is not the answer. What needs to be addressed internally before external progress becomes possible?",
+    "reversed": "Obstruction that is refused as obstruction — the insistence on taking the blocked path because the right path requires too much. Jiǎn reversed is also the inability to ask for help, the isolation that prevents access to the guidance that could resolve the situation.",
+    "lore": "Jiǎn (Limping/Obstruction) is the hexagram of genuine difficulty — not the temporary obstruction that yields to persistence, but the situation where the direct path is genuinely blocked and wisdom requires turning back. The I Ching's geographical language is literal: there are mountains ahead and water behind; certain passages should not be attempted under certain conditions. The virtue cultivated here is the self-knowledge to recognize limits."
+  },
+  {
+    "id": "iching-40", "name": "Deliverance", "chineseName": "Jiě", "deckType": "IChing", "number": 40,
+    "symbol": "䷧", "trigrams": { "upper": "Thunder", "lower": "Water" },
+    "keywords": ["release", "deliverance", "resolution", "return to normalcy", "forgiveness"],
+    "upright": "Thunder over water — the tension released, the storm that broke the blockage. Deliverance: the obstruction has cleared, the resolution has come. Act quickly to complete what needs completing; return to normal life without delay. Forgive what was done during the difficult time. When the knot is loosened, shake out the old tangles and start clean. The direction is back to the normal — do not linger in the drama of the difficulty.",
+    "reversed": "Liberation refused or released too quickly. Jiě reversed is the person who, when deliverance comes, does not actually return to normalcy but remains attached to the drama of the obstruction. Or the one who rushes the return before the resolution is genuine.",
+    "lore": "Jiě (Taking-Apart/Deliverance) is the complement of Obstruction and follows it directly. Thunder over water: the storm that breaks the impasse, the thaw after frost. The I Ching's advice is brisk and practical — go quickly, do not delay, forgive and release. The moment of liberation is not the time for long reflection but for decisive movement back into ordinary life. Forgiveness is not optional; it is part of the release."
+  },
+  {
+    "id": "iching-41", "name": "Decrease", "chineseName": "Sǔn", "deckType": "IChing", "number": 41,
+    "symbol": "䷨", "trigrams": { "upper": "Mountain", "lower": "Lake" },
+    "keywords": ["decrease", "simplification", "sincerity over form", "the offering", "inner cultivation"],
+    "upright": "Mountain over lake — the lake's depth decreasing to fill what is above. Decrease is not only loss: there are times when decreasing what is excessive enriches the essential. The I Ching asks about the sincerity behind the offering rather than its size — a small thing offered with genuine heart is more valuable than a large thing offered with calculation. What can be simplified? What excess can be released to enrich what actually matters?",
+    "reversed": "Decrease that diminishes the wrong things, or the refusal to let anything decrease. Sǔn reversed is the person who simplifies away what was actually nourishing, or who grips every possession so tightly that nothing flows.",
+    "lore": "Sǔn (Diminishing/Decrease) and Increase (Yì) form a complementary pair. The I Ching treats decrease philosophically: the movement of yin and yang means that what decreases below increases above, and what decreases above eventually returns below. The hexagram asks not 'how do I prevent loss?' but 'what is this loss for?' The image of the simple food offering given with complete sincerity captures the essence: not the amount but the quality of the giving."
+  },
+  {
+    "id": "iching-42", "name": "Increase", "chineseName": "Yì", "deckType": "IChing", "number": 42,
+    "symbol": "䷩", "trigrams": { "upper": "Wind", "lower": "Thunder" },
+    "keywords": ["increase", "benefit", "good fortune for action", "the favorable moment", "generosity"],
+    "upright": "Wind above thunder — two of the most active forces combined in a favorable direction. Increase: the time is right for action, for movement, for undertaking what has been contemplated. Good fortune attends crossing the great water. The I Ching notes that people always perceive genuine increase as a blessing; the person who increases the good of others without boasting takes the highest form of this hexagram. Act generously.",
+    "reversed": "Increase that is not sustainable, or advantage taken at others' expense. Yì reversed asks whether the increase is coming from genuine productivity or from extraction — increasing oneself by decreasing another. The favorable period will not last if it is built on this.",
+    "lore": "Yì (Augmenting/Increase) is one of the most auspicious hexagrams for undertaking action. Wind and thunder together represent two forces that amplify each other. The I Ching's commentary notes that genuinely great people 'move toward the good and correct errors' when they see the example of wind and thunder amplifying each other — the mutual amplification of genuine virtue is the highest form of increase."
+  },
+  {
+    "id": "iching-43", "name": "Breakthrough", "chineseName": "Guài", "deckType": "IChing", "number": 43,
+    "symbol": "䷪", "trigrams": { "upper": "Lake", "lower": "Heaven" },
+    "keywords": ["breakthrough", "resolution", "proclamation", "eliminating corruption", "decisive action"],
+    "upright": "Lake over heaven — five yang lines pushing up through one remaining yin line. The breakthrough is imminent; the inferior element is about to be displaced. But the I Ching is specific about how: not by force or attack but by clear, public declaration in the court. Name what must be named honestly. Do not use weapons against it — that gives it the dignity of an enemy. Maintain the best in yourself while making the break.",
+    "reversed": "Breakthrough that is all force and no principle, or the decisive action that creates more problems than it resolves. Guài in shadow is the person who calls their aggression 'decisive action' and their outburst 'clarity.' The genuine breakthrough requires the highest conduct at the moment of decision.",
+    "lore": "Guài (Displacement/Breakthrough) describes the moment when the long-dominant inferior element is finally about to be removed. The I Ching's advice for this moment is notably precise: announce the breakthrough honestly, do not use armed force, do not act out of personal resentment. The breakthrough must be a triumph of principle, not of force. The single yin line at the top, about to be displaced by five rising yang lines, represents what has overstayed its time."
+  },
+  {
+    "id": "iching-44", "name": "Coming to Meet", "chineseName": "Gòu", "deckType": "IChing", "number": 44,
+    "symbol": "䷫", "trigrams": { "upper": "Heaven", "lower": "Wind" },
+    "keywords": ["encounter", "temptation", "the unexpected meeting", "the bold woman", "caution"],
+    "upright": "Heaven above wind — the yin force beginning its advance again, a single yin line under five yang lines. This is the complement of Breakthrough: where yang completed its victory, yin now begins its return. The meeting is unexpected and potentially tempting; the I Ching advises against marrying the woman represented here (the forward, bold yin force initiating without invitation). Examine what is approaching you. Not every meeting should be embraced.",
+    "reversed": "The encounter that should have been avoided is now entangled. Gòu reversed is the connection made before full assessment — the alliance or relationship entered because the meeting felt compelling, without sufficient examination of what was actually being invited in.",
+    "lore": "Gòu (Coupling/Coming to Meet) directly follows Breakthrough and begins the yin return. The single yin line at the bottom represents an unusually assertive feminine force — 'bold' in the I Ching's traditional language, meaning forward and not waiting to be sought. The hexagram advises caution not because yin is inherently problematic but because an encounter that begins without discernment can grow into something that cannot be contained."
+  },
+  {
+    "id": "iching-45", "name": "Gathering Together", "chineseName": "Cuì", "deckType": "IChing", "number": 45,
+    "symbol": "䷬", "trigrams": { "upper": "Lake", "lower": "Earth" },
+    "keywords": ["gathering", "congregation", "the great assembly", "offering", "preparedness"],
+    "upright": "Lake over earth — people gathering around a genuine center. This hexagram speaks to the great gathering: when people congregate around something real, the energy that builds is remarkable. The I Ching advises: make offerings, visit the great person, see the king. Commit to the gathering with full sincerity. Also: because great gatherings attract trouble, prepare defenses. Not everyone who gathers is there for the same reason.",
+    "reversed": "Gathering without a genuine center, or the congregation that has gathered around the wrong thing. Cuì reversed is the mob, the crowd that has no meaningful purpose, or the gathering that excludes those who most need to be included.",
+    "lore": "Cuì (Clustering/Gathering Together) describes the powerful social force of genuine congregation — people and energies aligning around a meaningful center. The I Ching uses the image of the ritual offering and the visit to the king as models: genuine gathering requires ceremony, sincerity, and acknowledgment of proper authority. The hexagram also notes the dangers of large gatherings: conflict can arise when many interests come together."
+  },
+  {
+    "id": "iching-46", "name": "Ascending", "chineseName": "Shēng", "deckType": "IChing", "number": 46,
+    "symbol": "䷭", "trigrams": { "upper": "Earth", "lower": "Wind" },
+    "keywords": ["ascent", "pushing upward", "gradual growth", "going south", "steady progress"],
+    "upright": "Earth over wind — the tree growing up through the earth, patient and unstoppable. Ascending: this is gradual growth upward, gaining altitude through steady effort rather than sudden leap. The I Ching advises visiting the great person — not the king this time, but perhaps a mentor or guide. Go south: move toward clarity and warmth. The ascending is not dramatic but it is genuine. Keep climbing.",
+    "reversed": "Ascending that has no roots, or steady growth that has stalled. Shēng reversed is the ambition without the patience to grow genuinely — the desire to be at the top without the willingness to move through what the ascent requires.",
+    "lore": "Shēng (Ascending/Pushing Upward) is the hexagram of steady, rooted growth — the plant that pushes up through soil, gaining altitude slowly but without stopping. Unlike Progress (Jìn), which describes recognition from outside, Ascending describes the internal work of growing upward. The I Ching's direction 'go south' aligns with the trigram Li (fire, brightness) — move toward warmth and clarity."
+  },
+  {
+    "id": "iching-47", "name": "Oppression", "chineseName": "Kùn", "deckType": "IChing", "number": 47,
+    "symbol": "䷮", "trigrams": { "upper": "Lake", "lower": "Water" },
+    "keywords": ["exhaustion", "confined", "adversity", "words fail", "inner strength"],
+    "upright": "Lake above water — the lake drained, the water exhausted. Genuine oppression and exhaustion: resources are depleted, the external situation is constraining, and words will not help right now. The I Ching is honest: this is difficult and cannot be argued away. The person of genuine character does not lose their purpose even in adversity. The outer situation may be constrained; the inner life need not be. Maintain what is essential.",
+    "reversed": "Oppression that has become identity, or exhaustion used to excuse inaction when something could still be done. Kùn reversed is the person so identified with their victimhood that deliverance, when it comes, isn't recognized or isn't wanted.",
+    "lore": "Kùn (Confining/Oppression/Exhaustion) is one of the most difficult hexagrams in the I Ching and one of its most honest. The commentary opens: 'Words are not believed.' In times of genuine oppression, speech does not help; only inner integrity and patient endurance are of use. The I Ching here does not offer comfort through false promise but through the acknowledgment that genuine character is not destroyed by external constraint."
+  },
+  {
+    "id": "iching-48", "name": "The Well", "chineseName": "Jǐng", "deckType": "IChing", "number": 48,
+    "symbol": "䷯", "trigrams": { "upper": "Water", "lower": "Wind" },
+    "keywords": ["the source", "nourishment", "the common good", "inexhaustible supply", "draw up"],
+    "upright": "Water over wood — the well that serves all who come to it, unchanged by who draws from it. The Well is the inexhaustible source: you can change the city but not the well. Something fundamental and nourishing is available — the question is whether you are drawing from it. Lower your bucket all the way down. Access the deep source rather than surface water. What you find there feeds not only you but all who need it.",
+    "reversed": "The well not reached, the bucket broken, the rope too short. Jǐng reversed is access to the genuine source blocked by inadequate means or insufficient commitment — getting to the very edge and not quite drawing up what is there. Or the well that has been neglected and gone to mud.",
+    "lore": "Jǐng (Welling/The Well) represents the enduring, shared source that nourishes civilization. The I Ching notes: 'You may change the city but not the well.' The well is the permanent, common resource beneath particular structures — the source of nourishment that belongs to all and is depleted by none. The hexagram asks both 'what is your source?' and 'how do you contribute to the sources that others depend on?'"
+  },
+  {
+    "id": "iching-49", "name": "Revolution", "chineseName": "Gé", "deckType": "IChing", "number": 49,
+    "symbol": "䷰", "trigrams": { "upper": "Lake", "lower": "Fire" },
+    "keywords": ["revolution", "fundamental change", "shedding the skin", "transformation", "timing"],
+    "upright": "Lake above fire — two forces that oppose each other at the most fundamental level. Revolution: fundamental transformation is possible and may be necessary. But the I Ching is precise: revolution is only believed in when it actually happens, and it must be in accordance with heaven and responsive to humans to succeed. Time it right, build the mandate, and then act decisively. Change that is premature or that lacks genuine support falls apart.",
+    "reversed": "Revolution for its own sake, or change that is not yet ready. Gé reversed is the person who keeps turning things upside down without the mandate to do so — either acting too early, or pursuing personal grievance under the guise of necessary transformation.",
+    "lore": "Gé (Skinning/Revolution) takes its name from the skin that is shed in molting — the old form that must be removed for the new form to emerge. The I Ching treats revolution with seriousness: it requires a mandate from heaven and the people's trust, it must be properly timed, and its legitimacy must be clear. The two great revolutions cited are those of the legendary emperors Tang and Wu, who overthrew tyrants with heaven's approval."
+  },
+  {
+    "id": "iching-50", "name": "The Cauldron", "chineseName": "Dǐng", "deckType": "IChing", "number": 50,
+    "symbol": "䷱", "trigrams": { "upper": "Fire", "lower": "Wind" },
+    "keywords": ["transformation", "the sacred vessel", "nourishment of culture", "the prepared offering", "destiny"],
+    "upright": "Fire fed by wind — the sacred cauldron in which raw material is transformed into nourishment. This hexagram speaks to the transformation of raw experience into wisdom, of raw ingredients into the communal meal. You are in the process of preparing something — a work, a gift to your community, a piece of yourself that is being refined. The cauldron is the vessel of culture itself: what is cooked here nourishes many.",
+    "reversed": "The cauldron tipped or broken — preparation that fails, offering that spills. Dǐng reversed is the work undone at the last moment, the vessel that cannot hold what needs to be held, or the nourishment prepared without sufficient attention to what was going into it.",
+    "lore": "Dǐng (Holding/The Cauldron) is the ritualistic partner of Revolution — where Gé removes the old form, Dǐng creates the new. The ancient Chinese ritual cauldron was not merely a cooking vessel but a sacred object used in sacrifices and ceremonies marking the transfer of power. Its nourishment was offered to heaven before being shared with humanity. The hexagram represents the highest form of human cultural transformation: the patient, careful work of making something worthy."
+  },
+  {
+    "id": "iching-51", "name": "Thunder", "chineseName": "Zhèn", "deckType": "IChing", "number": 51,
+    "symbol": "䷲", "trigrams": { "upper": "Thunder", "lower": "Thunder" },
+    "keywords": ["shock", "thunder", "arousing", "fear and laughter", "the return to center"],
+    "upright": "Thunder doubled — shock upon shock. The first shock brings terror; the second brings laughter. The thunder that shakes you to your foundations is also the thunder that wakes you up. This hexagram is about how genuine shock forces the return to one's actual center: when the ground shakes, the important and unimportant sort themselves instantly. What remains after the shock is what was always real. After the terror — laughter, then clarity.",
+    "reversed": "Shock that only brings terror, or the person so identified with control that any disruption is intolerable. Zhèn reversed is the one who cannot find their way to the laughter after the thunder — remaining frozen in the first response rather than moving through it to recovery.",
+    "lore": "Zhèn (Shake/Thunder) is one of eight doubled-trigram hexagrams. The I Ching's image is vivid: first the thunder comes and the fearful man trembles; then comes the second thunder and the same man laughs. The point is the complete arc — genuine shock carries within it the seed of recovery, even laughter. The sage who is shaken maintains the capacity for sacrifice and ceremony even in the midst of disruption. He carries his spoon through the earthquake."
+  },
+  {
+    "id": "iching-52", "name": "Keeping Still", "chineseName": "Gèn", "deckType": "IChing", "number": 52,
+    "symbol": "䷳", "trigrams": { "upper": "Mountain", "lower": "Mountain" },
+    "keywords": ["stillness", "meditation", "stopping the mind", "the mountain's way", "inner quiet"],
+    "upright": "Mountain doubled — stillness of body, stillness of mind. The back kept still, walking the courtyard without seeing the people. This is the hexagram of genuine meditation: not the suppression of thought but the resting of the restless self. When you can keep still in stillness and move in movement — when stillness and movement are both in their proper time — then everything is in its right place. Rest in this.",
+    "reversed": "Stillness that is flight from engagement, or the inability to be still at all. Gèn reversed is the person who meditates to avoid responsibility, or the one who cannot stop moving long enough to know their own mind.",
+    "lore": "Gèn (Bound/Mountain) addresses the cultivation of stillness directly and philosophically. The I Ching's commentary is among the most meditative in the text: 'Keeping the back still so that one no longer feels the body.' The back is the part of oneself one cannot see — to still it is to release the ego from its constant self-monitoring. The mountain does not go anywhere; it is the stillness that allows the world to come to it."
+  },
+  {
+    "id": "iching-53", "name": "Gradual Progress", "chineseName": "Jiàn", "deckType": "IChing", "number": 53,
+    "symbol": "䷴", "trigrams": { "upper": "Wind", "lower": "Mountain" },
+    "keywords": ["gradual development", "propriety", "the wild goose", "step by step", "marriage"],
+    "upright": "Wind above mountain — the wild goose proceeding step by careful step: shore, rocks, dry land, trees, heights. This is the hexagram of proper, gradual development: each step prepares for the next; nothing is skipped; every stage has its value. The image of marriage is strong here — genuine relationship deepens by degrees, not by shortcuts. What is done properly, step by step, is also done lastingly. Proceed with patience.",
+    "reversed": "Development that skips steps and therefore lacks roots, or progress so gradual it never actually moves. Jiàn reversed is the impatience that ruins genuine development by forcing ahead, or the endless 'gradualness' that is actually avoidance of commitment.",
+    "lore": "Jiàn (Infiltrating/Gradual Progress) uses the migration of the wild goose as its central image — the bird that proceeds in a measured, natural sequence, landing at the shore before the rocks, the rocks before the plain, and so on. The I Ching values this kind of patient, proper progression: it leads to genuine, lasting development. The hexagram is associated with marriage because marriage is the human institution that models proper, gradual, meaningful progress through life stages."
+  },
+  {
+    "id": "iching-54", "name": "The Marrying Maiden", "chineseName": "Guī Mèi", "deckType": "IChing", "number": 54,
+    "symbol": "䷵", "trigrams": { "upper": "Thunder", "lower": "Lake" },
+    "keywords": ["secondary position", "the concubine", "wrong timing", "undertakings that fail", "caution"],
+    "upright": "Thunder above lake — the younger sister following the older sister as secondary wife. This is one of the I Ching's more difficult hexagrams: undertakings are unfavorable, nothing is advantageous. The situation is one of genuine imbalance — someone or something occupying a secondary position when primary status was expected. The path here requires accepting what is, without bitterness and without illusion. Advance with awareness of your actual position.",
+    "reversed": "The secondary position handled with resentment or rebellion, making a difficult situation into a disaster. Guī Mèi in shadow is the one who cannot accept the constraints of their actual position and therefore loses even what was possible within those constraints.",
+    "lore": "Guī Mèi (Converting the Maiden/Marrying Maiden) is one of the I Ching's most culturally specific hexagrams, depicting the position of the secondary wife (concubine) who follows the principal wife into the household. The commentary's concern is about the instability inherent in relationships built on desire rather than proper foundation. The hexagram asks: what is the genuine basis of your connection to this situation? Desire alone does not sustain."
+  },
+  {
+    "id": "iching-55", "name": "Abundance", "chineseName": "Fēng", "deckType": "IChing", "number": 55,
+    "symbol": "䷶", "trigrams": { "upper": "Thunder", "lower": "Fire" },
+    "keywords": ["abundance", "the sun at noon", "fullness", "do not grieve", "peak and passing"],
+    "upright": "Thunder over fire — the brightness at its fullest, the noon sun. Abundance: be like the sun at noon. Do not be sad about the fact that the sun will move past its peak — use the full light of this moment rather than mourning its eventual passage. You are at or near the peak of your powers in some area. Act with the generosity and brightness that fullness makes possible. The moment is real even though it will pass.",
+    "reversed": "Abundance mistaken for permanence, or grief over passing that prevents the use of the fullness while it lasts. Fēng reversed is the person who is so focused on the fact that the sun will set that they fail to use the light of noon.",
+    "lore": "Fēng (Abounding/Abundance) is one of the most explicitly time-aware hexagrams in the I Ching. The I Ching's comment — 'Do not grieve; be like the sun at noon' — acknowledges directly that the peak is temporary. The thunder and fire together represent action amplified by clarity: the most powerful moment in the hexagram cycle. The king offers ceremony and sacrifice at the height of abundance, understanding that the moment must be honored as well as used."
+  },
+  {
+    "id": "iching-56", "name": "The Wanderer", "chineseName": "Lǚ", "deckType": "IChing", "number": 56,
+    "symbol": "䷷", "trigrams": { "upper": "Fire", "lower": "Mountain" },
+    "keywords": ["the traveler", "small successes", "the stranger", "careful behavior", "transience"],
+    "upright": "Fire above mountain — the traveler moving through foreign territory. The Wanderer achieves small successes; the time is not right for major undertakings. You are in a position of relative weakness or unfamiliarity: a stranger in a strange land must tread carefully, maintain their integrity, move efficiently without lingering, and not become embroiled in local conflicts. Do not cause trouble; do not let trouble find you.",
+    "reversed": "The wanderer who overstays their welcome, or who fails to observe the caution that the stranger's position requires. Lǚ reversed is the traveler who picks fights, makes enemies, or mistakes foreign territory for home ground.",
+    "lore": "Lǚ (Sojourning/The Wanderer) is the hexagram of the person in an unfamiliar or marginal position — the traveler, the refugee, the new arrival. The I Ching's concern is practical: in an unfamiliar place, without established relationships or reputation, even small missteps can have large consequences. The fire on the mountain moves quickly and does not stay long. Small success in such conditions is actually significant success."
+  },
+  {
+    "id": "iching-57", "name": "The Gentle", "chineseName": "Xùn", "deckType": "IChing", "number": 57,
+    "symbol": "䷸", "trigrams": { "upper": "Wind", "lower": "Wind" },
+    "keywords": ["the gentle", "wind and wood", "penetrating influence", "persistence", "subtle power"],
+    "upright": "Wind doubled — the gentle, penetrating influence that accomplishes what force cannot. Small perseverance brings success: not through dramatic action but through consistent, gentle pressure, like the wind that finds every opening. The key here is the right direction, consistently maintained. This is not the moment for grand gestures but for the steady, penetrating work that goes where it needs to go. Have a direction. Be like the wind.",
+    "reversed": "Indecision disguised as gentleness, or the gentle influence that has no consistent direction and therefore penetrates nothing. Xùn reversed is the person who is too yielding — who accommodates everyone so completely that their own direction is lost.",
+    "lore": "Xùn (Ground/Wind/Gentle) is another doubled-trigram hexagram. The wind penetrates everywhere without forcing; the roots of a tree penetrate the earth without violence. The I Ching values this kind of action — persistent, directional, and unobtrusive. The commentary also emphasizes: the one who acts through gentle penetration must consult someone of genuine wisdom (three days before, three days after), as subtle influence requires precise direction."
+  },
+  {
+    "id": "iching-58", "name": "The Joyous", "chineseName": "Duì", "deckType": "IChing", "number": 58,
+    "symbol": "䷹", "trigrams": { "upper": "Lake", "lower": "Lake" },
+    "keywords": ["joy", "pleasure", "speech", "exchange", "the shared delight"],
+    "upright": "Lake doubled — genuine joy shared between people, the joy that multiplies in the sharing. This hexagram speaks to the pleasure of genuine exchange: conversation, friendship, the delight that one person's presence creates in another. True joy is outward-turning and generous. Persevere in it. The joy that is maintained through sincerity, that is shared rather than hoarded, that comes through genuine exchange — this joy is sustainable.",
+    "reversed": "Pleasure without substance, or joy maintained through flattery and self-indulgence. Duì reversed is the seductive joy that leads away from what is good — the pleasure that flatters and pleases but has no depth. Examine whether what you call joy is genuine delight or its substitute.",
+    "lore": "Duì (Open/Lake/Joy) is associated with the mouth and with speech — the joy that comes from genuine exchange, conversation, and shared understanding. The lake that opens to the sky receives rain and gives evaporation: the joy of this hexagram flows both ways. The I Ching notes that the sage who leads through joy rather than force is genuinely served by the people, who work willingly because they are inwardly glad."
+  },
+  {
+    "id": "iching-59", "name": "Dispersion", "chineseName": "Huàn", "deckType": "IChing", "number": 59,
+    "symbol": "䷺", "trigrams": { "upper": "Wind", "lower": "Water" },
+    "keywords": ["dissolution", "dispersion", "breaking up blockage", "spiritual work", "melting rigidity"],
+    "upright": "Wind above water — the wind that disperses what has hardened on the water's surface. Dispersion: breaking up the rigidity, the hardened selfishness, the frozen separation. The I Ching advises approaching a spiritual source, crossing great water. What has hardened into ego, into separateness, into bitterness, can be melted and redistributed. The king's offerings in the temple were designed to overcome estrangement between heaven and humans — this is what dispersion is for.",
+    "reversed": "Dispersion that scatters what should have been gathered, or the breaking up that is only destructive. Huàn reversed is dissolution without direction — the ice that melts and simply drains away rather than nourishing.",
+    "lore": "Huàn (Dispersing/Dissolution) addresses the problem of hardened separation — between people, between the human and the divine, between one's best self and one's habitual defenses. The boat on the water is the medium of crossing; the ceremony in the temple is the medium of reconnection. The ancient Chinese kings held ceremonies specifically designed to break down the barriers between ruler, nobles, and people that inevitably formed over time."
+  },
+  {
+    "id": "iching-60", "name": "Limitation", "chineseName": "Jié", "deckType": "IChing", "number": 60,
+    "symbol": "䷻", "trigrams": { "upper": "Water", "lower": "Lake" },
+    "keywords": ["limitation", "the right measure", "boundaries", "frugality", "the seasons"],
+    "upright": "Water over lake — the lake that contains but does not overflow. Limitation: boundaries, measure, the proper portion. Not all limitation is bad; the seasons themselves are limitations that make growth possible. The I Ching asks: are your limitations genuinely constructive, allowing you to develop fully within their structure? Frugality in difficult times is wisdom. But limitations that are too harsh are not endurable — find the measure that is both firm and livable.",
+    "reversed": "Limitations that crush rather than shape, or the refusal of any limitation that makes genuine form impossible. Jié reversed is both the tyrant who imposes unbearable constraints and the person who refuses all constraint and therefore cannot build anything lasting.",
+    "lore": "Jié (Articulating/Limitation) uses the word 'jié' which means both 'joint' (as in a bamboo joint) and 'limitation' — the dividing line that both separates and articulates. The bamboo's joints make it strong; without them it would be mere grass. The I Ching's approach to limitation is thoroughly pragmatic: some limitations are necessary and good; some are too severe. The art is finding the right measure."
+  },
+  {
+    "id": "iching-61", "name": "Inner Truth", "chineseName": "Zhōng Fú", "deckType": "IChing", "number": 61,
+    "symbol": "䷼", "trigrams": { "upper": "Wind", "lower": "Lake" },
+    "keywords": ["inner truth", "sincerity", "influence through genuine presence", "pigs and fish", "the center"],
+    "upright": "Wind above lake — the wind that moves the lake's surface from above, as genuine sincerity moves others from within. Inner truth: when what you say and what you are match completely, even pigs and fish respond. This is the hexagram of perfect sincerity — not the performance of sincerity but the genuine article, which influences not through argument but through the quality of presence itself. What is true at your center will be felt.",
+    "reversed": "The performance of sincerity in place of the real thing, or inner truth that is never expressed. Zhōng Fú reversed is the person who seems sincere but whose words and being do not match — or the one who has genuine inner truth but cannot or will not make it available to others.",
+    "lore": "Zhōng Fú (Centre Confirming/Inner Truth) addresses the most fundamental form of influence: genuine sincerity that touches even the most basic forms of life (pigs and fish represent the least spiritually developed beings in classical Chinese thought). The hollow center of the hexagram's shape — empty at the middle, solid at top and bottom — represents the heart open to receive truth rather than filled with its own calculations."
+  },
+  {
+    "id": "iching-62", "name": "Small Excess", "chineseName": "Xiǎo Guò", "deckType": "IChing", "number": 62,
+    "symbol": "䷽", "trigrams": { "upper": "Thunder", "lower": "Mountain" },
+    "keywords": ["small excess", "exceeding in smallness", "the flying bird", "modesty over ambition", "care"],
+    "upright": "Thunder above mountain — the small bird that flies too high is in danger; the small bird that comes down to rest is safe. This hexagram counsels modest excess: exceed in humility rather than pride, in caution rather than boldness, in grief rather than joy, in thrift rather than generosity. Big things are not favorable; small things are. Meet what approaches you without going out to seek it. The image of the bird in flight captures it: too high is dangerous, staying low preserves.",
+    "reversed": "Excess in the wrong direction — exceeding in pride, boldness, or ambition when the situation calls for their opposites. Xiǎo Guò reversed is the person who reads 'small excess' and decides they should be excessively large.",
+    "lore": "Xiǎo Guò (Small Exceeding) pairs with Inner Truth as its complement. Where Inner Truth spoke of genuine sincerity, Small Excess speaks of the genuine limits of what that sincerity can accomplish in the current moment. The flying bird image is deliberate: the bird that sings too loudly attracts predators; the bird that stays close to its nest is safe. This hexagram describes a time when virtuous understatement achieves what virtuous boldness cannot."
+  },
+  {
+    "id": "iching-63", "name": "After Completion", "chineseName": "Jì Jì", "deckType": "IChing", "number": 63,
+    "symbol": "䷾", "trigrams": { "upper": "Water", "lower": "Fire" },
+    "keywords": ["after completion", "in order", "the turning begins", "caution at the end", "disorder approaching"],
+    "upright": "Water above fire — every line in its correct position, the only hexagram in which every line is perfectly placed. But the I Ching is sobering: completion itself is the beginning of disorder. When something is perfectly arranged, the first movement begins to disturb that arrangement. Do not become complacent. Small perseverance is still required; the end contains the seed of beginning. The fox has nearly crossed but is already wetting its tail.",
+    "reversed": "The complacency that completion generates — the assumption that because things are in order, no further attention is required. Jì Jì reversed is the achievement that becomes a liability because it was never followed with the continued vigilance that sustains what was built.",
+    "lore": "Jì Jì (Already Fording/After Completion) is remarkable in the I Ching: it is the only hexagram in which every line is in its correct position. The I Ching does not celebrate this as permanence but as a moment — and uses the image of the fox crossing the river who wets his tail at the very end as a warning. Completion is real; it is also the moment when decline begins. The river has been crossed; watch what lies on the other bank."
+  },
+  {
+    "id": "iching-64", "name": "Before Completion", "chineseName": "Wèi Jì", "deckType": "IChing", "number": 64,
+    "symbol": "䷿", "trigrams": { "upper": "Fire", "lower": "Water" },
+    "keywords": ["before completion", "transition", "the young fox", "almost there", "vigilance"],
+    "upright": "Fire above water — every line in the wrong position, the complement of completion. This is the last hexagram, and it ends not with completion but with transition: still crossing, not yet arrived. The young fox has nearly crossed the river but stumbles at the last moment. Almost there is not there. Maintain your vigilance; the effort required at the very end is as real as the effort required at the beginning. The light is visible; do not mistake its appearance for its arrival.",
+    "reversed": "The stumble at the end — the abandonment of vigilance at the moment it is most required. Wèi Jì reversed is the task that is 95% complete and left there, or the finish that is rushed and botched because the end seemed near enough.",
+    "lore": "Wèi Jì (Not-Yet Fording/Before Completion) is the final hexagram of the I Ching, and the choice to end with incompleteness rather than completion is philosophically deliberate. The I Ching is a book about change; to end with completeness would be to suggest that change ends. Before Completion says: there is always another crossing ahead. The river is never fully behind you. Transition is the permanent condition; completion is a moment within it. Begin again."
+  }
+]
