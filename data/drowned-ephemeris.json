@@ -1,0 +1,1178 @@
+[
+  {
+    "id": "Bioluminescence",
+    "name": "Bioluminescence",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "self-generated light",
+      "visibility in darkness",
+      "the inner source",
+      "making your own illumination"
+    ],
+    "keyword_line": "You make your own light here.",
+    "upright": "In the absolute dark, the only light is what living things generate themselves. You are at a depth where borrowed light does not reach. What you illuminate, you illuminate with your own energy. This is not a burden; it is a capacity. What are you lighting up?",
+    "reversed": "The light is being withheld. The capacity is there but it is not being used. Staying dark by choice, in a situation where your own light is the only kind available."
+  },
+  {
+    "id": "Vent-Warp",
+    "name": "Vent-warp",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "pressure release",
+      "transformation",
+      "unexpected opening",
+      "heat from within"
+    ],
+    "keyword_line": "Life finds a way through the vent.",
+    "upright": "Where the pressure is greatest, something is releasing. A crack in the foundation is not failure; it is how the heat gets out. An unexpected source of energy or warmth is available now. Use it.",
+    "reversed": "The vent is blocked. Pressure builds without release. Something needs to give and you are preventing it. The explosion is more costly than the controlled release would have been."
+  },
+  {
+    "id": "absolute cold",
+    "name": "Absolute Cold",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "zero point",
+      "clarity",
+      "stripping away",
+      "the unchanging"
+    ],
+    "keyword_line": "What the cold removes was always temporary.",
+    "upright": "You have reached the temperature at which no false warmth survives. This is not punishment; it is precision. What remains in absolute cold is what was actually there. The clarity is uncomfortable and exact. Work with what is left.",
+    "reversed": "You are retreating from a clarity that threatened to change something. The warmth you are seeking will cost you the truth you were about to arrive at. The cold does not lie."
+  },
+  {
+    "id": "alien bloom",
+    "name": "Alien Bloom",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "beauty without recognition",
+      "the other",
+      "adaptation",
+      "flourishing outside category"
+    ],
+    "keyword_line": "It grows here because nothing told it not to.",
+    "upright": "Something is flourishing in conditions that should not support it. This belongs to no familiar category; do not try to name it by what it resembles. Witness it on its own terms and find out what it is actually doing.",
+    "reversed": "The bloom is being compared to something it is not. The unfamiliarity is the problem; you are trying to make the strange legible by forcing it into a known frame. Stop. Let it be what it is."
+  },
+  {
+    "id": "beyond chart",
+    "name": "Beyond Chart",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "unmapped",
+      "the edge of knowledge",
+      "genuine frontier",
+      "trust without confirmation"
+    ],
+    "keyword_line": "The map ends. The territory continues.",
+    "upright": "You are past what anyone has documented. This is not a failure of preparation; you have genuinely arrived somewhere new. Your instruments are still useful even without a reference point. Record what you find.",
+    "reversed": "You are insisting the map is complete. It is not. There is territory past the edge and you are refusing to enter it because it would mean admitting how much remains unknown."
+  },
+  {
+    "id": "blind sight",
+    "name": "Blind Sight",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "perception without eyes",
+      "sensing past vision",
+      "what the body knows",
+      "pressure reading"
+    ],
+    "keyword_line": "The body knows before the mind does.",
+    "upright": "You are perceiving something through channels that are not visual. The pressure in the room, the quality of a silence, a heaviness without source. Trust what your body is registering. This is not imagination; it is an older form of knowing.",
+    "reversed": "The body is sending a signal and the mind is overriding it. The rationalization is more comfortable than the thing being sensed. The body is usually right."
+  },
+  {
+    "id": "borrowed light",
+    "name": "Borrowed Light",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "reflected illumination",
+      "secondhand knowledge",
+      "proxy",
+      "what reaches here from elsewhere"
+    ],
+    "keyword_line": "Even borrowed light is light.",
+    "upright": "The illumination available here is not originating from this place. It is traveling from somewhere else. This does not make it useless; even borrowed light reveals what is in front of you. Work with what reaches you.",
+    "reversed": "Treating borrowed light as if it were your own source. The reflection is being mistaken for the fire. Find the origin. You need the actual source, not what reaches you secondhand."
+  },
+  {
+    "id": "clear water",
+    "name": "Clear Water",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "transparency",
+      "full visibility",
+      "nothing hidden",
+      "depth without obscurity"
+    ],
+    "keyword_line": "You can see all the way to the bottom.",
+    "upright": "The conditions are unusually clear. You can see more than you normally can. This is temporary; conditions change. Use the clarity while it is here. Look at what you have been avoiding looking at.",
+    "reversed": "The visibility is making you uncomfortable. You preferred the obscurity; it made certain things easier not to see. The clear water is still clear. Look anyway."
+  },
+  {
+    "id": "cold current",
+    "name": "Cold Current",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "undercurrent",
+      "the invisible force",
+      "what moves beneath the surface",
+      "deep influence"
+    ],
+    "keyword_line": "What you feel as cold is actually direction.",
+    "upright": "There is a current beneath the surface of this situation that you can feel but not see. It is moving something. Follow the cold to understand where the energy is actually going. The movement is real and it has a direction.",
+    "reversed": "The cold current is being ignored or dismissed as discomfort rather than information. You are swimming against a force you have not acknowledged. Name the current. It does not stop existing because you refuse to feel it."
+  },
+  {
+    "id": "cold intelligence",
+    "name": "Cold Intelligence",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "precision without warmth",
+      "pure analysis",
+      "the unemotional assessment",
+      "accuracy"
+    ],
+    "keyword_line": "What the cold eye sees, it sees correctly.",
+    "upright": "You are in a situation that requires precise assessment rather than warmth. This is not cruelty; it is the application of clear analysis to something that needs it. What does the situation actually show, stripped of what you wish it showed?",
+    "reversed": "Cold intelligence turned in the wrong direction. Precision without care has become a weapon, or the analysis is being used to avoid feeling something that needs to be felt."
+  },
+  {
+    "id": "crush depth",
+    "name": "Crush Depth",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "limit",
+      "what cannot survive this",
+      "the pressure test",
+      "structural truth"
+    ],
+    "keyword_line": "Everything has a depth it was not built for.",
+    "upright": "You have arrived at a depth that will test the actual structural integrity of something. This is not cruelty; it is physics. What was built well will survive. What was not will not. The test is honest and you cannot appeal the result.",
+    "reversed": "Avoiding the depth test. Going shallower to prevent the failure that would happen if you went deeper. The structural flaw does not disappear because you avoid the pressure."
+  },
+  {
+    "id": "deep current",
+    "name": "Deep Current",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "the long force",
+      "what shapes over time",
+      "the underlying movement",
+      "slow inevitability"
+    ],
+    "keyword_line": "Slow. Enormous. Continuous.",
+    "upright": "Something is moving at the deepest level of this situation, too slow to see directly but shaping everything above it. This current has been moving for longer than the immediate situation. Align with it rather than fighting it.",
+    "reversed": "The deep current is being ignored in favor of surface activity. The churn at the top is consuming attention while the actual force continues unacknowledged. Look down."
+  },
+  {
+    "id": "echo without source",
+    "name": "Echo Without Source",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "the origin-less signal",
+      "something received but not located",
+      "resonance without cause",
+      "what comes back changed"
+    ],
+    "keyword_line": "Something answered. From where?",
+    "upright": "You have received a signal you cannot trace back to its source. This is disorienting and also significant. Something is answering you, or has been calling, and it has not identified itself. Stay with the echo. The source is there even if you cannot locate it.",
+    "reversed": "Dismissing the echo because the source cannot be confirmed. The signal is real even if you cannot find where it originated. The inability to locate the source does not make the signal false."
+  },
+  {
+    "id": "fading edge",
+    "name": "Fading Edge",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "transition",
+      "the boundary dissolving",
+      "where one thing becomes another",
+      "thresholds"
+    ],
+    "keyword_line": "The line was always this unclear.",
+    "upright": "A boundary you thought was fixed is revealing itself to be permeable. This is not a loss of distinction; it is a recognition that the edge was always this soft. Something that seemed separate is continuous with something else. Update the map.",
+    "reversed": "Trying to hold a boundary that has already dissolved. The energy spent maintaining the distinction would be better used navigating what the dissolution has revealed."
+  },
+  {
+    "id": "half-heard",
+    "name": "Half-heard",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "incomplete signal",
+      "partial message",
+      "what came through and what did not",
+      "the gap in transmission"
+    ],
+    "keyword_line": "Something tried to reach you. Some of it got through.",
+    "upright": "A message has arrived but it did not arrive complete. Something was lost in the distance or the depth. Work with what you received. The partial message still contains something true.",
+    "reversed": "Waiting for the complete message before acting. The rest is not coming. What came through was enough to act on and the delay is costing something."
+  },
+  {
+    "id": "horizon line",
+    "name": "Horizon Line",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "limit of sight",
+      "the edge of what can be seen",
+      "perspective boundary",
+      "what lies beyond view"
+    ],
+    "keyword_line": "What you see ends here. The ocean does not.",
+    "upright": "You are at the limit of what your current position allows you to see. The horizon is a function of where you are standing, not a property of what is there. Change your position or accept that something exists beyond what you can see.",
+    "reversed": "Treating the horizon as the edge of what exists. What you cannot see from here is real. The limit of your sight is not the limit of the territory."
+  },
+  {
+    "id": "last light",
+    "name": "Last Light",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "the final illumination",
+      "what remains visible",
+      "the edge before dark",
+      "threshold of depth"
+    ],
+    "keyword_line": "Use what light remains.",
+    "upright": "The light is going. There is still enough to see. Use it before it goes. Make the observation, take the reading, do the thing that requires visibility. The dark is coming and you know it; that is not a reason to stop. It is a reason to begin.",
+    "reversed": "Mourning the light instead of using it. The time spent looking back at the light that has already faded is time that could be spent with the light that remains."
+  },
+  {
+    "id": "no further down",
+    "name": "No Further Down",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "the bottom",
+      "arrival at limit",
+      "the floor",
+      "where descent ends"
+    ],
+    "keyword_line": "This is the floor. You are standing on it.",
+    "upright": "You have reached the bottom of this. There is no further down. This is clarifying, even if it is uncomfortable. You now know the actual floor rather than fearing it indefinitely. From here, the only direction is choice.",
+    "reversed": "Not accepting that you have hit bottom. Looking for more floor when you are already on it. The refusal to acknowledge the bottom means you cannot begin from it."
+  },
+  {
+    "id": "no horizon",
+    "name": "No Horizon",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "disorientation",
+      "all directions equal",
+      "the featureless depth",
+      "navigating without reference"
+    ],
+    "keyword_line": "Every direction looks the same from here.",
+    "upright": "There is no horizon to navigate by. This is the featureless deep where all directions are equally unmarked. This is not permanent; it is a stage. Stop trying to find the reference point that is not here. Navigate by pressure, by temperature, by what your body knows.",
+    "reversed": "Panicking in the featureless zone instead of developing alternate navigation. The horizon was always a convenience. You can proceed without it."
+  },
+  {
+    "id": "nothing answers",
+    "name": "Nothing Answers",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "silence as response",
+      "the unanswered call",
+      "the void that does not echo",
+      "receiving no signal"
+    ],
+    "keyword_line": "The deep does not always answer.",
+    "upright": "You have sent a signal and nothing came back. This is information. Silence is a response; it is just not the one you wanted. The absence of answer tells you something about where you sent the question and what is there.",
+    "reversed": "Interpreting the silence as failure of transmission rather than as information. The signal reached its destination. Nothing there answered. That is the answer."
+  },
+  {
+    "id": "pressure change",
+    "name": "Pressure Change",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "something has shifted",
+      "a signal in the body",
+      "approaching change",
+      "the warning before the event"
+    ],
+    "keyword_line": "Feel it before you see it.",
+    "upright": "Something has shifted in the pressure. This is an early signal; the visible event has not happened yet. You are receiving the warning in your body before it is legible to your eyes. Pay attention to what you are sensing. The change is coming.",
+    "reversed": "The pressure change was noticed and dismissed. The discomfort was rationalized. The event it was warning toward has arrived or is about to. The instrument was right; it was overruled."
+  },
+  {
+    "id": "resurfacing",
+    "name": "Resurfacing",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "emergence",
+      "coming back up",
+      "what survived the depth",
+      "returning changed"
+    ],
+    "keyword_line": "What went down comes back different.",
+    "upright": "You are returning from depth. The ascent is as significant as the descent. What went down is coming back changed; that was the point. Do not try to resurface as the same thing that went under. Arrive as what the depth made you.",
+    "reversed": "Resurfacing too fast. The change the depth required has not had time to settle. Returning to the surface as if the depth were only something to escape, not something to integrate."
+  },
+  {
+    "id": "shape without detail",
+    "name": "Shape Without Detail",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "presence before form",
+      "something large and unclear",
+      "the approximate",
+      "early perception"
+    ],
+    "keyword_line": "It is there. What it is, you cannot yet say.",
+    "upright": "Something large is present but not yet fully resolved. You are perceiving shape before detail. This is an early stage; more information is coming. Hold the approximate. Do not fill in the detail before it arrives.",
+    "reversed": "Filling in the detail before it arrives. The shape is real but the details being added to it are fabricated from expectation. Wait for resolution before you act on what you think you see."
+  },
+  {
+    "id": "silence older than sound",
+    "name": "Silence Older Than Sound",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "primordial quiet",
+      "the deep before signal",
+      "original stillness",
+      "rest in the ancient"
+    ],
+    "keyword_line": "Before the first sound, this.",
+    "upright": "You have reached a silence that predates signal. This is not the silence of absence; it is the silence that holds all sounds before they are made. Rest in it. Let it be a foundation rather than a void.",
+    "reversed": "Filling the ancient silence with noise because the quiet is uncomfortable. Something that has been here longer than your discomfort is being overwritten. Let the silence be."
+  },
+  {
+    "id": "sounding line cast",
+    "name": "Sounding Line Cast",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "taking a measurement",
+      "testing the depth",
+      "methodical inquiry",
+      "reading the floor"
+    ],
+    "keyword_line": "Drop the line. Learn the depth.",
+    "upright": "This is a moment for measurement, not movement. Cast the sounding line. Find out how deep it actually is before you commit to the dive. The reading will tell you what you are dealing with. Do the careful work before the larger action.",
+    "reversed": "Not taking the measurement before acting. Going in without knowing the depth. The instrument is available; use it."
+  },
+  {
+    "id": "the absence",
+    "name": "The Absence",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "what is missing",
+      "the shape of the removed",
+      "negative space",
+      "what was and is not now"
+    ],
+    "keyword_line": "The shape of what is missing is still a shape.",
+    "upright": "Something is gone and its absence has a shape. This is information about what was there, about what mattered, about what structured things around it. The negative space is worth studying.",
+    "reversed": "Not acknowledging the absence. The space where something used to be is being treated as if it was always empty. The shape of the missing thing is still legible. Look at it."
+  },
+  {
+    "id": "the blur",
+    "name": "The Blur",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "motion",
+      "speed making form unclear",
+      "the in-between",
+      "transition without resolution"
+    ],
+    "keyword_line": "Too fast to see. Too present to ignore.",
+    "upright": "Something is moving too quickly to resolve into clear form. This is not unclear; it is in motion. Track the trajectory rather than trying to stop it long enough to see it clearly. The blur has a direction.",
+    "reversed": "Trying to resolve the blur before it resolves itself. The motion will not stop for examination. Follow it rather than trying to freeze it."
+  },
+  {
+    "id": "the call",
+    "name": "The Call",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "the summons",
+      "what is pulling you",
+      "the thing that will not stop sounding",
+      "invitation from depth"
+    ],
+    "keyword_line": "Something has been calling for some time now.",
+    "upright": "Something is calling you from below the surface of this situation. You have been hearing it. This is the moment to acknowledge that the call is real and that it is for you. Following it does not mean the descent is easy; it means you are responding to what is actually asking for you.",
+    "reversed": "The call is being heard and actively ignored. The reasons for not responding are understandable. They are also not the point. The call does not stop. At some point the question becomes not whether you will go but when."
+  },
+  {
+    "id": "the dark between",
+    "name": "The Dark Between",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "the space between",
+      "transition in the unknown",
+      "the gap",
+      "crossing without a map"
+    ],
+    "keyword_line": "What lies between the known places.",
+    "upright": "You are in the space between two known things. This space has its own qualities, its own pressures, its own way of moving. You are not lost; you are between. Stay with the between. Do not rush to the next landing.",
+    "reversed": "Rushing through the dark between without learning what it holds. The gap has its own information. What you skip over in transit will wait for you on the other side."
+  },
+  {
+    "id": "the edge of the trench",
+    "name": "The Edge of the Trench",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "the decision point",
+      "at the drop",
+      "choosing depth",
+      "what cannot be unseen once you look"
+    ],
+    "keyword_line": "Once you look down, you know.",
+    "upright": "You are at the edge of something that descends much farther than the surface suggested. Looking over the edge changes you; you will know something you cannot unknow. You do not have to go down. But you are here.",
+    "reversed": "Standing at the edge and looking away. The depth is there whether you look or not. What you are protecting yourself from knowing is already affecting you."
+  },
+  {
+    "id": "the instrument",
+    "name": "The Instrument",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "tool",
+      "precision",
+      "the right device for this depth",
+      "extending human perception"
+    ],
+    "keyword_line": "Built for exactly this.",
+    "upright": "You have the right instrument for this. Not a general-purpose tool but the one made specifically for what you are trying to measure or do at this depth. Use it with precision. The instrument knows what to do if you handle it correctly.",
+    "reversed": "Using the wrong instrument. Trying to do precise work with imprecise tools, or refusing to use the tools available. The right instrument is there; it is just not being used."
+  },
+  {
+    "id": "the keeper",
+    "name": "The Keeper",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "what is held",
+      "the guardian",
+      "what protects the deep",
+      "the warden of what matters"
+    ],
+    "keyword_line": "Some things are kept because they must be.",
+    "upright": "Something in this situation is being kept. Held in trust, protected, maintained against the pressure. Something or someone is acting as keeper. Ask whether what is being kept still needs to be, and whether the keeping is also a form of prevention.",
+    "reversed": "Keeping when the time to keep has passed. The thing held is ready to move; the keeper is holding past the point of service. Let what is ready to go, go."
+  },
+  {
+    "id": "the last cast",
+    "name": "The Last Cast",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "final attempt",
+      "one more throw",
+      "the resource nearly spent",
+      "making the last one count"
+    ],
+    "keyword_line": "One cast left. Make it matter.",
+    "upright": "You have one more attempt at this. The resources are nearly spent. This is not pessimism; it is information about what you are working with. Make this attempt with full attention. If it lands, you have something. If not, you know.",
+    "reversed": "Spending the last cast casually, as if there were more coming. There may not be. The final resource being used without full commitment."
+  },
+  {
+    "id": "the last current",
+    "name": "The Last Current",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "the end of the flow",
+      "what carries you the final distance",
+      "the last movement available",
+      "the final force"
+    ],
+    "keyword_line": "Let it carry you the rest of the way.",
+    "upright": "There is one current left available to carry you. This is the final movement of this particular kind of energy. Align with it. Let it take you where it is going rather than fighting for a direction that is no longer accessible.",
+    "reversed": "Fighting the last current. The force available is moving in the only direction it goes. The resistance is spending what little energy remains."
+  },
+  {
+    "id": "the last familiar shape",
+    "name": "The Last Familiar Shape",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "the final recognizable thing",
+      "what holds form before the deep dissolves it",
+      "the known receding",
+      "last landmark"
+    ],
+    "keyword_line": "Hold it in your mind before it goes.",
+    "upright": "You are past the point where most things look familiar. This is the last shape you will recognize for a while. Take note of it. Let it orient you before you move into what has no familiar form. Then let it go.",
+    "reversed": "Clinging to the last familiar shape instead of letting it recede. The familiar thing cannot come with you into the depth you are entering. The holding is preventing the movement."
+  },
+  {
+    "id": "the last tether's length",
+    "name": "The Last Tether's Length",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "at the end of the line",
+      "the limit of reach",
+      "how far the connection extends",
+      "maximum distance from anchor"
+    ],
+    "keyword_line": "This far. The rope ends here.",
+    "upright": "You have reached the limit of what connects you to the surface. The tether is taut. You can feel it. You are still connected; this is not severance. But you are at the absolute reach of it, and you now know exactly how far that is.",
+    "reversed": "Pretending the tether is longer than it is. Moving past the tether's length without acknowledging that the connection has ended. The rope ran out; the feeling of safety is now being supplied by something else."
+  },
+  {
+    "id": "the line",
+    "name": "The Line",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "the tether",
+      "what connects you",
+      "the umbilical of depth",
+      "keeping contact with above"
+    ],
+    "keyword_line": "It goes back to where you came from.",
+    "upright": "There is a line connecting you to something above. To origin, to safety, to the person or place you started from. This line is real and worth knowing the condition of. Feel the tension. The line is still there.",
+    "reversed": "The line has been severed, forgotten, or allowed to fray. The connection back to origin is gone or so thin it is no longer functional. Notice this. Decide whether reconnection is possible or whether you proceed alone."
+  },
+  {
+    "id": "the long silence",
+    "name": "The Long Silence",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "duration without answer",
+      "waiting in depth",
+      "the sustained pause",
+      "what does not resolve quickly"
+    ],
+    "keyword_line": "This silence has been going on for some time.",
+    "upright": "This is not a brief pause but a long one. Something has been in silence for a while. This is not a failure of transmission; this is a sustained condition. Learn to be in it without forcing resolution. The silence has its own texture.",
+    "reversed": "Breaking the long silence before it has done its work. Forcing sound into a silence that had something to show you. The thing it was growing in the quiet has not finished."
+  },
+  {
+    "id": "the point of no easy return",
+    "name": "The Point of No Easy Return",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "commitment",
+      "past the turn-back point",
+      "depth of no retrieval",
+      "what going further means"
+    ],
+    "keyword_line": "You have come too far to make going back easy.",
+    "upright": "Return is still possible but it is no longer simple. You have committed more deeply than the initial conditions suggested. This is a true accounting of where you are. Know it. Then decide: deeper or back, with full understanding of what each costs.",
+    "reversed": "Not acknowledging the depth of commitment already made. Acting as if retreat is still as simple as it was at the beginning. The cost of return has risen; know it."
+  },
+  {
+    "id": "the recorder",
+    "name": "The Recorder",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "documentation",
+      "the impartial witness",
+      "what captures without judgment",
+      "the log kept faithfully"
+    ],
+    "keyword_line": "What is happening is being recorded.",
+    "upright": "Something is recording this. Whether or not you are keeping notes, the event is being logged somewhere. Be the faithful recorder. Document without interpretation. The record will matter later.",
+    "reversed": "The record is not being kept. What is happening is going undocumented. The log is blank when it should be full. Something that should be recorded is being allowed to pass without witness."
+  },
+  {
+    "id": "the reef",
+    "name": "The Reef",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "structure beneath",
+      "what builds over time",
+      "the living foundation",
+      "richness from accumulation"
+    ],
+    "keyword_line": "A long time of small things making something large.",
+    "upright": "What looks like rock is alive. This structure has been building for a very long time, from accumulation too small to track individually, into something that now shapes everything around it. You are working with something built over that kind of time.",
+    "reversed": "Bleaching. The structure that has taken so long to build is under stress and is dying in place. This is slow damage; it does not look like destruction until it is complete. Notice what is happening before it finishes."
+  },
+  {
+    "id": "the regard",
+    "name": "The Regard",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "being seen from below",
+      "the gaze from depth",
+      "something attending to you",
+      "mutual perception"
+    ],
+    "keyword_line": "Something down there has noticed you.",
+    "upright": "You are being regarded from below. Something from the depth has its attention on you, as you have your attention on it. This is the moment of mutual perception. How you respond to being seen is as important as what you see.",
+    "reversed": "You are being watched and you are pretending not to notice. The gaze is real. The refusal to acknowledge it does not make it stop; it just makes you the one who is performing unawareness."
+  },
+  {
+    "id": "the surface",
+    "name": "The Surface",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "what shows above",
+      "the interface",
+      "where depth meets air",
+      "what is visible from outside"
+    ],
+    "keyword_line": "This is what can be seen from above.",
+    "upright": "The surface is where two worlds meet. It is not the shallow end; it is the interface. What is visible here is real, even if it is only the topmost layer of something that goes much deeper. The surface tells the truth; it just does not tell all of it.",
+    "reversed": "Mistaking the surface for the whole. What is visible from above is real, but treating it as complete is an error. The depth exists whether or not you are attending to it."
+  },
+  {
+    "id": "the toll",
+    "name": "The Toll",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "cost of passage",
+      "what the depth extracts",
+      "the fair exchange",
+      "what you owe for going this far"
+    ],
+    "keyword_line": "The depth charges for the crossing.",
+    "upright": "Going this far costs something. This is not arbitrary; it is the honest accounting of what the depth takes in exchange for what it gives. Name what has been paid. Do not pretend the toll was free. The passage was worth it or it was not, but it had a price.",
+    "reversed": "Refusing to acknowledge the toll. The cost of this passage is being denied or minimized. The debt to the depth is real even when you do not account for it."
+  },
+  {
+    "id": "the weight above",
+    "name": "The Weight Above",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "pressure from above",
+      "the mass of what is overhead",
+      "what presses down",
+      "depth as gravity"
+    ],
+    "keyword_line": "Feel how much is above you.",
+    "upright": "At this depth, the weight above is enormous. The pressure is real and specific: the weight of water, of time, of what you have committed to by coming this far. This is not something to escape; it is the condition of where you are. Your structure was built for it, or it was not.",
+    "reversed": "The weight is being underestimated. What is pressing from above is heavier than acknowledged. The structure bearing it is not as solid as you are treating it. Assess what is actually overhead before you go deeper."
+  },
+  {
+    "id": "tideline",
+    "name": "Tideline",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "the record of reach",
+      "where the high water was",
+      "what was left behind",
+      "the mark of maximum"
+    ],
+    "keyword_line": "This is how far it came.",
+    "upright": "There is a mark here of how far something reached at its height. The tide has gone back but the line remains. This is not nostalgia; it is information. What reached this far once can be useful data about what is possible.",
+    "reversed": "Mistaking the tideline for a living boundary. What is marked here is where the water was, not where it is. Using the old high-water mark as if it were current is a navigation error."
+  },
+  {
+    "id": "toe in the water",
+    "name": "Toe in the Water",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "the first contact",
+      "testing before committing",
+      "the edge of entry",
+      "what the first touch tells you"
+    ],
+    "keyword_line": "Before the dive, the first touch.",
+    "upright": "You are at the entry point. This is the first contact: a test, a read, a preliminary assessment before the full commitment. What the first touch tells you matters. Pay attention to the temperature, the resistance, the feeling of the water before you decide how far to go.",
+    "reversed": "Pulling back from even the first contact. The test is refused before it can yield information. The first touch would have told you something; now you proceed without it."
+  },
+  {
+    "id": "wake",
+    "name": "Wake",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "what follows",
+      "the trace left by passing",
+      "turbulence of progress",
+      "evidence of movement"
+    ],
+    "keyword_line": "Something moved through here. The water remembers.",
+    "upright": "Something has already moved through this water. The wake is evidence: turbulence, direction, scale. You are reading what something left behind. This tells you what passed and roughly where it went.",
+    "reversed": "You are in your own wake and mistaking it for the current. What is disturbing the water around you is your own previous movement. You are circling something you already passed through."
+  },
+  {
+    "id": "what has always been here",
+    "name": "What Has Always Been Here",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "the pre-existing",
+      "what predates your arrival",
+      "the ancient presence",
+      "continuity beyond witness"
+    ],
+    "keyword_line": "You are the visitor. This is not new.",
+    "upright": "What you are encountering was here before you arrived and will be here after you leave. You are the visitor in this depth. What has always been here has its own logic, its own time, its own requirements.",
+    "reversed": "Treating something ancient as if you are the first to arrive at it. The arrogance of discovery applied to what was not lost. What has always been here is not impressed by being found."
+  },
+  {
+    "id": "what looks back here",
+    "name": "What Looks Back Here",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "mutual gaze",
+      "the depth has eyes",
+      "reciprocal perception",
+      "what sees as you see"
+    ],
+    "keyword_line": "Looking into the deep, the deep looks back.",
+    "upright": "The depth is not a passive environment. It is looking back. What you have been studying has been studying you. This is not threat; it is parity. You are now in a mutual relationship with what is here, not a one-directional observer.",
+    "reversed": "Refusing to acknowledge the gaze returned. The reciprocal attention is real and it is being denied. What is looking back at you will not stop because you are not looking at it."
+  },
+  {
+    "id": "what the dark hides",
+    "name": "What the Dark Hides",
+    "deckType": "DrownedEphemeris",
+    "group": "oracle",
+    "symbol": "~",
+    "keywords": [
+      "the concealed",
+      "what darkness protects",
+      "the thing in shadow",
+      "waiting for light"
+    ],
+    "keyword_line": "Not everything hidden is hiding.",
+    "upright": "Something is in the dark here. Not everything concealed is trying to stay that way; some things are in the dark because they have not yet been reached by light. The question is not what the dark is hiding, but what you will find when the light gets there.",
+    "reversed": "Assuming that what is in the dark is dangerous. The concealment is being treated as evidence of threat. The dark is not always protective cover for something harmful. Some things are dark because you have not gotten there yet."
+  },
+  {
+    "id": "explorer of midnight",
+    "name": "Explorer of Midnight",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "midnight",
+    "rank": "explorer",
+    "symbol": "M",
+    "keywords": [
+      "explorer",
+      "midnight",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The explorer knows the absolute dark where only adapted things survive.",
+    "upright": "Something is being mapped here. You are moving into unknown water with intention, recording what you find. The territory ahead has no name yet; you are providing one. Go carefully and keep your instruments close.",
+    "reversed": "The mapping has stopped before the territory ran out. Fear of what the instruments might show, or a loss of confidence in what was already charted. The work is not done. Return to where you stopped and continue."
+  },
+  {
+    "id": "explorer of the abyssal",
+    "name": "Explorer of the Abyssal",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "abyssal",
+    "rank": "explorer",
+    "symbol": "A",
+    "keywords": [
+      "explorer",
+      "abyssal",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The explorer knows the great abyssal plain, featureless and immense.",
+    "upright": "Something is being mapped here. You are moving into unknown water with intention, recording what you find. The territory ahead has no name yet; you are providing one. Go carefully and keep your instruments close.",
+    "reversed": "The mapping has stopped before the territory ran out. Fear of what the instruments might show, or a loss of confidence in what was already charted. The work is not done. Return to where you stopped and continue."
+  },
+  {
+    "id": "explorer of the hadal",
+    "name": "Explorer of the Hadal",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "hadal",
+    "rank": "explorer",
+    "symbol": "H",
+    "keywords": [
+      "explorer",
+      "hadal",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The explorer knows the hadal trenches, the deepest cuts in the planet.",
+    "upright": "Something is being mapped here. You are moving into unknown water with intention, recording what you find. The territory ahead has no name yet; you are providing one. Go carefully and keep your instruments close.",
+    "reversed": "The mapping has stopped before the territory ran out. Fear of what the instruments might show, or a loss of confidence in what was already charted. The work is not done. Return to where you stopped and continue."
+  },
+  {
+    "id": "explorer of the sunlit",
+    "name": "Explorer of the Sunlit",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "sunlit",
+    "rank": "explorer",
+    "symbol": "S",
+    "keywords": [
+      "explorer",
+      "sunlit",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The explorer knows the sunlit zone, the most visible and most surveilled.",
+    "upright": "Something is being mapped here. You are moving into unknown water with intention, recording what you find. The territory ahead has no name yet; you are providing one. Go carefully and keep your instruments close.",
+    "reversed": "The mapping has stopped before the territory ran out. Fear of what the instruments might show, or a loss of confidence in what was already charted. The work is not done. Return to where you stopped and continue."
+  },
+  {
+    "id": "explorer of the twilight",
+    "name": "Explorer of the Twilight",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "twilight",
+    "rank": "explorer",
+    "symbol": "T",
+    "keywords": [
+      "explorer",
+      "twilight",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The explorer knows the twilight zone where light fails and pressure builds.",
+    "upright": "Something is being mapped here. You are moving into unknown water with intention, recording what you find. The territory ahead has no name yet; you are providing one. Go carefully and keep your instruments close.",
+    "reversed": "The mapping has stopped before the territory ran out. Fear of what the instruments might show, or a loss of confidence in what was already charted. The work is not done. Return to where you stopped and continue."
+  },
+  {
+    "id": "prophet of midnight",
+    "name": "Prophet of Midnight",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "midnight",
+    "rank": "prophet",
+    "symbol": "M",
+    "keywords": [
+      "prophet",
+      "midnight",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The prophet knows the absolute dark where only adapted things survive.",
+    "upright": "Something in the deep is sending a signal. A pressure change, a shift in current, a sound the body registers before the mind does. You are not imagining it. Let the signal come fully through before you act on it.",
+    "reversed": "The signal is being drowned out by noise, or you are mistaking static for signal. Wait for a cleaner channel before you act. Not every pressure change is a message."
+  },
+  {
+    "id": "prophet of the abyssal",
+    "name": "Prophet of the Abyssal",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "abyssal",
+    "rank": "prophet",
+    "symbol": "A",
+    "keywords": [
+      "prophet",
+      "abyssal",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The prophet knows the great abyssal plain, featureless and immense.",
+    "upright": "Something in the deep is sending a signal. A pressure change, a shift in current, a sound the body registers before the mind does. You are not imagining it. Let the signal come fully through before you act on it.",
+    "reversed": "The signal is being drowned out by noise, or you are mistaking static for signal. Wait for a cleaner channel before you act. Not every pressure change is a message."
+  },
+  {
+    "id": "prophet of the hadal",
+    "name": "Prophet of the Hadal",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "hadal",
+    "rank": "prophet",
+    "symbol": "H",
+    "keywords": [
+      "prophet",
+      "hadal",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The prophet knows the hadal trenches, the deepest cuts in the planet.",
+    "upright": "Something in the deep is sending a signal. A pressure change, a shift in current, a sound the body registers before the mind does. You are not imagining it. Let the signal come fully through before you act on it.",
+    "reversed": "The signal is being drowned out by noise, or you are mistaking static for signal. Wait for a cleaner channel before you act. Not every pressure change is a message."
+  },
+  {
+    "id": "prophet of the sunlit",
+    "name": "Prophet of the Sunlit",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "sunlit",
+    "rank": "prophet",
+    "symbol": "S",
+    "keywords": [
+      "prophet",
+      "sunlit",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The prophet knows the sunlit zone, the most visible and most surveilled.",
+    "upright": "Something in the deep is sending a signal. A pressure change, a shift in current, a sound the body registers before the mind does. You are not imagining it. Let the signal come fully through before you act on it.",
+    "reversed": "The signal is being drowned out by noise, or you are mistaking static for signal. Wait for a cleaner channel before you act. Not every pressure change is a message."
+  },
+  {
+    "id": "prophet of the twilight",
+    "name": "Prophet of the Twilight",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "twilight",
+    "rank": "prophet",
+    "symbol": "T",
+    "keywords": [
+      "prophet",
+      "twilight",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The prophet knows the twilight zone where light fails and pressure builds.",
+    "upright": "Something in the deep is sending a signal. A pressure change, a shift in current, a sound the body registers before the mind does. You are not imagining it. Let the signal come fully through before you act on it.",
+    "reversed": "The signal is being drowned out by noise, or you are mistaking static for signal. Wait for a cleaner channel before you act. Not every pressure change is a message."
+  },
+  {
+    "id": "condemned of midnight",
+    "name": "Condemned of Midnight",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "midnight",
+    "rank": "condemned",
+    "symbol": "M",
+    "keywords": [
+      "condemned",
+      "midnight",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The condemned knows the absolute dark where only adapted things survive.",
+    "upright": "The zone has claimed something that was trying to pass through. This is not punishment; it is the deep's accounting. What cannot survive the pressure will not. What can will be changed by having tried.",
+    "reversed": "Trying to survive a zone that was meant to change you. The transformation is being resisted rather than undergone. What you are protecting does not need protection; it needs to be released."
+  },
+  {
+    "id": "condemned of the abyssal",
+    "name": "Condemned of the Abyssal",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "abyssal",
+    "rank": "condemned",
+    "symbol": "A",
+    "keywords": [
+      "condemned",
+      "abyssal",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The condemned knows the great abyssal plain, featureless and immense.",
+    "upright": "The zone has claimed something that was trying to pass through. This is not punishment; it is the deep's accounting. What cannot survive the pressure will not. What can will be changed by having tried.",
+    "reversed": "Trying to survive a zone that was meant to change you. The transformation is being resisted rather than undergone. What you are protecting does not need protection; it needs to be released."
+  },
+  {
+    "id": "condemned of the hadal",
+    "name": "Condemned of the Hadal",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "hadal",
+    "rank": "condemned",
+    "symbol": "H",
+    "keywords": [
+      "condemned",
+      "hadal",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The condemned knows the hadal trenches, the deepest cuts in the planet.",
+    "upright": "The zone has claimed something that was trying to pass through. This is not punishment; it is the deep's accounting. What cannot survive the pressure will not. What can will be changed by having tried.",
+    "reversed": "Trying to survive a zone that was meant to change you. The transformation is being resisted rather than undergone. What you are protecting does not need protection; it needs to be released."
+  },
+  {
+    "id": "condemned of the sunlit",
+    "name": "Condemned of the Sunlit",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "sunlit",
+    "rank": "condemned",
+    "symbol": "S",
+    "keywords": [
+      "condemned",
+      "sunlit",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The condemned knows the sunlit zone, the most visible and most surveilled.",
+    "upright": "The zone has claimed something that was trying to pass through. This is not punishment; it is the deep's accounting. What cannot survive the pressure will not. What can will be changed by having tried.",
+    "reversed": "Trying to survive a zone that was meant to change you. The transformation is being resisted rather than undergone. What you are protecting does not need protection; it needs to be released."
+  },
+  {
+    "id": "condemned of the twilight",
+    "name": "Condemned of the Twilight",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "twilight",
+    "rank": "condemned",
+    "symbol": "T",
+    "keywords": [
+      "condemned",
+      "twilight",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The condemned knows the twilight zone where light fails and pressure builds.",
+    "upright": "The zone has claimed something that was trying to pass through. This is not punishment; it is the deep's accounting. What cannot survive the pressure will not. What can will be changed by having tried.",
+    "reversed": "Trying to survive a zone that was meant to change you. The transformation is being resisted rather than undergone. What you are protecting does not need protection; it needs to be released."
+  },
+  {
+    "id": "lost of midnight",
+    "name": "Lost of Midnight",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "midnight",
+    "rank": "lost",
+    "symbol": "M",
+    "keywords": [
+      "lost",
+      "midnight",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The lost knows the absolute dark where only adapted things survive.",
+    "upright": "Orientation has failed here. The usual coordinates do not apply at this depth. This is not permanent disorientation; it is a stage in descent. Stop seeking the surface. Learn to navigate by pressure.",
+    "reversed": "Using the wrong map. The old coordinates feel familiar but they no longer correspond to where you are. Let the false map go. The disorientation is temporary; clinging to the wrong chart makes it permanent."
+  },
+  {
+    "id": "lost of the abyssal",
+    "name": "Lost of the Abyssal",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "abyssal",
+    "rank": "lost",
+    "symbol": "A",
+    "keywords": [
+      "lost",
+      "abyssal",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The lost knows the great abyssal plain, featureless and immense.",
+    "upright": "Orientation has failed here. The usual coordinates do not apply at this depth. This is not permanent disorientation; it is a stage in descent. Stop seeking the surface. Learn to navigate by pressure.",
+    "reversed": "Using the wrong map. The old coordinates feel familiar but they no longer correspond to where you are. Let the false map go. The disorientation is temporary; clinging to the wrong chart makes it permanent."
+  },
+  {
+    "id": "lost of the hadal",
+    "name": "Lost of the Hadal",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "hadal",
+    "rank": "lost",
+    "symbol": "H",
+    "keywords": [
+      "lost",
+      "hadal",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The lost knows the hadal trenches, the deepest cuts in the planet.",
+    "upright": "Orientation has failed here. The usual coordinates do not apply at this depth. This is not permanent disorientation; it is a stage in descent. Stop seeking the surface. Learn to navigate by pressure.",
+    "reversed": "Using the wrong map. The old coordinates feel familiar but they no longer correspond to where you are. Let the false map go. The disorientation is temporary; clinging to the wrong chart makes it permanent."
+  },
+  {
+    "id": "lost of the sunlit",
+    "name": "Lost of the Sunlit",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "sunlit",
+    "rank": "lost",
+    "symbol": "S",
+    "keywords": [
+      "lost",
+      "sunlit",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The lost knows the sunlit zone, the most visible and most surveilled.",
+    "upright": "Orientation has failed here. The usual coordinates do not apply at this depth. This is not permanent disorientation; it is a stage in descent. Stop seeking the surface. Learn to navigate by pressure.",
+    "reversed": "Using the wrong map. The old coordinates feel familiar but they no longer correspond to where you are. Let the false map go. The disorientation is temporary; clinging to the wrong chart makes it permanent."
+  },
+  {
+    "id": "lost of the twilight",
+    "name": "Lost of the Twilight",
+    "deckType": "DrownedEphemeris",
+    "group": "court",
+    "suit": "twilight",
+    "rank": "lost",
+    "symbol": "T",
+    "keywords": [
+      "lost",
+      "twilight",
+      "depth",
+      "the deep"
+    ],
+    "keyword_line": "The lost knows the twilight zone where light fails and pressure builds.",
+    "upright": "Orientation has failed here. The usual coordinates do not apply at this depth. This is not permanent disorientation; it is a stage in descent. Stop seeking the surface. Learn to navigate by pressure.",
+    "reversed": "Using the wrong map. The old coordinates feel familiar but they no longer correspond to where you are. Let the false map go. The disorientation is temporary; clinging to the wrong chart makes it permanent."
+  }
+]

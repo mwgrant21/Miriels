@@ -1,6 +1,7 @@
 'use strict';
 
 const DAY = 86400000; // ms
+const RETURN_GAP_MS = 90 * DAY;
 const SUIT_RE = /\bof\s+(wands|cups|swords|pentacles|disks|coins)\b/i;
 
 function norm(name) { return String(name || '').trim().toLowerCase(); }
@@ -16,6 +17,14 @@ function suitOf(name) {
 function ordinal(n) {
   const s = ['th', 'st', 'nd', 'rd'], v = n % 100;
   return n + (s[(v - 20) % 10] || s[v] || s[0]);
+}
+
+function describeGap(ms) {
+  const days = ms / DAY;
+  if (days >= 330) return 'almost a year';
+  if (days >= 60)  return `about ${Math.round(days / 30)} months`;
+  if (days >= 21)  return `about ${Math.round(days / 7)} weeks`;
+  return `about ${Math.round(days)} days`;
 }
 
 // IMPORTANT: `readings` must be the reader's history WITHOUT the current draw
@@ -51,6 +60,19 @@ function findCardPatterns({ readings, currentCards, now }) {
           kind: 'reversal',
           strength: 4 + (revShare >= 0.9 ? 1 : 0),
           fact: `${c.name}, reversed again, it almost never lands upright for you (${Math.round(revShare * 100)}% of the times it's come).`,
+        });
+        continue;
+      }
+    }
+
+    if (total >= 3) {
+      const lastPriorTs = Math.max(...hist.map(a => a.ts));
+      const gapMs = now - lastPriorTs;
+      if (gapMs >= RETURN_GAP_MS) {
+        byCard.set(nm, {
+          kind: 'returning',
+          strength: 4 + (gapMs >= 180 * DAY ? 1 : 0),
+          fact: `${c.name} returns, you haven't drawn it in ${describeGap(gapMs)}.`,
         });
         continue;
       }

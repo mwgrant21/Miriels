@@ -6,6 +6,8 @@ const Database = require('better-sqlite3');
 const TYPES    = ['person', 'thread', 'event', 'feeling', 'prediction', 'fact', 'preference'];
 const STATUSES = ['open', 'moving', 'resolved', 'dormant'];
 const VERDICTS = ['came_to_pass', 'did_not', 'partly'];
+const DORMANT_DAYS         = 60;
+const DORMANT_SALIENCE_BAR = 3;
 
 function clampSalience(n) {
   const v = parseInt(n, 10);
@@ -118,6 +120,20 @@ module.exports = function createMemoryStore(dataDir) {
     WHERE reader_slug = ? AND type = 'prediction' AND status = 'open'
       AND (? - COALESCE(asked_at, created_at)) >= (14 + (id % 7) - 3) * 86400
     ORDER BY salience DESC, updated_at DESC
+    LIMIT ?
+  `);
+  // Dormant = an open/moving, salient thread untouched past a per-id jittered
+  // window: base 60 days, +/-3 from (id % 7) -> 57..63 days, stable per row so it
+  // never flickers. Measured from MAX(asked_at, updated_at) -- the more recent of
+  // the last ask and the last touch -- so re-engaging a thread (a fresh updated_at)
+  // rests it for another window, and asking about it (asked_at) also rests it
+  // (ask-once-then-rest). Quietest, most salient first. Mirrors stmtRipePredictions.
+  const stmtDormantThreads = db.prepare(`
+    SELECT * FROM memories
+    WHERE reader_slug = ? AND type = 'thread'
+      AND status IN ('open','moving') AND salience >= ${DORMANT_SALIENCE_BAR}
+      AND (? - MAX(IFNULL(asked_at, 0), updated_at)) >= (${DORMANT_DAYS} + (id % 7) - 3) * 86400
+    ORDER BY salience DESC, updated_at ASC
     LIMIT ?
   `);
   const stmtResolveStatus = db.prepare(`UPDATE memories SET status = 'resolved', updated_at = ? WHERE id = ? AND reader_slug = ?`);
@@ -269,6 +285,10 @@ module.exports = function createMemoryStore(dataDir) {
     return stmtRipePredictions.all(slug, nowTs, limit);
   }
 
+  function getDormantThreads(slug, limit = 2, nowTs = now()) {
+    return stmtDormantThreads.all(slug, nowTs, limit);
+  }
+
   function markAsked(ids) {
     if (!Array.isArray(ids) || !ids.length) return;
     const t = now();
@@ -279,9 +299,10 @@ module.exports = function createMemoryStore(dataDir) {
   return {
     addMemory, getMemory, applyOps, listMemories,
     getOpenAndSalient, markReferenced,
-    getOpenUnaskedThreads, getRipePredictions, markAsked,
+    getOpenUnaskedThreads, getRipePredictions, getDormantThreads, markAsked,
     getResolvedPredictions, getOpenPredictions,
     linkMemories, getLinks, getMeta, setMeta, getStats,
     _db: db, _now: now, TYPES, STATUSES, VERDICTS, clampSalience,
+    DORMANT_DAYS, DORMANT_SALIENCE_BAR,
   };
 };

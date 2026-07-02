@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miriel's Readings — Superpowers Spec</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+  :root {
+    --gold:        #c9a84c;
+    --gold-dim:    #8a6f30;
+    --gold-pale:   #e8d49a;
+    --purple:      #7c5cbf;
+    --purple-dim:  #3d2e66;
+    --purple-pale: #b09de0;
+    --bg:          #09091a;
+    --bg-card:     #0f0f24;
+    --bg-panel:    #13132b;
+    --text:        #d4cfe8;
+    --text-dim:    #7a758f;
+    --text-muted:  #4a4560;
+    --border:      rgba(201,168,76,0.18);
+    --border-dim:  rgba(201,168,76,0.08);
+    --green:       #5bbb7b;
+    --amber:       #e0a040;
+    --blue:        #5b9dd4;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* ── Background ──────────────────────────────────── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 40% at 20% 10%, rgba(124,92,191,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 60% at 80% 90%, rgba(201,168,76,0.07) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── Layout ──────────────────────────────────────── */
+  .page-wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 32px 120px;
+  }
+
+  /* ── Cover ───────────────────────────────────────── */
+  .cover {
+    text-align: center;
+    padding: 80px 0 60px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 72px;
+  }
+
+  .cover-ornament {
+    color: var(--gold-dim);
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    margin-bottom: 28px;
+  }
+
+  .cover h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    font-weight: 300;
+    color: var(--gold);
+    letter-spacing: 0.12em;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+
+  .cover h1 span {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-dim);
+    letter-spacing: 0.25em;
+    margin-top: 6px;
+  }
+
+  .cover-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--text-dim);
+    margin: 28px 0 36px;
+  }
+
+  .cover-meta {
+    display: inline-flex;
+    gap: 32px;
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+  }
+
+  .cover-meta span { color: var(--gold-dim); }
+
+  /* ── TOC ─────────────────────────────────────────── */
+  .toc {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 32px 36px;
+    margin-bottom: 72px;
+  }
+
+  .toc-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    color: var(--gold-dim);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .toc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px 24px;
+  }
+
+  .toc-item {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text);
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border-dim);
+    transition: color 0.2s;
+    font-size: 13px;
+  }
+
+  .toc-item:hover { color: var(--gold); }
+
+  .toc-item .toc-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    color: var(--gold-dim);
+    min-width: 18px;
+    font-style: italic;
+  }
+
+  .toc-item .toc-status {
+    margin-left: auto;
+    font-size: 10px;
+    padding: 1px 7px;
+    border-radius: 20px;
+  }
+
+  /* ── Status badges ───────────────────────────────── */
+  .badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  .badge-shipped   { background: rgba(91,187,123,0.12); color: var(--green); border: 1px solid rgba(91,187,123,0.3); }
+  .badge-approved  { background: rgba(201,168,76,0.10); color: var(--gold);  border: 1px solid rgba(201,168,76,0.3); }
+  .badge-building  { background: rgba(91,157,212,0.10); color: var(--blue);  border: 1px solid rgba(91,157,212,0.3); }
+  .badge-phase     { background: rgba(124,92,191,0.12); color: var(--purple-pale); border: 1px solid rgba(124,92,191,0.3); }
+
+  /* ── Section headings ────────────────────────────── */
+  .section-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 72px 0 48px;
+  }
+
+  .section-divider-label {
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    white-space: nowrap;
+  }
+
+  .section-divider-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ── Feature cards ───────────────────────────────── */
+  .feature {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+
+  .feature-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 28px 32px 24px;
+    border-bottom: 1px solid var(--border-dim);
+  }
+
+  .feature-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--gold-dim);
+    line-height: 1;
+    min-width: 40px;
+    margin-top: 2px;
+  }
+
+  .feature-title-block { flex: 1; }
+
+  .feature-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--gold-pale);
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  .feature-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .feature-date {
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  .feature-body {
+    padding: 28px 32px;
+  }
+
+  .feature-lede {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-style: italic;
+    color: var(--text-dim);
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+
+  /* ── Content blocks ──────────────────────────────── */
+  .cols-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 20px 0;
+  }
+
+  .cols-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 20px 0;
+  }
+
+  .block {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-dim);
+    border-radius: 6px;
+    padding: 18px 20px;
+  }
+
+  .block-title {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin-bottom: 12px;
+  }
+
+  p { margin-bottom: 12px; color: var(--text); }
+  p:last-child { margin-bottom: 0; }
+
+  /* ── Capability list ─────────────────────────────── */
+  .cap-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cap-list li {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  .cap-list li::before {
+    content: '◆';
+    color: var(--gold-dim);
+    font-size: 7px;
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+
+  /* ── Phase chain ─────────────────────────────────── */
+  .phase-chain {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin: 20px 0;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .phase-node {
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 12px;
+    color: var(--text-dim);
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .phase-node.active {
+    background: rgba(124,92,191,0.15);
+    border-color: rgba(124,92,191,0.4);
+    color: var(--purple-pale);
+  }
+
+  .phase-node strong {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin-bottom: 2px;
+  }
+
+  .phase-arrow {
+    color: var(--text-muted);
+    padding: 0 8px;
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+
+  /* ── Tier table ──────────────────────────────────── */
+  .tier-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin: 16px 0;
+  }
+
+  .tier-table th {
+    text-align: left;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .tier-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border-dim);
+    color: var(--text);
+    vertical-align: top;
+  }
+
+  .tier-table tr:last-child td { border-bottom: none; }
+
+  .tier-table td:first-child {
+    color: var(--gold);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  /* ── Quote block ─────────────────────────────────── */
+  .quote {
+    border-left: 2px solid var(--gold-dim);
+    padding: 12px 20px;
+    margin: 20px 0;
+    background: rgba(201,168,76,0.04);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--text-dim);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  /* ── Score formula ───────────────────────────────── */
+  .formula {
+    background: var(--bg);
+    border: 1px solid var(--border-dim);
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-family: 'Courier New', monospace;
+    font-size: 12.5px;
+    color: var(--purple-pale);
+    line-height: 1.9;
+  }
+
+  .formula .comment { color: var(--text-muted); }
+
+  /* ── Mode table ──────────────────────────────────── */
+  .mode-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 16px 0;
+  }
+
+  .mode-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-dim);
+    border-radius: 6px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .mode-card .mode-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+
+  .mode-card .mode-trigger {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .mode-card .mode-desc {
+    font-size: 12px;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+
+  /* ── Tech pills ──────────────────────────────────── */
+  .tech-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
+  }
+
+  .tech-pill {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-dim);
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 11.5px;
+    font-family: 'Courier New', monospace;
+    color: var(--blue);
+  }
+
+  /* ── Progress tracker ────────────────────────────── */
+  .progress-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-dim);
+    font-size: 13px;
+  }
+
+  .progress-row:last-child { border-bottom: none; }
+
+  .progress-label { flex: 1; color: var(--text); }
+  .progress-phase { color: var(--text-muted); font-size: 11px; min-width: 60px; text-align: right; }
+
+  /* ── Spread grid preview ─────────────────────────── */
+  .spread-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 16px 0;
+  }
+
+  .spread-cat {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-dim);
+    border-radius: 6px;
+    padding: 14px 16px;
+  }
+
+  .spread-cat-label {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin-bottom: 10px;
+  }
+
+  .spread-cat ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .spread-cat ul li {
+    font-size: 12px;
+    color: var(--text-dim);
+    padding-left: 10px;
+    position: relative;
+  }
+
+  .spread-cat ul li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--gold-dim);
+  }
+
+  /* ── Architecture flow ───────────────────────────── */
+  .arch-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 16px 0;
+  }
+
+  .arch-step {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+
+  .arch-step-num {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    padding: 10px 0;
+    text-align: right;
+  }
+
+  .arch-step-body {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-dim);
+    border-left: 2px solid var(--purple-dim);
+    border-radius: 0 6px 6px 0;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: var(--text);
+  }
+
+  .arch-step-body strong { color: var(--purple-pale); }
+
+  .arch-connector {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 16px;
+  }
+
+  .arch-connector-line {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 7px;
+  }
+
+  .arch-connector-line::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 16px;
+    background: var(--purple-dim);
+  }
+
+  /* ── Footer ──────────────────────────────────────── */
+  .footer {
+    text-align: center;
+    padding: 60px 0 0;
+    border-top: 1px solid var(--border);
+    margin-top: 80px;
+  }
+
+  .footer-ornament {
+    color: var(--gold-dim);
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    margin-bottom: 16px;
+  }
+
+  .footer-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--text-muted);
+  }
+
+  /* ── Scrollbar ───────────────────────────────────── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+  /* ── Responsive ──────────────────────────────────── */
+  @media (max-width: 760px) {
+    .page-wrap { padding: 0 16px 80px; }
+    .cover h1 { font-size: 36px; }
+    .toc-grid, .cols-2, .cols-3, .mode-cards, .spread-categories { grid-template-columns: 1fr; }
+    .feature-header { flex-direction: column; gap: 12px; }
+    .phase-chain { flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page-wrap">
+
+  <!-- ── Cover ──────────────────────────────────────── -->
+  <div class="cover">
+    <div class="cover-ornament">✦ · ✦ · ✦</div>
+    <h1>
+      MIRIEL'S READINGS
+      <span>SUPERPOWERS SPECIFICATION</span>
+    </h1>
+    <p class="cover-tagline">A living document of features shipped, approved, and in progress</p>
+    <div class="cover-meta">
+      <div>Spec count <span>9</span></div>
+      <div>Phases <span>0 – 4</span></div>
+      <div>Last updated <span>June 2026</span></div>
+    </div>
+  </div>
+
+  <!-- ── TOC ────────────────────────────────────────── -->
+  <div class="toc">
+    <div class="toc-title">Contents</div>
+    <div class="toc-grid">
+      <a class="toc-item" href="#feat-cache">
+        <span class="toc-num">0</span>
+        Interpretation Cache &amp; Reader Profile
+        <span class="toc-status badge badge-shipped">Shipped</span>
+      </a>
+      <a class="toc-item" href="#feat-spreads">
+        <span class="toc-num">—</span>
+        Spread Patterns
+        <span class="toc-status badge badge-shipped">Shipped</span>
+      </a>
+      <a class="toc-item" href="#feat-visual">
+        <span class="toc-num">—</span>
+        Visual Polish
+        <span class="toc-status badge badge-shipped">Shipped</span>
+      </a>
+      <a class="toc-item" href="#feat-addressing">
+        <span class="toc-num">—</span>
+        Second-Person Addressing
+        <span class="toc-status badge badge-shipped">Shipped</span>
+      </a>
+      <a class="toc-item" href="#feat-notebook">
+        <span class="toc-num">—</span>
+        Reader Notebook
+        <span class="toc-status badge badge-shipped">Shipped</span>
+      </a>
+      <a class="toc-item" href="#feat-memory">
+        <span class="toc-num">1</span>
+        Memory Engine
+        <span class="toc-status badge badge-approved">Approved</span>
+      </a>
+      <a class="toc-item" href="#feat-threshold">
+        <span class="toc-num">2</span>
+        The Threshold
+        <span class="toc-status badge badge-approved">Approved</span>
+      </a>
+      <a class="toc-item" href="#feat-curiosity">
+        <span class="toc-num">3</span>
+        In-Reading Curiosity
+        <span class="toc-status badge badge-approved">Approved</span>
+      </a>
+      <a class="toc-item" href="#feat-outcome">
+        <span class="toc-num">4</span>
+        Outcome Loop
+        <span class="toc-status badge badge-approved">Approved</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+       SECTION: Foundation
+  ════════════════════════════════════════════════════ -->
+  <div class="section-divider">
+    <div class="section-divider-label">Foundation</div>
+    <div class="section-divider-line"></div>
+  </div>
+
+  <!-- ── Feature 0: Cache + Profile ───────────────── -->
+  <div class="feature" id="feat-cache">
+    <div class="feature-header">
+      <div class="feature-number">0</div>
+      <div class="feature-title-block">
+        <div class="feature-title">Interpretation Cache &amp; Reader Profile</div>
+        <div class="feature-meta">
+          <span class="badge badge-shipped">Shipped</span>
+          <span class="feature-date">May 25, 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="feature-body">
+      <p class="feature-lede">Two systems working together: an offline fallback so Miriel never goes silent, and a graduated model of who you are to her.</p>
+
+      <div class="cols-2">
+        <div class="block">
+          <div class="block-title">Interpretation Cache</div>
+          <ul class="cap-list">
+            <li>SQLite-backed third fallback tier: <strong>Claude → Ollama → Cache</strong></li>
+            <li>Keyed by deck, spread type, position, card, and orientation — assembled card-by-card when no exact spread match exists</li>
+            <li>Claude entries always win over Ollama; Ollama only writes when no entry exists</li>
+            <li>Seeded via <code>scripts/seed-cache.js --deck tarot</code> before shipping</li>
+          </ul>
+        </div>
+        <div class="block">
+          <div class="block-title">Graduated Oracle Model</div>
+          <p>Miriel builds a compact per-reader profile distilled from full history — never sending raw history during a live reading.</p>
+          <p>Auto-refreshes every 5 readings at Tier 2, every 10 at Tier 3.</p>
+        </div>
+      </div>
+
+      <div class="block" style="margin-top: 0;">
+        <div class="block-title">Intimacy Tiers</div>
+        <table class="tier-table">
+          <thead>
+            <tr><th>Tier</th><th>Threshold</th><th>What Miriel knows</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Under 10 readings</td>
+              <td>Nothing — baseline behaviour, no profile injection</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>10–29 readings</td>
+              <td><code>miriel_notes</code> and recurring cards</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>30+ readings</td>
+              <td>Full arc: <code>life_arc.current_chapter</code>, key threads, unresolved thread, inflection points — plus the persona addition: <em>"You have known this person through many readings… Read accordingly."</em></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+       SECTION: Experience
+  ════════════════════════════════════════════════════ -->
+  <div class="section-divider">
+    <div class="section-divider-label">Experience Layer</div>
+    <div class="section-divider-line"></div>
+  </div>
+
+  <!-- ── Feature: Spread Patterns ─────────────────── -->
+  <div class="feature" id="feat-spreads">
+    <div class="feature-header">
+      <div class="feature-number">—</div>
+      <div class="feature-title-block">
+        <div class="feature-title">Spread Patterns</div>
+        <div class="feature-meta">
+          <span class="badge badge-shipped">Shipped</span>
+          <span class="feature-date">June 2, 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="feature-body">
+      <p class="feature-lede">Nine new spreads, a categorized tab selector, and a complete architectural overhaul of how layouts are rendered.</p>
+
+      <div class="spread-categories">
+        <div class="spread-cat">
+          <div class="spread-cat-label">General</div>
+          <ul>
+            <li>Celtic Cross (existing)</li>
+            <li>Three-Card (existing)</li>
+            <li>Yes / No (3 cards)</li>
+            <li>Horseshoe (7)</li>
+            <li>Year Ahead (12)</li>
+            <li>Decision (6)</li>
+          </ul>
+        </div>
+        <div class="spread-cat">
+          <div class="spread-cat-label">Relationship</div>
+          <ul>
+            <li>Relationship Cross (6)</li>
+            <li>Soulmates / Twin Flames (6)</li>
+            <li>Future of Relationship (6)</li>
+          </ul>
+        </div>
+        <div class="spread-cat">
+          <div class="spread-cat-label">Spiritual</div>
+          <ul>
+            <li>Chakra (7)</li>
+            <li>Star / Pentagram (5)</li>
+          </ul>
+        </div>
+        <div class="spread-cat">
+          <div class="spread-cat-label">Miriel's Choice</div>
+          <ul>
+            <li>Available in every category</li>
+            <li>Tab auto-switches to wherever Miriel chooses to place you</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cols-2">
+        <div class="block">
+          <div class="block-title">Architecture Change</div>
+          <ul class="cap-list">
+            <li><code>SPREADS</code> refactored from <code>key → array</code> to <code>key → { category, label, slots }</code></li>
+            <li><code>SPREAD_LAYOUTS</code> lookup table replaces the <code>renderSpread</code> if/else chain</li>
+            <li>Buttons generated dynamically via <code>initSpreadButtons()</code></li>
+            <li>Tab filtering via <code>activateTab(category)</code></li>
+          </ul>
+        </div>
+        <div class="block">
+          <div class="block-title">New CSS Grid Types</div>
+          <ul class="cap-list">
+            <li><code>horseshoe-grid</code> — arc via margin-bottom gradient</li>
+            <li><code>year-grid</code> — 4×3 CSS grid</li>
+            <li><code>chakra-grid</code> — flex column with chakra accent colours</li>
+            <li><code>decision-grid</code> — 3-col grid with spanning rows</li>
+            <li><code>star-grid</code> — absolute positioning at pentagram points</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Feature: Visual Polish ───────────────────── -->
+  <div class="feature" id="feat-visual">
+    <div class="feature-header">
+      <div class="feature-number">—</div>
+      <div class="feature-title-block">
+        <div class="feature-title">Visual Polish</div>
+        <div class="feature-meta">
+          <span class="badge badge-shipped">Shipped</span>
+          <span class="feature-date">June 4, 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="feature-body">
+      <p class="feature-lede">A full presentational pass — atmosphere, card presence, and layout — with no logic changes.</p>
+
+      <div class="cols-3">
+        <div class="block">
+          <div class="block-title">Background</div>
+          <p><code>MirielBG.jpg</code> fixed full-page with a 70% dark overlay. Scroll-independent.</p>
+        </div>
+        <div class="block">
+          <div class="block-title">Header</div>
+          <p>Centered two-row atmospheric layout: ornament · title · tagline above the controls row.</p>
+        </div>
+        <div class="block">
+          <div class="block-title">Spread Selector</div>
+          <p>Converted from <code>&lt;button&gt;</code> elements to a <code>&lt;select&gt;</code> rebuilt per tab.</p>
+        </div>
+        <div class="block">
+          <div class="block-title">Card Presence</div>
+          <p>Gold border with double-inset frame. Face-down cards pulse with a purple shimmer every 3s. Hover lifts with a gold aura glow.</p>
+        </div>
+        <div class="block">
+          <div class="block-title">Reading Panel</div>
+          <p>Two-column split: Card Meanings left, The Reading right. Collapses to single column at 768px.</p>
+        </div>
+        <div class="block">
+          <div class="block-title">Keyword Pills</div>
+          <p>Per-keyword <code>&lt;span&gt;</code> elements — gold for upright, purple-tint for reversed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Feature: Addressing ──────────────────────── -->
+  <div class="feature" id="feat-addressing">
+    <div class="feature-header">
+      <div class="feature-number">—</div>
+      <div class="feature-title-block">
+        <div class="feature-title">Second-Person Addressing</div>
+        <div class="feature-meta">
+          <span class="badge badge-shipped">Shipped</span>
+          <span class="feature-date">June 10, 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="feature-body">
+      <p class="feature-lede">A canonical rule that stops Miriel narrating you in the third person and makes her speak to you directly — always.</p>
+
+      <div class="quote">
+        <p>"The person sitting across from you is {name}. They are right there — speak to them as 'you,' always. Never describe them in the third person or repeat their name back to them as if reading from a file. You may use their name at most once in a reading, only where a real reader would: a quiet greeting, or a single moment that needs weight."</p>
+      </div>
+
+      <div class="cols-2">
+        <div class="block">
+          <div class="block-title">What this fixed</div>
+          <ul class="cap-list">
+            <li>Miriel was narrating readers in the third person (<em>"Matt seems troubled"</em>) instead of speaking to them</li>
+            <li>Tier 2/3 readers had the name instruction injected twice (double-injection bug)</li>
+          </ul>
+        </div>
+        <div class="block">
+          <div class="block-title">Applied at</div>
+          <ul class="cap-list">
+            <li><code>POST /api/interpret</code></li>
+            <li><code>POST /api/clarify</code></li>
+            <li><code>POST /api/compatibility</code></li>
+            <li><code>POST /api/session-summary</code></li>
+          </ul>
+          <p style="margin-top:10px; font-size: 12px; color: var(--text-dim);">Compatibility readings get a variant that addresses one person as "you" and names the other.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Feature: Notebook ────────────────────────── -->
+  <div class="feature" id="feat-notebook">
+    <div class="feature-header">
+      <div class="feature-number">—</div>
+      <div class="feature-title-block">
+        <div class="feature-title">Reader Notebook — "Your Story So Far"</div>
+        <div class="feature-meta">
+          <span class="badge badge-shipped">Shipped</span>
+          <span class="feature-date">June 10, 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="feature-body">
+      <p class="feature-lede">A cinematic full-screen takeover where Miriel opens her notebook on you — making the hidden profile visible for the first time.</p>
+
+      <div class="cols-2">
+        <div class="block">
+          <div class="block-title">Entry Point</div>
+          <p>Reader dropdown → <em>✦ Your Story So Far</em>. Full-screen overlay reuses <code>.miriel-takeover</code> styling for privacy across shared devices.</p>
+          <p>Notes are displayed <strong>in the third person verbatim</strong> — you are peeking into her notebook, not reading a report about yourself.</p>
+        </div>
+        <div class="block">
+          <div class="block-title">Empty State</div>
+          <p>Under 30 readings: an in-voice teaser — <em>"I'm still getting to know you. Sit with me a few more times."</em> — plus a remaining-readings count toward Tier 3.</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-title">Notebook Sections (Tier 3)</div>
+        <table class="tier-table">
+          <thead><tr><th>#</th><th>Section</th><th>Source</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Header — readings count, last updated</td><td>metadata</td></tr>
+            <tr><td>2</td><td>Current chapter — italic, centered, as a quote</td><td><code>life_arc.current_chapter</code></td></tr>
+            <tr><td>3</td><td>From her notebook — verbatim paragraphs</td><td><code>miriel_notes</code></td></tr>
+            <tr><td>4</td><td>Cards that keep finding you — art thumbnails + count + note</td><td><code>recurring_cards</code></td></tr>
+            <tr><td>5</td><td>The threads — status glyphs (○/◐/●) and coloured status words</td><td><code>life_arc.key_threads</code></td></tr>
+            <tr><td>6</td><td>What keeps surfacing — unresolved thread + inflection points</td><td><code>unresolved_thread</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+       SECTION: Memory System
+  ════════════════════════════════════════════════════ -->
+  <div class="section-divider">
+    <div class="section-divider-label">Memory System · Phases 1 – 4</div>
+    <div class="section-divider-line"></div>
+  </div>
+
+  <div class="phase-chain">
+    <div class="phase-node active">
+      <strong>Phase 1</strong>
+      Memory Engine
+    </div>
+    <div class="phase-arrow">→</div>
+    <div class="phase-node">
+      <strong>Phase 2</strong>
+      The Threshold
+    </div>
+    <div class="phase-arrow">→</div>
+    <div class="phase-node">
+      <strong>Phase 3</strong>
+      In-Reading Curiosity
+    </div>
+    <div class="phase-arrow">→</div>
+    <div class="phase-node">
+      <strong>Phase 4</strong>
+      Outcome Loop
+    </div>
+  </div>
+
+  <!-- ── Feature: Memory Engine ───────────────────── -->
+  <div class="feature" id="feat-memory">
+    <div class="feature-header">
+      <div class="feature-number">1</div>
+      <div class="feature-title-block">
+        <div class="feature-title">Memory Engine</div>
+        <div class="feature-meta">
+          <span class="badge badge-approved">Approved</span>
+          <span class="badge badge-phase">Phase 1 — Foundation</span>
+          <span class="feature-date">June 13, 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="feature-body">
+      <p class="feature-lede">The infrastructure underneath everything: atoms of what Miriel has learned, written to durable storage and recalled precisely when relevant.</p>
+
+      <div class="quote">
+        <p>Emotional target: <em>"How did she know that?"</em> plus <em>"I want to come back and tell her what happened."</em></p>
+      </div>
+
+      <div class="block" style="margin: 20px 0;">
+        <div class="block-title">Four Layers</div>
+        <div class="arch-flow">
+          <div class="arch-step">
+            <div class="arch-step-num">Capture</div>
+            <div class="arch-step-body">After each reading, a Haiku call extracts memory <strong>atoms</strong> as ADD / UPDATE / TOUCH operations — not a re-summarisation.</div>
+          </div>
+          <div class="arch-connector"><div class="arch-connector-line"></div><div></div></div>
+          <div class="arch-step">
+            <div class="arch-step-num">Store</div>
+            <div class="arch-step-body"><strong>data/memory.db</strong> — SQLite, separate from <code>interpretations.db</code>. Personal and precious; both are gitignored.</div>
+          </div>
+          <div class="arch-connector"><div class="arch-connector-line"></div><div></div></div>
+          <div class="arch-step">
+            <div class="arch-step-num">Recall</div>
+            <div class="arch-step-body">At <code>POST /api/interpret</code>, a <strong>deterministic scorer</strong> selects the top 3–5 relevant atoms and injects a "hold them lightly" block. No LLM on the critical path.</div>
+          </div>
+          <div class="arch-connector"><div class="arch-connector-line"></div><div></div></div>
+          <div class="arch-step">
+            <div class="arch-step-num">Synthesis</div>
+            <div class="arch-step-body"><strong>Your Story So Far</strong> notebook (prose profile) coexists with the atom layer — ambient sense vs. precise detail.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cols-2">
+        <div class="block">
+          <div class="block-title">Memory Types</div>
+          <div class="tech-pills">
+            <span class="tech-pill">person</span>
+            <span class="tech-pill">thread</span>
+            <span class="tech-pill">event</span>
+            <span class="tech-pill">feeling</span>
+            <span class="tech-pill">prediction</span>
+            <span class="tech-pill">fact</span>
+            <span class="tech-pill">preference</span>
+          </div>
+          <div class="block-title" style="margin-top: 14px;">Statuses</div>
+          <div class="tech-pills">
+            <span class="tech-pill">open</span>
+            <span class="tech-pill">moving</span>
+            <span class="tech-pill">resolved</span>
+            <span class="tech-pill">dormant</span>
+          </div>
+        </div>
+        <div class="block">
+          <div class="block-title">Recall Score Formula</div>
+          <div class="formula">
+score =
+  2.0 × salience_normalised
++ 1.5 × (open:1 | moving:0.6 | else:0)
++ 1.5 × keyword_overlap
++ 0.5 × recency_decay
+- 0.4 × overexposure
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-title">Anti-Hallucination Rules</div>
+        <ul class="cap-list">
+          <li>Record only what is explicitly present in the reading</li>
+          <li>Inferences allowed but marked low salience (1–2) and phrased tentatively</li>
+          <li>If parsing fails, apply nothing</li>
+          <li>Back-fill migrates existing history through the same extractor, guarded by a <code>memory_meta</code> flag so it runs exactly once per reader</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Feature: Threshold ────────────────────────── -->
+  <div class="feature" id="feat-threshold">
+    <div class="feature-header">
+      <div class="feature-number">2</div>
+      <div class="feature-title-block">
+        <div class="feature-title">The Threshold</div>
+        <div class="feature-meta">
+          <span class="badge badge-approved">Approved</span>
+          <span class="badge badge-phase">Phase 2 — Reunion</span>
+          <span class="feature-date">June 14, 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="feature-body">
+      <p class="feature-lede">When you return, Miriel meets you across the gap — she remembers what was open and asks what came of it, before you say anything.</p>
+
+      <div class="quote">
+        <p>Emotional target: <em>"A greeting you'd get visiting someone well known."</em></p>
+      </div>
+
+      <div class="mode-cards">
+        <div class="mode-card">
+          <div class="mode-name">Reunion</div>
+          <div class="mode-trigger">Gap ≥ 2 days + open thread</div>
+          <div class="mode-desc">Cinematic full-screen takeover. Miriel speaks across the gap, surfaces threads, asks what came of them.</div>
+        </div>
+        <div class="mode-card">
+          <div class="mode-name">Gentle</div>
+          <div class="mode-trigger">Gap &lt; 2 days + open thread</div>
+          <div class="mode-desc">Inline ask woven into the normal greeting. Same warmth, no ceremony.</div>
+        </div>
+        <div class="mode-card">
+          <div class="mode-name">None</div>
+          <div class="mode-trigger">No qualifying threads</div>
+          <div class="mode-desc">Today's greeting, unchanged. No fabricated reunion.</div>
+        </div>
+      </div>
+
+      <div class="cols-2">
+        <div class="block">
+          <div class="block-title">The Two-Beat Exchange</div>
+          <ul class="cap-list">
+            <li>Miriel speaks — generated greeting acknowledging the gap, surfacing threads, asking what came of them</li>
+            <li>You answer (free text) or skip</li>
+            <li>She responds only if answered — a voiced reflection, simultaneously captured to memory</li>
+            <li>Overlay dismisses into normal reading flow</li>
+          </ul>
+        </div>
+        <div class="block">
+          <div class="block-title">Model Choice</div>
+          <p><strong>Sonnet</strong> for greeting and reply — quality matters; latency is hidden by animation.</p>
+          <p><strong>Haiku</strong> for answer capture — fast and lightweight, out of the critical path.</p>
+          <p>LLM failure → <code>mode:'none'</code> — never a wooden template reunion.</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-title">Qualifying Thread</div>
+        <p style="font-size:13px; color: var(--text-dim);">Type <code>thread</code>, status <code>open</code> or <code>moving</code>, not previously asked (<code>asked_at IS NULL</code>), salience ≥ 3. Threads are marked asked at show time — not answer time — so she never re-asks the same one even if the user skips.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Feature: In-Reading Curiosity ────────────── -->
+  <div class="feature" id="feat-curiosity">
+    <div class="feature-header">
+      <div class="feature-number">3</div>
+      <div class="feature-title-block">
+        <div class="feature-title">In-Reading Curiosity</div>
+        <div class="feature-meta">
+          <span class="badge badge-approved">Approved</span>
+          <span class="badge badge-phase">Phase 3 — Presence</span>
+          <span class="feature-date">June 14, 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="feature-body">
+      <p class="feature-lede">As cards are laid one by one, Miriel sometimes gets stopped by a card. It pulls at something she remembers. She pauses. She asks.</p>
+
+      <div class="quote">
+        <p>"The Moon, here… wait — this pulls me somewhere else. Is your sister still upset with you?"</p>
+      </div>
+
+      <div class="cols-2">
+        <div class="block">
+          <div class="block-title">The Paced Deal</div>
+          <ul class="cap-list">
+            <li>~2s between cards with ±250ms jitter; soft 14s total cap</li>
+            <li>CSS-scheduled animation replaced with a JS <code>async</code> deal loop (<code>dealAndReveal()</code>)</li>
+            <li>Loop is interruptible at trigger card indices</li>
+          </ul>
+        </div>
+        <div class="block">
+          <div class="block-title">The Pause</div>
+          <ul class="cap-list">
+            <li>Trigger card glows and lifts; rest of spread dims to ~55%</li>
+            <li>A thread of light connects to a centred question panel</li>
+            <li>3–4s minimum visible beat even on instant response</li>
+            <li>Deal resumes after answer or skip; remaining cards continue</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-title">Frequency &amp; Discipline</div>
+        <ul class="cap-list">
+          <li>0–2 questions per reading — most readings have <strong>none</strong></li>
+          <li>Only open or moving threads with salience ≥ 3 are candidates</li>
+          <li>Bias toward striking or less-obvious connections</li>
+          <li>Detection runs up front during the shuffle beat using Haiku — not during the deal</li>
+          <li>Answers fold into the interpretation as added context; same <code>asked_at</code> gate as the Threshold — skip still marks asked</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Feature: Outcome Loop ─────────────────────── -->
+  <div class="feature" id="feat-outcome">
+    <div class="feature-header">
+      <div class="feature-number">4</div>
+      <div class="feature-title-block">
+        <div class="feature-title">Outcome Loop — Foretellings</div>
+        <div class="feature-meta">
+          <span class="badge badge-approved">Approved</span>
+          <span class="badge badge-phase">Phase 4 — Accountability</span>
+          <span class="feature-date">June 14, 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="feature-body">
+      <p class="feature-lede">Miriel is accountable to her own foretelling. She records specific predictions, asks about ripe ones at the Threshold, and writes a voiced outcome note that flows back into recall.</p>
+
+      <div class="quote">
+        <p>No tarot app tracks its own predictions.</p>
+      </div>
+
+      <div class="block">
+        <div class="block-title">Four Stages</div>
+        <table class="tier-table">
+          <thead><tr><th>Stage</th><th>What happens</th><th>When</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Capture</td>
+              <td>When Miriel's synopsis contains a specific, checkable foretelling, it's recorded as <code>type: prediction</code>, <code>status: open</code>, <code>salience ≥ 3</code>. Vague encouragement is not a prediction. Folds into the existing capture pass — no extra LLM call.</td>
+              <td>After each reading</td>
+            </tr>
+            <tr>
+              <td>Ripeness gate</td>
+              <td>A prediction ripens after <code>14 + (id % 7) - 3</code> days — 11–17 day range with per-prediction jitter. Deterministic; never flickers. Uses <code>asked_at</code> so <code>too_soon</code> deferrals re-ripen correctly.</td>
+              <td>On Threshold check</td>
+            </tr>
+            <tr>
+              <td>Follow-up</td>
+              <td>Ripe predictions ride into the existing Threshold reunion alongside threads — one unified looking-back moment. Verdict choices: <code>came_to_pass</code> | <code>did_not</code> | <code>partly</code> | <code>too_soon</code>.</td>
+              <td>At the Threshold</td>
+            </tr>
+            <tr>
+              <td>Voiced record</td>
+              <td>A voiced outcome note in Miriel's voice (<em>"The time with Maggie has ended."</em>) stored as a linked <code>event</code> atom. Flows through <code>recall()</code> into future readings. Visible in a new <strong>Foretellings</strong> section in the notebook.</td>
+              <td>After verdict</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+       SECTION: Technical Reference
+  ════════════════════════════════════════════════════ -->
+  <div class="section-divider">
+    <div class="section-divider-label">Technical Reference</div>
+    <div class="section-divider-line"></div>
+  </div>
+
+  <div class="cols-2">
+    <div class="block">
+      <div class="block-title">Models</div>
+      <table class="tier-table">
+        <thead><tr><th>Model</th><th>Used for</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Sonnet</td>
+            <td>Live readings, Threshold greeting &amp; reply</td>
+          </tr>
+          <tr>
+            <td>Haiku</td>
+            <td>Memory capture, back-fill, curiosity detection, session summaries</td>
+          </tr>
+          <tr>
+            <td>Ollama</td>
+            <td>Offline fallback (before cache tier)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="block">
+      <div class="block-title">Test Baseline Progression</div>
+      <div class="progress-row">
+        <span class="progress-label">Initial</span>
+        <span style="color: var(--gold); font-weight:500;">32 tests</span>
+        <span class="progress-phase">Pre-memory</span>
+      </div>
+      <div class="progress-row">
+        <span class="progress-label">After Phase 1</span>
+        <span style="color: var(--gold); font-weight:500;">58 tests</span>
+        <span class="progress-phase">Memory Engine</span>
+      </div>
+      <div class="progress-row">
+        <span class="progress-label">After Phase 2</span>
+        <span style="color: var(--gold); font-weight:500;">60+ tests</span>
+        <span class="progress-phase">Threshold</span>
+      </div>
+      <div class="progress-row">
+        <span class="progress-label">After Phase 3</span>
+        <span style="color: var(--gold); font-weight:500;">76+ tests</span>
+        <span class="progress-phase">Curiosity</span>
+      </div>
+      <div class="progress-row">
+        <span class="progress-label">After Phase 4</span>
+        <span style="color: var(--gold); font-weight:500;">87+ tests</span>
+        <span class="progress-phase">Outcome Loop</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="block" style="margin-top: 24px;">
+    <div class="block-title">Key Files Across All Features</div>
+    <div class="cols-2" style="margin: 12px 0 0;">
+      <ul class="cap-list">
+        <li><code>data/interpretation-cache.js</code> — SQLite cache factory</li>
+        <li><code>data/reader-profile.js</code> — profile load / save / synthesis</li>
+        <li><code>data/addressing.js</code> — canonical second-person voice rule</li>
+        <li><code>data/notebook.js</code> — notebook payload + card image resolution</li>
+      </ul>
+      <ul class="cap-list">
+        <li><code>data/memory-store.js</code> — pure SQLite memory store</li>
+        <li><code>data/memory-engine.js</code> — capture, recall, back-fill, threshold, curiosity, outcome</li>
+        <li><code>data/memory.db</code> / <code>data/interpretations.db</code> — gitignored, local only</li>
+        <li><code>scripts/seed-cache.js</code> — CLI for pre-generating single-card interpretations</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ── Footer ──────────────────────────────────────── -->
+  <div class="footer">
+    <div class="footer-ornament">✦ · ✦ · ✦</div>
+    <p class="footer-text">Miriel's Readings — internal specification document</p>
+  </div>
+
+</div>
+</body>
+</html>

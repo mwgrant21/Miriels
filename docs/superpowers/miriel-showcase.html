@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miriel's Readings — What She Can Do</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap');
+
+  :root {
+    --gold:         #c9a84c;
+    --gold-dim:     #8a6f30;
+    --gold-pale:    #e8d49a;
+    --gold-faint:   rgba(201,168,76,0.07);
+    --purple:       #7c5cbf;
+    --purple-dim:   #3d2e66;
+    --purple-pale:  #b09de0;
+    --bg:           #09091a;
+    --bg-card:      #0d0d22;
+    --bg-panel:     #11112a;
+    --text:         #ccc8e0;
+    --text-dim:     #7a758f;
+    --text-muted:   #40384f;
+    --border:       rgba(201,168,76,0.15);
+    --border-dim:   rgba(201,168,76,0.07);
+    --green:        #5bbb7b;
+    --amber:        #d4924a;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  /* ── Atmospheric background ──────────────────────── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 70% 50% at 15% 5%,  rgba(124,92,191,0.13) 0%, transparent 55%),
+      radial-gradient(ellipse 50% 70% at 85% 95%, rgba(201,168,76,0.08) 0%, transparent 55%),
+      radial-gradient(ellipse 40% 40% at 50% 50%, rgba(61,46,102,0.10) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── Page wrapper ────────────────────────────────── */
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 32px 120px;
+  }
+
+  /* ── Cover ───────────────────────────────────────── */
+  .cover {
+    text-align: center;
+    padding: 96px 0 72px;
+  }
+
+  .cover-ornament {
+    font-size: 13px;
+    letter-spacing: 0.35em;
+    color: var(--gold-dim);
+    margin-bottom: 36px;
+  }
+
+  .cover h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 58px;
+    font-weight: 300;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    line-height: 1.05;
+    margin-bottom: 8px;
+  }
+
+  .cover-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.28em;
+    color: var(--text-dim);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  .cover-description {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-style: italic;
+    color: var(--text-dim);
+    max-width: 540px;
+    margin: 0 auto 52px;
+    line-height: 1.65;
+  }
+
+  .cover-divider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .cover-divider-line { flex: 1; height: 1px; background: var(--border); }
+  .cover-divider-gem  { color: var(--gold-dim); font-size: 11px; }
+
+  /* ── Section label ───────────────────────────────── */
+  .section-header {
+    text-align: center;
+    margin: 80px 0 52px;
+  }
+
+  .section-label {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 5px 18px;
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--gold-pale);
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+  }
+
+  .section-desc {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--text-dim);
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  /* ── Feature cards ───────────────────────────────── */
+  .feature-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 32px;
+    transition: border-color 0.3s;
+  }
+
+  .feature-card:hover { border-color: rgba(201,168,76,0.35); }
+
+  .feature-card-inner {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    min-height: 160px;
+  }
+
+  .feature-accent {
+    background: linear-gradient(180deg, rgba(201,168,76,0.08) 0%, rgba(124,92,191,0.06) 100%);
+    border-right: 1px solid var(--border-dim);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+  }
+
+  .feature-content {
+    padding: 28px 32px;
+  }
+
+  .feature-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin-bottom: 6px;
+  }
+
+  .feature-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--gold-pale);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .feature-body {
+    color: var(--text-dim);
+    font-size: 14.5px;
+    line-height: 1.75;
+  }
+
+  .feature-body strong { color: var(--text); font-weight: 500; }
+
+  /* ── Full-width feature ──────────────────────────── */
+  .feature-full {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px 44px;
+    margin-bottom: 32px;
+  }
+
+  .feature-full:hover { border-color: rgba(201,168,76,0.35); }
+
+  .feature-full .feature-label { margin-bottom: 6px; }
+  .feature-full .feature-title { font-size: 28px; margin-bottom: 14px; }
+
+  /* ── Quote ───────────────────────────────────────── */
+  .pullquote {
+    text-align: center;
+    padding: 36px 20px;
+    margin: 32px 0;
+  }
+
+  .pullquote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--gold);
+    line-height: 1.5;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  .pullquote-attr {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 14px;
+  }
+
+  /* ── Grid layouts ────────────────────────────────── */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 24px 0;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  /* ── Small detail block ──────────────────────────── */
+  .detail-block {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-dim);
+    border-radius: 8px;
+    padding: 22px 24px;
+  }
+
+  .detail-title {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin-bottom: 12px;
+  }
+
+  .detail-block p {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.65;
+  }
+
+  /* ── Example moment ──────────────────────────────── */
+  .moment {
+    background: rgba(124,92,191,0.07);
+    border: 1px solid rgba(124,92,191,0.2);
+    border-left: 3px solid var(--purple);
+    border-radius: 0 8px 8px 0;
+    padding: 18px 24px;
+    margin: 20px 0;
+  }
+
+  .moment-label {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--purple-pale);
+    margin-bottom: 8px;
+    opacity: 0.8;
+  }
+
+  .moment p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--text-dim);
+    line-height: 1.6;
+  }
+
+  /* ── Phase timeline ──────────────────────────────── */
+  .timeline {
+    position: relative;
+    padding: 8px 0;
+    margin: 32px 0;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 28px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(180deg, transparent, var(--purple-dim) 20%, var(--purple-dim) 80%, transparent);
+  }
+
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 20px;
+    margin-bottom: 32px;
+    align-items: start;
+  }
+
+  .timeline-item:last-child { margin-bottom: 0; }
+
+  .timeline-dot {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+  }
+
+  .timeline-body {
+    padding-top: 10px;
+  }
+
+  .timeline-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    color: var(--gold-pale);
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+
+  .timeline-text {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.7;
+  }
+
+  /* ── Spread grid ─────────────────────────────────── */
+  .spread-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+  }
+
+  .spread-item {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-dim);
+    border-radius: 8px;
+    padding: 16px 18px;
+  }
+
+  .spread-item-cat {
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin-bottom: 8px;
+  }
+
+  .spread-item-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .spread-item-desc {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  /* ── Tier visual ─────────────────────────────────── */
+  .tiers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+  }
+
+  .tier {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+    align-items: center;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-dim);
+    border-radius: 8px;
+    padding: 16px 20px;
+  }
+
+  .tier-label {
+    text-align: center;
+  }
+
+  .tier-label-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+
+  .tier-label-sub {
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  .tier-body { font-size: 13.5px; color: var(--text-dim); line-height: 1.6; }
+  .tier-body strong { color: var(--text); font-weight: 500; }
+
+  /* ── Footer ──────────────────────────────────────── */
+  .footer {
+    text-align: center;
+    padding: 64px 0 0;
+    border-top: 1px solid var(--border);
+    margin-top: 96px;
+  }
+
+  .footer-ornament { color: var(--gold-dim); font-size: 13px; letter-spacing: 0.3em; margin-bottom: 20px; }
+
+  .footer-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+
+  .footer-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--text-muted);
+    max-width: 440px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* ── Responsive ──────────────────────────────────── */
+  @media (max-width: 700px) {
+    .wrap { padding: 0 16px 80px; }
+    .cover h1 { font-size: 38px; }
+    .grid-2, .grid-3, .spread-grid { grid-template-columns: 1fr; }
+    .feature-card-inner { grid-template-columns: 1fr; }
+    .feature-accent { min-height: 60px; border-right: none; border-bottom: 1px solid var(--border-dim); }
+    .feature-full { padding: 28px 24px; }
+  }
+
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ── Cover ──────────────────────────────────────── -->
+  <div class="cover">
+    <div class="cover-ornament">✦ · ✦ · ✦</div>
+    <h1>MIRIEL'S READINGS</h1>
+    <div class="cover-sub">Tarot · Oracle · Runes</div>
+    <p class="cover-description">A private reading space that learns who you are — not just what cards you draw, but what you carry, what remains unresolved, and what came to pass.</p>
+    <div class="cover-divider">
+      <div class="cover-divider-line"></div>
+      <div class="cover-divider-gem">◆</div>
+      <div class="cover-divider-line"></div>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════
+       THE READINGS THEMSELVES
+  ═════════════════════════════════════════ -->
+  <div class="section-header">
+    <div class="section-label">The Reading Experience</div>
+    <div class="section-title">A space built for presence</div>
+    <p class="section-desc">Every detail — the cards, the light, the pace — is designed to feel like sitting across from a real reader.</p>
+  </div>
+
+  <!-- Visual atmosphere -->
+  <div class="feature-card">
+    <div class="feature-card-inner">
+      <div class="feature-accent">🌙</div>
+      <div class="feature-content">
+        <div class="feature-label">Atmosphere</div>
+        <div class="feature-title">A room that feels like somewhere</div>
+        <div class="feature-body">
+          The app has its own visual atmosphere — a deep, candlelit aesthetic with gold-framed cards, a pulsing glow on face-down draws, and a two-column layout that separates what the cards mean from what Miriel reads in them for you. Keywords appear as small pills — gold for upright cards, muted violet for reversed.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spreads -->
+  <div class="feature-full">
+    <div class="feature-label">Spreads</div>
+    <div class="feature-title">Eighteen ways to ask a question</div>
+    <p class="feature-body" style="margin-bottom: 20px;">
+      Spreads are organized into categories so the right one is always easy to find. Miriel can also choose for you — she'll pick the spread she feels fits your question and move you to it automatically.
+    </p>
+
+    <div class="spread-grid">
+      <div class="spread-item">
+        <div class="spread-item-cat">General</div>
+        <div class="spread-item-name">Celtic Cross</div>
+        <div class="spread-item-desc">The classic ten-card spread</div>
+      </div>
+      <div class="spread-item">
+        <div class="spread-item-cat">General</div>
+        <div class="spread-item-name">Year Ahead</div>
+        <div class="spread-item-desc">One card per month — a map of the year</div>
+      </div>
+      <div class="spread-item">
+        <div class="spread-item-cat">General</div>
+        <div class="spread-item-name">Decision</div>
+        <div class="spread-item-desc">Two paths, their obstacles, and where each leads</div>
+      </div>
+      <div class="spread-item">
+        <div class="spread-item-cat">General</div>
+        <div class="spread-item-name">Horseshoe</div>
+        <div class="spread-item-desc">Past, present, and the arc ahead</div>
+      </div>
+      <div class="spread-item">
+        <div class="spread-item-cat">Relationship</div>
+        <div class="spread-item-name">Relationship Cross</div>
+        <div class="spread-item-desc">You, them, and the space between</div>
+      </div>
+      <div class="spread-item">
+        <div class="spread-item-cat">Relationship</div>
+        <div class="spread-item-name">Soulmates</div>
+        <div class="spread-item-desc">Soul contracts, karmic ties, and purpose</div>
+      </div>
+      <div class="spread-item">
+        <div class="spread-item-cat">Spiritual</div>
+        <div class="spread-item-name">Chakra</div>
+        <div class="spread-item-desc">Seven energy centres, read in sequence</div>
+      </div>
+      <div class="spread-item">
+        <div class="spread-item-cat">Spiritual</div>
+        <div class="spread-item-name">Star / Pentagram</div>
+        <div class="spread-item-desc">Five points: Earth, Air, Fire, Water, Spirit</div>
+      </div>
+      <div class="spread-item">
+        <div class="spread-item-cat">Any category</div>
+        <div class="spread-item-name">Miriel's Choice</div>
+        <div class="spread-item-desc">She picks the spread she feels you need</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Speaking to you -->
+  <div class="feature-card">
+    <div class="feature-card-inner">
+      <div class="feature-accent">🗣</div>
+      <div class="feature-content">
+        <div class="feature-label">Voice</div>
+        <div class="feature-title">She speaks to you, not about you</div>
+        <div class="feature-body">
+          Miriel addresses you directly — always <em>you</em>, never <em>they</em> or <em>Matt seems to be…</em> She may use your name once in a reading, the way a real reader would: a quiet opening, or a moment that needs weight. Nothing more.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fallback -->
+  <div class="feature-card">
+    <div class="feature-card-inner">
+      <div class="feature-accent">🕯</div>
+      <div class="feature-content">
+        <div class="feature-label">Reliability</div>
+        <div class="feature-title">She's always there, even offline</div>
+        <div class="feature-body">
+          Miriel has a layered fallback system — cloud AI first, then a local model, then a deep library of pre-built interpretations stored on your device. You'll never sit down for a reading and find her silent.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════
+       MEMORY
+  ═════════════════════════════════════════ -->
+  <div class="section-header">
+    <div class="section-label">Memory</div>
+    <div class="section-title">She remembers</div>
+    <p class="section-desc">Not just your last reading — the shape of what you carry, who matters to you, and what was unresolved last time you sat down.</p>
+  </div>
+
+  <div class="pullquote">
+    <p>"How did she know that?"
+      <span class="pullquote-attr">The feeling Miriel's memory is designed to create</span>
+    </p>
+  </div>
+
+  <!-- Graduated intimacy -->
+  <div class="feature-full">
+    <div class="feature-label">Intimacy over time</div>
+    <div class="feature-title">She grows more knowing with every reading</div>
+    <p class="feature-body" style="margin-bottom: 20px;">
+      Miriel doesn't treat your tenth reading the same as your first. The more time you spend with her, the richer her understanding becomes — and the more that shapes the way she reads for you.
+    </p>
+
+    <div class="tiers">
+      <div class="tier">
+        <div class="tier-label">
+          <div class="tier-label-title">New</div>
+          <div class="tier-label-sub">Under 10 readings</div>
+        </div>
+        <div class="tier-body">
+          A skilled stranger. She reads the cards with care, but she doesn't yet know you. Each session she listens closely.
+        </div>
+      </div>
+      <div class="tier">
+        <div class="tier-label">
+          <div class="tier-label-title">Known</div>
+          <div class="tier-label-sub">10–29 readings</div>
+        </div>
+        <div class="tier-body">
+          She has her own notes on you — patterns she's observed, cards that keep appearing for you. These quietly inform how she reads.
+        </div>
+      </div>
+      <div class="tier">
+        <div class="tier-label">
+          <div class="tier-label-title">Trusted</div>
+          <div class="tier-label-sub">30+ readings</div>
+        </div>
+        <div class="tier-body">
+          <strong>She knows your arc.</strong> The chapter you're in, the threads running through your life, what remains unresolved. She reads from that place of knowing — and she holds it without announcing it.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Your story so far -->
+  <div class="feature-card">
+    <div class="feature-card-inner">
+      <div class="feature-accent">📖</div>
+      <div class="feature-content">
+        <div class="feature-label">Your Story So Far</div>
+        <div class="feature-title">Peek into her notebook</div>
+        <div class="feature-body">
+          At any point you can open Miriel's notebook on you — a full-screen view of what she has observed. Her handwritten notes on who you are, the cards that find you again and again, the threads she's been watching, what she considers unresolved. Written in the third person, as notes to herself — because you're reading over her shoulder, not receiving a report.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════
+       THE LIVING FEATURES (phases)
+  ═════════════════════════════════════════ -->
+  <div class="section-header">
+    <div class="section-label">What's Coming</div>
+    <div class="section-title">Four moments that make Miriel feel alive</div>
+    <p class="section-desc">Each builds on the last. Together they turn a reading app into something that feels like an ongoing relationship.</p>
+  </div>
+
+  <div class="timeline">
+
+    <!-- Phase 1 -->
+    <div class="timeline-item">
+      <div class="timeline-dot">🧠</div>
+      <div class="timeline-body">
+        <div class="timeline-title">A memory that accumulates</div>
+        <div class="timeline-text">
+          Under the hood, Miriel begins building a careful record — not summaries, but specific atoms of what she has learned. Who is important to you. What you're working through. How things have shifted. Each reading adds to it. She draws on it quietly, without announcing what she knows.
+        </div>
+        <div class="moment" style="margin-top: 16px;">
+          <div class="moment-label">Example</div>
+          <p>She mentions your brother — not because you said his name just now, but because she remembered you were estranged, and something in today's cards points there.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 2 -->
+    <div class="timeline-item">
+      <div class="timeline-dot">🚪</div>
+      <div class="timeline-body">
+        <div class="timeline-title">The Threshold — she meets you at the door</div>
+        <div class="timeline-text">
+          When you return after time away and there's something she's been sitting with, Miriel greets you across the gap before the reading begins. She acknowledges that time has passed. She asks what came of the thing she last saw open in you. Your answer shapes her, and she responds to it — then the reading begins.
+        </div>
+        <div class="grid-2" style="margin-top: 16px;">
+          <div class="detail-block">
+            <div class="detail-title">Reunion</div>
+            <p>After a real absence — two or more days — she opens with a full greeting. Cinematic, unhurried, personal.</p>
+          </div>
+          <div class="detail-block">
+            <div class="detail-title">Gentle</div>
+            <p>If you were just here, she asks in passing — a quiet thread woven into the normal hello.</p>
+          </div>
+        </div>
+        <div class="moment" style="margin-top: 4px;">
+          <div class="moment-label">Example</div>
+          <p>"You were holding something heavy when we last sat together — that situation with work. It's been two weeks. How did it land?"</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 3 -->
+    <div class="timeline-item">
+      <div class="timeline-dot">✨</div>
+      <div class="timeline-body">
+        <div class="timeline-title">In-Reading Curiosity — a pause mid-deal</div>
+        <div class="timeline-text">
+          As the cards are laid one by one, Miriel sometimes gets stopped by one. It pulls at something she remembers. The card glows. The rest of the spread dims. She asks a question — pointed, personal, from memory — and waits. Your answer becomes part of what she reads in the full spread.
+        </div>
+        <div class="moment" style="margin-top: 16px;">
+          <div class="moment-label">Example</div>
+          <p>"The Moon, here… wait — this pulls me somewhere else. Is your sister still upset with you?"</p>
+        </div>
+        <p class="timeline-text" style="margin-top: 12px; font-style: italic; color: var(--text-muted);">
+          Most readings have none of these. When one appears, it's because something real connects.
+        </p>
+      </div>
+    </div>
+
+    <!-- Phase 4 -->
+    <div class="timeline-item">
+      <div class="timeline-dot">🔮</div>
+      <div class="timeline-body">
+        <div class="timeline-title">The Outcome Loop — she tracks her own foretelling</div>
+        <div class="timeline-text">
+          When Miriel makes a specific, checkable prediction in a reading, she records it. After enough time has passed, she brings it back — at the Threshold, asking what came of it. Did it come to pass? Partly? Not yet? She writes a voiced note on the outcome, and it flows into how she reads for you going forward.
+        </div>
+        <div class="detail-block" style="margin-top: 16px;">
+          <div class="detail-title">The Foretellings View</div>
+          <p>In your notebook, a new section appears: a record of her predictions and what became of them. Her voice, her words — a history of what she saw and what came true.</p>
+        </div>
+        <div class="moment">
+          <div class="moment-label">Example</div>
+          <p>"I said the door to that chapter would close before the year turned. You told me it did. I wrote it down."</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ── Footer ──────────────────────────────────────── -->
+  <div class="footer">
+    <div class="footer-ornament">✦ · ✦ · ✦</div>
+    <div class="footer-title">Miriel's Readings</div>
+    <p class="footer-text">A private space, entirely on your device. Miriel keeps what she learns about you to herself — and to you.</p>
+  </div>
+
+</div>
+</body>
+</html>

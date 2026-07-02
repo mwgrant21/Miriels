@@ -228,6 +228,70 @@ test('getRipePredictions re-ripens a deferred prediction relative to asked_at', 
   assert.equal(store.getRipePredictions('matt', 10, now).length, 1);
 });
 
+test('getDormantThreads returns a salient open thread gone quiet past the window', () => {
+  const store = createMemoryStore(tmpDir());
+  const now = store._now();
+  const id = store.addMemory('matt', { type: 'thread', content: 'the Portland move', status: 'open', salience: 4 });
+  const threshold = 60 + (id % 7) - 3; // per-id window, 57..63 days
+  store._db.prepare('UPDATE memories SET updated_at = ? WHERE id = ?').run(now - (threshold + 1) * 86400, id);
+  const rows = store.getDormantThreads('matt', 2, now);
+  assert.equal(rows.length, 1);
+  assert.equal(rows[0].content, 'the Portland move');
+});
+
+test('getDormantThreads excludes a freshly-touched thread', () => {
+  const store = createMemoryStore(tmpDir());
+  const now = store._now();
+  const id = store.addMemory('matt', { type: 'thread', content: 'recent worry', status: 'open', salience: 4 });
+  store._db.prepare('UPDATE memories SET updated_at = ? WHERE id = ?').run(now - 5 * 86400, id);
+  assert.equal(store.getDormantThreads('matt', 2, now).length, 0);
+});
+
+test('getDormantThreads excludes resolved/dormant-status threads, non-threads, and low salience', () => {
+  const store = createMemoryStore(tmpDir());
+  const now = store._now();
+  const old = now - 120 * 86400;
+  const ids = [
+    store.addMemory('matt', { type: 'thread',  content: 'resolved one', status: 'resolved', salience: 5 }),
+    store.addMemory('matt', { type: 'thread',  content: 'already dormant-status', status: 'dormant', salience: 5 }),
+    store.addMemory('matt', { type: 'feeling', content: 'not a thread', status: 'open', salience: 5 }),
+    store.addMemory('matt', { type: 'thread',  content: 'low salience', status: 'open', salience: 2 }),
+  ];
+  for (const id of ids) store._db.prepare('UPDATE memories SET updated_at = ? WHERE id = ?').run(old, id);
+  assert.equal(store.getDormantThreads('matt', 5, now).length, 0);
+});
+
+test('getDormantThreads enforces ask-once-then-rest cooldown via asked_at', () => {
+  const store = createMemoryStore(tmpDir());
+  const now = store._now();
+  const id = store.addMemory('matt', { type: 'thread', content: 'the move', status: 'open', salience: 4 });
+  const threshold = 60 + (id % 7) - 3;
+  // updated_at is old (would be dormant) but it was just asked -> within cooldown -> excluded
+  store._db.prepare('UPDATE memories SET updated_at = ?, asked_at = ? WHERE id = ?')
+    .run(now - 200 * 86400, now, id);
+  assert.equal(store.getDormantThreads('matt', 2, now).length, 0);
+  // asked_at now past the cooldown window -> re-ripens
+  store._db.prepare('UPDATE memories SET asked_at = ? WHERE id = ?')
+    .run(now - (threshold + 1) * 86400, id);
+  assert.equal(store.getDormantThreads('matt', 2, now).length, 1);
+});
+
+test('getDormantThreads rests when a thread is re-engaged (fresh updated_at) even if asked long ago', () => {
+  const store = createMemoryStore(tmpDir());
+  const now = store._now();
+  const id = store.addMemory('matt', { type: 'thread', content: 're-engaged thread', status: 'open', salience: 4 });
+  // Asked 200 days ago, but touched (updated) just 5 days ago -> should NOT surface as dormant.
+  store._db.prepare('UPDATE memories SET asked_at = ?, updated_at = ? WHERE id = ?')
+    .run(now - 200 * 86400, now - 5 * 86400, id);
+  assert.equal(store.getDormantThreads('matt', 2, now).length, 0);
+});
+
+test('getDormantThreads exposes DORMANT_DAYS and DORMANT_SALIENCE_BAR constants', () => {
+  const store = createMemoryStore(tmpDir());
+  assert.equal(store.DORMANT_DAYS, 60);
+  assert.equal(store.DORMANT_SALIENCE_BAR, 3);
+});
+
 test('applyOps RESOLVE with a verdict tags the outcome event', () => {
   const store = createMemoryStore(tmpDir());
   const pid = store.addMemory('matt', { type: 'prediction', content: 'friction in the move', status: 'open', salience: 4 });

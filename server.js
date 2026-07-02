@@ -18,6 +18,9 @@ const profiles = createProfileManager(DATA_DIR);
 
 const createMemoryEngine = require('./data/memory-engine');
 const memory = createMemoryEngine(DATA_DIR);
+const createEmotionalSeasons = require('./data/emotional-seasons');
+const seasons = createEmotionalSeasons(memory);
+const { detectSeasonShift, detectRecurringTheme } = createEmotionalSeasons;
 const {
   decideThresholdMode, buildGreetingPrompt, buildReplyPrompt,
   REUNION_MAX_THREADS, THRESHOLD_SALIENCE_BAR, REUNION_GAP_DAYS,
@@ -102,13 +105,16 @@ setImmediate(() => {
     memory.backfill(r.slug, loadReadings, callLLM)
       .then(res => { if (res && res.added) console.log(`  + Memory back-filled for ${r.slug} (${res.added} memories)`); })
       .catch(err => console.warn(`  ⚠  Memory back-fill failed for ${r.slug}:`, err.message));
+    seasons.backfillSeasons(r.slug, callLLM)
+      .then(res => { if (res && res.added) console.log(`  + Emotional seasons back-filled for ${r.slug} (${res.added})`); })
+      .catch(err => console.warn(`  ⚠  Season back-fill failed for ${r.slug}:`, err.message));
   }
 });
 
 function deriveDeck(card) {
   if (!card) return 'tarot';
   const dt = card.deckType;
-  if (dt === 'CelticDragon' || (card.id && card.id.startsWith('cd-'))) return 'celtic-dragon';
+  if (dt === 'VeilArcana') return 'veil-arcana';
   if (dt === 'Moonology') return 'moonology';
   if (dt === 'Lenormand') return 'lenormand';
   if (dt === 'Thoth')     return 'thoth';
@@ -288,6 +294,11 @@ app.post('/api/readings', (req, res) => {
       .catch(err => console.warn('  ⚠  Memory capture failed:', err.message));
     profiles.updateLivingNote(slug, callLLM, loadReadings)
       .catch(err => console.warn('  ⚠  Living note update failed:', err.message));
+    if (totalReadings % seasons.SEASON_CADENCE === 0) {
+      seasons.updateSeasons(slug, callLLM)
+        .then(res => { if (res && res.added) console.log(`  + Emotional season recorded for ${slug}`); })
+        .catch(err => console.warn('  ⚠  Season update failed:', err.message));
+    }
     res.json({ ok: true });
   } catch (err) {
     console.error('  ✗ Failed to save reading:', err.message);
@@ -387,7 +398,7 @@ function localDateKey(d = new Date()) {
 }
 
 function loadAllDeckCards() {
-  const deckFiles = ['tarot', 'thoth', 'celtic-dragon', 'moonology', 'lenormand', 'runic', 'iching', 'oracle'];
+  const deckFiles = ['tarot', 'thoth', 'veil-arcana', 'miriel-lunar', 'drowned-ephemeris', 'lenormand', 'runic', 'iching', 'oracle'];
   const decks = {};
   for (const d of deckFiles) {
     try { decks[d] = JSON.parse(fs.readFileSync(path.join(DATA_DIR, `${d}.json`), 'utf8')); }
@@ -459,15 +470,16 @@ app.get('/api/images', (req, res) => {
   const manifest = {};
   const imgRoot = process.env.IMAGES_DIR || path.join(__dirname, 'public', 'images');
 
-  // Maps manifest key → subfolder on disk (oracle shares the moonology folder)
+  // Maps manifest key → subfolder on disk (oracle images live in the moonology folder)
   const deckDirs = {
     'tarot':         'tarot',
-    'celtic-dragon': 'celtic-dragon',
-    'moonology':     'moonology',
+    'veil-arcana':   'veil-arcana',
+    'miriel-lunar':  'miriel-lunar',
     'oracle':        'moonology',
     'runic':         'runic',
-    'iching':        'iching',
-    'thoth':         'thoth'
+    'iching':           'iching',
+    'thoth':            'thoth',
+    'drowned-ephemeris':'drowned-ephemeris'
   };
 
   for (const [deck, folder] of Object.entries(deckDirs)) {
@@ -492,13 +504,14 @@ app.get('/api/images', (req, res) => {
 app.get('/api/cards', (req, res) => {
   const tarot        = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'tarot.json'), 'utf8'));
   const oracle       = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'oracle.json'), 'utf8'));
-  const moonology    = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'moonology.json'), 'utf8'));
-  const celticDragon = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'celtic-dragon.json'), 'utf8'));
-  const lenormand    = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'lenormand.json'), 'utf8'));
-  const thoth        = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'thoth.json'), 'utf8'));
-  const runic        = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'runic.json'), 'utf8'));
-  const iching       = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'iching.json'), 'utf8'));
-  res.json({ tarot, oracle, moonology, 'celtic-dragon': celticDragon, lenormand, thoth, runic, iching });
+  const mirielLunar  = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'miriel-lunar.json'), 'utf8'));
+  const veilArcana        = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'veil-arcana.json'), 'utf8'));
+  const drownedEphemeris  = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'drowned-ephemeris.json'), 'utf8'));
+  const lenormand         = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'lenormand.json'), 'utf8'));
+  const thoth             = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'thoth.json'), 'utf8'));
+  const runic             = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'runic.json'), 'utf8'));
+  const iching            = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'iching.json'), 'utf8'));
+  res.json({ tarot, oracle, 'miriel-lunar': mirielLunar, 'veil-arcana': veilArcana, 'drowned-ephemeris': drownedEphemeris, lenormand, thoth, runic, iching });
 });
 
 // ── Shared reader persona (system prompt for all Claude calls) ───────────────
@@ -677,12 +690,21 @@ app.post('/api/interpret', async (req, res) => {
     console.warn('  ⚠  Prophecy detection failed:', err.message);
   }
 
+  let seasonThemeBlock = '';
+  try {
+    const themeTimeline = JSON.parse(memory.getMeta(`seasons:${slug}`) || '[]');
+    const recurring = detectRecurringTheme(themeTimeline);
+    if (recurring) {
+      seasonThemeBlock = `\n\nAn emotional thread that recurs across the seasons you have witnessed in this person (reference it only when a card in front of you genuinely meets it; name it plainly in your own voice; never as a list, never inflated):\n- ${recurring.fact}`;
+    }
+  } catch (err) { console.warn('  ⚠  Season theme detection failed:', err.message); }
+
   // Guard against over-claiming. She genuinely tracks recurring cards, the patterns
   // and foretellings surfaced above, and specific remembered moments, but the app
   // does NOT analyze the topics or types of questions she's asked over time.
-  const overclaimGuard = `\n\nWhat you may and may not claim to notice across their readings: you genuinely track the cards and symbols that recur for them, the patterns named above, the foretellings surfaced above, and the specific past moments surfaced to you here. You do NOT keep a record of the topics or kinds of questions they bring over time, so never claim to see a pattern in "what they ask" or "the questions they keep asking" unless such a pattern is explicitly stated above. Speak only to patterns and foretellings you actually have in front of you; do not invent a history of noticing.`;
+  const overclaimGuard = `\n\nWhat you may and may not claim to notice across their readings: you genuinely track the cards and symbols that recur for them, the patterns named above, the foretellings surfaced above, the recurring emotional threads surfaced above, and the specific past moments surfaced to you here. You do NOT keep a record of the topics or kinds of questions they bring over time, so never claim to see a pattern in "what they ask" or "the questions they keep asking" unless such a pattern is explicitly stated above. Speak only to patterns and foretellings you actually have in front of you; do not invent a history of noticing.`;
 
-  const personaFinal = personaWithName + memoryBlock + patternBlock + prophecyBlock + overclaimGuard;
+  const personaFinal = personaWithName + memoryBlock + patternBlock + prophecyBlock + seasonThemeBlock + overclaimGuard;
 
   const spreadLabel = spread_type === 'single'     ? 'Single Card' :
                       spread_type === 'three-card'  ? 'Three-Card (Past / Present / Future)' :
@@ -1049,6 +1071,9 @@ app.get('/api/threshold', async (req, res) => {
 
     const threads     = memory.getOpenUnaskedThreads(slug, REUNION_MAX_THREADS, THRESHOLD_SALIENCE_BAR);
     const predictions = memory.getRipePredictions(slug, REUNION_MAX_THREADS, now);
+    const dormant = memory.getDormantThreads(slug, 2, now);
+    const dormantIds = new Set(dormant.map(t => t.id));
+    const freshThreads = threads.filter(t => !dormantIds.has(t.id));
     const lastVisit = memory.getMeta(`last_visit:${slug}`);
 
     // Temporal callbacks (rare, resonant). Detector + readings use MILLISECONDS;
@@ -1060,18 +1085,28 @@ app.get('/api/threshold', async (req, res) => {
     const allCallbacks = findTemporalCallbacks({ readings: loadReadings(slug), lastVisitTs: lastVisitMs, now: nowMs });
     const temporalCallbacks = filterSurfaced(allCallbacks, surfacedMap, nowMs, 30).slice(0, 1);
 
-    const mode      = decideThresholdMode(lastVisit, threads, now, REUNION_GAP_DAYS, predictions, temporalCallbacks);
+    let seasonSurfaced = {};
+    try { seasonSurfaced = JSON.parse(memory.getMeta(`season_surfaced:${slug}`) || '{}'); } catch {}
+    const rawShift = detectSeasonShift(JSON.parse(memory.getMeta(`seasons:${slug}`) || '[]'), now);
+    const SEASON_TTL_S = 30 * 86400;
+    const seasonShift = (rawShift && !(seasonSurfaced[rawShift.signature] && (now - seasonSurfaced[rawShift.signature]) < SEASON_TTL_S))
+      ? rawShift : null;
+
+    const mode      = decideThresholdMode(lastVisit, freshThreads, now, REUNION_GAP_DAYS, predictions, temporalCallbacks, dormant, seasonShift);
 
     if (mode === 'none') {
       memory.setMeta(`last_visit:${slug}`, String(now));
       return res.json({ mode: 'none' });
     }
 
-    const shownThreads     = mode === 'gentle' ? threads.slice(0, 1) : threads;
+    const shownThreads  = mode === 'gentle' ? freshThreads.slice(0, 1) : freshThreads;
+    const shownDormant  = mode === 'gentle'
+      ? (shownThreads.length ? [] : dormant.slice(0, 1))
+      : dormant;
     const shownPredictions = mode === 'gentle'
-      ? (shownThreads.length ? [] : predictions.slice(0, 1))
+      ? ((shownThreads.length || shownDormant.length) ? [] : predictions.slice(0, 1))
       : predictions;
-    const shown = [...shownThreads, ...shownPredictions];
+    const shown = [...shownThreads, ...shownDormant, ...shownPredictions];
     const gapDays = lastVisit == null ? Infinity : (now - Number(lastVisit)) / 86400;
 
     const readerProfile = profiles.loadReaderProfile(slug);
@@ -1082,7 +1117,7 @@ app.get('/api/threshold', async (req, res) => {
     );
     let greeting;
     try {
-      greeting = await callLLM(persona, buildGreetingPrompt(mode, shownThreads, gapDays, shownPredictions, temporalCallbacks, phase), 700, 'claude-sonnet-4-6');
+      greeting = await callLLM(persona, buildGreetingPrompt(mode, shownThreads, gapDays, shownPredictions, temporalCallbacks, phase, shownDormant, seasonShift), 700, 'claude-sonnet-4-6');
     } catch (err) {
       // Do NOT advance last_visit on a generation failure, a transient LLM blip
       // (e.g. Claude hiccup with no Ollama fallback) must retry the full reunion on
@@ -1101,6 +1136,14 @@ app.get('/api/threshold', async (req, res) => {
       }
       for (const c of temporalCallbacks) surfacedMap[c.signature] = nowMs;
       memory.setMeta(`temporal_surfaced:${slug}`, JSON.stringify(surfacedMap));
+    }
+    if (seasonShift) {
+      const ttlS = 30 * 86400;
+      for (const sig of Object.keys(seasonSurfaced)) {
+        if (now - seasonSurfaced[sig] >= ttlS) delete seasonSurfaced[sig];
+      }
+      seasonSurfaced[seasonShift.signature] = now;
+      memory.setMeta(`season_surfaced:${slug}`, JSON.stringify(seasonSurfaced));
     }
     memory.setMeta(`last_visit:${slug}`, String(now));
     res.json({ mode, greeting, threadIds: shown.map(t => t.id) });
@@ -1170,7 +1213,7 @@ app.get('/api/foretellings/:slug', (req, res) => {
 });
 
 app.get('/api/cache/stats', (req, res) => {
-  const deckNames = ['tarot', 'thoth', 'lenormand', 'celtic-dragon', 'runic', 'iching', 'moonology', 'oracle'];
+  const deckNames = ['tarot', 'thoth', 'lenormand', 'veil-arcana', 'drowned-ephemeris', 'runic', 'iching', 'oracle'];
   const deckCardCounts = {};
   for (const deck of deckNames) {
     try {

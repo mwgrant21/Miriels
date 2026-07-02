@@ -1496,6 +1496,86 @@ main {
   transform: translateX(-50%) rotate(180deg);
 }
 
+/* ── Miriel's Lunar Oracle — live text overlay ─────────────────────────────
+   Art files are clean (no baked text). The app composites the title and
+   keyword line into the lower 22% title-safe zone. On reversed draws only
+   the <img> rotates; the overlay stays upright so the title is always
+   readable. Badge appears inline in the overlay rather than on the face. */
+
+.miriel-lunar-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.miriel-lunar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.miriel-lunar-img.miriel-reversed {
+  transform: rotate(180deg);
+}
+
+.miriel-lunar-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+  padding: 4px 8px 6px;
+  background: linear-gradient(to top, rgba(0,0,0,0.78) 55%, transparent);
+  pointer-events: none;
+}
+
+.miriel-lunar-title {
+  font-family: 'Cinzel', 'Palatino Linotype', serif;
+  font-size: 0.62em;
+  font-variant: small-caps;
+  letter-spacing: 0.07em;
+  color: rgba(255, 255, 255, 0.93);
+  text-align: center;
+  line-height: 1.15;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.85);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.miriel-lunar-keyword {
+  font-family: 'Cormorant Garamond', 'Palatino Linotype', serif;
+  font-size: 0.53em;
+  font-style: italic;
+  color: rgba(215, 215, 232, 0.82);
+  text-align: center;
+  line-height: 1.2;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.miriel-lunar-badge {
+  font-family: 'Cinzel', serif;
+  font-size: 0.48em;
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+  color: rgba(180, 158, 220, 0.88);
+  text-align: center;
+  margin-top: 1px;
+}
+
 /* suit colors */
 .suit-wands .card-symbol { color: #e07a30; }
 .suit-cups .card-symbol { color: #4a9fd4; }
@@ -2810,6 +2890,25 @@ main {
 }
 .grimoire-tab:hover  { color: #e8d9b0; border-color: rgba(201, 164, 92, 0.5); }
 .grimoire-tab.active { color: #e8d9b0; border-color: #c9a45c; background: rgba(201, 164, 92, 0.08); }
+
+.grimoire-deck-intro {
+  grid-column: 1 / -1;
+  border-left: 2px solid #c9a45c44;
+  padding: 4px 0 4px 18px;
+  margin-bottom: 28px;
+}
+.grimoire-intro-title {
+  color: #c9a45c;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin: 4px 0 14px;
+}
+.grimoire-deck-intro .grimoire-detail-para {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #b8b0a4;
+}
+.grimoire-deck-intro .grimoire-detail-para:last-child { margin-bottom: 0; }
 
 .grimoire-grid {
   display: grid;

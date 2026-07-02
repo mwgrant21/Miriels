@@ -1,5 +1,5 @@
-let allCards = { tarot: [], oracle: [], moonology: [], 'celtic-dragon': [], lenormand: [], thoth: [], runic: [], iching: [] };
-let imageManifest = {};       // { 'celtic-dragon': { 'cd-major-0': '/images/celtic-dragon/cd-major-0.jpg', ... }, moonology: {...} }
+let allCards = { 'veil-arcana': [], 'drowned-ephemeris': [], tarot: [], oracle: [], 'miriel-lunar': [], lenormand: [], thoth: [], runic: [], iching: [] };
+let imageManifest = {};
 let currentDeck = 'tarot';
 let currentSpread = 'single';
 let drawnCards = [];
@@ -1229,15 +1229,43 @@ function closeJournal() {
 // ── Grimoire — card encyclopedia / study mode ────────────────────────────────
 
 const GRIMOIRE_DECKS = [
-  ['tarot',         'Rider-Waite'],
-  ['thoth',         'Thoth'],
-  ['celtic-dragon', 'Celtic Dragon'],
-  ['moonology',     'Moonology'],
+  ['veil-arcana',        'Veil Arcana'],
+  ['drowned-ephemeris',  'Drowned Ephemeris'],
+  ['tarot',              'Rider-Waite'],
+  ['thoth',              'Thoth'],
+  ['miriel-lunar',       'Moon Oracle'],
   ['lenormand',     'Lenormand'],
   ['runic',         'Runes'],
   ['iching',        'I Ching'],
   ['oracle',        'My Oracle'],
 ];
+
+const GRIMOIRE_DECK_INTROS = {
+  'veil-arcana': {
+    eyebrow: 'Provenance',
+    title: 'Veil Arcana',
+    paragraphs: [
+      'Long before I built anything, I read from what other people gave me. A deck pressed into my hands by a teacher who thought I was ready before I did. A deck won in a wager I still do not fully remember agreeing to. A deck bought for almost nothing from someone who only wanted it gone. Not everything that has come to me over the years arrived kindly, but that is a different story than this one.',
+      "What all of them gave me, kindly gotten or not, was the same seventy eight shapes wearing different clothes. A fool standing at a different cliff depending on which land drew him. A tower struck by lightning that meant something slightly different in every tradition that kept it. A devil who always seemed to know something about me personally, no matter whose hand had carved his face. I started keeping notes on where the traditions agreed and where they quietly disagreed with each other, and it was the disagreements that taught me the most.",
+      "I did not decide to test any of this. I simply started reading the disagreements instead of the cards, quietly, without telling anyone I was doing something different. When the standard meaning of a card did not feel true for the person in front of me, I tried my own reconciled version instead and watched whether it landed. It almost always landed better. I did this for years before I noticed I had stopped consulting the decks I owned at all, and had built, without meaning to, seventy eight readings of my own that I trusted more than any single tradition's original.",
+      "I call it Veil Arcana because that is what every tradition had actually handed me: a veil, the same figure dressed in whatever cloth its culture had on hand. Lift the Roman veil and there is a Greek figure underneath it. Lift that one and there is something older still. The myths were never different stories. They were the same handful of truths, veiled differently so each age could recognize itself in them. Reading well, I decided, is knowing which veil to lift for the person sitting across from you, and which to leave alone.",
+      'It behaves nothing like the Ephemeris. That deck is unfriendly on purpose, correcting me even when I would rather it stayed quiet. Veil Arcana is worn soft at the corners now, handled so often the varnish has dulled in the same places on every court card, wherever people\'s thumbs find it without meaning to. It does not measure anything. It simply agrees to be read, over and over, and has never once refused to tell me something because I was not ready to hear it.',
+      'This is the deck I would hand you first, if you only ever read with one of mine. Not because it is gentler, though it is, but because it took me the longest to trust, and I do not offer that lightly. Read it the way I built it, one veil at a time, and let it show you the same truth in whatever clothing you need it to wear today.',
+    ],
+  },
+  'drowned-ephemeris': {
+    eyebrow: 'Provenance',
+    title: 'The Drowned Ephemeris',
+    paragraphs: [
+      'I did not find this deck in one place, at one time, from one hand. I found it in pieces, across years and lands I no longer have names for, and it took me a long while to understand that what I kept finding was a single thing.',
+      "Some pieces I was drawn to the way you're pulled toward a smell before you know why, or a compass needle finds a wreck it was never told about. No summons, no vision, just a pull that did not let go until I had gone somewhere I would not otherwise have gone. Other pieces would not come to me until I had given something up first, and never anything that could be counted or spent. Time, mostly. Once, someone. I do not tell people what any of it was, not because it is shameful the way debts are usually shameful, but because saying it aloud would make it smaller than it was, and I will not do that to what it cost me. I will say only that I do not go by the name I was born with anymore, and that this is not unrelated to any single piece of it so much as to the whole of what it took, across all that time, to bring it together.",
+      'I do not know who made any of it, and I have stopped expecting to. Whoever handed me each piece either did not know its maker or would not say, and nothing about the pieces agrees on an origin. Driftwood does not come from where hammered iron comes from, and glass fused by lightning comes from neither. Five materials, no mark, no lineage, no one hand I can point to. I have read enough decks to know when something is hiding its maker on purpose. This one is.',
+      'What I got, piece by piece, was not power, not exactly. It was a way of listening to the parts of a person, a season, a question, that live below where light usually reaches. The absence underneath a question someone thinks they\'ve already answered. The pull beneath a choice they believe they\'ve already made. I have used it since on people who needed to hear what was actually working on them, not what they asked me about.',
+      'It does not behave like my other decks. It does not comfort. It measures. I have learned to trust what it finds even when I would rather it had found something kinder.',
+      'I am telling you this much and no more. Some of what this deck knows, I only know because I was willing to lose something to learn it, more than once. I would not ask that of you. I am only asking that you trust what it shows you, the way I have had to.',
+    ],
+  },
+};
 
 let grimoireDeck = 'tarot';
 
@@ -1322,6 +1350,16 @@ function renderGrimoireGrid(grid, detail, query) {
       ? 'No card answers to that. Try another word.'
       : 'This deck is still being unpacked.'));
     return;
+  }
+
+  // Deck provenance / intro block (shown only when browsing a specific deck, not searching)
+  if (!query && GRIMOIRE_DECK_INTROS[grimoireDeck]) {
+    const intro = GRIMOIRE_DECK_INTROS[grimoireDeck];
+    const block = notebookEl('div', 'grimoire-deck-intro');
+    block.appendChild(notebookEl('div', 'grimoire-detail-eyebrow', intro.eyebrow));
+    block.appendChild(notebookEl('div', 'grimoire-intro-title', intro.title));
+    intro.paragraphs.forEach(p => block.appendChild(notebookEl('p', 'grimoire-detail-para', p)));
+    grid.appendChild(block);
   }
 
   for (const card of cards) {
@@ -1768,7 +1806,7 @@ function showMirielIntro(panel, readerName) {
 
 function getDeck() {
   if (currentDeck === 'mixed') {
-    return [...allCards.tarot, ...allCards.thoth, ...allCards['celtic-dragon'], ...allCards.moonology, ...allCards.lenormand, ...allCards.runic, ...allCards.iching, ...allCards.oracle];
+    return [...allCards['veil-arcana'], ...allCards['drowned-ephemeris'], ...allCards.tarot, ...allCards.thoth, ...allCards['miriel-lunar'], ...allCards.lenormand, ...allCards.runic, ...allCards.iching, ...allCards.oracle];
   }
   return [...(allCards[currentDeck] || [])];
 }
@@ -1776,9 +1814,8 @@ function getDeck() {
 // Identify which deck key a single card object belongs to
 function cardDeckKey(card) {
   if (!card) return null;
-  if (card.deckType === 'CelticDragon') return 'celtic-dragon';
-  if (card.id && card.id.startsWith('cd-')) return 'celtic-dragon';
-  if (card.deckType === 'Moonology') return 'moonology';
+  if (card.deckType === 'VeilArcana') return 'veil-arcana';
+  if (card.deckType === 'DrownedEphemeris') return 'drowned-ephemeris';
   if (card.deckType === 'Lenormand') return 'lenormand';
   if (card.deckType === 'Thoth') return 'thoth';
   if (card.deckType === 'Runic') return 'runic';
@@ -1952,7 +1989,7 @@ const MIRIEL_LINES = [
   'The answer is already written in the cards…',
 ];
 
-const MIRIEL_DECKS = ['tarot', 'thoth', 'celtic-dragon', 'moonology', 'lenormand', 'runic', 'iching', 'oracle', 'mixed'];
+const MIRIEL_DECKS = ['tarot', 'thoth', 'veil-arcana', 'drowned-ephemeris', 'miriel-lunar', 'lenormand', 'runic', 'iching', 'oracle', 'mixed'];
 
 function mirielPickDeck() {
   const pick = MIRIEL_DECKS[Math.floor(cryptoRandom() * MIRIEL_DECKS.length)];
@@ -2322,10 +2359,11 @@ function buildSelectOptions() {
   frag.appendChild(blank);
 
   const groups = [
-    { label: 'Rider-Waite Tarot',   cards: allCards.tarot },
-    { label: 'Thoth Tarot',         cards: allCards.thoth },
-    { label: 'Celtic Dragon Tarot', cards: allCards['celtic-dragon'] },
-    { label: 'Moonology Oracle',    cards: allCards.moonology },
+    { label: 'Veil Arcana',       cards: allCards['veil-arcana'] },
+    { label: 'Drowned Ephemeris', cards: allCards['drowned-ephemeris'] },
+    { label: 'Rider-Waite Tarot', cards: allCards.tarot },
+    { label: 'Thoth Tarot',       cards: allCards.thoth },
+    { label: 'Moon Oracle',       cards: allCards['miriel-lunar'] },
     { label: 'Lenormand Oracle',    cards: allCards.lenormand },
     { label: 'Elder Futhark Runes', cards: allCards.runic },
     { label: 'I Ching',             cards: allCards.iching },
@@ -2408,16 +2446,16 @@ function showManualForm() {
 
 function findCardById(id) {
   return [
-    ...allCards.tarot, ...allCards.thoth, ...allCards['celtic-dragon'],
-    ...allCards.moonology, ...allCards.lenormand,
+    ...allCards['veil-arcana'], ...allCards.tarot, ...allCards.thoth,
+    ...allCards['miriel-lunar'], ...allCards.lenormand,
     ...allCards.runic, ...allCards.iching, ...allCards.oracle
   ].find(c => c.id === id);
 }
 
 function findCardByName(name) {
   return [
-    ...allCards.tarot, ...allCards.thoth, ...allCards['celtic-dragon'],
-    ...allCards.moonology, ...allCards.lenormand,
+    ...allCards['veil-arcana'], ...allCards.tarot, ...allCards.thoth,
+    ...allCards['miriel-lunar'], ...allCards.lenormand,
     ...allCards.runic, ...allCards.iching, ...allCards.oracle
   ].find(c => c.name === name);
 }
@@ -2773,11 +2811,11 @@ function showThemeMeaning() {
 // Populate a card face element — uses an image if one exists in the manifest,
 // otherwise falls back to the styled text display.
 function cardBackUrl(card) {
-  if (card && card.deckType === 'Moonology') {
-    return '/images/moonology/card%20back%204.jpg';
+  if (card && card.deckType === 'MirielLunar') {
+    return '/images/miriel-lunar/card-back.png';
   }
-  if (card && card.deckType === 'CelticDragon') {
-    return '/images/celtic-dragon/card%20backing.png';
+  if (card && card.deckType === 'VeilArcana') {
+    return '/images/veil-arcana/card-back.png';
   }
   if (card && card.deckType === 'Runic') {
     return '/images/runic/card-back.svg';
@@ -2789,16 +2827,58 @@ function cardBackUrl(card) {
 }
 
 function buildCardFace(face, card, arcanaLabel) {
-  const deckKey = card.deckType === 'Moonology'  ? 'moonology' :
-                  card.deckType === 'Lenormand'  ? null :
-                  card.deckType === 'Thoth'      ? 'thoth' :
-                  card.deckType === 'Runic'      ? 'runic' :
-                  card.deckType === 'IChing'     ? 'iching' :
-                  card.deckType === 'CelticDragon' ? 'celtic-dragon' :
-                  (card.id && card.id.startsWith('cd-')) ? 'celtic-dragon' :
+  const deckKey = card.deckType === 'MirielLunar'        ? 'miriel-lunar' :
+                  card.deckType === 'DrownedEphemeris'  ? 'drowned-ephemeris' :
+                  card.deckType === 'Lenormand'         ? null :
+                  card.deckType === 'Thoth'             ? 'thoth' :
+                  card.deckType === 'Runic'             ? 'runic' :
+                  card.deckType === 'IChing'            ? 'iching' :
+                  card.deckType === 'VeilArcana'        ? 'veil-arcana' :
                   (!card.arcana && !card.suit) ? 'oracle' :
                   card.arcana ? 'tarot' : null;
   const imgSrc  = deckKey && imageManifest[deckKey] && imageManifest[deckKey][card.id];
+
+  if (imgSrc && card.deckType === 'MirielLunar') {
+    face.classList.add('has-image');
+    const wrapper = document.createElement('div');
+    wrapper.className = 'miriel-lunar-card';
+
+    const img = document.createElement('img');
+    img.className = 'miriel-lunar-img' + (card.isReversed ? ' miriel-reversed' : '');
+    img.alt = card.name;
+    img.src = imgSrc;
+    img.onerror = () => {
+      face.classList.remove('has-image');
+      face.innerHTML = cardTextHTML(card, arcanaLabel);
+    };
+    wrapper.appendChild(img);
+
+    const overlay = document.createElement('div');
+    overlay.className = 'miriel-lunar-overlay';
+
+    const title = document.createElement('div');
+    title.className = 'miriel-lunar-title';
+    title.textContent = card.name;
+    overlay.appendChild(title);
+
+    if (card.keyword_line) {
+      const kw = document.createElement('div');
+      kw.className = 'miriel-lunar-keyword';
+      kw.textContent = card.keyword_line;
+      overlay.appendChild(kw);
+    }
+
+    if (card.isReversed) {
+      const badge = document.createElement('div');
+      badge.className = 'miriel-lunar-badge';
+      badge.textContent = 'Reversed';
+      overlay.appendChild(badge);
+    }
+
+    wrapper.appendChild(overlay);
+    face.appendChild(wrapper);
+    return;
+  }
 
   if (imgSrc) {
     face.classList.add('has-image');
@@ -2809,7 +2889,6 @@ function buildCardFace(face, card, arcanaLabel) {
     img.alt = card.name;
     img.src = imgSrc;
     img.onerror = () => {
-      // Image file missing or broken — fall back to text
       face.classList.remove('has-image');
       face.innerHTML = cardTextHTML(card, arcanaLabel);
     };
@@ -3007,10 +3086,10 @@ async function saveReading(synopsisText) {
     weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
   });
   const deckLabels = {
-    tarot: 'Rider-Waite Tarot', 'celtic-dragon': 'Celtic Dragon Tarot',
-    moonology: 'Moonology Oracle', lenormand: 'Lenormand Oracle',
-    thoth: 'Thoth Tarot', runic: 'Elder Futhark Runes',
-    iching: 'I Ching', oracle: 'My Oracle', mixed: 'All Decks'
+    'veil-arcana': 'Veil Arcana', 'drowned-ephemeris': 'Drowned Ephemeris', tarot: 'Rider-Waite Tarot',
+    'miriel-lunar': 'Moon Oracle',
+    lenormand: 'Lenormand Oracle', thoth: 'Thoth Tarot',
+    runic: 'Elder Futhark Runes', iching: 'I Ching', oracle: 'My Oracle', mixed: 'All Decks'
   };
   const spreadLabels = Object.fromEntries(
     Object.entries(SPREADS).map(([key, s]) => [key, s.label])
@@ -3474,14 +3553,13 @@ function birthDateToZodiac(dateStr) {
 
 function cardImageUrl(card) {
   if (!card.id) return null;
-  const deckKey = card.deckType === 'Moonology'      ? 'moonology' :
-                  card.deckType === 'Runic'           ? 'runic' :
+  const deckKey = card.deckType === 'Runic'           ? 'runic' :
                   card.deckType === 'IChing'          ? 'iching' :
                   card.deckType === 'Thoth'           ? 'thoth' :
                   card.deckType === 'Lenormand'       ? null :
-                  card.deckType === 'CelticDragon'    ? 'celtic-dragon' :
-                  card.id.startsWith('cd-')           ? 'celtic-dragon' :
-                  card.id.startsWith('oracle-')       ? 'oracle' :
+                  card.deckType === 'VeilArcana'         ? 'veil-arcana' :
+                  card.deckType === 'DrownedEphemeris'  ? 'drowned-ephemeris' :
+                  card.id.startsWith('oracle-')          ? 'oracle' :
                                                         'tarot';
   return (deckKey && imageManifest[deckKey] && imageManifest[deckKey][card.id]) || null;
 }
@@ -3674,10 +3752,10 @@ function replaceEl(id) {
 async function copyReadingText() {
   const btn = document.getElementById('copy-reading-btn');
   const deckLabels = {
-    tarot: 'Rider-Waite Tarot', 'celtic-dragon': 'Celtic Dragon Tarot',
-    moonology: 'Moonology Oracle', lenormand: 'Lenormand Oracle',
-    thoth: 'Thoth Tarot', runic: 'Elder Futhark Runes',
-    iching: 'I Ching', oracle: 'My Oracle', mixed: 'All Decks'
+    'veil-arcana': 'Veil Arcana', 'drowned-ephemeris': 'Drowned Ephemeris', tarot: 'Rider-Waite Tarot',
+    'miriel-lunar': 'Moon Oracle',
+    lenormand: 'Lenormand Oracle', thoth: 'Thoth Tarot',
+    runic: 'Elder Futhark Runes', iching: 'I Ching', oracle: 'My Oracle', mixed: 'All Decks'
   };
   const spreadLabels = Object.fromEntries(
     Object.entries(SPREADS).map(([key, s]) => [key, s.label])

@@ -111,8 +111,8 @@ const REUNION_GAP_DAYS      = 2;
 const THRESHOLD_SALIENCE_BAR = 3;
 const REUNION_MAX_THREADS   = 3;
 
-function decideThresholdMode(lastVisitTs, threads, now, gapDays = REUNION_GAP_DAYS, predictions = [], temporalCallbacks = []) {
-  const hasMaterial = (threads && threads.length) || (predictions && predictions.length) || (temporalCallbacks && temporalCallbacks.length);
+function decideThresholdMode(lastVisitTs, threads, now, gapDays = REUNION_GAP_DAYS, predictions = [], temporalCallbacks = [], dormantThreads = [], seasonShift = null) {
+  const hasMaterial = (threads && threads.length) || (predictions && predictions.length) || (temporalCallbacks && temporalCallbacks.length) || (dormantThreads && dormantThreads.length) || !!seasonShift;
   if (!hasMaterial) return 'none';
   const gap = (lastVisitTs == null) ? Infinity : (now - Number(lastVisitTs)) / 86400;
   return gap >= gapDays ? 'reunion' : 'gentle';
@@ -126,7 +126,7 @@ function predictionLines(predictions) {
   return (predictions || []).map(p => `- ${p.content}`).join('\n');
 }
 
-function buildGreetingPrompt(mode, threads, gapDays, predictions = [], temporalCallbacks = [], timeOfDay = '') {
+function buildGreetingPrompt(mode, threads, gapDays, predictions = [], temporalCallbacks = [], timeOfDay = '', dormantThreads = [], seasonShift = null) {
   const gap = Math.max(0, Math.round(gapDays));
   const gapPhrase = !isFinite(gapDays)
     ? 'It has been some time since they last sat with you.'
@@ -141,13 +141,22 @@ function buildGreetingPrompt(mode, threads, gapDays, predictions = [], temporalC
   const predBlock = hasPreds
     ? `Thing${predictions.length > 1 ? 's' : ''} the cards once foretold through you, which may have come to pass by now:\n${predictionLines(predictions)}`
     : '';
+  const hasDormant = dormantThreads && dormantThreads.length;
+  const dormantBlock = hasDormant
+    ? `Thread${dormantThreads.length > 1 ? 's' : ''} that ${dormantThreads.length > 1 ? 'have' : 'has'} gone quiet between you. They spoke of ${dormantThreads.length > 1 ? 'these' : 'this'} once, but not for a long while now:\n${dormantThreads.map(t => `- ${t.content}`).join('\n')}\n\nYou have been quietly holding ${dormantThreads.length > 1 ? 'these' : 'this'}. If it feels natural, gently wonder aloud whether ${dormantThreads.length > 1 ? 'they ever settled' : 'it ever settled'}, not as a checklist, but the way you would ask after something a friend once carried and may no longer be carrying. Do not press; if they do not take it up, let it rest.`
+    : '';
+  const seasonBlock = seasonShift
+    ? `The emotional weather you have watched move through them over time:\n${seasonShift.fact}\n\n` +
+      `If it feels true and kind, reflect this change back to them in your own voice, gently and specifically, ` +
+      `as someone who has sat with them across these seasons. Notice it; do not diagnose or explain it.`
+    : '';
   const temporalBlock = (temporalCallbacks && temporalCallbacks.length)
     ? `What you notice about the timing, in your own words:\n${temporalCallbacks.map(c => `- ${c.fact}`).join('\n')}\n\nIf this carries real history (a question they actually asked, the cards that fell), recall it concretely and specifically. Name it. Let them feel that you genuinely remember them and what they were carrying, then let it lead into now. If it is only a span of time (how long it has been, a milestone), simply acknowledge it warmly without inventing detail. IMPORTANT: these are facts about PAST READINGS, not about when they last visited. Do not say it has been a month or a year since they were here unless the gap line above actually says so. Honor the real recency stated above.`
     : '';
   const timeHint = timeOfDay
     ? `It is currently ${timeOfDay} where they are. You may let the hour gently color your greeting (a passing nod to the light or the time), but only if it feels natural; never force it and never make it the focus.`
     : '';
-  const material = [temporalBlock, threadBlock, predBlock, timeHint].filter(Boolean).join('\n\n');
+  const material = [temporalBlock, threadBlock, dormantBlock, seasonBlock, predBlock, timeHint].filter(Boolean).join('\n\n');
   const both = hasThreads && hasPreds;
 
   const askParts = [];
@@ -414,6 +423,7 @@ module.exports = function createMemoryEngine(dataDir) {
   return {
     recall, captureFromReading, backfill, captureThresholdAnswer, captureAnswer, detectCuriosity,
     getOpenUnaskedThreads: (slug, limit, minSal) => store.getOpenUnaskedThreads(slug, limit, minSal),
+    getDormantThreads: (slug, limit, nowTs) => store.getDormantThreads(slug, limit, nowTs),
     markAsked: (ids) => store.markAsked(ids),
     getRipePredictions: (slug, limit, nowTs) => store.getRipePredictions(slug, limit, nowTs),
     getMeta: (k) => store.getMeta(k),

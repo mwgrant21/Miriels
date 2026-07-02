@@ -380,6 +380,31 @@ test('engine.getRipePredictions passes through to the store', () => {
   assert.equal(engine.getRipePredictions('matt', 5, now).length, 1);
 });
 
+test('decideThresholdMode triggers on dormant threads alone', () => {
+  const { decideThresholdMode } = require('../data/memory-engine');
+  const now = 1000000;
+  const dormant = [{ id: 1, content: 'the Portland move' }];
+  assert.equal(decideThresholdMode(now, [], now, undefined, [], [], dormant), 'gentle');
+  assert.equal(decideThresholdMode(now - 5 * 86400, [], now, undefined, [], [], dormant), 'reunion');
+  assert.equal(decideThresholdMode(now, [], now, undefined, [], [], []), 'none');
+});
+
+test('buildGreetingPrompt emits a distinct dormant block with the thread content', () => {
+  const { buildGreetingPrompt } = require('../data/memory-engine');
+  const p = buildGreetingPrompt('reunion', [], 90, [], [], '', [{ id: 1, content: 'the Portland move' }]);
+  assert.ok(p.includes('the Portland move'));
+  assert.ok(/gone quiet/i.test(p));
+  assert.ok(!/[‒-―''""]/.test(p)); // no em dashes / smart quotes
+});
+
+test('engine.getDormantThreads passes through to the store', () => {
+  const engine = createMemoryEngine(tmpDir());
+  const now = engine._store._now();
+  const id = engine._store.addMemory('matt', { type: 'thread', content: 'quiet thread', status: 'open', salience: 4 });
+  engine._store._db.prepare('UPDATE memories SET updated_at = ? WHERE id = ?').run(now - 120 * 86400, id);
+  assert.equal(engine.getDormantThreads('matt', 2, now).length, 1);
+});
+
 test('recall ranking: a query-relevant memory outranks a more-salient unrelated one', () => {
   const now = Math.floor(Date.now() / 1000);
   const salientUnrelated = { id: 1, content: 'they love hiking in the mountains', subject: 'hobbies', status: 'open', salience: 5, last_referenced_at: null, reference_count: 0 };
@@ -439,4 +464,23 @@ test('buildGreetingPrompt weaves in the hour when timeOfDay is given', () => {
 test('buildGreetingPrompt omits any time reference when timeOfDay is empty', () => {
   const p = buildGreetingPrompt('reunion', [{ content: 'the move' }], 30, [], []);
   assert.doesNotMatch(p, /let the hour gently color your greeting/i);
+});
+
+test('decideThresholdMode triggers on a season shift alone', () => {
+  const { decideThresholdMode } = require('../data/memory-engine');
+  const now = 1000000;
+  const shift = { kind: 'season-shift', signature: 'season-shift:0->1', fact: 'weather shifted' };
+  assert.equal(decideThresholdMode(now, [], now, undefined, [], [], [], shift), 'gentle');
+  assert.equal(decideThresholdMode(now - 5 * 86400, [], now, undefined, [], [], [], shift), 'reunion');
+  assert.equal(decideThresholdMode(now, [], now, undefined, [], [], [], null), 'none');
+});
+
+test('buildGreetingPrompt emits the season-shift block with its fact', () => {
+  const { buildGreetingPrompt } = require('../data/memory-engine');
+  const shift = { kind: 'season-shift', signature: 'season-shift:0->1',
+    fact: 'About 4 months ago they were in "the heavy winter"; now they are in "the lighter spring".' };
+  const p = buildGreetingPrompt('reunion', [], 90, [], [], '', [], shift);
+  assert.match(p, /heavy winter/);
+  assert.match(p, /lighter spring/);
+  assert.ok(!/[‒-―‘’“”]/.test(p)); // no em dashes / smart quotes
 });

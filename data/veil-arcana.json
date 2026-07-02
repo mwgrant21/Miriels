@@ -1,0 +1,1562 @@
+[
+  {
+    "id": "The Stray",
+    "name": "The Stray",
+    "arcana": "major",
+    "number": 0,
+    "suit": null,
+    "symbol": "0",
+    "keyword_line": "One foot raised. Everything possible. Nothing yet lost.",
+    "keywords": [
+      "threshold",
+      "unbegotten potential",
+      "trust without proof",
+      "the unmarked step"
+    ],
+    "upright": "You are at the beginning of something that has no map. The Stray does not mean you are lost; it means you have not yet been defined by where you are going. Something in you is pulling forward before your mind has caught up. That pull is worth listening to. Take the step.",
+    "reversed": "You are standing at the cliff's edge and not stepping. This is not wisdom; it is hesitation that has gone on past its natural span. Something is stopping you that is not caution, and it is worth naming before the moment closes.",
+    "lore": "In Orphic tradition the soul between incarnations was described as the wanderer without memory, crossing the plain of Lethe before the next life claimed it. The Fool of older Italian decks carried no number precisely because it stood outside all sequence, belonging to every position and none. The archetype is the divine innocent: not ignorant, but prior to knowledge, prior to consequence, carrying only potential.",
+    "shadow": "The Stray's shadow is the permanent beginner, always at the threshold, always saying yes to the next thing before finishing any of the last ones. Perpetual newness used to avoid accountability. The cliff's edge as a lifestyle rather than a moment.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Hex-Weaver",
+    "name": "The Hex-Weaver",
+    "arcana": "major",
+    "number": 1,
+    "suit": null,
+    "symbol": "I",
+    "keyword_line": "The tools are laid. The will is the only missing piece.",
+    "keywords": [
+      "will",
+      "elemental mastery",
+      "focused intention",
+      "tools gathered"
+    ],
+    "upright": "Everything you need is already in front of you. The Hex-Weaver does not perform power, it wields it, and the difference is everything. What the card asks is not whether you have the skill but whether you are willing to use it with full intention. Gather your attention and begin.",
+    "reversed": "Skill is being misdirected or scattered. You may be performing competence rather than practicing it, or using your gifts to manipulate rather than create. Look honestly at what you are building and for whom.",
+    "lore": "The Norse volva who commanded seidr magic, the Greek Hermes Trismegistus said to hold the secrets of all transmutation, the Vedic rishi who through tapas shaped reality: what unites them is not knowledge but directed will, the understanding that skill unactivated is potential, not power. The magician stands at the axis between worlds because they have chosen to.",
+    "shadow": "The Hex-Weaver's shadow is the trickster who substitutes cleverness for substance, who manipulates rather than creates, who performs mastery for an audience rather than building anything real. Power without integrity becomes a hall of mirrors.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Sibyl",
+    "name": "The Sibyl",
+    "arcana": "major",
+    "number": 2,
+    "suit": null,
+    "symbol": "II",
+    "keyword_line": "The answer is already inside you. This card is just pointing at it.",
+    "keywords": [
+      "hidden knowing",
+      "the veil",
+      "inner oracle",
+      "what is not yet shown"
+    ],
+    "upright": "The answer you are looking for is already inside you. The Sibyl does not reveal, she confirms. Something in your body or your dreaming mind already knows what the waking mind is still circling. Go still. The knowing comes when you stop chasing it.",
+    "reversed": "You are refusing to look at what you already know, or someone around you is withholding information deliberately. In either case the truth exists. You are simply not yet willing, or not yet positioned, to act on it.",
+    "lore": "The Sibyls of the ancient world, particularly the Cumaean Sibyl consulted by Aeneas, were understood not as seers who received information from outside but as those in whom divine knowledge was already resident. The Pythia at Delphi sat over a chasm in the earth and breathed what was already there. The archetype is not the prophet who receives but the one who has always known.",
+    "shadow": "The Sibyl's shadow is the oracle who uses mystery as power, who keeps knowledge veiled for control rather than timing. Secrecy as manipulation. The perpetual withholding that calls itself wisdom but is actually fear of being seen to be wrong.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Verdant Throne",
+    "name": "The Verdant Throne",
+    "arcana": "major",
+    "number": 3,
+    "suit": null,
+    "symbol": "III",
+    "keyword_line": "What you have tended is responding. Do not pull it up to check the roots.",
+    "keywords": [
+      "abundance",
+      "creative fertility",
+      "what grows when tended",
+      "the generous earth"
+    ],
+    "upright": "Something you have been cultivating is moving into its season. The Verdant Throne represents not just material abundance but the richness that comes when creative energy is given space and patience. What you have been nurturing is responding. Let it grow on its own terms.",
+    "reversed": "Something that should be growing is being blocked, smothered, or over-managed. Creative energy does not respond well to control. A project, relationship, or part of yourself is being kept from its natural fullness. Loosen your grip.",
+    "lore": "Demeter, Inanna, Frigg, the Corn Mother of Mesoamerican tradition: every agricultural civilization produced an archetype of the abundant power that causes things to grow. The Empress in the Tarot de Marseille sat with her eagle shield and scepter, sovereignty expressed as creative output rather than dominion. She rules because she generates.",
+    "shadow": "The Verdant Throne's shadow is smothering abundance, the love that controls by over-nurturing. The mother who will not let the child become. Generosity as a leash. Growth managed so tightly it produces dependency rather than life.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Iron Sovereign",
+    "name": "The Iron Sovereign",
+    "arcana": "major",
+    "number": 4,
+    "suit": null,
+    "symbol": "IV",
+    "keyword_line": "Discipline applied now creates freedom later.",
+    "keywords": [
+      "authority",
+      "unyielding structure",
+      "rightful dominion",
+      "foundations that last"
+    ],
+    "upright": "This is a time to build, to lead, to establish what will last. The Iron Sovereign is not about domination but about the specific kind of order that protects and enables those within it. Take responsibility for something and hold it with both hands. Do not defer this.",
+    "reversed": "Structure has become rigidity. Authority is being wielded for its own sake rather than in service of anything real. This may be your own energy or someone else's. Either way, dominion without wisdom serves no one.",
+    "lore": "Ra maintaining Ma'at against Apophis, Zeus holding the balance of fate, Odin as the sovereign who must sacrifice an eye to see the full picture: the archetypal father as cosmic order was always conditional. Authority was legitimate only when it served the order it claimed to represent, not the person claiming it.",
+    "shadow": "The Iron Sovereign's shadow is the tyrant who has mistaken his own preferences for cosmic law. Rigidity as control. The man who cannot be told he is wrong because he has confused his will with the rules of reality.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Augur",
+    "name": "The Augur",
+    "arcana": "major",
+    "number": 5,
+    "suit": null,
+    "symbol": "V",
+    "keyword_line": "Not everything needs to be reinvented. Some things lasted because they work.",
+    "keywords": [
+      "sacred law",
+      "inherited wisdom",
+      "the rites that carry meaning",
+      "tradition earned"
+    ],
+    "upright": "There is something in the established path that has something real to teach you. The Augur does not represent blind conformity but the genuine transmission of earned knowledge from those who came before. A teacher, tradition, or institution may carry something worth receiving right now.",
+    "reversed": "The institution is the problem, not the answer. Rules are being followed for their own sake and the original purpose has been forgotten. If you are on a path because you were told to and not because you understand why, it is time to ask.",
+    "lore": "Roman augurs read the flight of birds to discern divine will; their authority came not from personal power but from standing in an unbroken line of interpretive tradition. The Hierophant of older Tarot represented the Pope but also any figure who transmits sacred knowledge through established form. The archetype is the bridge between divine knowledge and human practice.",
+    "shadow": "The Augur's shadow is the institution that serves itself, the tradition that has calcified into dogma. The priest who mistakes the container for the thing contained. Authority that punishes questioning because questioning reveals the authority is hollow.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Binding Flame",
+    "name": "The Binding Flame",
+    "arcana": "major",
+    "number": 6,
+    "suit": null,
+    "symbol": "VI",
+    "keyword_line": "The question is not whether to choose, but whether you are ready to mean it.",
+    "keywords": [
+      "sacred union",
+      "the binding choice",
+      "pact",
+      "devotion's cost"
+    ],
+    "upright": "You are being asked to choose, and the choice carries real weight. The Binding Flame appears at the moment when two paths have narrowed to one. This may be a relationship, a creative partnership, a calling. Whatever it is, it is asking you to bind yourself to it. Are you ready to mean it?",
+    "reversed": "A connection has broken down, or a choice has been avoided past the point where avoiding it is neutral. Either a union has run its course or you are resisting a commitment that is already due. Only one of these is actually a problem.",
+    "lore": "Sacred marriage (hieros gamos) appears in Sumerian texts as the union of Inanna and Dumuzid, in Egyptian ritual as the Pharaoh's yearly binding to the goddess of the land. Earlier Tarot decks depicted the Lovers not as a romantic couple but as a moment of moral choice, a young man between two women representing vice and virtue. The sacred binding is always a covenant with consequence.",
+    "shadow": "The Binding Flame's shadow is the union entered without true choice, the commitment made from fear of being alone, the pact signed with a self that no longer exists by the time the binding is felt. The flame that consumes rather than warms.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The War-Bringer",
+    "name": "The War-Bringer",
+    "arcana": "major",
+    "number": 7,
+    "suit": null,
+    "symbol": "VII",
+    "keyword_line": "The conditions will never be perfect. Push through anyway.",
+    "keywords": [
+      "conquest",
+      "momentum",
+      "the forward charge",
+      "iron will"
+    ],
+    "upright": "This is the card of moving through opposition rather than around it. The War-Bringer does not wait for perfect conditions. You have direction and you have momentum; the only thing left is to move. Push through the resistance in front of you.",
+    "reversed": "Force is being applied in the wrong direction or without control. Aggression has overshot its target, or a drive forward has become recklessness. Momentum without direction is just speed.",
+    "lore": "The chariot as symbol of divine conquest appears in Vedic tradition as Indra's war-car, in Egyptian iconography as the Pharaoh smiting enemies from a racing vehicle, in Greek myth as the sun-chariot. The Chariot in esoteric Tarot is often assigned to Cancer, the sign of the Moon: the apparent contradiction being that conquest flows not from force alone but from disciplined will over the self.",
+    "shadow": "The War-Bringer's shadow is conquest without purpose, dominion pursued because the energy of pushing forward feels better than stopping to ask why. The general who wins the battle and loses the war. Violence as identity.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Unbroken",
+    "name": "The Unbroken",
+    "arcana": "major",
+    "number": 8,
+    "suit": null,
+    "symbol": "VIII",
+    "keyword_line": "The strongest thing in this card is not the force. It is the calm.",
+    "keywords": [
+      "grace under pressure",
+      "sovereign courage",
+      "the soft force",
+      "what holds"
+    ],
+    "upright": "The Unbroken represents the particular courage that does not harden or flinch but simply stays present with what is difficult. You are being asked not to fight what you fear but to hold it with open hands until it loses its power over you. This is not passivity. It is the hardest kind of strength.",
+    "reversed": "You are forcing what needs gentleness, or backing away from what you actually have the capacity to face. The shadow of the Unbroken is either brute aggression or the particular cowardice of stepping back from your own strength.",
+    "lore": "Heracles taming the Nemean lion, Samson in his final sovereign act, Durga facing Mahishasura without armor: the archetype of strength meeting raw power through composure rather than greater force recurs across cultures. In alchemical tradition the lion represented the raw animal self that the spiritual will must not crush but integrate.",
+    "shadow": "The Unbroken's shadow is the performance of calm, the dissociation that looks like strength from outside but is actually the inability to feel what is happening. Suppression dressed as mastery. The smile that covers the wound.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Lantern Exile",
+    "name": "The Lantern Exile",
+    "arcana": "major",
+    "number": 9,
+    "suit": null,
+    "symbol": "IX",
+    "keyword_line": "Your own light is reliable. The question is whether you are willing to trust it.",
+    "keywords": [
+      "solitude",
+      "inner light",
+      "the long withdrawal",
+      "wisdom earned in silence"
+    ],
+    "upright": "You need to go somewhere quiet inside yourself. The Lantern Exile is not about isolation but about the specific knowing that only comes when you stop asking other people to confirm what you are feeling. Your own light is reliable. Trust it.",
+    "reversed": "The withdrawal has gone on past its usefulness. Solitude has become hiding, or you are keeping yourself from a world that actually has something to offer. The lantern is for finding your way back as much as for going in.",
+    "lore": "The hermit-seer appears in the figure of Diogenes in his barrel, in the Desert Fathers retreating to the Egyptian wastes, in the Hindu sadhu withdrawing from the world to find what the world cannot provide. In Norse tradition, Odin's long wanderings on the roads of Midgard in disguise represent the wisdom-seeker who must travel incognito to see clearly.",
+    "shadow": "The Lantern Exile's shadow is the withdrawal that is actually avoidance, the spiritual seclusion used to escape the inconvenient demands of other people. The hermit who is not seeking wisdom but hiding from life. Isolation as identity.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Fate Loom",
+    "name": "The Fate Loom",
+    "arcana": "major",
+    "number": 10,
+    "suit": null,
+    "symbol": "X",
+    "keyword_line": "The wheel is always turning. The question is where you are standing on it.",
+    "keywords": [
+      "the turning",
+      "destiny's current",
+      "cycles unbroken",
+      "what rises and falls"
+    ],
+    "upright": "Something is shifting and this shift is not personal, it is structural. The Fate Loom says: you did not cause this and you cannot stop it. But you can position yourself for what is coming. What rising current can you move with rather than against?",
+    "reversed": "You are resisting a natural change or clinging to a position on the wheel that is already turning away. The more tightly you hold what is passing, the harder the landing. Let the cycle move.",
+    "lore": "The spinning Norns of Norse tradition weaving fate at the Well of Wyrd, the Greek Moirai measuring and cutting the thread of life, Fortuna's wheel in Roman philosophy: the imagery of fate as a spinning mechanism appears across traditions. The Wheel of Fortune in medieval iconography showed four figures on the rim in various stages of rise and fall, the wheel itself the only constant.",
+    "shadow": "The Fate Loom's shadow is fatalism used to avoid responsibility, the claim that everything is destined being used to justify inaction. The wheel becomes a way of saying there is nothing to do rather than recognizing that positioning and timing are themselves acts of will.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Reckoning",
+    "name": "The Reckoning",
+    "arcana": "major",
+    "number": 11,
+    "suit": null,
+    "symbol": "XI",
+    "keyword_line": "The scales are honest. That is good news if you have been honest too.",
+    "keywords": [
+      "consequence",
+      "the weight of truth",
+      "balance that cannot be cheated",
+      "what holds under examination"
+    ],
+    "upright": "Whatever is in front of you right now is being measured accurately. The Reckoning is not punishment; it is assessment. Something is being weighed, and the scales are honest. If you have been acting with integrity, this card is good news.",
+    "reversed": "Something is out of balance and being allowed to stay that way. Justice is being delayed, denied, or corrupted. Someone may be acting in bad faith, or you may be avoiding a reckoning with yourself that is long overdue.",
+    "lore": "The Weighing of the Heart in Egyptian afterlife theology placed the deceased's heart against the feather of Ma'at before Anubis and Thoth. Only a heart lighter than the feather could proceed. The scales of blind Justitia appear in Roman iconography, and the concept of karmic accounting runs through both Hindu and Buddhist cosmology. The archetype is accurate measurement without favor.",
+    "shadow": "The Reckoning's shadow is the punishment that has separated from its purpose, the law that serves itself rather than order. Rigid adherence to rule when the rule has lost its meaning. Justice weaponized against the people it was built to protect.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Hanging God",
+    "name": "The Hanging God",
+    "arcana": "major",
+    "number": 12,
+    "suit": null,
+    "symbol": "XII",
+    "keyword_line": "The insight is coming sideways, from the place you have not looked yet.",
+    "keywords": [
+      "suspension",
+      "the willing sacrifice",
+      "seeing from the other side",
+      "wisdom through surrender"
+    ],
+    "upright": "What looks like being stuck is actually waiting to see. The Hanging God chose to hang, and the wisdom came through the surrender, not through climbing back up. You are in a period that requires you to stop trying to solve from your usual angle. Let the insight arrive.",
+    "reversed": "You are refusing to surrender something that needs to go, or you are in a suspension that has lasted longer than it was meant to. Either the sacrifice keeps being postponed, or the lesson has been received and the time to cut down has come.",
+    "lore": "Odin hanging for nine days and nights on Yggdrasil, the World Tree, wounded by his own spear, without food or water, until he could grasp the runes from below: this is the mythological archetype of the Hanged Man. The sacrifice is voluntary, the perspective inverted, and the reward is knowledge that cannot be received any other way. Parallel imagery appears in the shamanic death-and-rebirth initiations of Central Asian traditions.",
+    "shadow": "The Hanging God's shadow is the martyr who does not want the wisdom, only the suffering. Suspension as identity. The one who keeps sacrificing without ever receiving the gift the sacrifice was supposed to produce.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Pale Gate",
+    "name": "The Pale Gate",
+    "arcana": "major",
+    "number": 13,
+    "suit": null,
+    "symbol": "XIII",
+    "keyword_line": "Something is ending. This is not a catastrophe. It is a completion.",
+    "keywords": [
+      "threshold",
+      "the necessary ending",
+      "what cannot continue",
+      "the passage"
+    ],
+    "upright": "Something is ending. The Pale Gate does not represent destruction but threshold, and the figure standing in it is not your enemy but the natural conclusion of a chapter. What is ending needed to end. The space it leaves is where the next thing will grow.",
+    "reversed": "You are holding on to something past its natural end, or refusing to acknowledge that a chapter is over. The clinging costs more than the loss would. Or: something is ending before its time, and grief is the appropriate response. Do not rush either.",
+    "lore": "Anubis at the threshold of the Duat, Charon at the Styx, the Aztec deity Mictlantecuhtli ruling the land of the dead: every tradition posts a guardian at the border between life and death, and every tradition makes the same point, that the passage is not an annihilation but a transition requiring the right relationship to what is being left behind. The Death card has almost never depicted literal death. It depicts the death of a form.",
+    "shadow": "The Pale Gate's shadow is the refusal of endings, the desperate preservation of what should be allowed to conclude. But also its inverse: the attraction to endings, the person who repeatedly destroys rather than transforms because endings feel more manageable than the work of continuation.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Crucible",
+    "name": "The Crucible",
+    "arcana": "major",
+    "number": 14,
+    "suit": null,
+    "symbol": "XIV",
+    "keyword_line": "What is being refined will not look like the same thing when it comes out.",
+    "keywords": [
+      "alchemy",
+      "patience",
+      "the sacred balance",
+      "what transforms through time"
+    ],
+    "upright": "What you are going through right now is a process, not a problem. The Crucible represents transformation that only happens when heat and time are applied in the right measure. Nothing about this is instant. Stay with it.",
+    "reversed": "Something is being forced or rushed past what it is ready for. The alchemical process requires patience; push it and you get slag. Or you are avoiding the process entirely, which only delays what eventually needs to happen.",
+    "lore": "The alchemical Great Work of transforming base matter into gold was understood by Paracelsus and later Jung as simultaneously a physical and psychological process: the alchemist was transformed in proportion to the matter they worked. The angel pouring liquid between vessels in the traditional Temperance card references the mixing of divine and earthly, the adjustment that neither destroys the ingredients nor leaves them unchanged.",
+    "shadow": "The Crucible's shadow is the process that never completes, the eternal refinement used to avoid arriving. Endless transformation as a way of never being finished. The alchemist who keeps restarting the opus rather than receiving what the work has produced.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Shadow Pact",
+    "name": "The Shadow Pact",
+    "arcana": "major",
+    "number": 15,
+    "suit": null,
+    "symbol": "XV",
+    "keyword_line": "The chains are loose. The question is why you are keeping them on.",
+    "keywords": [
+      "the comfortable cage",
+      "the pact forgotten",
+      "what you keep choosing",
+      "self-binding"
+    ],
+    "upright": "Something has its claws in you because you have allowed it to, and on some level you know this. The Shadow Pact is not about an external force controlling you but about the agreements you have made with your own worst patterns. The chains are loose. Why are you still wearing them?",
+    "reversed": "You are beginning to see what you have been in bondage to, or you are on the verge of walking out. This is not a comfortable card reversed because clarity about the cage does not automatically make the exit easy. But you can see it now.",
+    "lore": "The chained figures in nearly every traditional Devil card could leave, the chains loose enough to slip: the captivity is a choice made so long ago it has been forgotten as a choice. In alchemical tradition the image of the bound figure represents the soul's entrapment in matter before spiritual development; in psychological terms it is the complex that runs below consciousness, directing behavior without consent.",
+    "shadow": "The Shadow Pact's shadow is the path of the pact itself, the complete surrender to appetite or addiction or compulsion, the self that has decided the cage is a home. But also the opposite: the person so terrified of their own darkness that they create the very entrapment they are trying to avoid.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Shattered Spire",
+    "name": "The Shattered Spire",
+    "arcana": "major",
+    "number": 16,
+    "suit": null,
+    "symbol": "XVI",
+    "keyword_line": "The fall is the truth arriving at speed.",
+    "keywords": [
+      "sudden undoing",
+      "the collapse that was always coming",
+      "revelation through destruction",
+      "no shelter"
+    ],
+    "upright": "Something is coming down and it cannot be stopped. The Shattered Spire represents a rupture that usually feels catastrophic but almost always, on reflection, was the moment things became honest. What is falling was built on something that could not hold.",
+    "reversed": "You know something is structurally wrong but you are deferring the collapse. This is understandable but temporary. Or: the explosion has already happened and you are still moving through the shock. Give yourself time to see what is still standing.",
+    "lore": "The Tower of Babel, the attempt to reach divine prerogative and the consequent undoing, is the Western version of an archetype that appears in myths of hubris across cultures: Icarus, Phaethon, the Titans struck down by Zeus. In alchemical imagery, the Tower struck by lightning represents the moment the ego's constructions are dissolved by divine intervention, necessary before the gold can be found beneath the rubble.",
+    "shadow": "The Shattered Spire's shadow is the attraction to catastrophe as an alternative to ordinary difficulty. The person who unconsciously engineers collapses because the dramatic clarity of destruction feels more manageable than the slow hard work of repair.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Star-Touched",
+    "name": "The Star-Touched",
+    "arcana": "major",
+    "number": 17,
+    "suit": null,
+    "symbol": "XVII",
+    "keyword_line": "The star is still there. The problem is looking at it.",
+    "keywords": [
+      "the sky's promise",
+      "guidance in darkness",
+      "hope without conditions",
+      "what remains after"
+    ],
+    "upright": "After the collapse, this. The Star-Touched is not optimism. It is a quieter thing, a sense that the universe still has its hand in this and that what is coming is not the end. Receive the guidance that is being offered. It knows something you do not.",
+    "reversed": "Hope has been deferred so long it has started to feel naive. You may be having trouble believing anything good is coming, or you are discounting help that is actually being offered. The star is still there.",
+    "lore": "Isis gathering the scattered pieces of Osiris by starlight, the Star of Bethlehem guiding through desert night, the Norse star-path Bifrost: stars as navigational and spiritual guides appear in almost every tradition as the lights that remain when earthly guides have failed. In Hermetic tradition, the Star card follows the Tower precisely because it represents what survives catastrophe: the divine guidance that needs the noise of the ego's constructions to cease before it can be heard.",
+    "shadow": "The Star-Touched's shadow is passive hope, the belief that something external will arrive and fix things, which becomes an excuse to do nothing. The star as alibi. Waiting for the universe to move while remaining motionless yourself.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Dream Veil",
+    "name": "The Dream Veil",
+    "arcana": "major",
+    "number": 18,
+    "suit": null,
+    "symbol": "XVIII",
+    "keyword_line": "Your intuition is more reliable than your eyes right now.",
+    "keywords": [
+      "the hidden face",
+      "what the dream shows",
+      "the mind's own wilderness",
+      "illusion in darkness"
+    ],
+    "upright": "Things are not what they appear to be right now, and the uncertainty is real. The Dream Veil represents the particular confusion of being unable to trust what you see because the light is wrong. Your intuition is more reliable than your eyes at the moment. What is the dream showing you that the waking mind keeps dismissing?",
+    "reversed": "The fog is lifting, or you have been in such profound confusion that you have mistaken the fog for the landscape. Something is becoming clear. The clarity may not be comfortable, but at least it is real.",
+    "lore": "Hecate, goddess of crossroads, the dark moon, and liminal spaces, presides over the territory between worlds where this card dwells. The full moon in ancient navigation was paradoxically the hardest to travel by: its light cast shadows that looked like solid ground and made the familiar landscape strange. In Qabalistic tradition, the Moon corresponds to the path between Netzach and Malkuth, where astral illusion and physical reality blur.",
+    "shadow": "The Dream Veil's shadow is the person who has made their home in the fog, who prefers the flexibility of uncertainty to the harder clarity of knowing. Mystery as evasion. The dream state preferred to the waking life because nothing in a dream has to be acted on.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Blazing God",
+    "name": "The Blazing God",
+    "arcana": "major",
+    "number": 19,
+    "suit": null,
+    "symbol": "XIX",
+    "keyword_line": "There is no catch. Accept what is genuinely good.",
+    "keywords": [
+      "clarity",
+      "vitality",
+      "unguarded joy",
+      "the truth you cannot look away from"
+    ],
+    "upright": "This is the card of full aliveness. The Blazing God is not subtle; it shines at full force, and what it illuminates cannot be unseen. You are in a period of clarity, of good energy, of things being genuinely good in a way you are allowed to let yourself feel. There is no catch.",
+    "reversed": "The light is being blocked or you are squinting against it. Joy has become performance, or you are in a situation where external brightness does not match your internal experience. Either the sun is genuinely behind clouds or you are not letting yourself stand in what is actually good.",
+    "lore": "Ra in his sun-barque crossing the sky, Apollo the archer whose arrows were light and whose oracle was truth, Lugh of the Long Hand in Irish mythology: the solar deity is the one who sees everything, who illuminates without mercy and without exception. The Sun card in the Tarot is traditionally the only card without shadow; in full sunlight there are no hiding places, including from one's own joy.",
+    "shadow": "The Blazing God's shadow is the blinding light, the revelation that overwhelms rather than illuminates. The solar consciousness that cannot tolerate darkness and therefore cannot understand what dark things know.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The Final Horn",
+    "name": "The Final Horn",
+    "arcana": "major",
+    "number": 20,
+    "suit": null,
+    "symbol": "XX",
+    "keyword_line": "The call is real. The resistance costs more than answering would.",
+    "keywords": [
+      "the call you cannot unhear",
+      "the awakening",
+      "what rises when you stop resisting",
+      "redemption"
+    ],
+    "upright": "Something in you is waking up that has been asleep, and the waking cannot be undone. The Final Horn is a point of no return in the most hopeful sense. What you are being called toward is real. The question is whether you are willing to leave behind what you are being called away from.",
+    "reversed": "You are resisting a call that is genuine, or you have heard it and decided it is too much, too late, or not meant for you. It is. The resistance costs more than answering would.",
+    "lore": "The Last Trump in Christian eschatology, Heimdall's Gjallarhorn that will sound at Ragnarok, the Vedic conch shell blown at the onset of the Mahabharata war: the final horn is the irreversible summons that reorganizes everything around it. In the Tarot, Judgement is assigned to the element of fire and the forces of absolute transformation that leave nothing untouched.",
+    "shadow": "The Final Horn's shadow is the person who has already been called and did not answer, who lives in the permanent aftermath of a missed summons. Or its opposite: the one who manufactures crises of vocation to avoid the ordinary sacred work already in front of them.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "The All-Held",
+    "name": "The All-Held",
+    "arcana": "major",
+    "number": 21,
+    "suit": null,
+    "symbol": "XXI",
+    "keyword_line": "Something that began with The Stray is arriving at its first wholeness here.",
+    "keywords": [
+      "the completed circle",
+      "wholeness",
+      "what is earned through the full journey",
+      "the world in your hands"
+    ],
+    "upright": "You have arrived somewhere. The All-Held is the card of genuine completion, not stopping but completing, the particular feeling of having come full circle and finding yourself larger than when you began. Take it in. This is real.",
+    "reversed": "Completion is being resisted or there is lingering unfinished business preventing arrival. Or: something that looks complete is not quite there yet. There is one more thing that needs to happen before you can truly set this down.",
+    "lore": "The ouroboros, the serpent eating its own tail as symbol of eternal cyclical completion, appears in Egyptian papyri, alchemical manuscripts, and Gnostic imagery. The World card shows a dancing figure inside a laurel wreath, four creatures at the corners corresponding to the four fixed zodiac signs: the completed whole of the elemental world dancing at its own center. In Kabbalah, the Shekinah dwelling in the world of matter is the figure at the center of The All-Held.",
+    "shadow": "The All-Held's shadow is the completion that cannot be acknowledged, the person who arrives at the finish and immediately runs the next race without receiving what they earned. Achievement as escape. The world in your hands, held so tightly it cannot be felt.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "ace of torches",
+    "name": "Ace of Torches",
+    "arcana": "minor",
+    "number": 1,
+    "suit": "wands",
+    "symbol": "A♦",
+    "keyword_line": "A creative force is being handed to you, raw and alive.",
+    "keywords": [
+      "new fire",
+      "the creative spark",
+      "inspired beginning",
+      "the live ember"
+    ],
+    "upright": "A creative force is being handed to you right now, raw and alive. The Ace of Torches is not a plan; it is an impulse, the kind that arrives before you have thought about whether it is practical. This impulse is real. Act while it is hot.",
+    "reversed": "The spark came but you hesitated, or the fire has gone out before it caught anything. The opportunity was genuine; the question is whether it has passed or is still smoldering under the ash.",
+    "lore": "Prometheus stealing fire from Olympus, Agni as the first and most necessary of the Vedic devas, the sacred fire of Vesta tended without interruption in Rome: the creative impulse at its purest is not a plan but a spark, something more fundamental than intention. The ace of fire is the gift of creative divinity.",
+    "shadow": "The Ace of Torches' shadow is the compulsive spark, the person who ignites endlessly without building. Always beginning. The excitement of new fire used to avoid the slower, harder heat of sustained work.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "two of torches",
+    "name": "Two of Torches",
+    "arcana": "minor",
+    "number": 2,
+    "suit": "wands",
+    "symbol": "2♦",
+    "keyword_line": "The vision is clear. The details will find their shape.",
+    "keywords": [
+      "vision held",
+      "the horizon",
+      "planning the route",
+      "what you are building toward"
+    ],
+    "upright": "You have seen where you want to go and you are beginning to map the route. The Two of Torches is early momentum, the stage where the vision is clear and the practical questions have not yet clouded it. Hold the vision. The details will find their shape.",
+    "reversed": "The vision has stalled before it became anything. You are looking at possibilities without committing to one, or deferring action in favor of planning. At some point the planning becomes the avoidance.",
+    "lore": "Alchemical texts distinguished between the vision of the opus, the full imaginal picture of the completed work, and its actual laboratory execution. The Two represents the moment when the vision is fully formed but the hands have not yet moved; the tension between seeing and doing is one of the oldest creative problems.",
+    "shadow": "The Two of Torches' shadow is the person who holds the vision so tightly and for so long that the vision becomes a substitute for the thing it was supposed to produce. The horizon chased but never reached because reaching it would mean finding another one.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "three of torches",
+    "name": "Three of Torches",
+    "arcana": "minor",
+    "number": 3,
+    "suit": "wands",
+    "symbol": "3♦",
+    "keyword_line": "You did what you could. What you started is already moving.",
+    "keywords": [
+      "ventures launched",
+      "awaiting return",
+      "expansion",
+      "what is already in motion"
+    ],
+    "upright": "Something you set in motion is out in the world now, and what you are feeling is the particular tension of waiting. The Three of Torches says: you did what you could. What you started is already moving. The waiting is part of the work.",
+    "reversed": "Plans have stalled, or what you launched has not returned what you expected. There may be a delay outside your control, or something in the original launch needs revisiting.",
+    "lore": "The Phoenician merchant standing on the shore watching his ships: the ships are his wealth and his risk simultaneously. The ancient trading networks of the Mediterranean, the Silk Road caravans: the energy of expansion and awaiting return is as old as commerce itself. The launch is complete; the outcome is not yet determined.",
+    "shadow": "The Three of Torches' shadow is the anxiety of waiting weaponized into frantic adjustment, the person who keeps changing the terms of what they sent out into the world before it has had time to land.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "four of torches",
+    "name": "Four of Torches",
+    "arcana": "minor",
+    "number": 4,
+    "suit": "wands",
+    "symbol": "4♦",
+    "keyword_line": "Let yourself feel what you have built. Not everything has to be a stepping stone.",
+    "keywords": [
+      "celebration",
+      "what has been built",
+      "the homecoming",
+      "earned rest"
+    ],
+    "upright": "Something is worth celebrating. The Four of Torches marks a genuine milestone, a point of completion that is real and earned. Let yourself feel it. You have built something that is standing. Not everything has to be a stepping stone to the next thing.",
+    "reversed": "You are deferring celebration or refusing to acknowledge what you have accomplished. Or: there is something in what should feel like a milestone that does not quite. Sit with what is missing before moving on.",
+    "lore": "Harvest festivals appear in virtually every agricultural society as a mandatory pause in the work cycle, a recognition that abundance required grateful acknowledgment before the next cycle could begin. In Jewish tradition, Sukkot; in the Celtic world, Lughnasadh; in the Roman calendar, Cerealia: the Four of Wands in its historical roots is the sanctified celebration of return and completion.",
+    "shadow": "The Four of Torches' shadow is the celebration that is actually performance, the public acknowledgment of achievement that papers over the private knowledge that something is hollow. Or: the milestone immediately minimized by the person who cannot allow themselves to arrive.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "five of torches",
+    "name": "Five of Torches",
+    "arcana": "minor",
+    "number": 5,
+    "suit": "wands",
+    "symbol": "5♦",
+    "keyword_line": "The question is whether you are fighting to win or fighting toward something.",
+    "keywords": [
+      "friction",
+      "competing visions",
+      "productive conflict",
+      "the clash"
+    ],
+    "upright": "You are in the middle of real conflict, and some of it is actually useful. The Five of Torches is not chaos but competition, the friction of multiple strong wills rubbing against each other. Something is being tested and sharpened here. What are you actually fighting for?",
+    "reversed": "The conflict has become purposeless or you are avoiding a fight that needs to happen. Either way, the energy is not landing anywhere productive. Name what the actual disagreement is.",
+    "lore": "The agon, the Greek concept of productive contest that gave rise to the Olympics and to Greek drama, was understood as fundamental to excellence: without the resistance of a worthy opponent, no one becomes their best. The Five of Wands showed young men competing in sport, not in war, the distinction being that sport produces winners without requiring the destruction of losers.",
+    "shadow": "The Five of Torches' shadow is conflict as identity, the person who needs opposition to feel alive, who unconsciously creates friction wherever things become too peaceful. Fighting for its own sake.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "six of torches",
+    "name": "Six of Torches",
+    "arcana": "minor",
+    "number": 6,
+    "suit": "wands",
+    "symbol": "6♦",
+    "keyword_line": "This reflects something real. Receive it.",
+    "keywords": [
+      "recognition",
+      "the public win",
+      "momentum honored",
+      "return"
+    ],
+    "upright": "Something you worked for is being seen and recognized. The Six of Torches is a public moment, the kind of acknowledgment that lands differently because it is witnessed. Receive this. You did not imagine it into being; it reflects something real.",
+    "reversed": "Recognition has not come, or has been withheld. Or: you are receiving recognition that does not feel earned, or given to the wrong person. The gap between the public story and the real one is what this card is pointing at.",
+    "lore": "The Roman triumph, granted to a victorious general returning to Rome, was not merely personal celebration but a ritual act acknowledging the gods' role in the victory and marking the transition from warrior to citizen. Public recognition in ancient cultures had cosmological significance, not just social. The Six of Wands is the acknowledgment that the contest was real and the result was real.",
+    "shadow": "The Six of Torches' shadow is the person who needs public recognition to feel that their accomplishments are real, who cannot access the internal sense of having done something well without external confirmation. The winner whose victory only counts when witnessed.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "seven of torches",
+    "name": "Seven of Torches",
+    "arcana": "minor",
+    "number": 7,
+    "suit": "wands",
+    "symbol": "7♦",
+    "keyword_line": "You do not have to give this up because you are tired of defending it.",
+    "keywords": [
+      "the contested position",
+      "holding ground",
+      "under siege",
+      "the defense"
+    ],
+    "upright": "You have reached something worth defending, and it is being tested. The Seven of Torches is not about aggression but about standing firm when others are pushing for ground you have earned. You do not have to give it up because you are tired of fighting for it.",
+    "reversed": "The defensiveness has become disproportionate to the actual threat, or you are holding a position past the point where it serves you. Sometimes the right answer is to let the position go.",
+    "lore": "The defended high ground is a military concept as old as organized conflict: the one who holds elevation has a structural advantage. The seven as the number of testing suggests the Seven of Wands is the moment when what has been built must prove itself against all comers, the penultimate test before completion.",
+    "shadow": "The Seven of Torches' shadow is the siege mentality, the person who has made their identity out of their beleagueredness. The position held past the point where it can be abandoned because abandoning it would mean acknowledging it was never worth the cost.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "eight of torches",
+    "name": "Eight of Torches",
+    "arcana": "minor",
+    "number": 8,
+    "suit": "wands",
+    "symbol": "8♦",
+    "keyword_line": "This kind of movement does not wait.",
+    "keywords": [
+      "rapid movement",
+      "messages arriving",
+      "speed",
+      "the streak of momentum"
+    ],
+    "upright": "Everything is moving fast right now and not because you pushed it. The Eight of Torches is momentum that has its own force, the moment when circumstances align and things that were stationary suddenly have speed. Stay with it.",
+    "reversed": "Things have stalled or the energy has scattered. You are waiting for something that is caught up somewhere, or you launched too fast and in the wrong direction.",
+    "lore": "The eight fire wands in traditional Tarot decks are associated with Mercury, the planet of communication, speed, and rapid transmission. In Norse tradition, Odin's eight-legged horse Sleipnir, the fastest creature in existence, could carry its rider between worlds in moments: the archetype of magical speed that transcends normal limitations.",
+    "shadow": "The Eight of Torches' shadow is speed as substitute for direction. Moving fast as a way of not having to feel where you are going. The streak that ends in the wrong place because no one stopped to check the heading.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "nine of torches",
+    "name": "Nine of Torches",
+    "arcana": "minor",
+    "number": 9,
+    "suit": "wands",
+    "symbol": "9♦",
+    "keyword_line": "You are closer than it feels. Hold for one more round.",
+    "keywords": [
+      "the long stand",
+      "battle-worn resilience",
+      "not yet finished",
+      "the last guard"
+    ],
+    "upright": "You are tired and you have not yet reached the end. The Nine of Torches sees this and asks you to hold for one more round. Not because it is fair but because you are closer than it feels. The wariness you are carrying is earned. You are still standing.",
+    "reversed": "The vigilance has become paranoia or the long fight has hollowed something out. You are defending yourself against threats that may no longer be real, or the stubbornness that kept you standing is now keeping you from moving forward.",
+    "lore": "The wounded warrior who will not leave the field: this archetype appears in Norse berserkers who fought past the point of human endurance, in the Japanese samurai tradition of dying in one's position, in the Celtic concept of the last man standing as the one who decides the outcome. The Nine of Wands is the bleaker, quieter heroism of not stopping.",
+    "shadow": "The Nine of Torches' shadow is exhaustion mistaken for vigilance, the person who has fought so long they have forgotten that the fight was supposed to end. The wound carried as identity. Wariness that has become the lens through which everything is seen.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "ten of torches",
+    "name": "Ten of Torches",
+    "arcana": "minor",
+    "number": 10,
+    "suit": "wands",
+    "symbol": "10♦",
+    "keyword_line": "You are carrying more than you should, and you know it.",
+    "keywords": [
+      "the weight of overcommitment",
+      "too much carried",
+      "the final push",
+      "what needs to be set down"
+    ],
+    "upright": "You are carrying more than you should and you know it. The Ten of Torches is not about what you cannot do but about what you are refusing to put down. The load is real and it is slowing you down. Something needs to go.",
+    "reversed": "You are finally setting down what you have been carrying, or you are collapsing under the weight of it. Either the release is beginning or the necessity of it is becoming impossible to ignore.",
+    "lore": "The figure in most traditional Ten of Wands cards carries all ten staves in an awkward bundle, clearly struggling, clearly near their destination but obscuring their own vision with what they carry. The number ten represents completion and excess simultaneously, the point where the energy of a suit has run past its productive maximum.",
+    "shadow": "The Ten of Torches' shadow is the martyrdom of overload, the person who is secretly proud of how much they carry, who would feel purposeless if they set anything down. Burden as proof of being needed.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "acolyte of torches",
+    "name": "Acolyte of Torches",
+    "arcana": "minor",
+    "number": 11,
+    "suit": "wands",
+    "symbol": "J♦",
+    "keyword_line": "The refinement comes later. Let this energy run.",
+    "keywords": [
+      "inspired eagerness",
+      "the spark forming into intention",
+      "enthusiasm not yet tempered",
+      "the live wire"
+    ],
+    "upright": "Something in you is newly ignited, enthusiastic and direct without yet having been tempered by experience. The Acolyte of Torches is not naive but genuinely lit up by what is possible. Let this energy run. The refinement comes later.",
+    "reversed": "The enthusiasm is without follow-through, or enthusiasm is masking anxiety. The fire flares and goes out before it catches anything.",
+    "lore": "In magical and initiatory traditions the acolyte represented the beginning of the elemental apprenticeship, the stage before mastery when raw talent was being formed. The fire acolyte carried the sacred flame in temple processions, tended the altar fires, and learned through proximity to the sacred. The enthusiasm was both a qualification and a thing to be refined.",
+    "shadow": "The Acolyte of Torches' shadow is the perpetual enthusiast who cannot move past the ignition phase. Always beginning, always excited, never arriving at the sustained work that the excitement was supposed to point toward.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "champion of torches",
+    "name": "Champion of Torches",
+    "arcana": "minor",
+    "number": 12,
+    "suit": "wands",
+    "symbol": "C♦",
+    "keyword_line": "Match the energy or be left behind by it.",
+    "keywords": [
+      "passionate pursuit",
+      "the bold arrival",
+      "charisma in motion",
+      "fire on the move"
+    ],
+    "upright": "Someone or something is arriving with heat and energy and it is asking you to respond in kind. The Champion of Torches brings a particular kind of force that does not wait politely at the door. Match the energy or be left behind by it.",
+    "reversed": "Recklessness dressed as passion, or passion that has overshot its target and become destructive. The drive is real; the aim is off.",
+    "lore": "The mounted knight was the medieval symbol of directed force and social mobility: armed, moving, carrying the emblem of his allegiance. In the fire suit, this knight is associated with rapid changes of direction and the kind of energy that can start things no one else can start but that may struggle to finish.",
+    "shadow": "The Champion of Torches' shadow is the person whose charisma and passion sweep others into movements they have not fully considered. The exciting arrival that produces chaos. Speed and fire without the wisdom to know when to stop.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "seer of torches",
+    "name": "Seer of Torches",
+    "arcana": "minor",
+    "number": 13,
+    "suit": "wands",
+    "symbol": "Q♦",
+    "keyword_line": "Be clear about what you want, and hold it without apology.",
+    "keywords": [
+      "passionate vision",
+      "the determined creator",
+      "conviction without desperation",
+      "fire mastered"
+    ],
+    "upright": "This is someone who knows exactly what she is building and will not be turned around. The Seer of Torches holds her vision with conviction rather than desperation, which is what makes her formidable. Be clear about what you actually want and hold it without apology.",
+    "reversed": "Passion has curdled into stubbornness, or creative vision has become controlling. The fire is pointing in the wrong direction.",
+    "lore": "Brigid, Celtic goddess of the sacred flame and of poetry and smithcraft, tends a fire that must never go out. The Queen of Wands in the Tarot tradition is associated with the quality of creative authority, the person who does not merely have the spark but has mastered it enough to build with it.",
+    "shadow": "The Seer of Torches' shadow is the visionary who cannot tolerate disagreement, whose creative conviction has become an inability to hear other perspectives. The flame so important to protect that nothing else is allowed to be real.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "archon of torches",
+    "name": "Archon of Torches",
+    "arcana": "minor",
+    "number": 14,
+    "suit": "wands",
+    "symbol": "K♦",
+    "keyword_line": "Lead from genuine passion. Generate energy rather than consuming it.",
+    "keywords": [
+      "the creative sovereign",
+      "authority through inspiration",
+      "vision made power",
+      "mature fire"
+    ],
+    "upright": "There is a particular kind of leadership here that generates energy rather than consuming it. The Archon of Torches leads from genuine passion, from mastery that still burns. He does not just manage; he ignites. This energy is asking you to bring fire to what you are responsible for.",
+    "reversed": "Creative authority has become domineering, or the fire has gone out and what remains is the performance of passion without the substance. The embers need tending, or the authority needs to be released.",
+    "lore": "Prometheus's theft of fire was the archetypal act of creative kingship, giving humans the power to make light and warmth in the dark. In Vedic tradition, Agni as king of the gods was the sacred fire through whom all gifts passed to the divine. The King of Wands rules by enabling.",
+    "shadow": "The Archon of Torches' shadow is the leader who identifies so completely with the fire that he cannot allow anyone else to carry any. The creative king who turns his kingdom into a reflection of his own vision, consuming the creative energy of those around him.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "ace of cauldrons",
+    "name": "Ace of Cauldrons",
+    "arcana": "minor",
+    "number": 1,
+    "suit": "cups",
+    "symbol": "A♥",
+    "keyword_line": "The heart that opens is the heart that is actually alive.",
+    "keywords": [
+      "the opening heart",
+      "new emotional current",
+      "the gift of feeling",
+      "love arriving"
+    ],
+    "upright": "Something is opening in you emotionally that has been closed. The Ace of Cauldrons is a new current of feeling, genuine and direct, and it is being offered without strings. Receive this. The heart that opens is not the heart that breaks; it is the heart that is actually alive.",
+    "reversed": "Emotional abundance is being blocked or the opening is happening before you are ready. Something in you is not yet able to receive what is being offered. The cup exists but is being held face-down.",
+    "lore": "The sacred cauldron appears in Celtic mythology as the Dagda's Cauldron of Plenty, in Welsh tradition as the Cauldron of Rebirth, in Greek myth as the vessel in which Medea restored youth. In alchemical imagery, the chalice was the receptive element that received and transformed. The Ace of Cups in esoteric tradition represents the Grail, the cup that overflows with exactly what each person needs.",
+    "shadow": "The Ace of Cauldrons' shadow is the emotional openness that is not actually openness but performance, the person who claims to feel deeply while remaining carefully defended, deploying the language of vulnerability as a form of control.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "two of cauldrons",
+    "name": "Two of Cauldrons",
+    "arcana": "minor",
+    "number": 2,
+    "suit": "cups",
+    "symbol": "2♥",
+    "keyword_line": "This kind of meeting is rarer than it sounds. Tend it.",
+    "keywords": [
+      "mutual recognition",
+      "the reciprocal bond",
+      "what is met equally",
+      "genuine partnership"
+    ],
+    "upright": "Something is being recognized and returned in equal measure. The Two of Cauldrons is the moment of genuine meeting, two people or two parts of yourself that are actually seeing each other rather than projecting. This kind of meeting is rarer than it sounds. Tend it.",
+    "reversed": "The reciprocity is off. One person is giving more than the other, or what looks like a meeting is two people seeing their own reflection. The imbalance is worth examining before it deepens.",
+    "lore": "The caduceus, the staff of Hermes entwined with two serpents, appears in some traditional versions of the Two of Cups as the symbol of balanced exchange. The hieros gamos, the sacred marriage of opposites that is the foundation of alchemical philosophy, begins with precisely this: two equal principles recognizing each other.",
+    "shadow": "The Two of Cauldrons' shadow is the union that is mutual projection, two people who have agreed to see in each other what neither of them can see in themselves. The partnership that requires the other to stay fixed in a particular role to maintain its coherence.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "three of cauldrons",
+    "name": "Three of Cauldrons",
+    "arcana": "minor",
+    "number": 3,
+    "suit": "cups",
+    "symbol": "3♥",
+    "keyword_line": "Let yourself be in this. The warmth is real.",
+    "keywords": [
+      "community",
+      "shared celebration",
+      "what grows among friends",
+      "abundance in company"
+    ],
+    "upright": "You are in a moment that wants to be shared. The Three of Cauldrons is the pleasure of good company and mutual abundance, the particular warmth of celebrating something with people who actually mean it. Let yourself be in this.",
+    "reversed": "The community is fracturing, or you are outside of it when you want to be inside. Or: the celebration is hollow, the company is difficult, the warmth is performed.",
+    "lore": "The Greek Symposium, the Norse feast in Valhalla, the African ubuntu principle that personhood is constituted through community: communal celebration as a sacred act appears across cultures. The three Graces of Greek mythology, representing splendor, mirth, and good cheer, are the presiding spirits of this card.",
+    "shadow": "The Three of Cauldrons' shadow is the group that has become a closed system, the community whose warmth extends only to insiders, or the celebration that papers over real fractures in the relationships it claims to honor.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "four of cauldrons",
+    "name": "Four of Cauldrons",
+    "arcana": "minor",
+    "number": 4,
+    "suit": "cups",
+    "symbol": "4♥",
+    "keyword_line": "Pull your eyes up. What is sitting directly in front of you?",
+    "keywords": [
+      "withdrawal",
+      "emotional satiation turned to boredom",
+      "missing what is offered",
+      "the closed heart"
+    ],
+    "upright": "You are being offered something and you are not seeing it. The Four of Cauldrons is not ingratitude so much as the particular blindness that comes from too much inward focus. Pull your eyes up. What is sitting directly in front of you?",
+    "reversed": "You are emerging from a withdrawal or a period of emotional disengagement. Or: you have been so turned inward that the offer has passed.",
+    "lore": "The mystic boredom described by contemplative traditions, the acedia of the Desert Fathers, the spiritual dryness written about by Teresa of Avila: the Four of Cups is the moment when what the world offers no longer satisfies and the soul is being drawn toward a different kind of nourishment. The image of the figure ignoring three cups while a fourth is offered from a cloud suggests not laziness but a refusal to settle.",
+    "shadow": "The Four of Cauldrons' shadow is the person whose introspection has become self-obsession, whose inner world is so consuming that nothing the outer world offers can penetrate. The contemplative who is actually just avoiding.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "five of cauldrons",
+    "name": "Five of Cauldrons",
+    "arcana": "minor",
+    "number": 5,
+    "suit": "cups",
+    "symbol": "5♥",
+    "keyword_line": "The two cups still standing are still there.",
+    "keywords": [
+      "grief",
+      "what was spilled",
+      "the loss in focus",
+      "what remains after loss"
+    ],
+    "upright": "Something has been lost and the grief is real. The Five of Cauldrons is not asking you to minimize this or rush through it. But: the two cups still standing are still there. The focus is on what was spilled, and eventually the focus will shift.",
+    "reversed": "The grief has gone on past its natural period and is becoming a structure rather than a process. Or: you are not allowing yourself to feel the loss at all and it is sitting in your body anyway.",
+    "lore": "The five in the suit of water is associated in Qabalistic Tarot with Geburah (severity) meeting the element of love and feeling, the severity that cannot be avoided when something real has been lost. The image in traditional Tarot shows three spilled cups and two standing ones: the mourner so focused on what fell that they cannot see what remains.",
+    "shadow": "The Five of Cauldrons' shadow is the grief that has become a permanent identity, the person for whom loss is the most real thing that ever happened and who shapes their entire life around it.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "six of cauldrons",
+    "name": "Six of Cauldrons",
+    "arcana": "minor",
+    "number": 6,
+    "suit": "cups",
+    "symbol": "6♥",
+    "keyword_line": "You are visiting the past. The question is whether you are living in it.",
+    "keywords": [
+      "the past revisited",
+      "memory and sweetness",
+      "what came before",
+      "nostalgia"
+    ],
+    "upright": "Something from your past is relevant right now, a memory, a connection, or an old part of yourself that has something to offer. The Six of Cauldrons is a gentle card, the sweetness of what was. The question is whether you are visiting the past or living in it.",
+    "reversed": "The past has too much of your attention. Nostalgia is running interference with what is actually in front of you. Something that ended needs to stay ended.",
+    "lore": "The memory palace of classical rhetoric, the anamnesis of Platonic philosophy (the idea that learning is remembering what the soul already knew), the ancestor veneration practices found in African, East Asian, and indigenous traditions: the past in these frameworks is not gone but present, accessible through the right kind of attention.",
+    "shadow": "The Six of Cauldrons' shadow is the person who lives primarily in memory, for whom the past is more real than the present, who returns obsessively to what was because it is more manageable than what is.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "seven of cauldrons",
+    "name": "Seven of Cauldrons",
+    "arcana": "minor",
+    "number": 7,
+    "suit": "cups",
+    "symbol": "7♥",
+    "keyword_line": "Fantasy and feeling are not the same as commitment.",
+    "keywords": [
+      "the mirage of choices",
+      "fantasy over action",
+      "emotional confusion",
+      "the dream that does not ground"
+    ],
+    "upright": "You are in a moment of too many possibilities, most of them still in the imagination rather than the real. The Seven of Cauldrons is seductive; all those cups look full. But fantasy and feeling are not the same as commitment. What are you actually willing to reach for?",
+    "reversed": "You are coming out of a fog of wishful thinking, or you have been so disillusioned that you are no longer willing to hope at all. Both are forms of refusing to engage with what is real.",
+    "lore": "The seven planets of classical astrology, the seven gates of the underworld in Mesopotamian mythology: the number seven in the water suit represents a profusion that must be navigated carefully. The Grail legend often involves exactly this: many cups presented, only one the genuine article.",
+    "shadow": "The Seven of Cauldrons' shadow is the person who has made their home in the possibility space, who keeps all options open as a way of never having to commit to any particular life. The dreamer who has decided that no reality could be as good as the dream.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "eight of cauldrons",
+    "name": "Eight of Cauldrons",
+    "arcana": "minor",
+    "number": 8,
+    "suit": "cups",
+    "symbol": "8♥",
+    "keyword_line": "It is not wrong exactly. It is not enough. And you know it.",
+    "keywords": [
+      "the deliberate leaving",
+      "walking away from what is full",
+      "seeking what cannot be found here",
+      "the necessary departure"
+    ],
+    "upright": "Something is not wrong exactly but it is not enough, and you know it. The Eight of Cauldrons is about choosing to walk away from something that has given you what it can, not because it failed but because you need something it cannot give. This is a valid and sometimes painful choice.",
+    "reversed": "You are avoiding the leaving that is due, or you have already gone but have not accepted the loss of what you left. The walking away can be done; the grief of it is a separate process.",
+    "lore": "The cloaked figure turning from eight full cups toward a mountainous path by moonlight: the cups are not empty, the leaving is not from deprivation but from a deeper call. This movement is associated in contemplative traditions with the dark night of the soul, the moment when even genuine fullness can no longer satisfy the soul's actual hunger.",
+    "shadow": "The Eight of Cauldrons' shadow is the serial leaver, the person who experiences this departure repeatedly not because they keep outgrowing things but because they cannot tolerate the ordinary difficult intimacy of staying.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "nine of cauldrons",
+    "name": "Nine of Cauldrons",
+    "arcana": "minor",
+    "number": 9,
+    "suit": "cups",
+    "symbol": "9♥",
+    "keyword_line": "You have what you wished for. Sit in it without immediately reaching for the next thing.",
+    "keywords": [
+      "emotional fulfillment",
+      "the satisfied self",
+      "wishes arrived",
+      "contentment earned"
+    ],
+    "upright": "You have arrived at something you actually wanted and you are allowed to feel it. The Nine of Cauldrons is not a trick; it is a genuine moment of having what you wished for. Sit in it without immediately reaching for the next thing.",
+    "reversed": "Satisfaction has become complacency, or what you thought you wanted is not giving you what you expected. The wish was real but the thing it pointed toward was not exactly this.",
+    "lore": "The Wish Card: the Nine of Cups has carried this name in cartomantic tradition since the early nineteenth century. The figure in traditional decks sits satisfied before a display of cups, arms crossed, a picture of contentment. The number nine is associated with completion within the cycle, the moment before the return to wholeness.",
+    "shadow": "The Nine of Cauldrons' shadow is the self-satisfaction that has calcified into smugness, the person so pleased with their emotional arrival that they can no longer be moved or surprised. Contentment as closure.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "ten of cauldrons",
+    "name": "Ten of Cauldrons",
+    "arcana": "minor",
+    "number": 10,
+    "suit": "cups",
+    "symbol": "10♥",
+    "keyword_line": "You are closer to this than you think.",
+    "keywords": [
+      "the full household",
+      "love that has settled",
+      "lasting emotional peace",
+      "what endures"
+    ],
+    "upright": "There is a kind of happiness here that is not dramatic but is very real. The Ten of Cauldrons is the long-term version of emotional fulfillment, the feeling of being genuinely at home in your life and relationships. You are closer to this than you think.",
+    "reversed": "The picture looks complete from the outside but something inside it is hollow. Or: the ideal of the happy household is being chased at the expense of what is actually happening.",
+    "lore": "The rainbow in traditional Ten of Cups imagery draws on ancient covenant symbolism: the Greek Iris as messenger, the Norse Bifrost bridge between worlds, the Biblical symbol of divine promise. The Ten of Cups represents not just individual fulfillment but relational wholeness, the love that has become a shared world.",
+    "shadow": "The Ten of Cauldrons' shadow is the performance of domestic happiness at the expense of its actual practice. The family photograph that records what everyone wishes the family were, rather than what it is.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "acolyte of cauldrons",
+    "name": "Acolyte of Cauldrons",
+    "arcana": "minor",
+    "number": 11,
+    "suit": "cups",
+    "symbol": "J♥",
+    "keyword_line": "Emotional depth is not weakness. This openness is not naivety.",
+    "keywords": [
+      "emotional sensitivity",
+      "the dreaming heart",
+      "intuition not yet tested",
+      "open to impression"
+    ],
+    "upright": "There is an emotional freshness here, a heart that is genuinely open to what the world is offering without the armor of experience. The Acolyte of Cauldrons feels things deeply and has not yet learned to guard against that. This is not weakness.",
+    "reversed": "The sensitivity has become overwhelm or the openness has allowed something in that should not be there. Emotional porousness without discernment.",
+    "lore": "The water acolyte in esoteric tradition is associated with the beginning of psychic development, the first openings of the intuitive faculty before it has been tested or trained. In shamanic traditions, the apprentice shaman is often characterized by this kind of raw emotional permeability, the gift not yet distinguished from the noise.",
+    "shadow": "The Acolyte of Cauldrons' shadow is the person who uses their emotional sensitivity as a way of avoiding responsibility, who feels everything so intensely that they cannot be held to account for how their feelings affect others.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "champion of cauldrons",
+    "name": "Champion of Cauldrons",
+    "arcana": "minor",
+    "number": 12,
+    "suit": "cups",
+    "symbol": "C♥",
+    "keyword_line": "Feeling is not the same as judgment. Examine what is being offered.",
+    "keywords": [
+      "the romantic advance",
+      "emotional pursuit",
+      "the messenger of the heart",
+      "what is genuinely offered"
+    ],
+    "upright": "Something is coming toward you with genuine feeling. The Champion of Cauldrons brings an offer, an approach, a romantic or creative advance that is real. It is also worth examining before you accept what it represents. Feeling is not the same as judgment.",
+    "reversed": "The pursuit has become idealization, or someone is showing up with feeling that is more about their projection than about you. Or: you are chasing something that is already receding.",
+    "lore": "The Celtic and Arthurian traditions are rich with romantic knights whose quests are essentially emotional: Lancelot's devotion, Tristan's love. The Knight of Cups is associated with Pisces, the most feeling-oriented of the water signs, and with the figure of the poet or artist who is moved by beauty into action.",
+    "shadow": "The Champion of Cauldrons' shadow is the lover who falls in love with the feeling of love rather than with an actual person. The romantic who requires the beloved to remain as imagined rather than as real.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "seer of cauldrons",
+    "name": "Seer of Cauldrons",
+    "arcana": "minor",
+    "number": 13,
+    "suit": "cups",
+    "symbol": "Q♥",
+    "keyword_line": "Trust your emotional intelligence. It is not a soft thing.",
+    "keywords": [
+      "emotional intelligence",
+      "the intuitive heart",
+      "care that sees clearly",
+      "depth without drowning"
+    ],
+    "upright": "This is someone who feels deeply and knows what she is feeling, which is rare. The Seer of Cauldrons does not perform empathy; she has it, and she uses it without being swallowed by it. Trust your emotional intelligence rather than dismiss it.",
+    "reversed": "Empathy has become absorption, or emotional reasoning is being used to avoid logic. Feelings are real data, but they are not the only data.",
+    "lore": "Sulis, the British goddess of the sacred hot spring and of healing; Yemoja, the Yoruba orisha of rivers and the mother of waters; the Avalonian tradition of Morgan le Fay as healer and keeper of deep knowledge: the water queens of mythology are consistently figures of emotional depth used in service of wisdom.",
+    "shadow": "The Seer of Cauldrons' shadow is the person who has made emotional depth her identity to the point where nothing that is not emotional can reach her. The empath who uses her sensitivity to control the emotional temperature of every room she enters.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "archon of cauldrons",
+    "name": "Archon of Cauldrons",
+    "arcana": "minor",
+    "number": 14,
+    "suit": "cups",
+    "symbol": "K♥",
+    "keyword_line": "Bring the same quality to what you are navigating. Hold space.",
+    "keywords": [
+      "emotional mastery",
+      "the sensitive leader",
+      "depth that does not drown",
+      "authority through care"
+    ],
+    "upright": "There is a kind of leadership here that operates through emotional intelligence rather than force. The Archon of Cauldrons knows how to sit with what is difficult without being destroyed by it. He holds space. This energy is asking you to bring the same quality to what you are navigating.",
+    "reversed": "Emotional depth has become emotional manipulation, or the calm exterior is suppressing something that needs to be addressed. The contained feelings are not contained indefinitely.",
+    "lore": "Asclepius whose touch could restore life, the Fisher King of Arthurian legend whose wound was the wound of the land, the Dalai Lama tradition of the compassionate ruler: the healer kings of world mythology hold the paradox of authority through receptivity. The King of Cups leads by holding, not by directing.",
+    "shadow": "The Archon of Cauldrons' shadow is the man whose emotional availability is a form of control, whose support always has a price, whose sensitivity is weaponized in intimate relationships. The healer who cannot allow those he tends to become whole.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "ace of shards",
+    "name": "Ace of Shards",
+    "arcana": "minor",
+    "number": 1,
+    "suit": "swords",
+    "symbol": "A♠",
+    "keyword_line": "The blade is clean. Something is becoming clear and undeniable.",
+    "keywords": [
+      "the clear cut",
+      "new clarity",
+      "truth arriving sharp",
+      "the mind fully engaged"
+    ],
+    "upright": "Something is becoming clear, sharp, and undeniable. The Ace of Shards is a breath of real clarity in a situation that has been muddy. This may mean a decision that can finally be made or a truth that can no longer be avoided. The blade is clean.",
+    "reversed": "The clarity is being refused, or the sharpness is being turned against yourself. The thinking mind is not always your ally, particularly when it is being used against the person doing the thinking.",
+    "lore": "The sword as symbol of truth-cutting appears across traditions: Excalibur drawn only by the rightful king, the sword of Damocles, the double-edged sword in Revelation that proceeded from the mouth of the divine. The Ace of Swords is associated with the divine intellect, the logos, the word that creates by naming.",
+    "shadow": "The Ace of Shards' shadow is the clarity that cuts rather than illuminates, the truth deployed without mercy as a weapon against those who cannot defend against it. Intelligence in service of cruelty.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "two of shards",
+    "name": "Two of Shards",
+    "arcana": "minor",
+    "number": 2,
+    "suit": "swords",
+    "symbol": "2♠",
+    "keyword_line": "At some point the blindfold has to come off.",
+    "keywords": [
+      "the difficult decision",
+      "chosen avoidance",
+      "stalemate",
+      "the blindfold kept on"
+    ],
+    "upright": "You are at a crossroads and both directions require something you would rather not give. The Two of Shards is the card of genuine impasse, not paralysis but the particular discomfort of holding two incompatible things. At some point the blindfold has to come off.",
+    "reversed": "The stalemate is finally breaking, or you have been avoiding a decision so long the choice has been made for you by circumstance.",
+    "lore": "The blindfolded figure at the sea's edge in traditional Tarot imagery invokes voluntary blindness in the face of the unknown: the swords she holds in balance represent two incompatible truths. In Roman legal tradition, Justitia was blindfolded to indicate impartiality; here the blindfold is self-chosen, protection from a reality that cannot be comfortably perceived.",
+    "shadow": "The Two of Shards' shadow is the permanent avoidance, the person who has made a lifestyle of not deciding, who keeps the blindfold on indefinitely as a way of claiming plausible deniability.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "three of shards",
+    "name": "Three of Shards",
+    "arcana": "minor",
+    "number": 3,
+    "suit": "swords",
+    "symbol": "3♠",
+    "keyword_line": "Naming it, seeing it clearly, is the beginning of processing it.",
+    "keywords": [
+      "heartbreak",
+      "what has been pierced",
+      "grief that is specific",
+      "the wound named"
+    ],
+    "upright": "Something has hurt you and the hurt is real. The Three of Shards does not minimize this or tell you how long it should last. Naming it, seeing it clearly for what it is, is the beginning of processing it. The pain is the thing that is happening. You are not the pain.",
+    "reversed": "Old wounds are resurfacing, or you are keeping an injury open longer than it needs to stay open. Or: you have been refusing to feel a hurt that is genuinely there.",
+    "lore": "The Sacred Heart imagery of Catholic devotional tradition, the sword of Simeon prophesied to pierce Mary's soul, the Norse kenning for grief as a sword-wound in the chest: the image of the pierced heart as the symbol of emotional pain that must be faced rather than avoided is nearly universal.",
+    "shadow": "The Three of Shards' shadow is the person who has identified so completely with their wounds that healing feels like a betrayal of the self. The grief maintained because without it, they would have to find out who they are.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "four of shards",
+    "name": "Four of Shards",
+    "arcana": "minor",
+    "number": 4,
+    "suit": "swords",
+    "symbol": "4♠",
+    "keyword_line": "Thinking harder is not the answer right now. Your mind needs rest.",
+    "keywords": [
+      "rest",
+      "the necessary retreat",
+      "recovering strength",
+      "the truce called with yourself"
+    ],
+    "upright": "Your mind needs rest. The Four of Shards is not defeat; it is the recognition that thinking harder is not the answer right now. Something has been taxing your mental resources and the only productive thing left is to stop. Rest is not delay.",
+    "reversed": "The rest has gone on past its purpose, or you are forcing yourself back into activity before you have actually recovered. What do you actually need rather than what you think you should need?",
+    "lore": "The Templar knight on his stone tomb in the traditional Four of Swords imagery represents not death but the dormant state of a power conserving itself. In many shamanic and initiatory traditions, retreat is understood as the most productive possible activity at certain moments, the accumulation of force before its deployment.",
+    "shadow": "The Four of Shards' shadow is the rest that is actually avoidance, the retreat from life justified as recovery. The person who has been 'resting' for years and calls it self-care while the world they were supposed to engage with goes on without them.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "five of shards",
+    "name": "Five of Shards",
+    "arcana": "minor",
+    "number": 5,
+    "suit": "swords",
+    "symbol": "5♠",
+    "keyword_line": "What do you do with where you are now?",
+    "keywords": [
+      "the compromised win",
+      "what was lost in the winning",
+      "conflict's true cost",
+      "no clean outcome"
+    ],
+    "upright": "Something has been won but the cost of winning was higher than expected, or you are on the losing side of something that was never a fair contest. The Five of Shards is a sour card because the conflict it depicts has no clean outcome. What do you do with where you are now?",
+    "reversed": "You are finally walking away from a conflict that was never going to end well, or the aftermath of a bitter struggle is settling. The clearing has its own kind of relief, even if what it reveals is not what you hoped.",
+    "lore": "The aftermath of battle appears in Homer as a moral problem as much as a tactical one: the Trojans could not honor their dead. The five as the number of imbalance and disruption runs through the suit-five cards as the moment of maximum friction. The battle is won but at what cost?",
+    "shadow": "The Five of Shards' shadow is the person who has become so accustomed to conflict that the sour aftermath feels normal. The one who picks up the swords the others dropped and keeps fighting because they do not know what else to do.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "six of shards",
+    "name": "Six of Shards",
+    "arcana": "minor",
+    "number": 6,
+    "suit": "swords",
+    "symbol": "6♠",
+    "keyword_line": "You are moving. That is what matters.",
+    "keywords": [
+      "the passage through",
+      "moving away from turbulence",
+      "transition",
+      "the slow crossing"
+    ],
+    "upright": "You are leaving something difficult behind. The Six of Shards is not arrival; it is the crossing, the slow movement from one shore to another when the water is still choppy but the direction is clear. You are not there yet. You are moving. That is what matters.",
+    "reversed": "The crossing is taking longer than it should or you are turning back toward what you left. The destination is still there, waiting. What is making you look back?",
+    "lore": "The psychopomp as guide across the river between worlds appears in Hermes, Charon, Anubis, the Norse Valkyries: the Six of Swords is the guided crossing from one state to another, the difficult passage that requires a guide. The swords come with you, but the direction of travel is away from where they were embedded.",
+    "shadow": "The Six of Shards' shadow is the endless crossing, the person who is always in transition, always between, never fully leaving the last shore and never arriving at the next one. The passage as identity.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "seven of shards",
+    "name": "Seven of Shards",
+    "arcana": "minor",
+    "number": 7,
+    "suit": "swords",
+    "symbol": "7♠",
+    "keyword_line": "Know the difference between resourcefulness and dishonesty.",
+    "keywords": [
+      "strategic retreat",
+      "the unconventional approach",
+      "cunning over force",
+      "what is taken in secret"
+    ],
+    "upright": "The situation calls for something other than direct confrontation. The Seven of Shards is about strategy, about going around rather than through, about being clever where brute force will not work. This is not dishonesty so much as resourcefulness. Know the difference.",
+    "reversed": "The strategy has become deception, or you are taking something that is not yours to take. The clever approach has gone around a corner into the wrong territory.",
+    "lore": "The trickster figure in world mythology occupies precisely this territory: Loki, Anansi, Coyote, Hermes in his capacity as thief. The trickster is not evil but operates by different rules, navigating by wits where others navigate by force or law. The problem of the Seven is exactly the problem the trickster always faces: when does cleverness become transgression?",
+    "shadow": "The Seven of Shards' shadow is the person who has convinced themselves that every situation requires the indirect approach, that honesty is never the right strategy. Cunning as a way of avoiding the vulnerability of being straightforward.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "eight of shards",
+    "name": "Eight of Shards",
+    "arcana": "minor",
+    "number": 8,
+    "suit": "swords",
+    "symbol": "8♠",
+    "keyword_line": "The blindfold is removable. The question is whether you are willing to take it off.",
+    "keywords": [
+      "self-imposed limitation",
+      "the mind that traps itself",
+      "what you believe that holds you",
+      "the bindings of thought"
+    ],
+    "upright": "The restriction you feel is more in your own thinking than in the actual situation. The Eight of Shards is not about external bars but about the story you have been telling yourself that is keeping you from moving. The blindfold is removable. Are you willing to take it off?",
+    "reversed": "You are beginning to see past the story, or you have been living in the story so long that even its removal feels dangerous. The exit is clearer than it was.",
+    "lore": "The prisoner who has forgotten they can leave appears across mythology: Persephone bound by the pomegranate seeds she ate, the Buddha's account of the second arrow (the first arrow is the wound; the second is the story we tell about the wound), the Platonic cave where prisoners mistake shadows for reality.",
+    "shadow": "The Eight of Shards' shadow is the person who needs to be trapped, who unconsciously recreates the binding whenever they escape it because the prison is more familiar than freedom. The blindfold put back on after being removed.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "nine of shards",
+    "name": "Nine of Shards",
+    "arcana": "minor",
+    "number": 9,
+    "suit": "swords",
+    "symbol": "9♠",
+    "keyword_line": "The dark is making the real parts larger. You will see it differently in the morning.",
+    "keywords": [
+      "the three a.m. mind",
+      "anxiety without resolution",
+      "the spiral",
+      "grief that wakes you"
+    ],
+    "upright": "The worry is real but it is happening in the dark, which makes it worse than it is. The Nine of Shards is the mind turning on itself in the night, running the same scenarios without rest. Some of what you are afraid of is real and some of it is the dark. You will see it differently in the morning.",
+    "reversed": "The anxiety has either passed or deepened into something that needs actual support, not just morning light. Either way, carrying this alone is not sustainable.",
+    "lore": "Vigils of terror appear in the literature of mystic experience as the dark night of the soul, that period described by John of the Cross when the soul is stripped of all consolation. The Epicureans noted that most of what humans fear is either past or imagined, neither of which can be addressed at three in the morning.",
+    "shadow": "The Nine of Shards' shadow is the person who has made their anxiety the most interesting thing about them, who shares it so widely and so constantly that the anxiety has become their primary mode of relating to others. Suffering performed rather than processed.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "ten of shards",
+    "name": "Ten of Shards",
+    "arcana": "minor",
+    "number": 10,
+    "suit": "swords",
+    "symbol": "10♠",
+    "keyword_line": "This is the floor. You can stop bracing for more impact.",
+    "keywords": [
+      "the final blow",
+      "the bottom",
+      "what has ended completely",
+      "surrender that is not defeat"
+    ],
+    "upright": "Whatever was going to fall has fallen. The Ten of Shards is the absolute bottom of a particular experience, and what it says is: this is the floor. You can stop bracing for more impact. The hardest part of what is happening is already behind you.",
+    "reversed": "You are being dramatic about a situation that has not actually destroyed you, or you are not yet at the bottom of something that still has further to go. Either way, look carefully at what is actually standing.",
+    "lore": "The ten as the number of completion and excess in every suit: the Ten of Swords represents the absolute maximum of the sword's cutting energy. Everything that could be severed has been severed. In the Qabalistic tradition, the tens correspond to Malkuth, the physical world: the Ten of Swords is suffering fully embodied, made real by its arrival in matter.",
+    "shadow": "The Ten of Shards' shadow is the catastrophization of minor wounds, the person for whom every setback is the final blow. The performance of the bottom as a way of receiving care.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "acolyte of shards",
+    "name": "Acolyte of Shards",
+    "arcana": "minor",
+    "number": 11,
+    "suit": "swords",
+    "symbol": "J♠",
+    "keyword_line": "What are you being asked to see clearly right now, even if it is uncomfortable?",
+    "keywords": [
+      "sharp perception",
+      "the observant mind",
+      "analytical eagerness",
+      "curiosity with an edge"
+    ],
+    "upright": "There is a clear-eyed intelligence here that sees what others miss, sometimes with more honesty than tact. The Acolyte of Shards notices things. What are you being asked to see clearly right now, even if it is uncomfortable?",
+    "reversed": "Sharp perception has become cynicism, or the critical eye is being turned where it is not welcome or needed.",
+    "lore": "The young seer in world mythology represents the intelligence that has not yet learned to be diplomatic about what it perceives. In Norse tradition, Loki's gift was exactly this: the ability to see the truth of things and to say so before propriety could stop him.",
+    "shadow": "The Acolyte of Shards' shadow is the person whose intelligence has become a weapon turned on everyone around them. The wit deployed as cruelty. The sharp eye used to cut rather than illuminate.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "champion of shards",
+    "name": "Champion of Shards",
+    "arcana": "minor",
+    "number": 12,
+    "suit": "swords",
+    "symbol": "C♠",
+    "keyword_line": "Be decisive where you have been deferring.",
+    "keywords": [
+      "swift action",
+      "the decisive move",
+      "cutting through delay",
+      "intellectual courage"
+    ],
+    "upright": "Someone or something is arriving that will cut through the current situation with speed and clarity. The Champion of Shards does not hesitate; once the decision is made, the move is made. This energy asks you to be decisive where you have been deferring.",
+    "reversed": "Speed without direction, or a decisive action that has not taken the full situation into account. The cut was made but it was not clean.",
+    "lore": "The archetype of the swift decisive warrior appears in Arjuna on the battlefield in the Bhagavad Gita, in Perseus striking before Medusa can petrify him, in Alexander the Great cutting the Gordian Knot rather than untying it. The Knight of Swords is pure directed mental energy at full gallop.",
+    "shadow": "The Champion of Shards' shadow is the person who mistakes speed for wisdom, who has confused the ability to act quickly with the judgment to act well. The decisive cut that severs something that needed to remain attached.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "seer of shards",
+    "name": "Seer of Shards",
+    "arcana": "minor",
+    "number": 13,
+    "suit": "swords",
+    "symbol": "Q♠",
+    "keyword_line": "What honest thing are you avoiding right now?",
+    "keywords": [
+      "the sharp truth",
+      "she who sees and says so",
+      "intelligence without softening",
+      "the honest voice"
+    ],
+    "upright": "This is someone who will tell you the truth about your situation without managing your feelings around it. The Seer of Shards is not unkind but she is direct, and what she has to say is worth hearing even if it requires something from you. What honest thing are you avoiding right now?",
+    "reversed": "The clarity has become cruelty, or the truth is being wielded as a weapon. Sharp intelligence in service of wounding is not wisdom.",
+    "lore": "Cassandra whose true prophecies went unheeded, the sibylline books whose warnings were dismissed, Deborah the judge who led not through military force but through the authority of accurate perception: the tradition of the sharp-tongued prophetess is one of the oldest in human culture.",
+    "shadow": "The Seer of Shards' shadow is the woman who has made her sharp tongue her identity, who uses precision and truth as a form of superiority. Intelligence deployed as dominance.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "archon of shards",
+    "name": "Archon of Shards",
+    "arcana": "minor",
+    "number": 14,
+    "suit": "swords",
+    "symbol": "K♠",
+    "keyword_line": "Bring that same clarity to what you are responsible for.",
+    "keywords": [
+      "the analytical sovereign",
+      "authority through clarity",
+      "the mind that commands",
+      "strategic mastery"
+    ],
+    "upright": "There is a form of leadership here that runs on clear thinking, precision, and the willingness to make hard calls without flinching. The Archon of Shards does not let sentiment cloud the decision. This energy is asking you to bring that same clarity to what you are responsible for.",
+    "reversed": "Analysis has become coldness, or the precision has been applied to something that needed a human response rather than a correct one.",
+    "lore": "Hammurabi whose code is the earliest surviving legal text, Solomon whose judgment cut through contradiction to truth, Minos the Cretan king who became a judge of the dead: the lawgiver kings of world mythology rule by the clarity of law, by the sword that separates truth from falsehood.",
+    "shadow": "The Archon of Shards' shadow is the ruler who has confused clarity with correctness, who applies his analytical frame to situations that require something his frame cannot capture. The man who is never wrong because he has defined right as what he can measure.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "ace of sigils",
+    "name": "Ace of Sigils",
+    "arcana": "minor",
+    "number": 1,
+    "suit": "pentacles",
+    "symbol": "A♣",
+    "keyword_line": "Possibility has just become something that can be built.",
+    "keywords": [
+      "material beginning",
+      "the seed of form",
+      "new abundance arriving",
+      "what can be built"
+    ],
+    "upright": "Something is being placed in your hands that has real, tangible potential. The Ace of Sigils is not abstract; it is the moment when possibility becomes concrete, a new opportunity, resource, or project that has weight and structure. Plant it carefully.",
+    "reversed": "The opportunity exists but you are not yet in a position to receive or act on it. Or it is being offered and you are not recognizing it for what it is.",
+    "lore": "The alchemical pentacle as materialized spiritual energy, the sacred coin of ancient Rome inscribed with the divine image, the first seeds saved from the harvest: the Ace of Pentacles in esoteric Tarot represents the moment when spiritual energy takes physical form. The gift is not merely wealth but the capacity to manifest.",
+    "shadow": "The Ace of Sigils' shadow is the material opportunity grasped without discernment, the seed planted in the wrong ground for the wrong reasons. The beginning of an accumulation that will eventually crowd out what matters.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "two of sigils",
+    "name": "Two of Sigils",
+    "arcana": "minor",
+    "number": 2,
+    "suit": "pentacles",
+    "symbol": "2♣",
+    "keyword_line": "You are doing it. Stay flexible.",
+    "keywords": [
+      "the juggle",
+      "adapting to change",
+      "balance in motion",
+      "keeping two things moving"
+    ],
+    "upright": "You are managing more than one significant thing at once and you are doing it. The Two of Sigils is active balance, not perfect stillness but the ongoing calibration of competing demands. What you are carrying is real and so is your capacity to carry it, as long as you stay flexible.",
+    "reversed": "The balance has broken down or the juggling has become too demanding to sustain. Something needs to be set down or the rhythm needs to be reset.",
+    "lore": "The figure juggling the lemniscate (the infinity symbol) above two coins in traditional Two of Pentacles imagery represents the endless cyclical nature of material management. In ancient Egyptian administrative texts, the image of the scribe balancing two sets of accounts captures this same energy: resource management as a constant process, not a settled state.",
+    "shadow": "The Two of Sigils' shadow is the person who has made the juggling their identity, who needs the complexity to feel important, who adds a new ball before setting down the ones that have run their course.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "three of sigils",
+    "name": "Three of Sigils",
+    "arcana": "minor",
+    "number": 3,
+    "suit": "pentacles",
+    "symbol": "3♣",
+    "keyword_line": "The work is taking visible form through competence and care.",
+    "keywords": [
+      "collaboration",
+      "the work taking shape",
+      "what is built in company",
+      "craftsmanship honored"
+    ],
+    "upright": "Something real is being built and it is being built well. The Three of Sigils is the card of skilled work done in good company, the satisfaction of a project taking visible form through competence and collaboration. You are doing the right things.",
+    "reversed": "The collaboration is breaking down or the work is not meeting the standard it should. Something in the foundation needs examination before the building goes higher.",
+    "lore": "The medieval guild system, in which master craftsmen assessed and approved the work of journeymen and apprentices, is the historical archetype of the Three of Pentacles: skill being evaluated by those who know the craft, excellence recognized by those with the authority to recognize it. The cathedral builders of the Middle Ages worked within this system.",
+    "shadow": "The Three of Sigils' shadow is the work performed for external approval rather than internal standard. The craftsperson who builds for recognition rather than quality, whose excellence is contingent on the presence of an audience.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "four of sigils",
+    "name": "Four of Sigils",
+    "arcana": "minor",
+    "number": 4,
+    "suit": "pentacles",
+    "symbol": "4♣",
+    "keyword_line": "Is what you are protecting as precarious as it feels?",
+    "keywords": [
+      "the guarded holding",
+      "security that has become hoarding",
+      "resource protection",
+      "held too tightly"
+    ],
+    "upright": "You are holding onto what you have with both hands and there is a reason for it. The Four of Sigils is not always negative; sometimes protecting your resources is exactly right. The question is whether the protection has become gripping and whether what you are holding is as precarious as it feels.",
+    "reversed": "The grip is loosening, or you have been holding so tightly that the holding itself has become the problem. What would happen if you set this down?",
+    "lore": "The miser figure of world literature, from Scrooge to Harpagon to the dragon sitting on its hoard in Norse legend: the fear of loss that produces the very poverty it tries to avoid is one of the oldest moral tales. In Qabalistic tradition, the Four corresponds to Chesed (mercy, abundance), which in the earth element has become static rather than generous.",
+    "shadow": "The Four of Sigils' shadow is the hoarding that impoverishes: the person who holds their resources, their love, their time, their talent so tightly that nothing flows and nothing grows. Security purchased at the price of aliveness.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "five of sigils",
+    "name": "Five of Sigils",
+    "arcana": "minor",
+    "number": 5,
+    "suit": "pentacles",
+    "symbol": "5♣",
+    "keyword_line": "The shelter is real. Do not refuse it.",
+    "keywords": [
+      "material hardship",
+      "feeling left out in the cold",
+      "the lack that feels permanent",
+      "what is not seen"
+    ],
+    "upright": "Something is genuinely difficult right now in the material or practical dimension of your life. The Five of Sigils is not about attitude but about real circumstances that require real response. The warmth behind you is worth looking toward. It does not solve the cold but it is not imaginary.",
+    "reversed": "A difficult period is beginning to ease, or you are refusing the help that is available because accepting it feels like losing something. The shelter is real. What is making it hard to accept what is being offered?",
+    "lore": "The two figures struggling through the snow outside a lit church window in traditional Tarot imagery: help is there, and they have not turned to look at it. The iconography of the five as disruption meets the earth element's most difficult lesson: that material difficulty is real and that spiritual pride can prevent the reception of material help.",
+    "shadow": "The Five of Sigils' shadow is the poverty that has become an identity, the person who refuses to leave their suffering because suffering has organized their sense of self. The cold outside the warm building chosen over the warmth that would require change.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "six of sigils",
+    "name": "Six of Sigils",
+    "arcana": "minor",
+    "number": 6,
+    "suit": "pentacles",
+    "symbol": "6♣",
+    "keyword_line": "Where is your relationship with giving and receiving right now?",
+    "keywords": [
+      "the exchange",
+      "generosity in balance",
+      "giving and receiving",
+      "abundance shared"
+    ],
+    "upright": "There is a flow of resources here, given and received in something approaching balance. The Six of Sigils is about the health of exchange, what comes in and goes out, whether generosity is genuine and whether receiving is allowed. Where is your relationship with giving and receiving right now?",
+    "reversed": "The exchange is out of balance. Either you are giving more than you can sustain or you are taking without reciprocating. Generosity without boundaries is not health.",
+    "lore": "The Vedic concept of rta (cosmic order maintained by sacrifice and reciprocal gift), the Andean concept of ayni (sacred reciprocity), the Northwest Coast potlatch as the redistribution of accumulated wealth: reciprocal exchange as the basis of social and cosmic order appears across cultures. The Six of Pentacles shows a figure weighing and distributing coins, the scales of reciprocal exchange.",
+    "shadow": "The Six of Sigils' shadow is the generosity that is control, the giving that creates obligation, the charity that humiliates the receiver. Power wielded through the management of resources rather than their genuine distribution.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "seven of sigils",
+    "name": "Seven of Sigils",
+    "arcana": "minor",
+    "number": 7,
+    "suit": "pentacles",
+    "symbol": "7♣",
+    "keyword_line": "Is what you are growing still what you intended?",
+    "keywords": [
+      "the long investment",
+      "waiting for what is planted",
+      "patience with what is growing",
+      "honest mid-course assessment"
+    ],
+    "upright": "You are in the in-between stage of a long project or investment, too far in to stop, not yet close enough to see the return. The Seven of Sigils asks you to assess honestly whether what you are growing is still what you intended. If it is, keep tending.",
+    "reversed": "The investment is not going to pay off in the way you hoped, or you are waiting for a harvest from something that has already run its course. It may be time to redirect the energy.",
+    "lore": "The agricultural calendar demanded that farmers assess their crops mid-season, before full commitment of additional resources: the concept of the mid-season review is ancient and practical. The figure leaning on a hoe and surveying the growing crops represents not giving up, not doubling down without thought, but looking carefully at what is actually happening.",
+    "shadow": "The Seven of Sigils' shadow is the sunk cost that cannot be abandoned because too much has already been invested. The crop tended past the point of honest assessment into the territory of magical thinking.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "eight of sigils",
+    "name": "Eight of Sigils",
+    "arcana": "minor",
+    "number": 8,
+    "suit": "pentacles",
+    "symbol": "8♣",
+    "keyword_line": "What you are practicing is working. Keep at it.",
+    "keywords": [
+      "mastery in progress",
+      "the skilled work",
+      "devotion to craft",
+      "developing capability"
+    ],
+    "upright": "You are in the middle of developing real skill and it shows. The Eight of Sigils is not about arrival but about the sustained practice that makes arrival possible. What you are practicing is working. Keep at it with the same attention you have been bringing.",
+    "reversed": "The work has become rote, or you are practicing something you have already mastered, neither growing nor moving. The repetition is not producing the refinement it once did.",
+    "lore": "The medieval craftsperson at the bench, producing piece after piece in the development of their skill, captures the essence of the Eight of Pentacles: the patience that mastery requires before it becomes visible. In Japanese aesthetics, the concept of shokunin (the craftsperson) carries a similar energy, the devoted application of skill over time that eventually produces something transcendent.",
+    "shadow": "The Eight of Sigils' shadow is the perfectionism that uses the endless refinement of craft to avoid the vulnerability of putting finished work into the world. The mastery that is never complete enough to be shown.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "nine of sigils",
+    "name": "Nine of Sigils",
+    "arcana": "minor",
+    "number": 9,
+    "suit": "pentacles",
+    "symbol": "9♣",
+    "keyword_line": "You built this yourself, and it stands. Own it without minimizing.",
+    "keywords": [
+      "hard-won abundance",
+      "the solo achievement",
+      "what is built by your own hand",
+      "earned security"
+    ],
+    "upright": "What you have built, you have built yourself, and it stands. The Nine of Sigils is the particular satisfaction of self-sufficiency, of having created the security you needed through your own sustained effort. This is real. Own it without minimizing.",
+    "reversed": "The self-sufficiency has become isolation, or what looks like independence is actually loneliness. You have built the garden. Are you letting anyone in?",
+    "lore": "The image of the lone figure in a lush garden in traditional Nine of Pentacles imagery draws on the iconography of the hortus conclusus, the enclosed garden of medieval Christian symbolism, a place of achieved peace and cultivated beauty. The abundance is real and the boundary is also real; the question is whether the boundary is chosen or imposed.",
+    "shadow": "The Nine of Sigils' shadow is the independence that has become a fortress, the person who has achieved material security by closing off the vulnerability that genuine connection requires. The garden flourishing, the gate locked from the inside.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "ten of sigils",
+    "name": "Ten of Sigils",
+    "arcana": "minor",
+    "number": 10,
+    "suit": "pentacles",
+    "symbol": "10♣",
+    "keyword_line": "You are part of something that will continue beyond you.",
+    "keywords": [
+      "the full inheritance",
+      "lasting material foundation",
+      "what is passed down",
+      "legacy"
+    ],
+    "upright": "There is a foundation here meant to last beyond the moment, a kind of wealth, stability, or legacy that has genuine permanence. The Ten of Sigils is not just material; it is the accumulation of what has been built over time into something that means something. You are part of something that will continue.",
+    "reversed": "The legacy is complicated, or what has been built has strings attached. Or: the stability is an illusion and the foundation has cracks that need addressing before more is built on top.",
+    "lore": "The Roman concept of patria potestas, the Japanese concept of ie (the household as a continuous entity across generations), the Yoruba concept of the ancestor as an active participant in the living family's fate: legacy and inheritance run through ancient cultures as primary organizing principles. The Ten of Pentacles is the material suit at its fullest expression, wealth that connects past to future.",
+    "shadow": "The Ten of Sigils' shadow is the family legacy that is also a burden, the inheritance of wealth accompanied by the inheritance of dysfunction, expectation, or obligation that the recipient never chose. The stability bought at the price of freedom.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "acolyte of sigils",
+    "name": "Acolyte of Sigils",
+    "arcana": "minor",
+    "number": 11,
+    "suit": "pentacles",
+    "symbol": "J♣",
+    "keyword_line": "The unglamorous practice is the practice. Stay with it.",
+    "keywords": [
+      "the diligent learner",
+      "patience with process",
+      "early material effort",
+      "grounded beginning"
+    ],
+    "upright": "There is a steady, careful quality here, someone who is learning through practice and is not in a hurry to get ahead of their own preparation. The Acolyte of Sigils puts in the time. What are you being asked to learn through sustained and unglamorous practice?",
+    "reversed": "The diligence has become drudgery or the carefulness has crossed into lack of ambition. The pace is too slow for what the situation actually requires.",
+    "lore": "The apprentice system in craft traditions placed young people in a state of disciplined patience that ran counter to individual ambition: you learned by watching, then by doing under supervision, then by demonstrating competence before being allowed to advance. The Page of Pentacles in traditional cartomancy represented a young person with practical aptitude, the first signs of material intelligence.",
+    "shadow": "The Acolyte of Sigils' shadow is the student who has confused the process of learning with the life they are supposed to be living, who keeps returning to the beginning of things because beginning something new is more comfortable than the vulnerability of attempting mastery.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "champion of sigils",
+    "name": "Champion of Sigils",
+    "arcana": "minor",
+    "number": 12,
+    "suit": "pentacles",
+    "symbol": "C♣",
+    "keyword_line": "The pace is correct even if it does not feel like enough.",
+    "keywords": [
+      "steady advance",
+      "the methodical approach",
+      "reliable progress",
+      "what moves forward without drama"
+    ],
+    "upright": "Progress is happening. The Champion of Sigils is not exciting but the movement is reliable, incremental, and real. Something that requires patience and consistency is asking you to apply exactly that. The pace is correct even if it does not feel like enough.",
+    "reversed": "The pace has slowed past productive, or the methodical approach is being applied to something that actually needs a different kind of energy. Steadiness is not the answer to every problem.",
+    "lore": "The ox as the laboring animal, as opposed to the horse (speed) or the eagle (vision): the Knight of Pentacles is associated with the slow, strong, reliable energy of the working earth element. In Norse tradition, Thor's goats who pulled his chariot and could be killed and resurrected each day represent this same energy: reliable, regenerative, and entirely unglamorous.",
+    "shadow": "The Champion of Sigils' shadow is the person who has made reliability into a form of resistance to growth, who uses steadiness to avoid the risk that genuine development requires. Moving slowly as a way of never having to fail spectacularly.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "seer of sigils",
+    "name": "Seer of Sigils",
+    "arcana": "minor",
+    "number": 13,
+    "suit": "pentacles",
+    "symbol": "Q♣",
+    "keyword_line": "Steward what you have with the same care she brings.",
+    "keywords": [
+      "practical intelligence",
+      "she who builds the lasting thing",
+      "generosity from strength",
+      "earth wisdom"
+    ],
+    "upright": "This is someone who knows how to take care of what matters, who is generous from a place of actual abundance rather than performance, and who builds what she undertakes with real skill. The Seer of Sigils does not waste what she has. What are you being asked to steward with this kind of care?",
+    "reversed": "Practicality has become stinginess, or the competence is being applied to control rather than creation. The abundance is real; the generosity is not flowing from it.",
+    "lore": "Demeter managing the harvest, Frigg whose knowledge she keeps while managing the household of Asgard, the Yoruba Oshun who governs sweetness and material abundance: the figure of the fertile, abundant, practical queen of the earth appears across traditions. The Queen of Pentacles is almost always depicted in a garden, the natural world responsive to her attention.",
+    "shadow": "The Seer of Sigils' shadow is the practical woman whose practicality has become a way of controlling the people around her, who manages the material world so effectively that no one else is allowed to touch it. Competence as a form of dominion.",
+    "deckType": "VeilArcana"
+  },
+  {
+    "id": "archon of sigils",
+    "name": "Archon of Sigils",
+    "arcana": "minor",
+    "number": 14,
+    "suit": "pentacles",
+    "symbol": "K♣",
+    "keyword_line": "Take the long view of what you are building. Tend it seriously.",
+    "keywords": [
+      "the sovereign builder",
+      "material mastery",
+      "wealth through patience",
+      "what is built to last"
+    ],
+    "upright": "There is an authority here that has come from building something real over a long time. The Archon of Sigils is not wealthy by accident or inheritance but through sustained effort and genuine acumen. This energy is asking you to take a long view of what you are building and to tend it with the same seriousness.",
+    "reversed": "Material mastery has become materialism, or the steadiness is in service of acquisition rather than abundance. What is being built is missing something that cannot be purchased.",
+    "lore": "The Celtic notion of the sacred king whose body was the body of the land, the Egyptian Pharaoh as the embodiment of Ma'at, the Japanese Emperor as the linchpin of cosmic order through ritual connection to the land: the King of Pentacles governs material reality as a sacred trust, not as personal property. The wealth is his to manage, not to own.",
+    "shadow": "The Archon of Sigils' shadow is the man who has identified so completely with what he has built that he cannot allow himself to be separate from it. The empire that has become more important than the people it was built to sustain. Wealth as identity.",
+    "deckType": "VeilArcana"
+  }
+]

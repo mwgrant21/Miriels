@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Drowned Ephemeris — DALL-E Generation Tracker</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, sans-serif; background: #0a0c0e; color: #ccd4d6; min-height: 100vh; }
+  h1 { font-size: 18px; font-weight: 500; }
+
+  .header { padding: 20px 24px 16px; border-bottom: 0.5px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .header-left h1 { color: #c8a878; }
+  .header-left p { font-size: 13px; color: #6e7679; margin-top: 2px; }
+  .progress-wrap { display: flex; align-items: center; gap: 12px; }
+  .progress-bar { width: 200px; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, #4a7a82, #c8a050); border-radius: 3px; transition: width 0.3s; }
+  .progress-label { font-size: 14px; font-weight: 500; color: #c8a878; white-space: nowrap; }
+
+  .style-section { padding: 10px 24px; border-bottom: 0.5px solid rgba(255,255,255,0.08); display: flex; gap: 10px; align-items: flex-start; }
+  .style-label { font-size: 11px; color: #6e7679; white-space: nowrap; padding-top: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .style-meta { flex: 1; }
+  .style-note { font-size: 11px; color: #4a5052; margin-bottom: 5px; }
+  .style-note strong { color: #8a9294; font-weight: 500; }
+  .style-text { font-size: 12px; color: #74807f; font-family: monospace; line-height: 1.5; }
+
+  .filters { padding: 12px 24px; display: flex; gap: 6px; flex-wrap: wrap; border-bottom: 0.5px solid rgba(255,255,255,0.08); }
+  .filter-btn { font-size: 12px; padding: 4px 12px; border-radius: 20px; border: 0.5px solid rgba(255,255,255,0.15); background: transparent; color: #8a9294; cursor: pointer; transition: all 0.15s; }
+  .filter-btn:hover { background: rgba(255,255,255,0.06); color: #c8a878; }
+  .filter-btn.active { background: rgba(120,90,50,0.35); border-color: rgba(200,160,80,0.6); color: #e0c088; }
+  .search-wrap { margin-left: auto; }
+  .search-wrap input { font-size: 12px; padding: 4px 10px; background: rgba(255,255,255,0.05); border: 0.5px solid rgba(255,255,255,0.12); border-radius: 6px; color: #c8a878; outline: none; width: 160px; }
+  .search-wrap input::placeholder { color: #4a5052; }
+  .search-wrap input:focus { border-color: rgba(200,160,80,0.5); }
+
+  .detail-panel { display: none; margin: 0; border-bottom: 0.5px solid rgba(255,255,255,0.12); background: rgba(30,36,38,0.5); padding: 20px 24px; }
+  .detail-panel.visible { display: block; }
+  .detail-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .detail-num { font-size: 11px; color: #6e7679; font-family: monospace; }
+  .detail-name { font-size: 17px; font-weight: 500; color: #e0c088; flex: 1; }
+  .detail-blemish { font-size: 11px; color: #8fb0b6; border: 0.5px solid rgba(143,176,182,0.4); border-radius: 12px; padding: 2px 9px; white-space: nowrap; }
+  .close-btn { font-size: 13px; padding: 4px 10px; background: transparent; border: 0.5px solid rgba(255,255,255,0.15); color: #8a9294; border-radius: 6px; cursor: pointer; }
+  .close-btn:hover { color: #c8a878; border-color: rgba(255,255,255,0.3); }
+  .detail-prompt { font-size: 13px; color: #c4ccce; line-height: 1.7; background: rgba(0,0,0,0.3); border: 0.5px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 14px 16px; margin-bottom: 14px; font-family: monospace; white-space: pre-wrap; }
+  .detail-actions { display: flex; gap: 10px; }
+  .action-btn { font-size: 13px; padding: 7px 16px; border-radius: 7px; border: 0.5px solid; cursor: pointer; transition: all 0.15s; font-weight: 500; }
+  .copy-prompt-btn { background: rgba(120,90,50,0.4); border-color: rgba(200,160,80,0.6); color: #e0c088; font-size: 14px; padding: 9px 20px; }
+  .copy-prompt-btn:hover { background: rgba(120,90,50,0.6); }
+  .copy-prompt-btn.copied { background: rgba(30,90,80,0.4); border-color: rgba(80,170,150,0.5); color: #7ee8c8; }
+  .done-btn { background: rgba(40,90,85,0.3); border-color: rgba(70,150,140,0.5); color: #86d4c4; }
+  .done-btn:hover { background: rgba(40,90,85,0.5); }
+  .done-btn.is-done { background: rgba(40,90,85,0.5); border-color: rgba(80,190,170,0.7); color: #7ee8c8; }
+  .undone-btn { background: rgba(120,50,50,0.3); border-color: rgba(180,70,70,0.5); color: #e88888; }
+  .undone-btn:hover { background: rgba(120,50,50,0.5); }
+
+  .grid-wrap { padding: 16px 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); gap: 8px; }
+  .card { border: 0.5px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 10px 12px; cursor: pointer; transition: all 0.15s; background: rgba(255,255,255,0.03); position: relative; }
+  .card:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.2); }
+  .card.selected { border-color: rgba(200,160,80,0.7); background: rgba(120,90,50,0.18); }
+  .card.done { opacity: 0.5; }
+  .card.done .card-name { text-decoration: line-through; color: #565e60; }
+  .card-top { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; }
+  .suit-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .card-num { font-size: 11px; color: #4a5052; font-family: monospace; }
+  .card-name { font-size: 12px; color: #c8a878; line-height: 1.35; font-weight: 500; }
+  .card-suit-label { font-size: 10px; color: #5a6264; margin-top: 4px; }
+  .card-mark { font-size: 9px; color: #8fb0b6; margin-top: 2px; }
+  .done-check { position: absolute; top: 7px; right: 8px; font-size: 14px; color: #5dc0a8; }
+  .hidden { display: none !important; }
+
+  .dot-unbound { background: #c8a050; }
+  .dot-court { background: #8fb0b6; }
+  .dot-cast { background: #6a8a92; }
+
+  .section-label { font-size: 11px; color: #4a5052; text-transform: uppercase; letter-spacing: 0.06em; margin: 16px 0 8px; grid-column: 1 / -1; padding-bottom: 4px; border-bottom: 0.5px solid rgba(255,255,255,0.06); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <h1>The Drowned Ephemeris — DALL-E Generation Tracker</h1>
+    <p>Pressed-relief Deep/Void instrument deck &nbsp;·&nbsp; 71 cards</p>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <div class="progress-label" id="progressLabel">0 / 71</div>
+  </div>
+</div>
+
+<div class="style-section">
+  <div class="style-label">Baseline<br>style</div>
+  <div class="style-meta">
+    <div class="style-note"><strong>Already included</strong> — the copy button on each card gives you the complete ready-to-paste prompt with this appended. Material and any blemish are already written into each card's own scene description, since they vary card to card.</div>
+    <div class="style-text">No paint, no brushwork. No text, no numerals, no card frame. Square 1:1.</div>
+  </div>
+</div>
+
+<div class="filters">
+  <button class="filter-btn active" onclick="setFilter('all',this)">All (71)</button>
+  <button class="filter-btn" onclick="setFilter('unbound',this)">Unbound (11)</button>
+  <button class="filter-btn" onclick="setFilter('court',this)">Courts (20)</button>
+  <button class="filter-btn" onclick="setFilter('cast',this)">Casts (40)</button>
+  <button class="filter-btn" onclick="setFilter('marked',this)">Blemished (18)</button>
+  <button class="filter-btn" onclick="setFilter('todo',this)">To do</button>
+  <button class="filter-btn" onclick="setFilter('done',this)">Done</button>
+  <div class="search-wrap"><input type="text" id="searchInput" placeholder="Search cards..." oninput="renderGrid()"></div>
+</div>
+
+<div class="detail-panel" id="detailPanel">
+  <div class="detail-header">
+    <span class="detail-num" id="detailNum"></span>
+    <span class="detail-name" id="detailName"></span>
+    <span class="detail-blemish" id="detailBlemish"></span>
+    <button class="close-btn" onclick="closeDetail()">Close</button>
+  </div>
+  <div class="detail-prompt" id="detailPrompt"></div>
+  <div class="detail-actions">
+    <button class="action-btn copy-prompt-btn" id="copyPromptBtn" onclick="copyPrompt()">Copy prompt</button>
+    <button class="action-btn done-btn" id="doneBtn" onclick="toggleDone()"></button>
+  </div>
+</div>
+
+<div class="grid-wrap">
+  <div class="grid" id="cardGrid"></div>
+</div>
+
+<script>
+const STYLE = " No paint, no brushwork. No text, no numerals, no card frame. Square 1:1.";
+
+const CARDS = [
+  // ---- UNBOUND (11) ----
+  {id:"instrument",num:"1",name:"The Instrument",section:"unbound",sectionLabel:"Unbound",mark:"The Strike",prompt:"An antique brass surveying instrument, like a sounding-line reel fused with a sextant, struck in low relief into worn brass and bronze, pitted patina, warm aged metal tones. Across its face, a branching Lichtenberg lightning-scar spreads from its center, charred at the edges, faint glow still visible in the hairline cracks, as if the strike never fully stopped."},
+  {id:"line",num:"2",name:"The Line",section:"unbound",sectionLabel:"Unbound",mark:"",prompt:"A single coiled length of rope, taut at one end and fraying at the other, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones."},
+  {id:"toll",num:"3",name:"The Toll",section:"unbound",sectionLabel:"Unbound",mark:"Mend (gold)",prompt:"A pair of old brass scales, one side weighted heavier than the other, struck in low relief into worn brass and bronze, pitted patina, warm aged metal tones, with one fracture through the base filled and repaired by a vein of gold sitting proud of the surface."},
+  {id:"surface",num:"4",name:"The Surface",section:"unbound",sectionLabel:"Unbound",mark:"Mend (burn-seal)",prompt:"A horizon line and a single small boat, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones, with a split in the grain sealed shut by a dark scorched char line."},
+  {id:"regard",num:"5",name:"The Regard",section:"unbound",sectionLabel:"Unbound",mark:"Mend (silver)",prompt:"A single vast eye, pressed in low relief into polished black obsidian, glossy and faintly reflective, with one fracture across the glass filled and repaired by a vein of tarnished silver sitting proud of the surface."},
+  {id:"recorder",num:"6",name:"The Recorder",section:"unbound",sectionLabel:"Unbound",mark:"",prompt:"A single open book or ledger, its pages blank, carved in low relief into dark slate, cracked by pressure and weathered at the edges."},
+  {id:"resurfacing",num:"7",name:"Resurfacing",section:"unbound",sectionLabel:"Unbound",mark:"",prompt:"A single hand breaking upward through a flat plane, fingers just clearing the surface, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones."},
+  {id:"absence",num:"8",name:"The Absence",section:"unbound",sectionLabel:"Unbound",mark:"The Gap",prompt:"A weathered slab of dark slate, cracked by pressure and weathered at the edges, with a human silhouette outlined faintly at its center where the relief simply never took, that portion of the stone left blank and featureless against the textured surface around it."},
+  {id:"keeper",num:"9",name:"The Keeper",section:"unbound",sectionLabel:"Unbound",mark:"Scrape",prompt:"A weathered stone sentinel face, ancient and half-eroded at the edges, pressed in low relief into dark slate, with three parallel claw-like gouges raked diagonally across the face, cutting fresh and pale through the dark weathered stone."},
+  {id:"dark-between",num:"10",name:"The Dark Between",section:"unbound",sectionLabel:"Unbound",mark:"",prompt:"A field of fine radiating fracture lines spreading outward with no central figure, pressed in low relief into polished black obsidian, glossy and faintly reflective, ambient pressure implied by the fractures alone rather than any subject."},
+  {id:"call",num:"11",name:"The Call",section:"unbound",sectionLabel:"Unbound",mark:"Wound",prompt:"A single hand reaching out over the edge of a precipice, struck in low relief into hammered black iron, pitted from repeated strikes, faint rust-orange at raised edges, with a deep jagged tear through the wrist left raw and unrepaired, edges peeled back."},
+
+  // ---- COURTS (20) ----
+  {id:"explorer-sunlit",num:"Su",name:"Explorer of the Sunlit",section:"court",sectionLabel:"Court · Sunlit",mark:"",prompt:"A hooded robed figure, hood drawn up and low over the brow, face shadowed but for the set of the jaw, head tilted slightly forward as though scenting the way ahead, one foot stepping forward, alert forward-leaning posture, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones."},
+  {id:"lost-sunlit",num:"Su",name:"Lost of the Sunlit",section:"court",sectionLabel:"Court · Sunlit",mark:"",prompt:"A hooded robed figure, head turned aside, hands held slightly out as if uncertain of direction, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones."},
+  {id:"prophet-sunlit",num:"Su",name:"Prophet of the Sunlit",section:"court",sectionLabel:"Court · Sunlit",mark:"",prompt:"A hooded robed figure, head bowed, one hand raised near the temple as if listening to something unseen, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones."},
+  {id:"condemned-sunlit",num:"Su",name:"Condemned of the Sunlit",section:"court",sectionLabel:"Court · Sunlit",mark:"",prompt:"A fully hooded robed figure, head down, weighted stance, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones."},
+
+  {id:"explorer-twilight",num:"Tw",name:"Explorer of the Twilight",section:"court",sectionLabel:"Court · Twilight",mark:"",prompt:"A hooded robed figure, hood drawn up and low over the brow, face shadowed but for the set of the jaw, head tilted slightly forward as though scenting the way ahead, one foot stepping forward, alert forward-leaning posture, struck in low relief into worn brass and bronze, pitted patina, warm aged metal tones."},
+  {id:"lost-twilight",num:"Tw",name:"Lost of the Twilight",section:"court",sectionLabel:"Court · Twilight",mark:"",prompt:"A hooded robed figure, head turned aside, hands held slightly out, struck in low relief into worn brass and bronze, pitted patina, warm aged metal tones."},
+  {id:"prophet-twilight",num:"Tw",name:"Prophet of the Twilight",section:"court",sectionLabel:"Court · Twilight",mark:"",prompt:"A hooded robed figure, head bowed, one hand raised near the temple, struck in low relief into worn brass and bronze, pitted patina, warm aged metal tones."},
+  {id:"condemned-twilight",num:"Tw",name:"Condemned of the Twilight",section:"court",sectionLabel:"Court · Twilight",mark:"",prompt:"A fully hooded robed figure, head down, weighted stance, struck in low relief into worn brass and bronze, pitted patina, warm aged metal tones."},
+
+  {id:"explorer-midnight",num:"Mi",name:"Explorer of Midnight",section:"court",sectionLabel:"Court · Midnight",mark:"",prompt:"A hooded robed figure, hood drawn up and low over the brow, face shadowed but for the set of the jaw, head tilted slightly forward as though scenting the way ahead, one foot stepping forward, alert forward-leaning posture, pressed in low relief into dark slate, cracked by pressure and weathered at the edges."},
+  {id:"lost-midnight",num:"Mi",name:"Lost of Midnight",section:"court",sectionLabel:"Court · Midnight",mark:"",prompt:"A hooded robed figure, head turned aside, hands held slightly out, pressed in low relief into dark slate, cracked by pressure and weathered at the edges."},
+  {id:"prophet-midnight",num:"Mi",name:"Prophet of Midnight",section:"court",sectionLabel:"Court · Midnight",mark:"",prompt:"A hooded robed figure, head bowed, one hand raised near the temple, pressed in low relief into dark slate, cracked by pressure and weathered at the edges."},
+  {id:"condemned-midnight",num:"Mi",name:"Condemned of Midnight",section:"court",sectionLabel:"Court · Midnight",mark:"Mend (pewter)",prompt:"A fully hooded robed figure, head down, weighted stance, pressed in low relief into dark slate, cracked by pressure and weathered at the edges, with one fracture through the cloak filled and repaired by a vein of dull soft pewter sitting proud of the surface."},
+
+  {id:"explorer-abyssal",num:"Ab",name:"Explorer of the Abyssal",section:"court",sectionLabel:"Court · Abyssal",mark:"",prompt:"A hooded robed figure, hood drawn up and low over the brow, face shadowed but for the set of the jaw, head tilted slightly forward as though scenting the way ahead, one foot stepping forward, alert forward-leaning posture, struck in low relief into hammered black iron, pitted from repeated strikes, faint rust-orange at raised edges."},
+  {id:"lost-abyssal",num:"Ab",name:"Lost of the Abyssal",section:"court",sectionLabel:"Court · Abyssal",mark:"",prompt:"A hooded robed figure, head turned aside, hands held slightly out, struck in low relief into hammered black iron, pitted from repeated strikes, faint rust-orange at raised edges."},
+  {id:"prophet-abyssal",num:"Ab",name:"Prophet of the Abyssal",section:"court",sectionLabel:"Court · Abyssal",mark:"",prompt:"A hooded robed figure, head bowed, one hand raised near the temple, struck in low relief into hammered black iron, pitted from repeated strikes, faint rust-orange at raised edges."},
+  {id:"condemned-abyssal",num:"Ab",name:"Condemned of the Abyssal",section:"court",sectionLabel:"Court · Abyssal",mark:"Wound",prompt:"A hooded robed figure, head down, weighted stance, struck in low relief into hammered black iron, pitted from repeated strikes, with a deep jagged tear torn through the cloak and shoulder, raw and unrepaired, the metal peeled back at the wound's edges."},
+
+  {id:"explorer-hadal",num:"Ha",name:"Explorer of the Hadal",section:"court",sectionLabel:"Court · Hadal",mark:"Wound",prompt:"A hooded figure pressed flat into a slab of branching fulgurite glass, rough sandy exterior, smooth pale frosted interior, the whole form fused into the flat plane of the slab with no depth beyond the surface, not a freestanding object, no ground or floor visible, viewed frontally as a flat wall panel, with a deep jagged tear through the glass left raw and unrepaired, edges peeled back."},
+  {id:"lost-hadal",num:"Ha",name:"Lost of the Hadal",section:"court",sectionLabel:"Court · Hadal",mark:"Scrape",prompt:"A hooded figure pressed flat into a slab of branching fulgurite glass, rough sandy exterior, smooth pale frosted interior, the whole form fused into the flat plane of the slab with no depth beyond the surface, not a freestanding object, no ground or floor visible, viewed frontally as a flat wall panel, with three parallel claw-like gouges raked across the translucent body."},
+  {id:"prophet-hadal",num:"Ha",name:"Prophet of the Hadal",section:"court",sectionLabel:"Court · Hadal",mark:"",prompt:"A hooded figure formed within branching fulgurite glass, rough sandy exterior, smooth pale frosted interior, a small dark sigil burned into the glass at the figure's chest as though a pact was sealed the instant the glass formed."},
+  {id:"condemned-hadal",num:"Ha",name:"Condemned of the Hadal",section:"court",sectionLabel:"Court · Hadal",mark:"Mend (silver)",prompt:"A fully hooded figure pressed flat into a slab of branching fulgurite glass, rough sandy exterior, smooth pale frosted interior, the whole form fused into the flat plane of the slab with no depth beyond the surface, not a freestanding object, no ground or floor visible, viewed frontally as a flat wall panel, with one fracture through the body filled and repaired by a vein of tarnished silver sitting proud of the surface."},
+
+  // ---- CASTS (40) ----
+  {id:"sunlit-1",num:"Su-1",name:"Toe in the Water",section:"cast",sectionLabel:"Cast · Sunlit",mark:"",prompt:"A single bare foot stepping into shallow rippling water, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones."},
+  {id:"sunlit-2",num:"Su-2",name:"Clear Water",section:"cast",sectionLabel:"Cast · Sunlit",mark:"",prompt:"A still water surface with smooth pebbles visible on the floor beneath it, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones."},
+  {id:"sunlit-3",num:"Su-3",name:"The Reef",section:"cast",sectionLabel:"Cast · Sunlit",mark:"",prompt:"A clustered branching reef structure teeming with small shell-like shapes, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones."},
+  {id:"sunlit-4",num:"Su-4",name:"Tideline",section:"cast",sectionLabel:"Cast · Sunlit",mark:"",prompt:"A wavy horizontal line of scattered shells and debris marking a tide's reach, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones."},
+  {id:"sunlit-5",num:"Su-5",name:"Sounding Line Cast",section:"cast",sectionLabel:"Cast · Sunlit",mark:"",prompt:"A weighted line dropping straight down into still water, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones."},
+  {id:"sunlit-6",num:"Su-6",name:"Wake",section:"cast",sectionLabel:"Cast · Sunlit",mark:"",prompt:"The rippling trail left behind a small boat, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones."},
+  {id:"sunlit-7",num:"Su-7",name:"Horizon Line",section:"cast",sectionLabel:"Cast · Sunlit",mark:"",prompt:"A flat horizon line with one small distant shape resting on it, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones."},
+  {id:"sunlit-8",num:"Su-8",name:"Last Light",section:"cast",sectionLabel:"Cast · Sunlit",mark:"",prompt:"A single raised radiant disc low against a flat horizon, like a sun about to set, pressed in low relief into salt-bleached driftwood, natural wood grain, pale silvered grey tones."},
+
+  {id:"twilight-1",num:"Tw-1",name:"Fading Edge",section:"cast",sectionLabel:"Cast · Twilight",mark:"",prompt:"A landscape silhouette whose horizon grows indistinct and blurred at one side, struck in low relief into worn brass and bronze, pitted patina, warm aged metal tones."},
+  {id:"twilight-2",num:"Tw-2",name:"Borrowed Light",section:"cast",sectionLabel:"Cast · Twilight",mark:"",prompt:"A lantern held aloft by a single unseen hand, struck in low relief into worn brass and bronze, pitted patina, warm aged metal tones."},
+  {id:"twilight-3",num:"Tw-3",name:"Bioluminescence",section:"cast",sectionLabel:"Cast · Twilight",mark:"",prompt:"A cluster of small raised luminous nodules scattered across a dim surface, struck in low relief into worn brass and bronze, pitted patina, warm aged metal tones."},
+  {id:"twilight-4",num:"Tw-4",name:"The Blur",section:"cast",sectionLabel:"Cast · Twilight",mark:"",prompt:"Overlapping soft-edged ripples with indistinct boundaries, struck in low relief into worn brass and bronze, pitted patina, warm aged metal tones."},
+  {id:"twilight-5",num:"Tw-5",name:"Shape Without Detail",section:"cast",sectionLabel:"Cast · Twilight",mark:"",prompt:"A simple silhouette figure with no carved facial features, deliberately blank, struck in low relief into worn brass and bronze, pitted patina, warm aged metal tones."},
+  {id:"twilight-6",num:"Tw-6",name:"Cold Current",section:"cast",sectionLabel:"Cast · Twilight",mark:"",prompt:"Flowing linear current lines moving diagonally across the surface, struck in low relief into worn brass and bronze, pitted patina, warm aged metal tones."},
+  {id:"twilight-7",num:"Tw-7",name:"Half-Heard",section:"cast",sectionLabel:"Cast · Twilight",mark:"",prompt:"A single cupped hand held near an ear, straining to listen, struck in low relief into worn brass and bronze, pitted patina, warm aged metal tones."},
+  {id:"twilight-8",num:"Tw-8",name:"The Last Familiar Shape",section:"cast",sectionLabel:"Cast · Twilight",mark:"",prompt:"A small carved anchor, its outline fading into rough uncarved texture at the edges, struck in low relief into worn brass and bronze, pitted patina, warm aged metal tones."},
+
+  {id:"midnight-1",num:"Mi-1",name:"No Horizon",section:"cast",sectionLabel:"Cast · Midnight",mark:"",prompt:"A flat featureless plane with no dividing line anywhere on it, pressed in low relief into dark slate, cracked by pressure and weathered at the edges."},
+  {id:"midnight-2",num:"Mi-2",name:"Pressure Change",section:"cast",sectionLabel:"Cast · Midnight",mark:"",prompt:"Concentric rings compressing inward toward a single center point, pressed in low relief into dark slate, cracked by pressure and weathered at the edges."},
+  {id:"midnight-3",num:"Mi-3",name:"Cold Intelligence",section:"cast",sectionLabel:"Cast · Midnight",mark:"",prompt:"An asymmetrical many-limbed silhouette, unfamiliar and alien in shape, pressed in low relief into dark slate, cracked by pressure and weathered at the edges."},
+  {id:"midnight-4",num:"Mi-4",name:"The Long Silence",section:"cast",sectionLabel:"Cast · Midnight",mark:"",prompt:"A single still seated figure surrounded by wide empty untextured space, pressed in low relief into dark slate, cracked by pressure and weathered at the edges."},
+  {id:"midnight-5",num:"Mi-5",name:"Deep Current",section:"cast",sectionLabel:"Cast · Midnight",mark:"",prompt:"Strong flowing directional ribbons of movement crossing the surface, pressed in low relief into dark slate, cracked by pressure and weathered at the edges."},
+  {id:"midnight-6",num:"Mi-6",name:"What the Dark Hides",section:"cast",sectionLabel:"Cast · Midnight",mark:"",prompt:"A shape mostly receding into deep untouched shadow, only its edges visible, pressed in low relief into dark slate, cracked by pressure and weathered at the edges."},
+  {id:"midnight-7",num:"Mi-7",name:"Echo Without Source",section:"cast",sectionLabel:"Cast · Midnight",mark:"",prompt:"Concentric rippling rings radiating outward with no visible point of origin, pressed in low relief into dark slate, cracked by pressure and weathered at the edges."},
+  {id:"midnight-8",num:"Mi-8",name:"The Point of No Easy Return",section:"cast",sectionLabel:"Cast · Midnight",mark:"Mend (pewter)",prompt:"A single footprint at the very edge of a steep drop-off, pressed in low relief into dark slate, cracked by pressure and weathered at the edges, with one fracture nearby filled and repaired by a vein of dull soft pewter sitting proud of the surface."},
+
+  {id:"abyssal-1",num:"Ab-1",name:"Crush Depth",section:"cast",sectionLabel:"Cast · Abyssal",mark:"",prompt:"A structure visibly bowed and compressed inward under immense weight, struck in low relief into hammered black iron, pitted from repeated strikes."},
+  {id:"abyssal-2",num:"Ab-2",name:"Alien Bloom",section:"cast",sectionLabel:"Cast · Abyssal",mark:"",prompt:"A strange branching flowerlike structure unlike any known plant, struck in low relief into hammered black iron, pitted from repeated strikes."},
+  {id:"abyssal-3",num:"Ab-3",name:"Vent",section:"cast",sectionLabel:"Cast · Abyssal",mark:"Warp",prompt:"A fissure with radiating cracks around a central opening, struck in low relief into hammered black iron, pitted from repeated strikes, with the area around the opening blistered and scorched outward as if heat pushed through from behind."},
+  {id:"abyssal-4",num:"Ab-4",name:"The Weight Above",section:"cast",sectionLabel:"Cast · Abyssal",mark:"",prompt:"A figure bent under an unseen weight pressing down from above, struck in low relief into hammered black iron, pitted from repeated strikes."},
+  {id:"abyssal-5",num:"Ab-5",name:"Blind Sight",section:"cast",sectionLabel:"Cast · Abyssal",mark:"",prompt:"A face with smooth unmarked eyes, its surface texture emphasized instead of features, struck in low relief into hammered black iron, pitted from repeated strikes."},
+  {id:"abyssal-6",num:"Ab-6",name:"The Last Current",section:"cast",sectionLabel:"Cast · Abyssal",mark:"",prompt:"A single thin ribbon of movement crossing an otherwise still, heavy surface, struck in low relief into hammered black iron, pitted from repeated strikes."},
+  {id:"abyssal-7",num:"Ab-7",name:"Nothing Answers",section:"cast",sectionLabel:"Cast · Abyssal",mark:"",prompt:"A single open mouth-like shape with no answering shape opposite it, isolated on the surface, struck in low relief into hammered black iron, pitted from repeated strikes."},
+  {id:"abyssal-8",num:"Ab-8",name:"The Edge of the Trench",section:"cast",sectionLabel:"Cast · Abyssal",mark:"Scrape",prompt:"A jagged drop-off ledge marking a boundary before a plunge, struck in low relief into hammered black iron, pitted from repeated strikes, with three parallel claw-like gouges raked across the ledge's edge."},
+
+  {id:"hadal-1",num:"Ha-1",name:"Beyond Chart",section:"cast",sectionLabel:"Cast · Hadal",mark:"Scrape",prompt:"A compass shape that trails off into blank unmarked glass past its own edge, pressed flat into a slab of branching fulgurite glass, rough sandy exterior, smooth pale frosted interior, the whole form fused into the flat plane of the slab with no depth beyond the surface, not a freestanding object, viewed frontally as a flat wall panel, with three parallel claw-like gouges raked across the surface."},
+  {id:"hadal-2",num:"Ha-2",name:"The Last Tether's Length",section:"cast",sectionLabel:"Cast · Hadal",mark:"",prompt:"A taut rope reaching the very end of its length, pressed flat into a slab of branching fulgurite glass, rough sandy exterior, smooth pale frosted interior, the whole form fused into the flat plane of the slab with no depth beyond the surface, not a freestanding object, viewed frontally as a flat wall panel."},
+  {id:"hadal-3",num:"Ha-3",name:"Absolute Cold",section:"cast",sectionLabel:"Cast · Hadal",mark:"",prompt:"A stark, sharply faceted geometric form stripped of all ornament, pressed flat into a slab of branching fulgurite glass, rough sandy exterior, smooth pale frosted interior, the whole form fused into the flat plane of the slab with no depth beyond the surface, not a freestanding object, viewed frontally as a flat wall panel."},
+  {id:"hadal-4",num:"Ha-4",name:"Silence Older Than Sound",section:"cast",sectionLabel:"Cast · Hadal",mark:"",prompt:"A smooth unbroken expanse with a single faint ancient crack running through it, pressed flat into a slab of branching fulgurite glass, rough sandy exterior, smooth pale frosted interior, the whole form fused into the flat plane of the slab with no depth beyond the surface, not a freestanding object, viewed frontally as a flat wall panel."},
+  {id:"hadal-5",num:"Ha-5",name:"What Has Always Been Here",section:"cast",sectionLabel:"Cast · Hadal",mark:"",prompt:"A massive ancient partial monument shape emerging at the very edge of the frame, pressed flat into a slab of branching fulgurite glass, rough sandy exterior, smooth pale frosted interior, the whole form fused into the flat plane of the slab with no depth beyond the surface, not a freestanding object, viewed frontally as a flat wall panel."},
+  {id:"hadal-6",num:"Ha-6",name:"No Further Down",section:"cast",sectionLabel:"Cast · Hadal",mark:"",prompt:"A solid floor plane meeting the bottom edge of the frame directly, pressed flat into a slab of branching fulgurite glass, rough sandy exterior, smooth pale frosted interior, the whole form fused into the flat plane of the slab with no depth beyond the surface, not a freestanding object, viewed frontally as a flat wall panel."},
+  {id:"hadal-7",num:"Ha-7",name:"What Looks Back Here",section:"cast",sectionLabel:"Cast · Hadal",mark:"Mend (silver)",prompt:"A single vast eye fully formed within a slab of branching fulgurite glass, rough sandy exterior, smooth pale frosted interior, the whole form pressed flat and fused into the flat plane of the slab with no depth beyond the surface, not a freestanding object, viewed frontally as a flat wall panel, with one fracture across it filled and repaired by a vein of tarnished silver sitting proud of the surface."},
+  {id:"hadal-8",num:"Ha-8",name:"The Last Cast",section:"cast",sectionLabel:"Cast · Hadal",mark:"Wound",prompt:"A single line cast outward into empty blank space, reaching nothing at its end, pressed flat into a slab of branching fulgurite glass, rough sandy exterior, smooth pale frosted interior, the whole form fused into the flat plane of the slab with no depth beyond the surface, not a freestanding object, viewed frontally as a flat wall panel, with a deep jagged tear left raw and unrepaired along the line's length."},
+];
+
+CARDS.forEach(c => { c.fullPrompt = c.prompt + STYLE; });
+
+const SECTION_ORDER = ["unbound","court","cast"];
+const SECTION_NAMES = {unbound:"Unbound", court:"Court", cast:"Cast"};
+
+let done = JSON.parse(localStorage.getItem("ephemeris-done") || "{}");
+let filter = "all";
+let selected = null;
+
+function saveDone() { localStorage.setItem("ephemeris-done", JSON.stringify(done)); }
+
+function updateProgress() {
+  const n = Object.values(done).filter(Boolean).length;
+  document.getElementById("progressFill").style.width = (n/71*100)+"%";
+  document.getElementById("progressLabel").textContent = n + " / 71";
+}
+
+function setFilter(f, btn) {
+  filter = f;
+  document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  renderGrid();
+}
+
+function renderGrid() {
+  const q = document.getElementById("searchInput").value.toLowerCase();
+  const grid = document.getElementById("cardGrid");
+  grid.innerHTML = "";
+
+  let lastSection = null;
+  CARDS.forEach(card => {
+    const isDone = !!done[card.id];
+    if (filter === "done" && !isDone) return;
+    if (filter === "todo" && isDone) return;
+    if (filter === "marked" && !card.mark) return;
+    if (["unbound","court","cast"].includes(filter) && card.section !== filter) return;
+    if (q && !card.name.toLowerCase().includes(q)) return;
+
+    if (filter === "all" && card.section !== lastSection) {
+      const label = document.createElement("div");
+      label.className = "section-label";
+      label.textContent = SECTION_NAMES[card.section];
+      grid.appendChild(label);
+      lastSection = card.section;
+    }
+
+    const el = document.createElement("div");
+    el.className = "card" + (isDone ? " done" : "") + (selected === card.id ? " selected" : "");
+    el.dataset.id = card.id;
+    el.onclick = () => selectCard(card.id);
+    el.innerHTML = `
+      <div class="card-top">
+        <div class="suit-dot dot-${card.section}"></div>
+        <span class="card-num">${card.num}</span>
+      </div>
+      <div class="card-name">${card.name}</div>
+      <div class="card-suit-label">${card.sectionLabel}</div>
+      ${card.mark ? `<div class="card-mark">${card.mark}</div>` : ""}
+      ${isDone ? '<div class="done-check">&#10003;</div>' : ""}
+    `;
+    grid.appendChild(el);
+  });
+}
+
+function selectCard(id) {
+  const card = CARDS.find(c => c.id === id);
+  if (!card) return;
+  selected = id;
+  document.getElementById("detailPanel").classList.add("visible");
+  document.getElementById("detailNum").textContent = card.num + " · " + card.sectionLabel;
+  document.getElementById("detailName").textContent = card.name;
+  document.getElementById("detailBlemish").textContent = card.mark || "clean";
+  document.getElementById("detailPrompt").textContent = card.fullPrompt;
+  updateDoneBtn();
+  renderGrid();
+  document.getElementById("detailPanel").scrollIntoView({behavior:"smooth", block:"nearest"});
+}
+
+function updateDoneBtn() {
+  const btn = document.getElementById("doneBtn");
+  const isDone = selected && !!done[selected];
+  if (isDone) {
+    btn.textContent = "Mark as not done";
+    btn.className = "action-btn undone-btn";
+  } else {
+    btn.textContent = "Mark as done ✓";
+    btn.className = "action-btn done-btn";
+  }
+}
+
+function toggleDone() {
+  if (!selected) return;
+  done[selected] = !done[selected];
+  saveDone();
+  updateProgress();
+  updateDoneBtn();
+  renderGrid();
+}
+
+function closeDetail() {
+  selected = null;
+  document.getElementById("detailPanel").classList.remove("visible");
+  renderGrid();
+}
+
+function copyText(text, btn, label) {
+  const finish = () => {
+    btn.textContent = "Copied!";
+    btn.classList.add("copied");
+    setTimeout(() => { btn.textContent = label; btn.classList.remove("copied"); }, 1800);
+  };
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(finish).catch(() => fallbackCopy(text, finish));
+  } else {
+    fallbackCopy(text, finish);
+  }
+}
+
+function fallbackCopy(text, cb) {
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.setAttribute("readonly", "");
+  ta.style.cssText = "position:absolute;left:-9999px;top:0;width:1px;height:1px";
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  ta.setSelectionRange(0, text.length);
+  let ok = false;
+  try { ok = document.execCommand("copy"); } catch(e) {}
+  document.body.removeChild(ta);
+  if (ok) { cb(); } else { alert("Copy failed — please select the prompt text manually."); }
+}
+
+function copyPrompt() {
+  const card = CARDS.find(c => c.id === selected);
+  if (!card) return;
+  copyText(card.fullPrompt, document.getElementById("copyPromptBtn"), "Copy prompt");
+}
+
+updateProgress();
+renderGrid();
+</script>
+</body>
+</html>

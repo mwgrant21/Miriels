@@ -1,6 +1,6 @@
 {
   "name": "tarot",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Local tarot & oracle reading tool",
   "main": "electron/main.js",
   "dependencies": {

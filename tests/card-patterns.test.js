@@ -80,3 +80,82 @@ test('caps at 3 facts', () => {
   const out = findCardPatterns({ readings: many, currentCards: [card('The Tower'), card('Two of Cups')], now: NOW });
   assert.ok(out.length <= 3, 'no more than 3 facts');
 });
+
+test('returning: a recurring card absent >= 90 days is noticed as a return', () => {
+  const readings = [
+    rdg(daysAgo(180), [card('The Tower')]),
+    rdg(daysAgo(150), [card('The Tower')]),
+    rdg(daysAgo(120), [card('The Tower')]), // most-recent prior = 120 days ago
+  ];
+  const out = findCardPatterns({ readings, currentCards: [card('The Tower')], now: NOW });
+  const ret = out.find(f => f.kind === 'returning');
+  assert.ok(ret, 'returning fact present');
+  assert.match(ret.fact, /The Tower returns/);
+  assert.match(ret.fact, /about 4 months/);
+  assert.equal(ret.strength, 4); // 120-day gap is < 180 -> base strength, guards against a formula inversion
+});
+
+test('returning: a very long absence (>= 180 days) gets strength 5', () => {
+  const readings = [
+    rdg(daysAgo(360), [card('Death')]),
+    rdg(daysAgo(300), [card('Death')]),
+    rdg(daysAgo(210), [card('Death')]), // most-recent prior = 210 days ago
+  ];
+  const out = findCardPatterns({ readings, currentCards: [card('Death')], now: NOW });
+  const ret = out.find(f => f.kind === 'returning');
+  assert.ok(ret);
+  assert.equal(ret.strength, 5);
+});
+
+test('returning: an absence of almost a year is phrased as such', () => {
+  const readings = [
+    rdg(daysAgo(500), [card('The Moon')]),
+    rdg(daysAgo(420), [card('The Moon')]),
+    rdg(daysAgo(350), [card('The Moon')]), // ~350 days ago
+  ];
+  const out = findCardPatterns({ readings, currentCards: [card('The Moon')], now: NOW });
+  assert.match(out.find(f => f.kind === 'returning').fact, /almost a year/);
+});
+
+test('returning does NOT fire when the card appeared recently (falls through to recurrence)', () => {
+  const readings = [
+    rdg(daysAgo(120), [card('The Tower')]),
+    rdg(daysAgo(110), [card('The Tower')]),
+    rdg(daysAgo(20),  [card('The Tower')]), // most-recent prior = 20 days ago (< 90)
+  ];
+  const out = findCardPatterns({ readings, currentCards: [card('The Tower')], now: NOW });
+  assert.equal(out.find(f => f.kind === 'returning'), undefined);
+  assert.ok(out.find(f => f.kind === 'recurrence'), 'recurrence fires instead');
+});
+
+test('returning does NOT fire for a card with fewer than 3 prior appearances', () => {
+  const readings = [
+    rdg(daysAgo(200), [card('The Star')]),
+    rdg(daysAgo(150), [card('The Star')]), // only 2 prior appearances
+  ];
+  const out = findCardPatterns({ readings, currentCards: [card('The Star')], now: NOW });
+  assert.equal(out.find(f => f.kind === 'returning'), undefined);
+  assert.equal(out.find(f => f.kind === 'recurrence'), undefined);
+});
+
+test('returning takes precedence over recurrence for the same card (no duplicate fact)', () => {
+  const readings = [
+    rdg(daysAgo(200), [card('Death')]),
+    rdg(daysAgo(170), [card('Death')]),
+    rdg(daysAgo(140), [card('Death')]),
+  ];
+  const out = findCardPatterns({ readings, currentCards: [card('Death')], now: NOW });
+  assert.ok(out.find(f => f.kind === 'returning'));
+  assert.equal(out.find(f => f.kind === 'recurrence' && /Death/.test(f.fact)), undefined);
+});
+
+test('reversal still wins over returning for a reversed-heavy returning card', () => {
+  const readings = [
+    rdg(daysAgo(200), [card('The Empress', true)]),
+    rdg(daysAgo(170), [card('The Empress', true)]),
+    rdg(daysAgo(140), [card('The Empress', true)]), // gap qualifies for returning too
+  ];
+  const out = findCardPatterns({ readings, currentCards: [card('The Empress', true)], now: NOW });
+  assert.ok(out.find(f => f.kind === 'reversal'), 'reversal fact present');
+  assert.equal(out.find(f => f.kind === 'returning'), undefined, 'returning suppressed by reversal');
+});
