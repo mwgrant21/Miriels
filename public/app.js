@@ -11,8 +11,7 @@ let lastRenderDealt   = false; // snapshot of dealAnimActive captured in renderS
 
 const DEAL_INTERVAL   = 480;  // ms between each card starting to deal
 const SHUFFLE_MS      = 1400; // visible riffle of the pile before dealing begins
-const DEAL_DURATION   = 520;  // ms flight duration
-const DEAL_FLIP_DELAY = 640;  // ms from card start until flip (DEAL_DURATION + 120 buffer)
+const DEAL_FLIP_DELAY = 640;  // ms from card start until flip (520ms flight + 120 buffer)
 let dealToken = 0; // bumped on each new draw so an in-flight async deal can abort
 function dealPaceMs(n) { return Math.min(2000, Math.max(1100, Math.round(14000 / n))); }
 function jittered(ms) { return ms + (Math.random() * 500 - 250); }
@@ -418,7 +417,7 @@ function applyTimeOfDayTheme() {
         requestAnimationFrame(() => { fade.style.opacity = '0'; });
         faded = true;
       }
-    } catch (err) {
+    } catch {
       faded = false; // fall through to the instant swap below
     }
   }
@@ -1231,9 +1230,9 @@ function closeJournal() {
 const GRIMOIRE_DECKS = [
   ['veil-arcana',        'Veil Arcana'],
   ['drowned-ephemeris',  'Drowned Ephemeris'],
+  ['miriel-lunar',       'Moon Oracle'],
   ['tarot',              'Rider-Waite'],
   ['thoth',              'Thoth'],
-  ['miriel-lunar',       'Moon Oracle'],
   ['lenormand',     'Lenormand'],
   ['runic',         'Runes'],
   ['iching',        'I Ching'],
@@ -2178,7 +2177,16 @@ async function drawWithReaderChoice() {
       'four-card': 'Four-Card', 'five-card': 'Five-Card',
       'six-card': 'Six-Card', 'nine-card': 'Nine-Card', 'celtic': 'Celtic Cross'
     };
-    noteEl.innerHTML = `<span class="reader-note-label">${spreadNames[chosenSpread] || (SPREADS[chosenSpread] && SPREADS[chosenSpread].label) || chosenSpread}</span>${chosenReason ? ' \u2014 ' + chosenReason : ''}`;
+    // chosenReason is raw model output; build the note with textContent so it can
+    // never inject markup/script (the label is a controlled whitelist, but treated
+    // as text here too for consistency).
+    const noteLabel = spreadNames[chosenSpread] || (SPREADS[chosenSpread] && SPREADS[chosenSpread].label) || chosenSpread;
+    noteEl.textContent = '';
+    const labelSpan = document.createElement('span');
+    labelSpan.className = 'reader-note-label';
+    labelSpan.textContent = noteLabel;
+    noteEl.appendChild(labelSpan);
+    if (chosenReason) noteEl.appendChild(document.createTextNode(' \u2014 ' + chosenReason));
     noteEl.classList.remove('hidden');
     scrollToNewReading();
 
@@ -2361,9 +2369,9 @@ function buildSelectOptions() {
   const groups = [
     { label: 'Veil Arcana',       cards: allCards['veil-arcana'] },
     { label: 'Drowned Ephemeris', cards: allCards['drowned-ephemeris'] },
+    { label: 'Moon Oracle',       cards: allCards['miriel-lunar'] },
     { label: 'Rider-Waite Tarot', cards: allCards.tarot },
     { label: 'Thoth Tarot',       cards: allCards.thoth },
-    { label: 'Moon Oracle',       cards: allCards['miriel-lunar'] },
     { label: 'Lenormand Oracle',    cards: allCards.lenormand },
     { label: 'Elder Futhark Runes', cards: allCards.runic },
     { label: 'I Ching',             cards: allCards.iching },
@@ -2392,7 +2400,6 @@ function showManualForm() {
   hideMeaningPanel();
 
   const spreadSlots = (SPREADS[currentSpread] && SPREADS[currentSpread].slots) || SPREADS['single'].slots;
-  const isFlexible = currentSpread === 'single'; // single allows any card count
 
   const form = document.createElement('div');
   form.className = 'manual-form';
@@ -3559,6 +3566,7 @@ function cardImageUrl(card) {
                   card.deckType === 'Lenormand'       ? null :
                   card.deckType === 'VeilArcana'         ? 'veil-arcana' :
                   card.deckType === 'DrownedEphemeris'  ? 'drowned-ephemeris' :
+                  card.deckType === 'MirielLunar'        ? 'miriel-lunar' :
                   card.id.startsWith('oracle-')          ? 'oracle' :
                                                         'tarot';
   return (deckKey && imageManifest[deckKey] && imageManifest[deckKey][card.id]) || null;

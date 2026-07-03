@@ -10,12 +10,17 @@
   "devDependencies": {
     "@electron/packager": "^19.1.0",
     "@electron/rebuild": "^4.0.4",
+    "@eslint/js": "^9.0.0",
     "electron": "^35.0.0",
     "electron-builder": "^25.0.0",
+    "eslint": "^9.0.0",
+    "globals": "^17.7.0",
     "jimp": "^1.6.1",
     "png2icons": "^2.0.1"
   },
   "scripts": {
+    "test": "node --test tests/*.test.js",
+    "lint": "eslint .",
     "start": "node server.js",
     "electron": "electron .",
     "rebuild": "electron-rebuild -f -w better-sqlite3",

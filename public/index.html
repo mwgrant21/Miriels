@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'">
   <title>Miriel's Readings</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -29,10 +30,10 @@
           <label class="sr-only">Deck</label>
           <select id="deck-select" class="deck-select">
             <option value="veil-arcana">Veil Arcana</option>
-            <option value="tarot">Rider-Waite Tarot</option>
-            <option value="thoth">Thoth Tarot</option>
             <option value="drowned-ephemeris">Drowned Ephemeris</option>
             <option value="miriel-lunar">Moon Oracle</option>
+            <option value="tarot">Rider-Waite Tarot</option>
+            <option value="thoth">Thoth Tarot</option>
             <option value="lenormand">Lenormand Oracle</option>
             <option value="runic">Elder Futhark Runes</option>
             <option value="iching">I Ching</option>
@@ -308,7 +309,7 @@
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous"></script>
+  <script src="vendor/html2canvas.min.js"></script>
   <script src="theme-transition.js"></script>
   <script src="ambient-lines.js"></script>
   <script src="app.js"></script>

@@ -1,5 +1,7 @@
 'use strict';
 
+const { fence } = require('./prompt-safety');
+
 const DAY = 86400000; // ms
 
 function near(age, target, windowMs) { return Math.abs(age - target) <= windowMs; }
@@ -34,7 +36,7 @@ function findTemporalCallbacks({ readings, lastVisitTs, now }) {
     if (age <= 0) continue;
     if (near(age, 365 * DAY, ANNIV_WINDOW)) {
       out.push({ kind: 'anniversary', strength: 5, signature: `anniversary:1y:${r.id}`,
-        fact: `Exactly one year ago, in a past reading (not their last visit), they asked: "${r.question || '(no question)'}" (${cardNames(r)}).`,
+        fact: `Exactly one year ago, in a past reading (not their last visit), they asked: ${r.question ? fence('querent_question', r.question, 300) : '(no question)'} (${cardNames(r)}).`,
         ref: { date: r.date, question: r.question, cards: r.cards } });
     }
   }
@@ -64,7 +66,7 @@ function findTemporalCallbacks({ readings, lastVisitTs, now }) {
   if (seasonalBest) {
     const yrs = nowYear - new Date(seasonalBest.timestamp).getFullYear();
     out.push({ kind: 'seasonal', strength: 2, signature: `seasonal:${new Date(seasonalBest.timestamp).getFullYear()}:${seasonalBest.id}`,
-      fact: `Around this time ${yrs} year${yrs > 1 ? 's' : ''} ago they asked: "${seasonalBest.question || '(no question)'}" (${cardNames(seasonalBest)}).`,
+      fact: `Around this time ${yrs} year${yrs > 1 ? 's' : ''} ago they asked: ${seasonalBest.question ? fence('querent_question', seasonalBest.question, 300) : '(no question)'} (${cardNames(seasonalBest)}).`,
       ref: { date: seasonalBest.date, question: seasonalBest.question, cards: seasonalBest.cards } });
   }
 

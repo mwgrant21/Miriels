@@ -1,7 +1,10 @@
 'use strict';
 
+const { sanitizeUntrusted } = require('./prompt-safety');
+
 // Self-contained tokenizer/overlap (kept dependency-free so this module stays pure
-// and unit-testable without loading the sqlite-backed memory engine). Mirrors the
+// and unit-testable without loading the sqlite-backed memory engine; prompt-safety
+// has no deps of its own, so requiring it does not pull in sqlite). Mirrors the
 // tokenizer in data/memory-engine.js intentionally.
 const STOPWORDS = new Set(
   ('the a an and or but if then of to in on for with about into your you i me my we our it its this that ' +
@@ -34,13 +37,15 @@ function resolvedFact(kind, foretelling, outcome) {
   const tail = kind === 'fulfilled' ? 'It came to pass'
              : kind === 'partial'   ? 'It came partly true'
              : 'It did not come to pass';
-  return outcome
-    ? `You foretold: "${foretelling}". ${tail}: "${outcome}".`
-    : `You foretold: "${foretelling}". ${tail}.`;
+  const f = sanitizeUntrusted(foretelling, 0);
+  const o = outcome ? sanitizeUntrusted(outcome, 0) : outcome;
+  return o
+    ? `You foretold: "${f}". ${tail}: "${o}".`
+    : `You foretold: "${f}". ${tail}.`;
 }
 
 function openFact(foretelling) {
-  return `You foretold: "${foretelling}". This is still unfolding, not yet resolved.`;
+  return `You foretold: "${sanitizeUntrusted(foretelling, 0)}". This is still unfolding, not yet resolved.`;
 }
 
 const DAY = 86400 * 1000;

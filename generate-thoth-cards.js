@@ -76,7 +76,7 @@ function astroGlyphs(astro) {
 // ── Suit symbol SVG snippets ──────────────────────────────────────────────────
 // All centred at cx=140, vertically around y=225 with span ~80px
 
-function suitSymbol(suit, accent, glow) {
+function suitSymbol(suit, accent, _glow) {
   const filter = `filter="url(#suit-glow)"`;
   switch ((suit || '').toLowerCase()) {
     case 'wands':
@@ -130,7 +130,7 @@ function suitSymbol(suit, accent, glow) {
 // Queen    = Water = downward triangle (plain)
 // Knight   = Fire  = upward triangle (plain)
 
-function courtGlyph(name, accent, glow) {
+function courtGlyph(name, accent, _glow) {
   const filter = `filter="url(#suit-glow)"`;
   if (name.includes('Knight')) return `
   <!-- Knight: Fire △ -->

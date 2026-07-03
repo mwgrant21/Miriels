@@ -1,5 +1,7 @@
 'use strict';
 
+const { sanitizeUntrusted } = require('./prompt-safety');
+
 const DAY = 86400; // seconds
 const MIN_FEELINGS_PER_SEASON = 4;
 const SEASON_WINDOW_DAYS = 30;
@@ -79,7 +81,7 @@ const SEASON_SYSTEM =
   'second person ("you")}. ASCII only. No em dashes. No text outside the JSON.';
 
 function buildSeasonPrompt(feelings) {
-  const lines = feelings.map(f => `- ${f.content}`).join('\n');
+  const lines = feelings.map(f => `- ${sanitizeUntrusted(f.content, 0)}`).join('\n');
   return `Things they have felt during one stretch of time:\n${lines}\n\n` +
          `Characterize this emotional season now. Return only the JSON object.`;
 }

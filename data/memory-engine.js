@@ -1,6 +1,7 @@
 'use strict';
 const createMemoryStore = require('./memory-store');
 const { buildAddressingNote } = require('./addressing');
+const { fence, sanitizeUntrusted } = require('./prompt-safety');
 
 function parseExtractorOutput(raw) {
   if (!raw) return [];
@@ -100,7 +101,7 @@ const RECALL_LIMIT = 10;
 
 function formatRecallBlock(memories) {
   if (!memories || !memories.length) return '';
-  const lines = memories.map(m => `- ${m.content}`).join('\n');
+  const lines = memories.map(m => `- ${sanitizeUntrusted(m.content, 0)}`).join('\n');
   return `\n\nWhat you know about this person that may bear on what's in front of them now. ` +
          `Draw on whatever genuinely connects to their question or these cards, and when you do, ` +
          `name it specifically (the actual moment or thread), not a vague gesture. Don't force in ` +
@@ -119,11 +120,11 @@ function decideThresholdMode(lastVisitTs, threads, now, gapDays = REUNION_GAP_DA
 }
 
 function threadLines(threads) {
-  return (threads || []).map(t => `- ${t.content}`).join('\n');
+  return (threads || []).map(t => `- ${sanitizeUntrusted(t.content, 0)}`).join('\n');
 }
 
 function predictionLines(predictions) {
-  return (predictions || []).map(p => `- ${p.content}`).join('\n');
+  return (predictions || []).map(p => `- ${sanitizeUntrusted(p.content, 0)}`).join('\n');
 }
 
 function buildGreetingPrompt(mode, threads, gapDays, predictions = [], temporalCallbacks = [], timeOfDay = '', dormantThreads = [], seasonShift = null) {
@@ -188,7 +189,7 @@ function buildReplyPrompt(threads, answer) {
   return `Moments ago you asked this person what had come of:
 ${threadLines(threads)}
 
-They answered: "${String(answer || '').slice(0, 800)}"
+They answered: ${fence('answer', answer, 800)}
 
 Respond as Miriel, take in what they said and reflect it back briefly, with warmth and honesty, and let it settle into a single quiet bridge toward the reading to come. One or two sentences. Do not read the cards yet.`;
 }
@@ -201,12 +202,12 @@ const THRESHOLD_CAPTURE_SYSTEM =
 
 function buildThresholdCapturePrompt(items, answer) {
   const block = (items || [])
-    .map(t => `#${t.id} [${t.type || 'thread'}/${t.status || '-'}] ${t.content}`).join('\n');
+    .map(t => `#${t.id} [${t.type || 'thread'}/${t.status || '-'}] ${sanitizeUntrusted(t.content, 0)}`).join('\n');
   return `WHAT MIRIEL ASKED ABOUT:
 ${block}
 
 WHAT THE PERSON SAID:
-"${String(answer || '').slice(0, 1000)}"
+${fence('answer', answer, 1000)}
 
 Update memory. Respond with ONLY a JSON object:
 
@@ -240,7 +241,7 @@ function buildCuriosityCardLines(cards) {
 
 function buildCuriosityPrompt(cards, threads) {
   const cardBlock   = buildCuriosityCardLines(cards);
-  const threadBlock = (threads || []).map(t => `#${t.id} ${t.content}`).join('\n');
+  const threadBlock = (threads || []).map(t => `#${t.id} ${sanitizeUntrusted(t.content, 0)}`).join('\n');
   return `THE SPREAD JUST LAID (id in brackets):
 ${cardBlock}
 
@@ -272,7 +273,7 @@ function summarizeReading(reading) {
   const syn = reading.synopsis ? String(reading.synopsis).slice(0, 1200) : '';
   return `Date: ${reading.date || 'unknown'}\n` +
          `Spread: ${reading.spread || 'unknown'}\n` +
-         `Question: ${reading.question ? `"${reading.question}"` : 'none'}\n` +
+         `Question: ${reading.question ? fence('querent_question', reading.question, 500) : 'none'}\n` +
          `Cards: ${cards}\n` +
          `What Miriel said: ${syn}`;
 }
@@ -285,7 +286,7 @@ const EXTRACT_SYSTEM =
 
 function buildCapturePrompt(reading, existing) {
   const existingBlock = existing.length
-    ? existing.map(m => `#${m.id} [${m.type}/${m.status || '-'}] ${m.content}`).join('\n')
+    ? existing.map(m => `#${m.id} [${m.type}/${m.status || '-'}] ${sanitizeUntrusted(m.content, 0)}`).join('\n')
     : '(none yet)';
   return `READING:
 ${summarizeReading(reading)}
@@ -338,7 +339,7 @@ module.exports = function createMemoryEngine(dataDir) {
   const store = createMemoryStore(dataDir);
 
   function recall(slug, { question, cards } = {}) {
-    let candidates = [];
+    let candidates;
     try { candidates = store.getOpenAndSalient(slug, 200); } catch { candidates = []; }
     if (!candidates.length) return { memories: [], block: '' };
     const chosen = scoreCandidates(candidates, { question, cards })

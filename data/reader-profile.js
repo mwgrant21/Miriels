@@ -1,6 +1,7 @@
 'use strict';
 const path = require('path');
 const fs   = require('fs');
+const { fence } = require('./prompt-safety');
 
 const T2 = 10;
 const T3 = 30;
@@ -84,7 +85,7 @@ module.exports = function createProfileManager(dataDir) {
       const cardList = (r.cards || [])
         .map(c => `${c.position ? c.position + ': ' : ''}${c.name} (${c.isReversed ? 'reversed' : 'upright'})`)
         .join(', ');
-      return `${r.date || 'unknown date'} -- ${r.deckLabel || r.deck || 'tarot'}, ${r.spread || 'unknown spread'}${r.question ? `, question: "${r.question}"` : ''}\nCards: ${cardList}${r.synopsis ? `\nNotes: ${r.synopsis.slice(0, 200)}` : ''}`;
+      return `${r.date || 'unknown date'} -- ${r.deckLabel || r.deck || 'tarot'}, ${r.spread || 'unknown spread'}${r.question ? `, question: ${fence('querent_question', r.question, 300)}` : ''}\nCards: ${cardList}${r.synopsis ? `\nNotes: ${fence('prior_reading', r.synopsis, 200)}` : ''}`;
     }).join('\n\n');
 
     const systemPrompt = 'You are Miriel, an experienced tarot reader.';
@@ -154,8 +155,8 @@ module.exports = function createProfileManager(dataDir) {
 
     const block = readings.map(r => {
       const cards = (r.cards || []).map(c => `${c.name}${c.isReversed ? ' (reversed)' : ''}`).join(', ');
-      return `${r.date || ''} -- ${r.question ? `"${r.question}"` : 'no question'}\nCards: ${cards}` +
-             `${r.synopsis ? `\n${String(r.synopsis).slice(0, 400)}` : ''}`;
+      return `${r.date || ''} -- ${r.question ? fence('querent_question', r.question, 300) : 'no question'}\nCards: ${cards}` +
+             `${r.synopsis ? `\n${fence('prior_reading', r.synopsis, 400)}` : ''}`;
     }).join('\n\n');
 
     let note;

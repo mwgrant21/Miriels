@@ -203,6 +203,7 @@ test('detectRecurringTheme emits a theme present in >= 2 distinct seasons', () =
   assert.equal(got.theme, 'fear');
   assert.equal(got.seasons, 2);
   assert.match(got.fact, /fear/);
+  // eslint-disable-next-line no-control-regex -- intentional: asserts output is ASCII-only
   assert.ok(/^[\x00-\x7F]*$/.test(got.fact), 'fact must be ASCII only');
 });
 

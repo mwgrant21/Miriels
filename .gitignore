@@ -22,3 +22,6 @@ data/daily/
 
 # API key lives here — never commit
 data/config.json
+
+# Personal documents that live in the project folder but are not source
+*.pdf
