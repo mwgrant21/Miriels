@@ -75,9 +75,9 @@ test('chakra has 7 slots', () => {
 });
 
 test('server valid array matches all non-special spreads', () => {
-  const serverSrc = fs.readFileSync(path.join(__dirname, '../server.js'), 'utf8');
+  const serverSrc = fs.readFileSync(path.join(__dirname, '../routes/interpret.js'), 'utf8');
   const validMatch = serverSrc.match(/const valid = \[([^\]]+)\]/);
-  assert.ok(validMatch, 'Could not find valid array in server.js');
+  assert.ok(validMatch, 'Could not find valid array in routes/interpret.js');
   const validKeys = validMatch[1].match(/'([^']+)'/g).map(s => s.replace(/'/g, ''));
 
   const nonSpecialKeys = Object.entries(SPREADS)

@@ -10,10 +10,13 @@ an Electron desktop app, and has a sibling Android (Kotlin) implementation.
 ```
 public/  (vanilla JS, no framework)         — UI, deck/draw animation, reading flow
    │  fetch /api/*
-server.js (Express, loopback only)          — routes + LLM prompt assembly
+server.js (Express, loopback only)          — wiring: config, middleware, mounts
+   │  require()
+routes/*.js (9 modules)                     — route handlers, LLM prompt assembly
    │  require()
 data/*.js (service layer, node:test suites) — memory engine, profiles, notebook,
-   │                                          patterns, prophecy recall, prompt safety
+   │                                          patterns, prophecy recall, prompt
+   │                                          safety, LLM client, reader store
 storage                                     — better-sqlite3 (memory.db,
                                               interpretations.db) + JSON files
                                               (readings, profiles, patterns, daily)
@@ -22,11 +25,14 @@ storage                                     — better-sqlite3 (memory.db,
 - **Frontend** (`public/`): classic scripts today; ES-module split planned (see
   the portfolio-hardening spec in `docs/superpowers/specs/`). No framework by
   deliberate choice — see `docs/adr/001-no-frontend-framework.md`.
-- **Server** (`server.js`): ~23 routes. Route handlers assemble LLM prompts from
-  service-layer data; a route-module split is planned. All untrusted text entering
-  prompts is fenced via `data/prompt-safety.js`.
-- **Service layer** (`data/*.js`): 11 CommonJS modules backed by 14 node:test
-  suites in `tests/`. This is where the product's real complexity lives.
+- **Server** (`server.js`): ~77 lines of wiring. Routes live in `routes/` (9
+  modules: cache, cards, config, daily, interpret, profiles, readers, readings,
+  threshold); route handlers assemble LLM prompts from service-layer data. All
+  untrusted text entering prompts is fenced via `data/prompt-safety.js`.
+- **Service layer** (`data/*.js`): 14 CommonJS modules backed by 17 node:test
+  suites in `tests/`, including `data/llm-client.js` (Claude primary, Ollama
+  fallback) and `data/reader-store.js`. This is where the product's real
+  complexity lives.
 - **Storage**: better-sqlite3 for the memory engine and interpretation cache
   (synchronous, zero-config, single-user — see `docs/adr/003-storage.md`);
   JSON files for readings/profiles/caches. All personal data stays local and

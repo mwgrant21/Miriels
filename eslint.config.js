@@ -15,7 +15,7 @@ module.exports = [
   js.configs.recommended,
   {
     // Backend, tooling, Electron main — CommonJS under Node
-    files: ['eslint.config.js', 'server.js', 'data/**/*.js', 'scripts/**/*.js', 'electron/**/*.js', 'tests/**/*.js', 'generate-*.js'],
+    files: ['eslint.config.js', 'server.js', 'data/**/*.js', 'routes/**/*.js', 'scripts/**/*.js', 'electron/**/*.js', 'tests/**/*.js', 'generate-*.js'],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'commonjs',
