@@ -1,3 +1,4 @@
+// @ts-check
 // Miriel's system persona, shared by every LLM-backed route.
 // Moved byte-identically from server.js; treat as copy, not code.
 'use strict';

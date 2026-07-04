@@ -1,3 +1,4 @@
+// @ts-check
 // Prompt-safety helpers: neutralize and delimit untrusted text before it is
 // spliced into an LLM prompt.
 //

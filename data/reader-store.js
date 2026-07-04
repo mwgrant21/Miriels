@@ -1,3 +1,4 @@
+// @ts-check
 // Reader + reading-history persistence (JSON files under the data dir).
 // Extracted from server.js unchanged.
 'use strict';

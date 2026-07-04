@@ -1,3 +1,4 @@
+// @ts-check
 'use strict';
 const createMemoryStore = require('./memory-store');
 const { buildAddressingNote } = require('./addressing');
@@ -88,6 +89,13 @@ function scoreMemory(m, queryTokens, now) {
   return 3.0 * overlap + 1.5 * sal + 1.5 * statusW + 0.5 * fresh - 0.4 * over;
 }
 
+/**
+ * @param {Array<any>} candidates
+ * @param {object} [opts]
+ * @param {string} [opts.question]
+ * @param {Array<{ name?: string }>} [opts.cards]
+ * @param {number} [opts.now]
+ */
 function scoreCandidates(candidates, { question, cards, now } = {}) {
   const cardNames   = (cards || []).map(c => c.name).join(' ');
   const queryTokens = new Set(tokenize(`${question || ''} ${cardNames}`));
@@ -338,6 +346,12 @@ Rules:
 module.exports = function createMemoryEngine(dataDir) {
   const store = createMemoryStore(dataDir);
 
+  /**
+   * @param {string} slug
+   * @param {object} [opts]
+   * @param {string} [opts.question]
+   * @param {Array<{ name?: string }>} [opts.cards]
+   */
   function recall(slug, { question, cards } = {}) {
     let candidates;
     try { candidates = store.getOpenAndSalient(slug, 200); } catch { candidates = []; }

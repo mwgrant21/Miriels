@@ -1,3 +1,4 @@
+// @ts-check
 'use strict';
 
 const { sanitizeUntrusted } = require('./prompt-safety');
@@ -70,6 +71,16 @@ function filterProphecySurfaced(items, surfaced, now, ttlDays) {
 // recency. Open (in-motion) predictions follow for continuity. Recently-surfaced
 // foretellings are filtered out first (across-visit dedup) when a surfaced map and
 // `now` are supplied. Pure: no I/O.
+/**
+ * @param {object} [opts]
+ * @param {Array<any>} [opts.resolved]
+ * @param {Array<any>} [opts.open]
+ * @param {Array<{ name?: string }>} [opts.currentCards]
+ * @param {string} [opts.question]
+ * @param {Record<string, any>} [opts.surfaced]
+ * @param {number} [opts.now]
+ * @param {number} [opts.ttlDays]
+ */
 function findProphecyCallbacks({ resolved, open, currentCards, question, surfaced, now, ttlDays } = {}) {
   const cards = Array.isArray(currentCards) ? currentCards : [];
   const cardNames = cards.map(c => c && c.name).filter(Boolean).join(' ');

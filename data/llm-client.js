@@ -1,3 +1,4 @@
+// @ts-check
 // LLM plumbing: Claude primary, local Ollama fallback. Extracted from server.js
 // unchanged; the factory closes over the data dir so getApiKey can read config.json.
 'use strict';

@@ -1,3 +1,4 @@
+// @ts-check
 'use strict';
 
 const DAY = 86400000; // ms

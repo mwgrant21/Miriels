@@ -1,0 +1,17 @@
+{
+  "//": "Type-checking only, no emit. A cheap correctness signal over the vanilla-JS service layer via JSDoc + `// @ts-check` (see docs/adr/002-no-typescript.md). Not a build step: `npm run typecheck` runs `tsc --noEmit`.",
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "types": ["node"]
+  },
+  "include": ["data/**/*.js"],
+  "exclude": ["node_modules"]
+}
