@@ -9,6 +9,7 @@ an Electron desktop app, and has a sibling Android (Kotlin) implementation.
 
 ```
 public/  (vanilla JS, no framework)         — UI, deck/draw animation, reading flow
+  └─ public/js/ (12 ES modules) + 5-line app.js entry point
    │  fetch /api/*
 server.js (Express, loopback only)          — wiring: config, middleware, mounts
    │  require()
@@ -22,9 +23,19 @@ storage                                     — better-sqlite3 (memory.db,
                                               (readings, profiles, patterns, daily)
 ```
 
-- **Frontend** (`public/`): classic scripts today; ES-module split planned (see
-  the portfolio-hardening spec in `docs/superpowers/specs/`). No framework by
-  deliberate choice — see `docs/adr/001-no-frontend-framework.md`.
+- **Frontend** (`public/`): vanilla JS split into 12 native ES modules under
+  `public/js/` (bootstrap, reading-flow, reader-identity, content-library,
+  session-export, card-render, spreads-data, deck, utils, theme, overlay,
+  state), loaded via a 5-line `app.js` entry point
+  (`<script type="module">`). Two classic scripts (`theme-transition.js`,
+  `ambient-lines.js`) stay plain `<script>`s, reused by Node tests. The
+  migration's `app.js`↔module cycles were dissolved by promoting shared
+  mutable state into `state.js` (a zero-import leaf); the only remaining
+  cycles are two TDZ-safe function-level pairs within the reading-flow
+  cluster (reading-flow↔session-export, reading-flow↔reader-identity),
+  where imports are referenced only at call time. Zero build step, no
+  framework by deliberate choice — see
+  `docs/adr/001-no-frontend-framework.md`.
 - **Server** (`server.js`): ~77 lines of wiring. Routes live in `routes/` (9
   modules: cache, cards, config, daily, interpret, profiles, readers, readings,
   threshold); route handlers assemble LLM prompts from service-layer data. All

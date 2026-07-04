@@ -4,6 +4,9 @@ data/readings/
 *.log
 .env
 
+# Smoke-harness screenshots (regenerated per run, not source)
+screenshots/
+
 # Interpretation cache and reader profiles (personal data, stays local)
 data/interpretations.db
 data/profiles/

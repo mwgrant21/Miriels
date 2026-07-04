@@ -23,22 +23,21 @@ module.exports = [
     },
   },
   {
-    // Frontend — classic scripts sharing the page's global scope until the
-    // Phase 3 ES-module split makes these dependencies explicit imports.
-    files: ['public/**/*.js'],
+    // Frontend ES modules (app.js entry + extracted modules)
+    files: ['public/app.js', 'public/js/**/*.js'],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'module',
+      globals: { ...globals.browser, html2canvas: 'readonly' },
+    },
+  },
+  {
+    // Classic scripts kept dual-consumable (browser global + node require for tests)
+    files: ['public/theme-transition.js', 'public/ambient-lines.js'],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'script',
-      globals: {
-        ...globals.browser,
-        html2canvas: 'readonly',
-        // ambient-lines.js/theme-transition.js feature-detect the Node `module`
-        // global so they can also be require()'d directly by node --test.
-        module: 'readonly',
-        // Cross-file globals; become explicit imports in the Phase 3 module split.
-        shouldCrossfade: 'readonly',
-        ambientLineFor: 'readonly',
-      },
+      globals: { ...globals.browser, module: 'readonly' },
     },
   },
   {

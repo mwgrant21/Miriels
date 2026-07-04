@@ -5,11 +5,11 @@ const assert   = require('node:assert/strict');
 const fs   = require('fs');
 const path = require('path');
 
-const appSrc = fs.readFileSync(path.join(__dirname, '../public/app.js'), 'utf8');
+const appSrc = fs.readFileSync(path.join(__dirname, '../public/js/spreads-data.js'), 'utf8');
 // Extract the SPREADS object by evaluating up to the closing brace
-const spreadsMatch = appSrc.match(/^const SPREADS = \{[\s\S]+?\n\};/m);
-assert.ok(spreadsMatch, 'Could not find SPREADS constant in app.js');
-const SPREADS = eval(`(${spreadsMatch[0].replace('const SPREADS =', '').replace(/;$/, '')})`);
+const spreadsMatch = appSrc.match(/^export const SPREADS = \{[\s\S]+?\n\};/m);
+assert.ok(spreadsMatch, 'Could not find SPREADS constant in public/js/spreads-data.js');
+const SPREADS = eval(`(${spreadsMatch[0].replace('export const SPREADS =', '').replace(/;$/, '')})`);
 
 // Expected spread keys
 const ALL_KEYS = [

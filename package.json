@@ -16,11 +16,13 @@
     "eslint": "^9.0.0",
     "globals": "^17.7.0",
     "jimp": "^1.6.1",
-    "png2icons": "^2.0.1"
+    "png2icons": "^2.0.1",
+    "puppeteer-core": "^25.3.0"
   },
   "scripts": {
     "test": "node --test tests/*.test.js",
     "lint": "eslint .",
+    "smoke": "node scripts/smoke-frontend.js",
     "start": "node server.js",
     "electron": "electron .",
     "rebuild": "electron-rebuild -f -w better-sqlite3",
