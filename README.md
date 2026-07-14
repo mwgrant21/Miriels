@@ -121,6 +121,10 @@ testing and release packaging. The custom agents and skills in `.claude/` are th
 itself — authored to staff the project's specialized areas. I can explain any decision or
 subsystem in this repo; that's the standard I hold the process to.
 
+This is the curated portfolio repository: the history here is a small set of clean,
+reviewable commits. The full development history (360+ commits) is preserved in the
+original working repository, [mwgrant21/tarot](https://github.com/mwgrant21/tarot).
+
 ## Privacy
 
 This is a personal, local-first app. Your readings, profiles, and accumulated
