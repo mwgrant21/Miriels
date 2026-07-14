@@ -11,7 +11,9 @@ your machine.
 
 The heart of the app is **the memory engine** ("the moat") - Miriel accumulates a
 genuine memory of the querent across readings, so a reading in month six lands
-differently than a reading on day one.
+differently than a reading on day one. The full design - the atom store, the
+recall scoring, the jittered dormancy clocks, the prophecy verdict loop - is
+written up in [docs/memory-engine.md](docs/memory-engine.md).
 
 - **Accumulating memory** - an atom store of facts, threads, feelings, and
   predictions distilled from each reading.
@@ -109,6 +111,15 @@ specialized areas:
 - **memory-engine** (agent) - specialist for the memory subsystem
 - **tarot-release** (skill) - Electron packaging / native-module checklist
 - **android-parity** (agent) - keeps the Android companion in sync
+
+## How this was built
+
+Full transparency: this codebase was written by directing Claude Code, not by hand. I
+supplied the product vision, the specs and design decisions (see `docs/superpowers/` and
+the ADRs in `docs/adr/`), reviewed and accepted every change, and did the real-machine
+testing and release packaging. The custom agents and skills in `.claude/` are the workflow
+itself — authored to staff the project's specialized areas. I can explain any decision or
+subsystem in this repo; that's the standard I hold the process to.
 
 ## Privacy
 
