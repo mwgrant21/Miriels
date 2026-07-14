@@ -118,8 +118,9 @@ Full transparency: this codebase was written by directing Claude Code, not by ha
 supplied the product vision, the specs and design decisions (see `docs/superpowers/` and
 the ADRs in `docs/adr/`), reviewed and accepted every change, and did the real-machine
 testing and release packaging. The custom agents and skills in `.claude/` are the workflow
-itself — authored to staff the project's specialized areas. I can explain any decision or
-subsystem in this repo; that's the standard I hold the process to.
+itself — authored to staff the project's specialized areas. I can explain why every
+subsystem exists, how it's meant to behave, and how it was validated; for line-level
+implementation detail, the specs, ADRs, and commit history are the record.
 
 This is the curated portfolio repository: the history here is a small set of clean,
 reviewable commits. The full development history (360+ commits) is preserved in the
