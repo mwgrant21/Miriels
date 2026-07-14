@@ -154,7 +154,7 @@ export function makeThemeCardEl(card) {
   } else {
     const back = document.createElement('div');
     const backUrl = cardBackUrl(card);
-    back.className = 'card-back' + (backUrl !== '/images/tarot/card-back.jpg' ? ' has-image-back' : '');
+    back.className = 'card-back' + (backUrl !== '/images/tarot/card-back.webp' ? ' has-image-back' : '');
     back.style.backgroundImage = `url('${backUrl}')`;
     back.style.backgroundSize = 'cover';
     back.style.backgroundPosition = 'center';
@@ -290,7 +290,7 @@ export function makeCardEl(card, index) {
   } else {
     const back = document.createElement('div');
     const backUrl = cardBackUrl(card);
-    back.className = 'card-back' + (backUrl !== '/images/tarot/card-back.jpg' ? ' has-image-back' : '');
+    back.className = 'card-back' + (backUrl !== '/images/tarot/card-back.webp' ? ' has-image-back' : '');
     back.style.backgroundImage = `url('${backUrl}')`;
     back.style.backgroundSize = 'cover';
     back.style.backgroundPosition = 'center';
@@ -456,7 +456,7 @@ export function makeClarifierCardEl(card) {
   } else {
     const back = document.createElement('div');
     const backUrl = cardBackUrl(card);
-    back.className = 'card-back' + (backUrl !== '/images/tarot/card-back.jpg' ? ' has-image-back' : '');
+    back.className = 'card-back' + (backUrl !== '/images/tarot/card-back.webp' ? ' has-image-back' : '');
     back.style.backgroundImage = `url('${backUrl}')`;
     back.style.backgroundSize = 'cover';
     back.style.backgroundPosition = 'center';

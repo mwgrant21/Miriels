@@ -3141,7 +3141,7 @@ main {
   inset: 0;
   background-image:
     linear-gradient(180deg, rgba(10, 8, 26, 0.66) 0%, rgba(10, 8, 22, 0.50) 45%, rgba(8, 7, 18, 0.62) 100%),
-    url('../images/mirielbg-optimized.jpg');
+    url('../images/mirielbg-optimized.webp');
   background-size: cover, cover;
   background-position: center top, center top;
 }
@@ -3223,7 +3223,7 @@ main {
 body[data-time="night"] .cosmos-forest {
   background-image:
     linear-gradient(180deg, rgba(20, 16, 48, 0.42) 0%, rgba(14, 12, 32, 0.30) 50%, rgba(8, 7, 18, 0.55) 100%),
-    url('../images/mirielnightbg-optimized.jpg');
+    url('../images/mirielnightbg-optimized.webp');
 }
 body[data-time="night"] .cosmos-nebula {
   background:
@@ -3503,7 +3503,7 @@ body[data-time="dawn"] .cosmos-forest {
      like the day image so floating text (title, greeting) stays legible. */
   background-image:
     linear-gradient(180deg, rgba(18, 11, 5, 0.60) 0%, rgba(16, 10, 6, 0.54) 45%, rgba(12, 8, 4, 0.64) 100%),
-    url('../images/mirielsunrise-optimized.jpg');
+    url('../images/mirielsunrise-optimized.webp');
 }
 body[data-time="dawn"] .cosmos-nebula {
   background:
@@ -3539,7 +3539,7 @@ body[data-time="dusk"] {
 body[data-time="dusk"] .cosmos-forest {
   background-image:
     linear-gradient(180deg, rgba(28, 16, 36, 0.45) 0%, rgba(22, 14, 26, 0.28) 45%, rgba(14, 9, 14, 0.55) 100%),
-    url('../images/mirieldusk-optimized.jpg');
+    url('../images/mirieldusk-optimized.webp');
 }
 /* warm amber glow rising from the horizon + violet deepening at the very top */
 body[data-time="dusk"] .cosmos-nebula {

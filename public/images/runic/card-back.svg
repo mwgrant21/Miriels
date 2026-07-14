@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 486" width="280" height="486">
+  <defs>
+
+    <!-- Stone noise texture -->
+    <filter id="stone" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.72 0.68" numOctaves="4"
+                    stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="mono"/>
+      <feComponentTransfer in="mono" result="dimmed">
+        <feFuncA type="linear" slope="0.30"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="dimmed" mode="multiply"/>
+    </filter>
+
+    <!-- Vignette: dark edges -->
+    <radialGradient id="vig" cx="50%" cy="48%" r="65%">
+      <stop offset="0%"   stop-color="#1e1830" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#060406" stop-opacity="0.78"/>
+    </radialGradient>
+
+    <!-- Slab gradient -->
+    <linearGradient id="slab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#2a2038" stop-opacity="0.45"/>
+      <stop offset="50%"  stop-color="transparent"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.40"/>
+    </linearGradient>
+
+    <!-- Central halo -->
+    <radialGradient id="halo" cx="50%" cy="50%" r="45%">
+      <stop offset="0%"   stop-color="#8060b8" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#8060b8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Hagalaz glow -->
+    <filter id="rune-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="14"
+                    flood-color="#9080c8" flood-opacity="0.55"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="4"
+                    flood-color="#000000" flood-opacity="0.60"/>
+    </filter>
+
+  </defs>
+
+  <!-- Background -->
+  <rect width="280" height="486" rx="14" fill="#181422"/>
+  <rect width="280" height="486" rx="14" fill="#1e1830" filter="url(#stone)"/>
+  <rect width="280" height="486" rx="14" fill="url(#slab)"/>
+  <rect width="280" height="486" rx="14" fill="url(#vig)"/>
+
+  <!-- Borders -->
+  <rect x="7"  y="7"  width="266" height="472" rx="10" fill="none"
+        stroke="#504060" stroke-width="1.5"/>
+  <rect x="15" y="15" width="250" height="456" rx="7"  fill="none"
+        stroke="#3a2e48" stroke-width="0.75"/>
+
+  <!-- Corner accents -->
+  <polyline points="15,34 15,15 34,15"       fill="none" stroke="#7060a0" stroke-width="2" stroke-linecap="round"/>
+  <polyline points="246,15 265,15 265,34"    fill="none" stroke="#7060a0" stroke-width="2" stroke-linecap="round"/>
+  <polyline points="15,452 15,471 34,471"    fill="none" stroke="#7060a0" stroke-width="2" stroke-linecap="round"/>
+  <polyline points="246,471 265,471 265,452" fill="none" stroke="#7060a0" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Top label -->
+  <text x="140" y="42"
+    font-family="Georgia, 'Palatino Linotype', Palatino, serif"
+    font-size="10" fill="#504060"
+    text-anchor="middle" letter-spacing="4">ELDER FUTHARK</text>
+
+  <!-- Upper rune row -->
+  <text x="65"  y="108" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.55">&#x16A0;</text>
+  <text x="100" y="108" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.55">&#x16A2;</text>
+  <text x="140" y="108" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.55">&#x16A6;</text>
+  <text x="180" y="108" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.55">&#x16A8;</text>
+  <text x="215" y="108" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.55">&#x16B1;</text>
+
+  <!-- Second rune row -->
+  <text x="65"  y="152" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.45">&#x16B2;</text>
+  <text x="100" y="152" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.45">&#x16B7;</text>
+  <text x="140" y="152" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.45">&#x16B9;</text>
+  <text x="180" y="152" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.45">&#x16BA;</text>
+  <text x="215" y="152" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.45">&#x16BE;</text>
+
+  <!-- Central halo -->
+  <ellipse cx="140" cy="248" rx="85" ry="90" fill="url(#halo)"/>
+
+  <!-- Central Hagalaz (mother rune) -->
+  <text x="140" y="278"
+    font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="170" fill="#c8c0e0"
+    text-anchor="middle" dominant-baseline="middle"
+    filter="url(#rune-glow)">&#x16BA;</text>
+
+  <!-- Lower rune row -->
+  <text x="65"  y="368" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.45">&#x16C1;</text>
+  <text x="100" y="368" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.45">&#x16C3;</text>
+  <text x="140" y="368" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.45">&#x16C7;</text>
+  <text x="180" y="368" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.45">&#x16C8;</text>
+  <text x="215" y="368" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.45">&#x16C9;</text>
+
+  <!-- Bottom rune row -->
+  <text x="65"  y="412" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.55">&#x16CF;</text>
+  <text x="100" y="412" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.55">&#x16D2;</text>
+  <text x="140" y="412" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.55">&#x16D6;</text>
+  <text x="180" y="412" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.55">&#x16DC;</text>
+  <text x="215" y="412" font-family="'Segoe UI Symbol','Apple Symbols','Noto Sans Runic',serif"
+    font-size="26" fill="#3a2e58" text-anchor="middle" opacity="0.55">&#x16DF;</text>
+
+  <!-- Bottom label -->
+  <text x="140" y="456"
+    font-family="Georgia, 'Palatino Linotype', Palatino, serif"
+    font-size="10" fill="#504060"
+    text-anchor="middle" letter-spacing="4">ELDER FUTHARK</text>
+
+</svg>

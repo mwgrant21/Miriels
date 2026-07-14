@@ -123,18 +123,18 @@ export function isAlwaysFaceUp(card) {
 
 export function cardBackUrl(card) {
   if (card && card.deckType === 'MirielLunar') {
-    return '/images/miriel-lunar/card-back.png';
+    return '/images/miriel-lunar/card-back.webp';
   }
   if (card && card.deckType === 'VeilArcana') {
-    return '/images/veil-arcana/card-back.png';
+    return '/images/veil-arcana/card-back.webp';
   }
   if (card && card.deckType === 'Runic') {
     return '/images/runic/card-back.svg';
   }
   if (card && card.deckType === 'IChing') {
-    return '/images/iching/card-back.jpg';
+    return '/images/iching/card-back.webp';
   }
-  return '/images/tarot/card-back.jpg';
+  return '/images/tarot/card-back.webp';
 }
 
 export function cardImageUrl(card) {
